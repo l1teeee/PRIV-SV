@@ -67,6 +67,8 @@ Columnas: id, titulo, articulo, clasificacion, plazo, modulos candidatos. El det
 | OBL-DPO-07 | Informe periodico del delegado al responsable | Art. 30 | CONDICIONAL | 2 veces al ano (minimo) | Organizacion, Auditoria |
 | OBL-DPO-08 | Deber de asistencia de dependencias, empleados y proveedores al delegado | Art. 17 | OBLIGATORIO | - | Organizacion |
 
+(Actualizacion 2026-09-24, fase 3: OBL-DPO-01 incluye designar sustituto en 10 dias habiles tras el cese o suspension del Delegado, Art. 19 Lineamientos DPO; sin ID propio)
+
 ### AVISO - Aviso y politica de privacidad (5)
 
 | id | titulo | articulo | clasificacion | plazo | modulos candidatos |

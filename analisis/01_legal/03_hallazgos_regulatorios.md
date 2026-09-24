@@ -1195,7 +1195,7 @@ Nota: la obligacion de auditorias internas anuales ya esta catalogada como OBL-D
 |---|---|---|---|---|---|---|
 | LPDP | Art. 18 inc. final | 10 | dias habiles | Dia siguiente a la notificacion de la prevencion | Prorroga no prevista; una sola prevencion | Archivo automatico si vence sin subsanacion |
 | LPDP | Art. 19 | 5 | dias habiles | Recepcion de la solicitud | No prevista | Generar devolucion motivada al titular |
-| LPDP | Art. 20 | 20 (+20) | dias habiles | Recepcion de la solicitud (tras subsanacion si hubo prevencion) | Una prorroga de hasta 20 dias habiles adicionales, por causa justificada | Plazo maestro; requiere motivo documentado para prorrogar |
+| LPDP | Art. 20 | 20 (+20) | dias habiles | Recepcion de la solicitud (Actualizacion 2026-09-24, fase 3: igual que matriz_obligaciones.json OBL-ARCO-10; no resuelto si la prevencion del Art. 18 suspende este computo, ver incertidumbre 16) | Una prorroga de hasta 20 dias habiles adicionales, por causa justificada | Plazo maestro; requiere motivo documentado para prorrogar |
 | LPDP | Art. 21 inc. 3 | 5 | dias habiles | Determinacion de procedencia de la solicitud | No prevista | Solo si hubo transferencia previa de esos datos |
 | LPDP | Art. 22 | 3 | dias habiles | Adopcion de la decision de denegar | No prevista | Notificar por el medio senalado por el titular |
 | LPDP | Art. 9 | 20 | dias habiles | Recepcion de la solicitud de rectificacion | No prevista expresamente | Bloqueo cautelar del dato durante el tramite |

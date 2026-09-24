@@ -690,7 +690,8 @@
     ],
     "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 15, 17); https://www.asamblea.gob.sv/node/14116",
     "verificada": true,
-    "plazo": null
+    "plazo": null,
+    "nota_actualizacion_fase3": "Actualizacion 2026-09-24 (fase 3): la continuidad de la figura incluye designar un nuevo Delegado dentro de los 10 dias habiles siguientes a su cese o suspension (Lineamientos para el Delegado, Art. 19); se trata dentro de esta obligacion, sin ID propio, hasta la proxima revision de la matriz."
   },
   {
     "id": "OBL-DPO-02",

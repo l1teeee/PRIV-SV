@@ -657,7 +657,7 @@
       "TrainingProgram",
       "TrainingRecord"
     ],
-    "notas_reforma_659": "OBL-CAP-02 (capacitacion especifica del Delegado) esta afectada: se mantiene mientras el estado sea ACTUAL; en estado FUTURO pasa a buena practica voluntaria si la empresa mantiene al Responsable Interno.",
+    "notas_reforma_659": "OBL-CAP-02 (plan anual de capacitacion e induccion dirigido al personal, elaborado por el Delegado/Responsable Interno) esta afectada: se mantiene mientras el estado sea ACTUAL; en estado FUTURO pasa a buena practica voluntaria si la empresa mantiene al Responsable Interno.",
     "obligaciones_propietarias": [
       "OBL-CAP-01",
       "OBL-CAP-02"
@@ -863,11 +863,17 @@
       "OBL-ARCO-08",
       "OBL-ARCO-09",
       "OBL-ARCO-10",
+      "OBL-ARCO-11",
+      "OBL-ARCO-12",
+      "OBL-ARCO-14",
+      "OBL-CONS-03",
       "OBL-DPO-02",
       "OBL-DPO-03",
+      "OBL-DPO-04",
       "OBL-INC-01",
       "OBL-INC-02",
-      "OBL-SANC-05"
+      "OBL-SANC-05",
+      "OBL-SANC-06"
     ]
   },
   {
