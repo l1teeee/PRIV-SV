@@ -292,3 +292,109 @@ Ninguna de las funcionalidades siguientes tiene un OBL-ID propio en `matriz_obli
 
 ---
 
+# 18. Funcionalidades opcionales
+
+Fecha de elaboracion: 2026-09-24. Misma fase, mismas fuentes y misma convencion de identificadores que las secciones 16 y 17.
+
+Esta seccion cubre funcionalidades que ninguna obligacion de `matriz_obligaciones.json` exige (ni siquiera de forma RECOMENDADO) y que ademas ninguna ficha describe como necesarias para reforzar la responsabilidad demostrada: son mejoras de comodidad, automatizacion, alcance comercial o canal, tomadas literalmente de las filas COULD HAVE y FUTURE de la seccion Q de las 26 fichas. Ninguna de ellas bloquea el MVP; todas estan explicitamente marcadas en su ficha de origen como diferibles sin dejar un vacio legal. Se agrupan en las categorias que pide el prompt del cliente (seccion 18 de `00_prompt_analisis_funcional.md`): comodidad, automatizacion avanzada, integraciones, portal publico avanzado y canales adicionales; se anade una sexta categoria, vision consolidada multi-sociedad (Enterprise), porque aparece de forma recurrente en al menos nueve fichas distintas como el mismo tipo de funcionalidad diferida por la misma decision de alcance (`02_validacion_de_la_idea.md`, decision 2.7.31), y agruparla aparte evita repetirla de forma dispersa dentro de las otras cinco categorias.
+
+Convencion de esta seccion: donde una funcionalidad roza el limite de un anti-feature de `02_validacion/22_anti_features.md` (por ejemplo, cualquier forma de integracion tecnica con la infraestructura del cliente), la columna "Por que no es necesaria para el MVP" incluye ademas una advertencia explicita de diseno, tomada literalmente de la ficha de origen, para que una version futura no cruce esa linea.
+
+```
+Seccion 18: funcionalidades opcionales (ninguna bloquea el MVP)
+
+  18.1 Comodidad ----------- mejora de experiencia sobre una capacidad ya cubierta
+  18.2 Automatizacion ------ reemplaza un paso manual del MVP por un motor automatico
+  18.3 Integraciones ------- conecta el sistema con herramientas externas del cliente
+  18.4 Portal avanzado ----- amplia el canal publico mas alla del formulario interno
+  18.5 Canales adicionales - suma canales de notificacion/intake mas alla de plataforma+correo
+  18.6 Multi-sociedad ------ vision consolidada de grupo corporativo (Enterprise)
+```
+
+## 18.1 Comodidad y experiencia de usuario
+
+| Funcionalidad | Modulo | Valor | Por que no es necesaria para el MVP |
+|---|---|---|---|
+| Organigrama visual grafico de la estructura de la organizacion | MOD-001 (Organizacion y Personas) | Mejora la comprension visual de la estructura interna para empresas medianas y corporativas | Mejora de experiencia; no bloquea ninguna obligacion ni ningun otro modulo, la lista tabular de unidades ya cubre la necesidad operativa |
+| Historial comparativo entre diagnosticos sucesivos | MOD-004 (Diagnostico de Cumplimiento) | Permite ver la evolucion del nivel de madurez entre re-diagnosticos | Utilidad de seguimiento; el re-diagnostico manual ya disponible en el MVP cubre la necesidad legal de mantener el diagnostico actualizado |
+| Comentarios en una pregunta especifica del diagnostico | MOD-004 (Diagnostico de Cumplimiento) | Facilita la colaboracion interna entre quien responde y quien revisa | Mejora de colaboracion, postergable sin riesgo legal |
+| Vista tipo tablero (kanban) o calendario visual de tareas | MOD-021 (Centro de Tareas) | Ofrece una forma visual alternativa de gestionar el mismo trabajo | La lista de tareas y el dashboard del MVP ya muestran la misma informacion; el tablero visual no aporta una capacidad nueva |
+| Checklist de subtareas dentro de una tarea | MOD-021 (Centro de Tareas) | Util para tareas complejas con varios pasos (por ejemplo, un plan de accion de un procedimiento sancionador) | El MVP puede resolver lo mismo con varias tareas independientes vinculadas entre si |
+| Marca visible personalizada por organizacion (logo, colores corporativos) en el Portal del Titular | MOD-012 (Portal del Titular) | Valor comercial y de confianza para el titular que presenta la solicitud | Sin relacion con ninguna obligacion legal; el formulario interno seguro del MVP ya cumple sin necesidad de marca propia |
+| Portal del Titular en mas de un idioma | MOD-012 (Portal del Titular) | Util para empresas con titulares o clientes extranjeros | Sin urgencia regulatoria; el mercado objetivo del MVP es exclusivamente salvadoreno |
+| Diccionario de sinonimos en lenguaje sencillo para la Busqueda Global | MOD-025 (Busqueda Global) | Mejora sustancial de usabilidad para quien no conoce los terminos tecnicos de la ley | Requiere mantenimiento continuo sobre que terminos usa la gente real; la busqueda de texto simple ya funciona sin el |
+| Exportacion del Glosario y catalogo de ayuda por modulo en PDF | MOD-026 (Centro de Ayuda) | Material de referencia descargable para capacitacion interna | No bloquea el proposito central del modulo, que ya se cumple con la tarjeta de ayuda contextual dentro de cada pantalla |
+| Plantillas para documentos internos no regulatorios (por ejemplo, manuales internos sin relacion con proteccion de datos) | MOD-008 (Documentos y Politicas) | Retiene al cliente reutilizando el mismo motor documental para otros usos | Fuera del alcance legal estricto de este modulo; es valor de producto, no de cumplimiento |
+| Firma electronica avanzada integrada dentro del flujo de aprobacion de documentos | MOD-008 (Documentos y Politicas) | Refuerza la formalidad de la aprobacion de un documento | La Ley de Firma Electronica exige integridad verificable (OBL-RET-06), que el MVP ya cubre con versionado y hash; la firma avanzada es una mejora, no una obligacion |
+
+## 18.2 Automatizacion avanzada
+
+| Funcionalidad | Modulo | Valor | Por que no es necesaria para el MVP |
+|---|---|---|---|
+| Recalculo dinamico de riesgo del RAT con factores de volumen y ponderacion configurable por la empresa | MOD-006 (RAT y Mapa de Datos) | Mejora la precision del calculo de riesgo inicial | El calculo simple del MVP (basado en presencia de dato sensible) ya es util y puede refinarse despues sin romper compatibilidad |
+| Motor de scoring automatizado de riesgo de proveedores, mas alla del campo manual con cuestionario de apoyo | MOD-009 (Proveedores y Encargados) | Reduce el criterio humano en la evaluacion de riesgo de un proveedor | El nivel de riesgo se asigna hoy con apoyo de un cuestionario y criterio humano, que ya es suficiente para operar |
+| Deteccion automatica de transferencias internacionales no documentadas al dar de alta un proveedor extranjero | MOD-010 (Transferencias Internacionales) | Reduce el riesgo de que una transferencia quede sin registrar | La cobertura parcial del MVP (una tarea manual disparada desde el Diagnostico) ya cubre la senal minima sin este motor |
+| Deteccion automatica de solicitudes ARCO-POL potencialmente masivas o abusivas | MOD-011 (ARCO-POL) | Reduce la carga operativa del Responsable ARCO-POL ante un patron sospechoso | Ninguna obligacion legal lo exige; es una mejora operativa |
+| Deteccion automatica de solicitudes ARCO-POL duplicadas | MOD-011 (ARCO-POL) | Evita procesar dos veces la misma solicitud | Mejora operativa sin respaldo legal directo |
+| Sugerencia automatica de un Control de Seguridad "pendiente de implementar" a partir de una mitigacion de una EIPD | MOD-014 (Riesgos y EIPD) | Ahorra un paso manual al Responsable de Seguridad/IT | Sin ella, el control se puede crear manualmente en MOD-015 despues de leer la mitigacion recomendada |
+| Reasignacion automatica de tareas por balanceo de carga entre responsables | MOD-021 (Centro de Tareas) | Optimiza la distribucion del trabajo en equipos grandes | Es una optimizacion de gestion de equipo, no una necesidad de cumplimiento legal |
+| Recomendaciones dinamicas del Diagnostico basadas en benchmarking por sector | MOD-004 (Diagnostico de Cumplimiento) | Contextualiza el resultado del diagnostico frente a empresas similares | Requiere una base de datos de multiples clientes por sector que no existe en el lanzamiento inicial del producto |
+| Generacion automatica del borrador de puesta en conocimiento a la ACE (Art. 45) a partir de una transferencia registrada | MOD-010 (Transferencias Internacionales); MOD-024 (Centro Regulatorio) | Reduce el trabajo manual de preparar el tramite | Depende de que el submodulo de Tramites ante la ACE de MOD-024 este maduro; el registro manual del MVP ya opera sin ella |
+| Integracion automatica completa entre el registro de tramites ante la ACE y el modulo de origen (por ejemplo, cierre automatico al recibir un acuse de la ACE) | MOD-024 (Centro Regulatorio) | Cierra el ciclo de un tramite sin intervencion manual | Depende de que la ACE habilite canales oficiales de comunicacion, que a la fecha de este analisis no existen; el registro manual de acuses ya cubre la necesidad |
+
+## 18.3 Integraciones
+
+| Funcionalidad | Modulo | Valor | Por que no es necesaria para el MVP (y advertencia de diseno) |
+|---|---|---|---|
+| Sincronizacion con sistemas externos del cliente (webhook a CRM o plataforma de marketing) para el estado del consentimiento | MOD-007 (Consentimiento) | Evita mantener el estado del consentimiento por duplicado entre el sistema y las herramientas de marketing del cliente | No exigido por la ley; debe disenarse con cuidado porque, mal implementada, acerca el producto al anti-feature 1 (no ser un CRM ni centralizar la base de clientes del cliente) |
+| Integraciones de sincronizacion automatica de la lista de supresion de marketing (oposicion ARCO-POL) con sistemas externos (CRM, plataformas de envio de correo) | MOD-011 (ARCO-POL) | Evita que marketing siga contactando a alguien que ya se opuso, sin depender de un aviso manual | Mejora de integracion sin obligacion legal especifica en la LPDP; el registro interno del MVP ya satisface la obligacion |
+| Integracion con un proveedor externo de e-learning o LMS para impartir la capacitacion | MOD-017 (Capacitacion) | Permite impartir contenido de capacitacion sin salir del flujo del sistema | Fuera del alcance funcional de este analisis (sin stack ni tecnologias); ademas, construir cursos interactivos dentro de la plataforma convertiria el modulo en un LMS, fuera del alcance de este producto |
+| Integracion de solo lectura con herramientas reales de seguridad (por ejemplo, un SIEM o un escaner de vulnerabilidades) para autocompletar evidencia de un control | MOD-015 (Controles de Seguridad) | Reduce el trabajo manual de cargar evidencia de un control tecnico ya monitoreado en otra herramienta | Fuera del alcance central del MVP; debe disenarse con cuidado para no convertir el producto en un SIEM (anti-feature 2): el sistema registra evidencia de que el control existe, nunca ejecuta ni monitorea el control el mismo |
+| Sincronizacion de los eventos del Calendario central con la aplicacion de calendario personal del usuario | MOD-023 (Calendario y Motor de Plazos) | Permite ver los plazos legales en la misma agenda personal que usa el usuario para todo lo demas | Requiere una definicion tecnica fuera del alcance de este analisis funcional; no es dependencia estructural de ningun modulo MUST HAVE |
+| Reportes exportables avanzados de notificaciones (configuracion vigente de reglas, entregas fallidas y reintentos) | MOD-022 (Notificaciones) | Util para depurar por que una alerta critica no llego a su destinatario | El listado basico de notificaciones (XLSX/CSV) ya es MUST HAVE; los reportes mas elaborados esperan a la primera necesidad real de auditoria de entregas |
+
+## 18.4 Portal publico avanzado
+
+El nucleo del Portal del Titular (MOD-012, SHOULD HAVE/V1 en el mapa de modulos) ya se trato en la seccion 16 en la medida en que sostiene obligaciones (OBL-DOC-04, OBL-PLAZO-04). Las funcionalidades siguientes son mejoras sobre ese nucleo, todas opcionales porque el MVP de ARCO-POL (MOD-011) ya cumple la obligacion legal completa con el formulario interno seguro, sin depender de ningun portal publico.
+
+| Funcionalidad | Modulo | Valor | Por que no es necesaria para el MVP |
+|---|---|---|---|
+| Portal publico con autoregistro del titular (consulta de estado autenticada por el propio titular, sin depender de un empleado) | MOD-011 (ARCO-POL); MOD-012 (Portal del Titular) | Reduce la carga operativa de responder "en que va mi solicitud" por telefono o correo | El MVP de ARCO-POL ya cumple la obligacion legal completa sin el; pertenece de forma propia a MOD-012 |
+| Descarga directa de la resolucion final desde el Portal | MOD-012 (Portal del Titular) | Anade autoservicio real al titular | Exige revision previa del Responsable Legal por el riesgo de que la resolucion contenga datos de terceros; se difiere hasta que ese control este maduro |
+| Cuenta persistente del titular con historial de sus propias solicitudes | MOD-012 (Portal del Titular) | Simplifica solicitudes repetidas para el mismo titular | Suma superficie de ataque y gestion de credenciales; el MVP no exige autoregistro persistente del titular (decision 2.7.30) |
+| Mensajeria o chat con el Responsable ARCO-POL dentro del Portal | MOD-012 (Portal del Titular) | Acelera aclaraciones puntuales sobre una solicitud en curso | Anade complejidad de moderacion y de conservacion de evidencia de conversaciones, sin que ninguna obligacion legal lo exija |
+| Verificacion de identidad biometrica o KYC electronico de terceros dentro del Portal | MOD-012 (Portal del Titular) | Reforzaria la verificacion de identidad de quien presenta la solicitud | Cruza el anti-feature 9 (el sistema no almacena datos biometricos de los titulares); cualquier integracion tendria que ser con un proveedor externo, fuera del alcance de este analisis |
+| Aplicacion movil nativa del Portal | MOD-012 (Portal del Titular) | Alcance adicional para titulares que prefieren su celular | El Portal web responsivo ya cubre el caso de uso principal; es decision comercial futura sin valor legal adicional |
+| Kiosco fisico de autoservicio en sucursal | MOD-012 (Portal del Titular) | Atiende al perfil de titular que prefiere el canal presencial (ver perfil Sra. Cecilia Marroquin, `05_tipos_de_usuario.md`) | Fuera del alcance de un producto SaaS de autogestion; implicaria integracion de hardware propia de cada cliente |
+| Portal publico de autogestion del consentimiento para el titular (revocar o actualizar su consentimiento sin pasar por un empleado) | MOD-007 (Consentimiento); MOD-012 (Portal del Titular) | Reduce la carga operativa de gestionar revocaciones por canal manual | Depende de que MOD-012 exista como modulo completo; en el MVP el titular usa el mismo formulario interno seguro que ya existe para todo ARCO-POL |
+| Omnicanalidad automatizada (bot de WhatsApp, IVR telefonico) para recibir solicitudes ARCO-POL | MOD-011 (ARCO-POL) | Amplia los canales de entrada sin depender de que un empleado transcriba manualmente | El MVP ya cumple con canales manuales (correo, presencial, WhatsApp transcrito por una persona); automatizar el canal es mejora de producto, no obligacion legal |
+
+## 18.5 Canales adicionales de notificacion
+
+El MVP de MOD-022 (Notificaciones) cubre unicamente plataforma y correo electronico, canales suficientes para que ninguna alerta legal (por ejemplo, el cronometro de 72 horas de MOD-013) dependa de un canal aun no construido.
+
+| Funcionalidad | Modulo | Valor | Por que no es necesaria para el MVP |
+|---|---|---|---|
+| Canales adicionales de notificacion (Microsoft Teams, Slack, SMS, WhatsApp) para alertas del sistema en general | MOD-022 (Notificaciones) | Alcanza al usuario en la herramienta que ya usa a diario, en vez de exigirle revisar el correo | El MVP con plataforma y correo ya asegura que ninguna alerta legal dependa de un canal por construir; los canales adicionales se priorizan segun la demanda real de los primeros clientes |
+| Alertas por canales adicionales (SMS, WhatsApp, Teams, Slack) especificamente para el escalamiento critico de un incidente de seguridad | MOD-013 (Incidentes de Seguridad) | Reduce el riesgo de que una alerta critica de las 72 horas pase inadvertida | Depende de que esos canales existan primero en MOD-022; la plataforma y el correo del MVP ya cubren el escalamiento minimo |
+| Integraciones de notificacion de tareas con Teams, Slack, SMS o WhatsApp | MOD-021 (Centro de Tareas) | Mismo beneficio que el anterior, aplicado a tareas generales del Centro de Tareas | Depende de que MOD-022 incorpore esos canales; el MVP de MOD-022 solo cubre plataforma y correo |
+| Panel de analitica de volumen y adopcion de resumenes de notificaciones | MOD-022 (Notificaciones) | Ayuda al equipo de producto a entender el uso real del modulo | Mejora de gestion de producto, no aporta una capacidad legal nueva a la empresa cliente |
+
+## 18.6 Vision consolidada multi-sociedad (Enterprise)
+
+Un grupo corporativo con varias sociedades bajo una misma casa matriz (perfil Licda. Ana Gabriela Reyes Portillo, Directora de Cumplimiento Corporativo, `05_tipos_de_usuario.md` seccion 5.1) necesita comparar el estado entre sociedades y ver una vision consolidada. El mapa de modulos y `02_validacion_de_la_idea.md` (decision 2.7.31) dejan esto fuera del MVP de forma consistente en al menos nueve modulos: el MVP atiende a una organizacion con una sola razon social (que puede tener varias sucursales).
+
+| Funcionalidad | Modulo | Valor | Por que no es necesaria para el MVP |
+|---|---|---|---|
+| Gestion de grupo empresarial multi-sociedad (holding con varias razones sociales y delegado comun) | MOD-001 (Organizacion y Personas) | Permite administrar varias empresas del mismo grupo desde una sola cuenta | Explicitamente fuera del MVP por la decision de alcance 2.7.31; el segmento de entrada del producto es una sociedad individual |
+| Vision consolidada multi-sociedad en el Dashboard | MOD-001 (Organizacion y Personas); MOD-020 (Dashboard y Reportes) | Le da a la Directora de Cumplimiento Corporativo una vista comparativa entre sociedades | Depende de la gestion de grupo empresarial; sin ella no tiene sobre que consolidar |
+| Delegado comun para grupos de sociedades (Art. 16 Lineamientos DPO) | MOD-002 (Delegado / Responsable Interno de Datos) | La ley permite un delegado comun para varias sociedades del mismo grupo | La gestion de grupos empresariales con delegado comun queda fuera del MVP por la misma decision 2.7.31 |
+| Version multi-sociedad del RAT (comparar el Registro de Actividades de Tratamiento entre varias empresas de un mismo grupo) | MOD-006 (RAT y Mapa de Datos) | Util para detectar tratamientos duplicados o inconsistentes entre sociedades del grupo | Declarado Enterprise en `05_tipos_de_usuario.md`; el RAT de una sola sociedad ya cumple la obligacion legal en el MVP |
+| Panel comparativo de transferencias internacionales por pais o por proveedor a nivel de grupo corporativo | MOD-010 (Transferencias Internacionales) | Util para detectar concentracion de riesgo de pais a nivel de grupo | Solo tiene sentido para el perfil de grupo corporativo con varias sociedades, fuera del alcance de una empresa individual del MVP |
+| Mapa de calor de riesgo consolidado multi-tratamiento o multi-sociedad | MOD-014 (Riesgos y EIPD) | Ofrece una vista agregada de riesgo para Gerencia o para la Junta de un grupo | Requiere volumen de EIPD acumulado y, en el caso multi-sociedad, la misma vision consolidada de grupo diferida por la decision 2.7.31 |
+| Vista consolidada de calendario entre varias sociedades de un mismo grupo corporativo | MOD-023 (Calendario y Motor de Plazos) | Un unico calendario de plazos legales para todo el grupo | Misma decision de alcance que el resto de funcionalidades multi-sociedad |
+| Vista consolidada de tareas entre varias sociedades de un mismo grupo corporativo | MOD-021 (Centro de Tareas) | Un unico Centro de Tareas para todo el grupo | Misma decision de alcance 2.7.31 |
+| Plan de Cumplimiento consolidado multi-sociedad (grupo corporativo) | MOD-005 (Plan de Cumplimiento) | Vision unica de las acciones pendientes de todo el grupo | Misma decision de alcance 2.7.31; el MVP opera un plan por sociedad |
+
+---
+
