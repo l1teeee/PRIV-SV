@@ -72,8 +72,9 @@ La contratacion comercial del software (proceso externo de venta, fuera del alca
         |
         v
   MOD-003 Onboarding (NO_INICIADO)
-        |  Paso 1 empresa -> Paso 2 estructura -> Paso 3 usuarios/roles
-        |  -> Paso 4 pregunta del Delegado -> Paso 5 confirmar y finalizar
+        |  Paso 1 empresa -> Paso 2 primer usuario (Administrador)
+        |  -> Paso 3 usuarios adicionales -> Paso 4 pregunta del Delegado
+        |  -> Paso 5 confirmar y finalizar
         v
   MOD-003 COMPLETADO
         |
@@ -110,7 +111,7 @@ La contratacion comercial del software (proceso externo de venta, fuera del alca
 | Paso | Quien | Modulo | Que hace en el sistema | Que genera | Plazo y como se calcula | Fundamento |
 |---|---|---|---|---|---|---|
 | 1 | Karla | MOD-003 | Inicia el wizard de configuracion (Paso 1: razon social, NIT, sector, pais, numero de empleados) | Pasa de NO_INICIADO a EN_PROGRESO; evento de auditoria "onboarding iniciado" | Sin plazo legal; alerta INFO si no se inicia en 48 horas | Buena practica |
-| 2 | Karla | MOD-003 | Completa el Paso 2 (estructura minima: pais, sucursal) y el Paso 3 (usuarios y roles: se asigna a si misma Administradora y, en el Paso 4, tambien Delegada) | Autoguardado por paso; catalogo de areas disponible en la invitacion de usuarios | Sin plazo legal | Buena practica |
+| 2 | Karla | MOD-003 | Completa el Paso 2 (primer usuario Administrador: se registra a si misma con nombre completo, correo electronico y cargo) y el Paso 3 (usuarios adicionales, que queda vacio en esta pyme de una sola persona, ver `15_onboarding.md`, seccion 15.6.1) (Actualizacion 2026-09-24, fase 3: se corrige el contenido de los Pasos 2 y 3 conforme a MOD-003_ficha.md, seccion D; no existe un campo "sucursal" en el wizard) | Autoguardado por paso; catalogo de areas disponible en la invitacion de usuarios | Sin plazo legal | Buena practica |
 | 3 | Karla | MOD-003 | Responde la pregunta del Delegado (Paso 4) con "designarlo ahora", indicandose a si misma | Crea automaticamente el registro inicial del Delegado en MOD-002 en estado "designacion en curso"; siembra en MOD-023 el conteo del plazo de comunicacion a la ACE (15 dias habiles) a partir de cuando MOD-002 confirme el nombramiento | El plazo de 15 dias habiles corre desde la confirmacion del nombramiento en MOD-002, no desde este paso | OBL-DPO-01 (Art. 15 y 17); OBL-DPO-03 (Art. 10) |
 | 4 | Karla | MOD-003 | Confirma y finaliza (Paso 5): casilla de descargo marcada, al menos un usuario Administrador activo | Activa la Organizacion en MOD-001; crea el registro del Delegado en MOD-002; envia invitaciones (MOD-022); crea la tarea "Iniciar el Diagnostico" y redirige a MOD-004 | Sin plazo legal para este paso especifico | Buena practica |
 | 5 | Sistema | MOD-001 | La organizacion pasa de BORRADOR a ACTIVA al completarse los campos minimos de la seccion D.1 | Evento "organizacion lista"; habilita MOD-004 | Automatico, sin plazo | OBL-AMB-01 (Art. 2 inc. 1), obligacion colaboradora del modulo |
@@ -396,7 +397,7 @@ El area de Mercadeo solicita a Cumplimiento habilitar el nuevo formulario (web y
 | 11 | Mauricio | MOD-014 | Aprueba la EIPD (si aplico) antes de que el formulario quede definitivamente activo | Pasa a VIGENTE | Sin plazo propio | OBL-DOC-03 |
 | 12 | Titular (padre/madre) | MOD-007 | Meses despues, solicita revocar el consentimiento de mercadeo para el o para su hijo/hija | Se crea el registro ConsentWithdrawal en Recibida; se calcula la fecha limite de ejecucion | 5 dias habiles desde la recepcion (MOD-023) | OBL-CONS-03 (Art. 30) |
 | 13 | Mauricio | MOD-007 | Valida y ejecuta la revocacion (deja de tratar el dato para esa finalidad) | Pasa a Ejecutada; el Consent origen pasa a Revocado | Igual al paso anterior | OBL-CONS-03 (Art. 30) |
-| 14 | Responsable de Seguridad/IT | MOD-007 / MOD-009 | Si el tratamiento tiene encargado (la herramienta de marketing), se notifica la revocacion al encargado | Pasa a Encargado notificado -> Cerrada | 5 dias habiles adicionales desde la ejecucion (MOD-023) | OBL-CONS-04 (Art. 26 inc. 4, segundo tramo) |
+| 14 | Responsable de Seguridad/IT | MOD-007 / MOD-009 | Si el tratamiento tiene encargado (la herramienta de marketing), se notifica la revocacion al encargado | Pasa a Encargado notificado -> Cerrada | 5 dias habiles adicionales desde la ejecucion (MOD-023) | OBL-CONS-03 (Art. 30 inc. 2) (Actualizacion 2026-09-24, fase 3: se corrige el OBL-ID, antes citado por error como OBL-CONS-04) |
 | 15 | Sistema | MOD-007 | Si la finalidad revocada incluye marketing directo, envia automaticamente al titular a la lista de supresion de marketing, enlazada con la oposicion de MOD-011 | Entrada en la lista de supresion, referenciada desde MOD-011 | Automatico al ejecutarse la revocacion | Buena practica (faltante 29 de `02_validacion_de_la_idea.md`) |
 | 16 | Titular (distinto, ejemplo alterno) | MOD-011 | En vez de revocar el consentimiento, presenta una solicitud ARCO-POL marcando derecho "Oposicion" y "Es oposicion a mercadotecnia directa / perfilado: Si" | Expediente Nueva/Recibida -> Verificando identidad -> Evaluando requisitos Art. 18 -> Admitida | Contador de 20 dias habiles desde Admitida (MOD-023) | OBL-ARCO-05 (Art. 12) |
 | 17 | Mauricio | MOD-011 | Analiza la procedencia (no hay interes legitimo prevalente que la contradiga) y aprueba el reconocimiento | Expediente pasa a Reconocida; al reconocerse la oposicion a mercadotecnia, se envia automaticamente el dato del titular a la lista de supresion de MOD-007/Consentimiento | Sin plazo adicional a los 20 dias habiles ya corridos | OBL-ARCO-05 (Art. 12) |

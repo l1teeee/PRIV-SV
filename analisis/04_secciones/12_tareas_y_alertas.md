@@ -587,7 +587,8 @@ MOD-020 no genera alertas propias (declara `alimenta_a: []`): quien necesita ser
 | Sucursal sin fiesta patronal local documentada | Alta de sucursal sin registro en Capa 3 | WARNING | Administrador | Plataforma + correo | Una vez, luego mensual | A Legal a los 60 dias | Se registra con fuente | No |
 | Recalculo aplicado a un plazo abierto | Se confirma un asueto ad hoc dentro de la ventana de un calculo | INFO/WARNING | Responsable del expediente, Delegado | Plataforma + correo | Una vez por recalculo | Inmediato al Administrador si deja menos de 1 dia habil | El calculo se cierra o se recalcula de nuevo | No |
 | Cambio de criterio de computo pendiente de segunda aprobacion | Se inicia el cambio de un criterio ambiguo | WARNING | El segundo revisor (Legal o Delegado) | Plataforma + correo | Diaria | A Administrador a los 5 dias habiles | Se completa el doble control o se cancela | No |
-| Cronometro de 72 horas proximo a vencer (24, 48, 60 horas) | Transcurren esos umbrales desde el inicio | INFO/INFO/WARNING | Seguridad/IT, Delegado | Plataforma + correo | Una vez por umbral | Inmediato a Administrador y Legal a las 60 horas | Se cierra el calculo o llega a 72 horas | Si (OBL-INC-01/02) |
+
+(Actualizacion 2026-09-24, fase 3: se elimina de esta seccion la fila del cronometro de 72 horas de incidentes -24/48/60h-, que duplicaba de forma incompatible el esquema real de MOD-013, propietario del plazo de OBL-INC-01/02; ver la seccion 12.3.13 de este mismo documento y `03_modulos/MOD-013_ficha.md` seccion I. En 12.3.21 quedan solo las alertas propias de MOD-023 -calendario y calculo de plazos en general-, no el cronometro especifico de un modulo consumidor.)
 
 ### 12.3.22 MOD-024 Centro Regulatorio
 

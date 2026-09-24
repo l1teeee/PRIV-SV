@@ -61,7 +61,7 @@ Se usan los 12 roles estandar de `05_tipos_de_usuario.md`, seccion 5.3.
 | Modificar campos | No | Si | No | Si | Solo campos tecnicos | Solo su borrador antes de enviarlo a revision | No | No | No | No | No | No |
 | Confirmar o descartar una transferencia detectada automaticamente | No | Si | No | Si | No | No (solo aporta informacion) | No | No | No | No | No | No |
 | Aprobar paso a ACTIVA | No | No (ejecuta, no aprueba lo que el mismo redacto salvo pyme, ver nota) | No | No (mismo motivo) | No | No | Si | No | No | No | No | No |
-| Aprobar y enviar puesta en conocimiento a la ACE (via MOD-024) | No | Si (acto legalmente atribuido al Delegado hoy) | No | No | No | No | Si, doble control en empresa mediana/corporativo | No | No | No | No | No |
+| Aprobar y enviar puesta en conocimiento a la ACE (via MOD-024) | Si (ver nota) | No (genera y revisa el borrador del ACEFiling, pero la aprobacion y el envio se rigen por la cadena de MOD-024) | No | Si | No | No | Si, doble control en empresa mediana/corporativo | No | No | No | No | No |
 | Cerrar o suspender transferencia | No | Si | No | Si | No | No | Si | No | No | No | No | No |
 | Eliminar / archivar | No | Si (archivar, nunca eliminar el historial) | No | No | No | No | No | No | No | No | No | No |
 | Exportar paquete de evidencia | Si | Si | No | Si | No | No | No | Si | Si (solo el paquete compartido con ella) | No | No | No |
@@ -330,7 +330,7 @@ Eventos que quedan en el historial del modulo y se replican en la auditoria tran
 | Vinculacion de consentimiento especifico (MOD-007) | | X | | | Exigido por OBL-TRANSF-04, condicion para activar una transferencia internacional. |
 | Deteccion automatica de transferencias no documentadas al dar de alta un proveedor extranjero | | | X | | Mejora significativa de riesgo, pero la cobertura parcial del MVP (tarea manual desde el Diagnostico) ya cubre la senal minima sin este motor; se construye despues del registro manual basico. |
 | Generacion automatica del borrador de puesta en conocimiento a la ACE (integracion con MOD-024) | | | X | | Depende de que MOD-024 tenga ya su pieza de Tramites ante la ACE madura; se puede operar en su version inicial con un registro manual mas simple. |
-| Solicitud de opinion previa a la ACE | | | | X | Es una facultad opcional de la empresa (RECOMENDADO, OBL-TRANSF-06), no una obligacion; se deja para una version posterior sin que eso deje ninguna obligacion sin cubrir. |
+| Solicitud de opinion previa a la ACE | | | | X | Es una facultad opcional del Art. 45 LPDP, sin OBL-ID propio en la matriz, no una obligacion; se deja para una version posterior sin que eso deje ninguna obligacion sin cubrir. |
 | Revision periodica automatizada con calendario y alertas escalonadas | | | X | | Mejora de mantenimiento del registro; el registro basico puede operar inicialmente con revision manual sin recordatorio automatico. |
 | Reportes y paquete de evidencia exportable con hash | | X | | | Es lo que hace probatorio al modulo (OBL-TRANSF-06); sin exportacion verificable, el registro no sirve ante una auditoria o una fiscalizacion. |
 | Panel comparativo de transferencias por pais o por proveedor a nivel de grupo corporativo | | | | X | Util solo para el perfil de grupo corporativo con varias sociedades (Enterprise, decision 2.7.31 de `02_validacion_de_la_idea.md`), fuera del alcance de una empresa individual del MVP. |

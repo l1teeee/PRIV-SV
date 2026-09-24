@@ -219,7 +219,7 @@ Cada ficha indica: proposito, submodulos (si existen), obligaciones que cubre co
 - Obligaciones que cubre (propietario): OBL-AVISO-01, OBL-AVISO-02, OBL-AVISO-03, OBL-AVISO-04, OBL-AVISO-05, OBL-DOC-01 (6).
 - Areas del prompt que absorbe: 15.
 - Decision respecto al documento maestro y a la propuesta ganadora: Se mantiene (sec. 20 del maestro), absorbe Contratos/DPA como tipo de documento (fusion parcial de la sec. 23), decision 2.7.2.
-- MVP: MUST HAVE. Justificacion: El Aviso de Privacidad (OBL-AVISO-01/02/03/05) es OBLIGATORIO y su mecanismo de publicacion tiene plazo transitorio ya vencido (OBL-PLAZO-04, 23-may-2025, propietaria de MOD-012).
+- MVP: MUST HAVE. Justificacion: El Aviso de Privacidad es OBLIGATORIO en su contenido minimo y en la Politica de Privacidad (OBL-AVISO-01, OBL-AVISO-05); ademas puede exigir dos elementos CONDICIONALES segun el caso (OBL-AVISO-02 si hay encargado subcontratado, OBL-AVISO-03 si usa cookies); su mecanismo de publicacion tiene plazo transitorio ya vencido (OBL-PLAZO-04, 23-may-2025, propietaria de MOD-012). (Actualizacion 2026-09-24, fase 3: se distingue la clasificacion OBLIGATORIO de OBL-AVISO-01/05 de la clasificacion CONDICIONAL de OBL-AVISO-02/03, conforme a matriz_obligaciones.json.)
 - Dependencias: entra desde MOD-004, MOD-006. Sale hacia MOD-007, MOD-009, MOD-012, MOD-016, MOD-019.
 - Notas reforma 659: No aplica directamente; el Aviso de Privacidad puede requerir revision tras un cambio de estado (ver seccion 5, punto 5 del documento principal).
 
@@ -310,7 +310,7 @@ Cada ficha indica: proposito, submodulos (si existen), obligaciones que cubre co
 - Decision respecto al documento maestro y a la propuesta ganadora: Se mantiene (sec. 28 del maestro), pero el registro minimo pasa de "a evaluar" a MVP explicito (decision 2.7.23, inconsistencia 25).
 - MVP: MUST HAVE. Justificacion: OBL-CAP-01 es OBLIGATORIO sin condicion (medida organizativa de las Politicas ACE); cursos interactivos, microlearning y certificados quedan como funcionalidad diferenciadora en V1/V2.
 - Dependencias: entra desde MOD-001, MOD-002. Sale hacia MOD-019, MOD-020.
-- Notas reforma 659: OBL-CAP-02 (capacitacion especifica del Delegado) esta afectada: se mantiene mientras el estado sea ACTUAL; en estado FUTURO pasa a buena practica voluntaria si la empresa mantiene al Responsable Interno.
+- Notas reforma 659: OBL-CAP-02 (plan anual de capacitacion e induccion dirigido al personal, elaborado por el Delegado/Responsable Interno) esta afectada: se mantiene mientras el estado sea ACTUAL; en estado FUTURO pasa a buena practica voluntaria si la empresa mantiene al Responsable Interno. (Actualizacion 2026-09-24, fase 3: corregida la descripcion de OBL-CAP-02, que no es la capacitacion que recibe el propio Delegado -esa es OBL-DPO-05- sino el plan que el Delegado elabora para el personal, conforme a matriz_obligaciones.json y Art. 22 de los Lineamientos DPO.)
 
 ### MOD-018 Auditoria de Cumplimiento (Demostrar)
 - Proposito: Programa sustantivo de auditoria anual (alcance, hallazgos, plan de accion, cierre), distinto del registro tecnico de trazabilidad (AuditLog, funcion transversal embebida en todos los modulos). Genera el recordatorio anual anclado a la ultima auditoria registrada.
@@ -342,7 +342,7 @@ Cada ficha indica: proposito, submodulos (si existen), obligaciones que cubre co
 - Notas reforma 659: No aplica directamente.
 
 ### MOD-021 Centro de Tareas (Transversal, transversal)
-- Proposito: Convierte cada obligacion en una accion concreta con titulo, fundamento, responsable, fecha, dependencia, evidencia requerida y estado (Pendiente, En proceso, Bloqueada, En revision, Aprobada, Completada, Vencida). Alimentado por Diagnostico, ARCO-POL, Incidentes, Proveedores, Riesgos, Documentos y Auditoria.
+- Proposito: Convierte cada obligacion en una accion concreta con titulo, fundamento, responsable, fecha, dependencia, evidencia requerida y estado (Pendiente, En proceso, Bloqueada, En revision, Aprobada, Completada, Vencida, No aplica). Alimentado por Diagnostico, ARCO-POL, Incidentes, Proveedores, Riesgos, Documentos y Auditoria. (Actualizacion 2026-09-24, fase 3: se agrega "No aplica" al catalogo de estados citado aqui, para que coincida con la nota de reforma 659 de este mismo parrafo y con el catalogo completo de MOD-021_ficha.md, seccion D.1.)
 - Obligaciones que cubre (propietario): ninguna con OBL-ID propio.
 - Areas del prompt que absorbe: 14.
 - Decision respecto al documento maestro y a la propuesta ganadora: Se mantiene (sec. 16 del maestro), confirmado como modulo transversal.

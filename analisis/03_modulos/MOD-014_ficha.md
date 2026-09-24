@@ -274,7 +274,7 @@ Todas las reglas son configurables por la empresa dentro de los rangos indicados
   - Documento EIPD (borrador, luego version final tras la aprobacion), con el cuestionario completo, el nivel de riesgo, las mitigaciones y la conclusion.
   - Registro de mitigaciones, como anexo o seccion del documento EIPD.
   - Constancia de aprobacion, con identidad y fecha del Aprobador.
-  - Informe de riesgo residual, reutilizable como insumo del informe periodico del Delegado (OBL-DPO-09) o del informe de la auditoria anual (OBL-AUD-01, MOD-018).
+  - Informe de riesgo residual, reutilizable como insumo del informe periodico del Delegado (OBL-DPO-07) o del informe de la auditoria anual (OBL-AUD-01, MOD-018). (Actualizacion 2026-09-24, fase 3: el ID citado era OBL-DPO-09, que no existe en la matriz; el area DPO llega hasta OBL-DPO-08 y el registro correcto para el informe periodico del Delegado es OBL-DPO-07.)
 - **Plantillas que el sistema provee.**
   - "Plantilla generica de EIPD": cuestionario base con los campos de la seccion D. Variables: nombre del tratamiento, categorias de datos, base juridica, factores de riesgo marcados, mitigaciones. Siempre marcada "borrador pendiente de revision" hasta la aprobacion.
   - Plantillas orientadas por tipo de disparador (biometria, videovigilancia/reconocimiento facial, datos de salud, menores de edad), que preseleccionan las preguntas mas relevantes de ese tipo de tratamiento: funcionalidad COULD HAVE, ver seccion Q.

@@ -84,7 +84,7 @@ Colaboradoras que este modulo consulta o alimenta sin ser su propietario: OBL-CO
 | Aprobar y emitir la incompetencia | No | Si | No | No | No | No | No | No | No | No | No | No |
 | Redactar borrador de resolucion (reconocimiento o denegatoria) | No | No | Si | Si (revision) | No | No | No | No | No | No | No | No |
 | Aprobar y emitir la resolucion final | No | Si | No | No | No | No | Si (segundo revisor si aplica) | No | No | No | No | No |
-| Notificar a receptores | No | No | Si (ejecuta) | No | No | No | No | No | No | No | No | No |
+| Notificar a receptores | No | Si (aprueba el envio) | Si (ejecuta) | No | No | No | No | No | No | No | No | No |
 | Cerrar expediente | No | Si | Si (propone) | No | No | No | No | No | No | No | No | No |
 | Reabrir por reclamo ante la ACE | No | Si | No | Si | No | No | No | No | No | No | No | No |
 | Asignar responsable / reasignar | Si | Si | No | No | No | No | No | No | No | No | No | No |
