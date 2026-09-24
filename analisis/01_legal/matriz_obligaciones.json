@@ -1,0 +1,3277 @@
+[
+  {
+    "id": "OBL-AMB-01",
+    "titulo": "Ambito de aplicacion universal de la LPDP",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 2 inc. 1",
+    "texto_obligacion": "La ley aplica a toda persona natural o juridica, publica o privada, que trate datos personales de forma manual o automatizada, directamente o a traves de terceros, incluso si no cumple los requisitos y limites de la ley.",
+    "a_quien_aplica": "Toda empresa u organizacion privada que trate datos personales en El Salvador",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Analisis de aplicabilidad de la ley al cliente",
+      "Ficha de organizacion con giro y tipos de tratamiento"
+    ],
+    "documentos_relacionados": [
+      "Diagnostico de aplicabilidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Diagnostico"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 2)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-AMB-02",
+    "titulo": "Exclusion de historial crediticio (con excepcion para sector financiero)",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 3 lit. a)",
+    "texto_obligacion": "Se excluye del ambito de la LPDP el tratamiento de historial crediticio bajo la ley especial de buros de credito; esta exclusion NO aplica a integrantes del Sistema Financiero supervisados por la SSF respecto de informacion que no sea historial crediticio, quienes quedan sujetos a la LPDP por el resto de sus datos.",
+    "a_quien_aplica": "Empresas cuyo giro incluya reporte de historial crediticio; entidades supervisadas por la SSF",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si el cliente reporta historial crediticio bajo la ley especial de buros de credito, o es supervisado por la SSF",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Clasificacion del giro del cliente"
+    ],
+    "documentos_relacionados": [
+      "Diagnostico de aplicabilidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Diagnostico"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 3 lit. a)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-AMB-03",
+    "titulo": "Exclusion de ambito domestico",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 3 lit. b)",
+    "texto_obligacion": "Se excluye el tratamiento destinado exclusivamente a actividades de vida familiar o domestica, mientras no tenga proposito de divulgacion o utilizacion comercial.",
+    "a_quien_aplica": "Tratamientos estrictamente domesticos/familiares sin fin comercial",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo cuando el tratamiento es exclusivamente domestico y sin fin de divulgacion o uso comercial; no aplica a una empresa en su operacion ordinaria",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Analisis de aplicabilidad"
+    ],
+    "documentos_relacionados": [
+      "Diagnostico de aplicabilidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Diagnostico"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 3 lit. b)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-AMB-04",
+    "titulo": "Exclusiones por seguridad publica y registros publicos",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 3 lit. c) y d)",
+    "texto_obligacion": "Se excluyen el tratamiento con objeto de seguridad publica, defensa y persecucion del delito, y el realizado en registros publicos, registro del estado familiar y emision del DUI. Son exclusiones por objeto del tratamiento; no se extienden por analogia a seguridad privada o prevencion de fraude de empresas privadas.",
+    "a_quien_aplica": "Entidades de seguridad publica y registros publicos; no aplica a empresas privadas ordinarias",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo al tratamiento cuyo objeto especifico sea seguridad publica/defensa/persecucion del delito o registros publicos oficiales",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Analisis de aplicabilidad"
+    ],
+    "documentos_relacionados": [
+      "Diagnostico de aplicabilidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Diagnostico"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 3 lit. c-d)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PRIN-01",
+    "titulo": "Principio de consentimiento y finalidad",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 5 lit. c)",
+    "texto_obligacion": "En el tratamiento y recoleccion de datos personales debe existir un consentimiento libre, especifico, informado, expreso e individualizado del titular, que establezca el fin, proposito y periodo de almacenamiento y tratamiento.",
+    "a_quien_aplica": "Responsables del tratamiento (empresas privadas)",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de consentimientos con finalidad y periodo declarados"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad",
+      "RAT"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 1"
+    ],
+    "modulos_candidatos": [
+      "Consentimiento",
+      "RAT",
+      "Plan"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 5 lit. c)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PRIN-02",
+    "titulo": "Principio de licitud: seis bases de tratamiento",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 5 lit. g)",
+    "texto_obligacion": "Todo tratamiento debe apoyarse en al menos una de seis bases de licitud: consentimiento expreso, ejecucion de contrato o medidas precontractuales, cumplimiento de obligacion legal, proteccion de intereses vitales, cumplimiento de un fin de interes publico, o intereses legitimos que no atenten contra los derechos o libertades de los titulares.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "condicion": "",
+    "evidencia_esperada": [
+      "RAT con base de licitud y justificacion por cada actividad de tratamiento"
+    ],
+    "documentos_relacionados": [
+      "RAT",
+      "Politica de privacidad"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 1"
+    ],
+    "modulos_candidatos": [
+      "RAT",
+      "Consentimiento",
+      "Plan"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 5 lit. g)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PRIN-03",
+    "titulo": "Principio de responsabilidad demostrada",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 5 lit. i)",
+    "texto_obligacion": "Toda entidad que recoja y efectue el tratamiento de datos personales debe ser capaz de demostrar el cumplimiento de sus obligaciones, adoptando medidas y manteniendo evidencia de su cumplimiento (accountability).",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Repositorio de evidencia de cumplimiento (RAT, EIPD, contratos, capacitaciones, auditorias)"
+    ],
+    "documentos_relacionados": [
+      "RAT",
+      "EIPD",
+      "Controles"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Evidencias",
+      "Controles",
+      "Auditoria"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 5 lit. i)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PRIN-04",
+    "titulo": "Principio de ejercicio progresivo de facultades (NNA)",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 5 lit. j)",
+    "texto_obligacion": "El ejercicio de derechos y el consentimiento de ninas, ninos y adolescentes se rige por el principio de ejercicio progresivo de sus facultades, segun su desarrollo evolutivo, sin que la LPDP fije una edad especifica de consentimiento digital.",
+    "a_quien_aplica": "Responsables que traten datos de NNA",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando el cliente trata datos de ninas, ninos o adolescentes",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Procedimiento diferenciado para titulares NNA"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad",
+      "Procedimiento ARCO-POL"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 3"
+    ],
+    "modulos_candidatos": [
+      "Consentimiento",
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 5 lit. j)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-01",
+    "titulo": "Legitimacion para ejercer derechos ARCO-POL",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 6",
+    "texto_obligacion": "La solicitud puede presentarla el titular, su representante con facultades especiales, o -si el titular fallecio- sus herederos o sucesores acreditando esa calidad con documentacion.",
+    "a_quien_aplica": "Responsables del tratamiento (receptores de solicitudes ARCO-POL)",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "La reforma 659 no altera la legitimacion del Art. 6, solo el canal de recepcion (directo ante la empresa en vez de via delegado obligatorio)."
+    },
+    "evidencia_esperada": [
+      "Formulario de verificacion de identidad y representacion"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Formularios ACE"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 6)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null
+  },
+  {
+    "id": "OBL-ARCO-02",
+    "titulo": "Contenido de la respuesta al derecho de acceso",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 8",
+    "texto_obligacion": "El informe de acceso debe indicar quienes consultaron la informacion del titular y con que proposito, si hubo intercambio con otras instituciones, y nunca puede revelar datos de terceros aunque se vinculen con el titular.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Plantilla de respuesta de acceso con historial de consultas/comparticiones"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Formulario de acceso ACE"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 2",
+      "Art. 56 lit. c num. 2"
+    ],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 8)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-03",
+    "titulo": "Rectificacion: plazo, gratuidad y bloqueo cautelar",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 9",
+    "texto_obligacion": "La rectificacion debe resolverse en 20 dias habiles desde la recepcion de la solicitud, de forma gratuita; mientras se verifica, los datos en revision deben bloquearse y darse a conocer que estan en revision o actualizacion. El incumplimiento del plazo habilita denuncia ante la ACE.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 20,
+      "unidad": "dias habiles",
+      "inicio": "recepcion de la solicitud"
+    },
+    "evidencia_esperada": [
+      "Registro de solicitud, bloqueo cautelar y resolucion dentro de plazo"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Formulario de rectificacion ACE"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 2"
+    ],
+    "modulos_candidatos": [
+      "ARCO-POL",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 9)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-04",
+    "titulo": "Cancelacion: causales de procedencia e improcedencia",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 10",
+    "texto_obligacion": "La cancelacion procede en 7 causales tasadas (datos innecesarios, retiro de consentimiento, oposicion sin motivo legitimo prevalente, datos ilicitos, obligacion legal de suprimir, oferta directa a ninos, oferta de servicios de instituciones publicas o privadas) y no procede en 6 supuestos (entre ellos perjuicio a terceros con resolucion judicial u orden administrativa de conservar, obligacion legal, libertad de expresion, datos disociados). Ante solicitud de olvido procedente sobre datos publicados en entorno electronico, debe informarse a otros responsables para que eliminen enlaces, copias o replicas.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Procede solo si se cumple alguna de las 7 causales del Art. 10 y no concurre ninguna de las 6 causales de improcedencia",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Analisis motivado de procedencia/improcedencia de cada solicitud"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Formulario de cancelacion/supresion ACE",
+      "Formulario de olvido ACE"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 2"
+    ],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 10)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-05",
+    "titulo": "Oposicion al tratamiento, incluido marketing directo",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 12",
+    "texto_obligacion": "El titular tiene derecho a solicitar el cese del tratamiento de sus datos, incluida la elaboracion de perfiles o clasificaciones con fines comerciales o de mercadotecnia directa; el derecho no puede ejercerse cuando el tratamiento es necesario por interes publico o por interes legitimo prevalente del responsable o un tercero, con especial cuidado si el titular es nino o nina.",
+    "a_quien_aplica": "Responsables del tratamiento, incluidos los que hacen marketing directo o perfilado",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Procede salvo que el tratamiento se ampare en interes publico o interes legitimo prevalente del responsable/tercero",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de solicitudes de oposicion y su resolucion",
+      "Mecanismo de exclusion (opt-out) de campanas de marketing"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Formulario de oposicion ACE"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 12)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-06",
+    "titulo": "Limitacion del tratamiento",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 13",
+    "texto_obligacion": "La limitacion procede solo en 4 supuestos: impugnacion de exactitud en verificacion, tratamiento ilicito con oposicion del titular a la supresion, necesidad del titular para reclamaciones, y oposicion pendiente de ponderacion.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Procede solo ante alguno de los 4 supuestos tasados del Art. 13",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de datos marcados en estado de limitacion"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Formulario de limitacion ACE"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 13)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-07",
+    "titulo": "Portabilidad de datos",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 14",
+    "texto_obligacion": "La portabilidad exige que el tratamiento se base en consentimiento y que sea automatizado; el responsable debe migrar los datos a otro responsable sin costo cuando el titular lo pida.",
+    "a_quien_aplica": "Responsables del tratamiento que traten datos con base en consentimiento de forma automatizada",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Procede solo si el tratamiento se basa en consentimiento y es automatizado",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de exportacion de datos en formato portable"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Formulario de portabilidad ACE"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 14)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-08",
+    "titulo": "Requisitos de la solicitud ARCO-POL y prevencion unica",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 18",
+    "texto_obligacion": "La solicitud debe contener 7 elementos (identificacion y domicilio, documentos de identidad, area que trata los datos si se conoce, descripcion de los datos, derecho ejercido, elementos para localizar los datos, firma o medio equivalente). Si es incompleta, debe prevenirse por una sola ocasion, con 10 dias habiles para subsanar desde el dia siguiente a la notificacion; si no se subsana, se archiva sin mas tramite.",
+    "a_quien_aplica": "Responsables del tratamiento (via el delegado, segun texto vigente)",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 10,
+      "unidad": "dias habiles",
+      "inicio": "dia siguiente a la notificacion de la prevencion"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "El texto vigente atribuye la prevencion al delegado; la reforma 659 trasladaria esta funcion al sujeto obligado si deroga el delegado obligatorio en el sector privado."
+    },
+    "evidencia_esperada": [
+      "Checklist de requisitos de la solicitud",
+      "Registro de prevenciones enviadas y plazo de subsanacion"
+    ],
+    "documentos_relacionados": [
+      "Formularios ACE (7 formularios ARCO-POL)"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 18)",
+    "verificada": true,
+    "condicion": ""
+  },
+  {
+    "id": "OBL-ARCO-09",
+    "titulo": "Devolucion de solicitud por incompetencia",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 19",
+    "texto_obligacion": "Si el responsable no es competente para resolver la solicitud, debe comunicarlo al titular y devolver la peticion dentro de los 5 dias habiles posteriores a su recepcion.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando el responsable no es competente sobre los datos objeto de la solicitud",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 5,
+      "unidad": "dias habiles",
+      "inicio": "recepcion de la solicitud"
+    },
+    "evidencia_esperada": [
+      "Registro de devolucion motivada por incompetencia"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 19)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-10",
+    "titulo": "Plazo general de respuesta ARCO-POL y prorroga",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 20",
+    "texto_obligacion": "El plazo general de respuesta a una solicitud ARCO-POL es de 20 dias habiles, prorrogable por causas justificadas hasta otros 20 dias habiles adicionales.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 20,
+      "unidad": "dias habiles (prorrogable hasta 20 dias habiles adicionales)",
+      "inicio": "recepcion de la solicitud"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Segun fuentes secundarias, la reforma 659 mantiene este plazo de 20+20 dias habiles sin modificacion."
+    },
+    "evidencia_esperada": [
+      "Calendario de vencimiento por solicitud",
+      "Alertas de proximidad de vencimiento"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 2",
+      "Art. 56 lit. c num. 2"
+    ],
+    "modulos_candidatos": [
+      "ARCO-POL",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 20)",
+    "verificada": true,
+    "condicion": ""
+  },
+  {
+    "id": "OBL-ARCO-11",
+    "titulo": "Notificacion a receptores de datos tras rectificacion, actualizacion o eliminacion",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 21 inc. 3",
+    "texto_obligacion": "En caso de comunicacion o transferencia de datos personales, debe notificarse la rectificacion, actualizacion o eliminacion a quienes hayan recibido los datos, dentro de los 5 dias habiles posteriores a la determinacion de procedencia de la solicitud del titular.",
+    "a_quien_aplica": "Responsables que hayan transferido o comunicado los datos objeto de la solicitud",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si los datos objeto de la solicitud fueron previamente comunicados o transferidos a terceros",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 5,
+      "unidad": "dias habiles",
+      "inicio": "determinacion de procedencia de la solicitud"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Segun fuentes secundarias, la reforma 659 mantiene el plazo de 5 dias habiles para notificar a terceros."
+    },
+    "evidencia_esperada": [
+      "Registro de notificaciones a receptores/terceros"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL",
+      "Registro de transferencias"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL",
+      "Transferencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 21 inc. 3)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-ARCO-12",
+    "titulo": "Denegatoria motivada de solicitudes ARCO-POL",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 22",
+    "texto_obligacion": "La denegatoria total o parcial solo procede en 8 supuestos tasados y debe notificarse motivada, con pruebas, dentro de 3 dias habiles desde la adopcion de la decision, por el mismo medio senalado por el titular.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 3,
+      "unidad": "dias habiles",
+      "inicio": "adopcion de la decision de denegar"
+    },
+    "evidencia_esperada": [
+      "Resolucion motivada de denegatoria con soporte probatorio"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 2"
+    ],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 22)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-ARCO-13",
+    "titulo": "Gratuidad del ejercicio de derechos ARCO-POL",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 23",
+    "texto_obligacion": "El ejercicio de los derechos ARCO-POL es gratuito; solo pueden cobrarse costos de reproduccion, certificacion o envio, previamente publicados por el responsable.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Tabla de costos de reproduccion/envio publicada"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. a num. 7"
+    ],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 23)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-DPO-01",
+    "titulo": "Obligatoriedad de nombrar delegado en el sector privado",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 15 y 17",
+    "texto_obligacion": "Bajo el texto vigente, los sujetos obligados del sector privado deben nombrar un delegado de proteccion de datos personales, quien centraliza la atencion de solicitudes ARCO-POL y demas funciones de cumplimiento; cada dependencia, empleado o proveedor debe asistir y atender las peticiones canalizadas por el delegado.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "condicion": "El Decreto Legislativo 659 (aprobado 17-sep-2026, pendiente de publicacion en el Diario Oficial al 24-sep-2026) derogaria esta obligatoriedad para el sector privado; mientras no se publique, el Art. 15 y 17 permanecen vigentes y la obligacion se mantiene",
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Segun fuentes secundarias (prensa y nota oficial de la Asamblea), el Decreto 659 deroga los Arts. 15 y 17, eliminando la obligatoriedad del delegado en el sector privado; texto oficial no localizado, publicacion en Diario Oficial no confirmada al 24-sep-2026."
+    },
+    "evidencia_esperada": [
+      "Acta de nombramiento del delegado",
+      "Credencial ACE del delegado"
+    ],
+    "documentos_relacionados": [
+      "Formulario de nombramiento de delegado ACE"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 15, 17); https://www.asamblea.gob.sv/node/14116",
+    "verificada": true,
+    "plazo": null
+  },
+  {
+    "id": "OBL-DPO-02",
+    "titulo": "Notificacion interna del nombramiento del delegado",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 8",
+    "texto_obligacion": "El responsable debe notificar al delegado su nombramiento dentro de los tres dias habiles siguientes a su designacion.",
+    "a_quien_aplica": "Empresas privadas que nombren delegado (mientras subsista la obligatoriedad)",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica mientras el cliente tenga obligacion o decida mantener voluntariamente un delegado",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 3,
+      "unidad": "dias habiles",
+      "inicio": "designacion del delegado"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Si la reforma 659 entra en vigencia y elimina la obligatoriedad en el sector privado, este plazo pasaria a ser relevante solo para quien mantenga delegado voluntariamente."
+    },
+    "evidencia_esperada": [
+      "Comunicacion formal de notificacion al delegado"
+    ],
+    "documentos_relacionados": [
+      "Acta de nombramiento"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 8)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-DPO-03",
+    "titulo": "Comunicacion del nombramiento del delegado a la ACE",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 10",
+    "texto_obligacion": "El nombramiento del delegado debe comunicarse a la ACE en un plazo maximo de 15 dias habiles contados desde el dia siguiente al nombramiento; toda modificacion de la informacion del delegado debe actualizarse en la plataforma de la ACE en un plazo maximo de 10 dias habiles.",
+    "a_quien_aplica": "Empresas privadas que nombren delegado",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica mientras subsista la obligatoriedad del delegado o se mantenga uno de forma voluntaria",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 15,
+      "unidad": "dias habiles",
+      "inicio": "dia siguiente al nombramiento del delegado"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Ver nota en OBL-DPO-01 sobre la reforma 659."
+    },
+    "evidencia_esperada": [
+      "Constancia de registro del delegado ante la ACE",
+      "Credencial emitida por la ACE"
+    ],
+    "documentos_relacionados": [
+      "Formulario de nombramiento de delegado ACE"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 10, 12)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-DPO-04",
+    "titulo": "Reverificacion periodica del perfil del delegado",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 18",
+    "texto_obligacion": "El perfil del delegado debe reverificarse al menos cada tres anos, con presentacion de atestados de capacitacion o certificaciones.",
+    "a_quien_aplica": "Empresas privadas con delegado nombrado",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica mientras subsista la figura del delegado",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 3,
+      "unidad": "anos",
+      "inicio": "nombramiento o ultima reverificacion del delegado"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Ver nota en OBL-DPO-01."
+    },
+    "evidencia_esperada": [
+      "Atestados de capacitacion o certificacion vigentes del delegado"
+    ],
+    "documentos_relacionados": [
+      "Expediente del delegado"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Capacitacion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 18)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-DPO-05",
+    "titulo": "Capacitacion anual del propio delegado",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 22",
+    "texto_obligacion": "El responsable debe garantizar que el delegado reciba capacitacion al menos una vez al ano.",
+    "a_quien_aplica": "Empresas privadas con delegado nombrado",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica mientras subsista la figura del delegado",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 1,
+      "unidad": "ano (periodicidad)",
+      "inicio": "nombramiento del delegado / ultima capacitacion"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Ver nota en OBL-DPO-01."
+    },
+    "evidencia_esperada": [
+      "Constancia de capacitacion anual del delegado"
+    ],
+    "documentos_relacionados": [
+      "Plan de capacitacion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Capacitacion",
+      "Organizacion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 22)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-DPO-06",
+    "titulo": "Confidencialidad del delegado tras el cese",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 36",
+    "texto_obligacion": "El deber de confidencialidad del delegado subsiste durante 5 anos despues de su cese en el cargo.",
+    "a_quien_aplica": "Delegados de proteccion de datos y la empresa que los contrato",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica al cesar el delegado en el cargo",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 5,
+      "unidad": "anos",
+      "inicio": "cese del delegado en el cargo"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Ver nota en OBL-DPO-01."
+    },
+    "evidencia_esperada": [
+      "Clausula de confidencialidad post-contractual en el contrato del delegado"
+    ],
+    "documentos_relacionados": [
+      "Contrato o acta de nombramiento del delegado"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Documentos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 36)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-DPO-07",
+    "titulo": "Informe periodico del delegado al responsable",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 30",
+    "texto_obligacion": "El delegado debe informar al responsable, cuando sea necesario y al menos dos veces al ano, sobre el desarrollo de sus funciones y estadisticas ARCO-POL; no existe un informe anual obligatorio a la ACE (la ACE puede requerir informes cuando lo estime necesario).",
+    "a_quien_aplica": "Delegados de proteccion de datos y la empresa que los contrato",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica mientras subsista la figura del delegado",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 2,
+      "unidad": "veces al ano (minimo)",
+      "inicio": "periodo de gestion del delegado"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Ver nota en OBL-DPO-01."
+    },
+    "evidencia_esperada": [
+      "Informes semestrales o bianuales del delegado con estadisticas ARCO-POL"
+    ],
+    "documentos_relacionados": [
+      "Informe de gestion del delegado"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion",
+      "Auditoria"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 30)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-AVISO-01",
+    "titulo": "Contenido minimo del aviso de privacidad",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 24",
+    "texto_obligacion": "El responsable debe elaborar y comunicar un aviso de privacidad con contenido minimo (literales a a i), consistente con la politica de privacidad que tambien debe elaborar; no puede eximirse de comunicarlo por escrito al titular al momento en que este otorgue su consentimiento informado.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Aviso de privacidad publicado",
+      "Registro de comunicacion del aviso al titular"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad",
+      "Aviso de privacidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Documentos",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 24)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-AVISO-02",
+    "titulo": "Datos de contacto del encargado en el aviso de privacidad",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 24 lit. h)",
+    "texto_obligacion": "El aviso de privacidad debe contener los datos de contacto de la entidad subcontratada encargada del tratamiento, en caso de existir.",
+    "a_quien_aplica": "Responsables que subcontraten encargados del tratamiento",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando el responsable subcontrata a un encargado del tratamiento",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Aviso de privacidad con seccion de encargados"
+    ],
+    "documentos_relacionados": [
+      "Aviso de privacidad",
+      "Inventario de proveedores"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. a num. 2"
+    ],
+    "modulos_candidatos": [
+      "Documentos",
+      "Proveedores"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 24 lit. h)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-AVISO-03",
+    "titulo": "Informar el uso de cookies",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 24 lit. i)",
+    "texto_obligacion": "El aviso de privacidad debe informar el uso de cookies; la LPDP no exige de forma expresa consentimiento previo para su uso, solo su comunicacion informativa.",
+    "a_quien_aplica": "Responsables que usen cookies u otras tecnologias de rastreo",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando el cliente opera sitios web o apps que usan cookies",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Aviso de privacidad con seccion de cookies"
+    ],
+    "documentos_relacionados": [
+      "Aviso de privacidad",
+      "Politica de cookies"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Documentos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 24 lit. i)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-AVISO-04",
+    "titulo": "Derecho de informacion en la recoleccion",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 7",
+    "texto_obligacion": "El titular tiene derecho a conocer quienes resguardan sus datos personales, incluidos los proveedores de servicios de almacenamiento tercerizados (encargados) que usan la nube u otra infraestructura.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Aviso de privacidad con listado de encargados/proveedores de almacenamiento"
+    ],
+    "documentos_relacionados": [
+      "Aviso de privacidad",
+      "Inventario de proveedores"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Documentos",
+      "Proveedores"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 7)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-AVISO-05",
+    "titulo": "Elaboracion de la politica de privacidad",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 24 inc. 1",
+    "texto_obligacion": "El responsable debe elaborar una politica de privacidad, base de consistencia del aviso de privacidad; las Politicas ACE la listan expresamente como medida organizativa obligatoria.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Documento de politica de privacidad aprobado internamente"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Documentos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 24 inc. 1); C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4 lit. a)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-CONS-01",
+    "titulo": "Requisitos del consentimiento",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 26 y 27",
+    "texto_obligacion": "El consentimiento debe ser expreso y manifestarse de forma verbal, escrita o por signos inequivocos siempre que conste en medio fisico, electronico o tecnologico; ademas debe ser libre, especifico, informado, expreso e individualizado.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de consentimiento con medio, fecha y finalidad"
+    ],
+    "documentos_relacionados": [
+      "Formulario de consentimiento",
+      "RAT"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 1"
+    ],
+    "modulos_candidatos": [
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 26, 27)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-CONS-02",
+    "titulo": "Revocacion del consentimiento en cualquier momento",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 29",
+    "texto_obligacion": "El titular puede revocar su consentimiento en cualquier momento, sin efecto retroactivo, mediante mecanismos expeditos, sencillos y gratuitos que el responsable debe establecer.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Mecanismo de revocacion disponible al titular",
+      "Registro de revocaciones"
+    ],
+    "documentos_relacionados": [
+      "Formulario de revocacion (no publicado aun por la ACE)"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 9",
+      "Art. 56 lit. c num. 10"
+    ],
+    "modulos_candidatos": [
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 29)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-CONS-03",
+    "titulo": "Plazo para procesar la revocacion del consentimiento",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 30",
+    "texto_obligacion": "Ante una solicitud de revocacion, debe procederse conforme a ella en un plazo de 5 dias habiles desde su recepcion; si los datos tambien son tratados por un encargado, debe informarsele de la revocacion en 5 dias habiles desde la emision de la resolucion para que la ejecute de inmediato.",
+    "a_quien_aplica": "Responsables del tratamiento (via el delegado, segun texto vigente) y encargados",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 5,
+      "unidad": "dias habiles",
+      "inicio": "recepcion de la solicitud de revocacion"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "El texto vigente atribuye el tramite al delegado; la reforma 659 trasladaria la funcion al sujeto obligado. Segun fuentes secundarias, el plazo de 5 dias habiles para revocacion no cambia."
+    },
+    "evidencia_esperada": [
+      "Registro de fecha de recepcion y ejecucion de la revocacion",
+      "Constancia de notificacion al encargado"
+    ],
+    "documentos_relacionados": [
+      "Registro de consentimientos",
+      "Contratos con encargados"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 9",
+      "Art. 56 lit. c num. 10"
+    ],
+    "modulos_candidatos": [
+      "Consentimiento",
+      "Proveedores"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 30)",
+    "verificada": true,
+    "condicion": ""
+  },
+  {
+    "id": "OBL-CONS-04",
+    "titulo": "Consentimiento por escrito para datos sensibles",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 26 inc. 4",
+    "texto_obligacion": "Para el tratamiento de datos personales sensibles, el consentimiento debe obtenerse por escrito mediante firma autografa del titular o su equivalente.",
+    "a_quien_aplica": "Responsables que traten datos sensibles",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica solo al tratamiento de datos personales sensibles",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Formulario de consentimiento firmado para datos sensibles"
+    ],
+    "documentos_relacionados": [
+      "Formulario de consentimiento sensible"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 1"
+    ],
+    "modulos_candidatos": [
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 26 inc. 4)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-CONS-05",
+    "titulo": "Carga de la prueba del consentimiento y del aviso de privacidad",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 54",
+    "texto_obligacion": "La carga de la prueba de haber obtenido el consentimiento y de haber comunicado el aviso de privacidad recae especificamente en el responsable del tratamiento.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro probatorio de consentimiento (fecha, medio, texto aceptado)",
+      "Constancia de entrega del aviso de privacidad"
+    ],
+    "documentos_relacionados": [
+      "Registro de consentimientos",
+      "Aviso de privacidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Consentimiento",
+      "Evidencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 54)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-CONS-06",
+    "titulo": "Consentimiento parental para datos de ninez y adolescencia",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 56 lit. c num. 3, en relacion con Art. 5 lit. j y Art. 42",
+    "texto_obligacion": "El uso de datos personales de ninas, ninos y adolescentes sin el previo consentimiento de sus padres, representantes o tutores, conforme a las leyes vigentes, esta prohibido y constituye infraccion muy grave; debe informarseles previamente en lenguaje adaptado a su edad.",
+    "a_quien_aplica": "Responsables que traten datos de NNA",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando el cliente trata datos de ninas, ninos o adolescentes",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de consentimiento parental para titulares NNA"
+    ],
+    "documentos_relacionados": [
+      "Formulario de consentimiento parental"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 3"
+    ],
+    "modulos_candidatos": [
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 56 lit. c num. 3; Art. 42)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SENS-01",
+    "titulo": "Identificacion de datos personales sensibles",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 4 lit. g)",
+    "texto_obligacion": "Los datos sensibles tienen definicion enunciativa y no limitativa: salud fisica y mental, informacion biometrica y genetica, origen etnico, creencias religiosas, ideologia politica, afiliacion sindical, preferencias sexuales, situacion moral y familiar y habitos personales, entre otros.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Clasificacion de datos por categoria (ordinarios/sensibles) en el RAT"
+    ],
+    "documentos_relacionados": [
+      "RAT"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 4 lit. g)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SENS-02",
+    "titulo": "Advertencia del derecho a no proporcionar datos sensibles",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 37 inc. 1",
+    "texto_obligacion": "Ninguna persona puede ser obligada a proporcionar sus datos personales sensibles; el responsable debe advertir al titular sobre su derecho a no prestarlos.",
+    "a_quien_aplica": "Responsables que soliciten datos sensibles",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica cuando se solicitan datos sensibles al titular",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Texto de advertencia en formularios de recoleccion de datos sensibles"
+    ],
+    "documentos_relacionados": [
+      "Formulario de recoleccion de datos sensibles"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 37 inc. 1)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SENS-03",
+    "titulo": "Excepciones al consentimiento para datos sensibles",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 37 inc. 2-3 y Art. 38 inc. 1",
+    "texto_obligacion": "Existen tres excepciones al consentimiento para datos sensibles: salvaguarda de la vida del titular u otra persona cuando este no puede consentir, tratamiento de datos de salud por profesional sujeto a secreto, y tratamiento amparado en interes general autorizado por ley o mandato legal.",
+    "a_quien_aplica": "Responsables que traten datos sensibles bajo alguna de estas excepciones",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo ante uno de los tres supuestos de excepcion tasados",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Justificacion documentada de la excepcion invocada"
+    ],
+    "documentos_relacionados": [
+      "RAT"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 37, 38)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SENS-04",
+    "titulo": "Tratamiento de datos de salud",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 39",
+    "texto_obligacion": "El tratamiento de datos de salud por establecimientos y profesionales sanitarios se remite a la Ley de Deberes y Derechos de los Pacientes y Prestadores de Servicios de Salud, respetando el secreto profesional.",
+    "a_quien_aplica": "Establecimientos y profesionales de salud",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica a clientes cuyo giro sea la prestacion de servicios de salud",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Politica de manejo de expediente clinico alineada a la ley de pacientes"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad sectorial (salud)"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 39)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SENS-05",
+    "titulo": "Prohibiciones sobre datos sensibles y comercializacion indebida",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 59",
+    "texto_obligacion": "Esta prohibido: crear bases de datos con datos sensibles en contravencion de la ley; tratar datos de categorias especiales sin observar el Capitulo IV del Titulo II; revelar, difundir o comercializar datos conocidos por razon del cargo; y utilizar, transferir, compartir o comercializar informacion de las bases en contravencion de la ley.",
+    "a_quien_aplica": "Responsables, encargados y su personal",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Politica interna de prohibiciones y sanciones internas por incumplimiento"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad",
+      "Codigo de conducta interno"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 6"
+    ],
+    "modulos_candidatos": [
+      "RAT",
+      "Controles"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 59)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRAT-01",
+    "titulo": "Prohibicion de desviacion de finalidad",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 32",
+    "texto_obligacion": "No pueden tratarse o transferirse datos personales para fines distintos a los previamente informados al titular, sin su previa autorizacion.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "RAT con finalidad declarada por cada tratamiento",
+      "Control de cambios de finalidad"
+    ],
+    "documentos_relacionados": [
+      "RAT",
+      "Politica de privacidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 32)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRAT-02",
+    "titulo": "Excepciones al consentimiento previo",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 28",
+    "texto_obligacion": "Existen 8 supuestos (lit. a a h) en que no se requiere consentimiento previo del titular, incluida la excepcion de fuentes de acceso publico, que no aplica cuando los datos son sensibles.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo ante alguno de los 8 supuestos tasados del Art. 28",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Justificacion documentada de la excepcion invocada en el RAT"
+    ],
+    "documentos_relacionados": [
+      "RAT"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 28)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRAT-03",
+    "titulo": "Definicion estricta de fuentes de acceso publico",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 4 lit. l)",
+    "texto_obligacion": "Las fuentes de acceso publico se definen de forma estricta como bases o repositorios cuya consulta puede realizarse por disposicion de ley por cualquier persona; esto excluye a redes sociales y sitios web abiertos de esa categoria legal.",
+    "a_quien_aplica": "Responsables que invoquen la excepcion de fuentes de acceso publico",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando el responsable pretenda tratar datos sin consentimiento invocando que provienen de una fuente de acceso publico",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Analisis documentado de si la fuente califica como acceso publico"
+    ],
+    "documentos_relacionados": [
+      "RAT"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 4 lit. l)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PROV-01",
+    "titulo": "Sometimiento de proveedores subcontratados a la LPDP",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 33 inc. 2",
+    "texto_obligacion": "Cuando el responsable subcontrate servicios en los cuales se conceda acceso a datos personales, esos proveedores deben someterse a la LPDP y a los lineamientos que establezcan el responsable y la ACE.",
+    "a_quien_aplica": "Responsables que subcontraten proveedores con acceso a datos personales",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica cuando existe subcontratacion con acceso a datos personales",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Inventario de proveedores con acceso a datos",
+      "Clausulas de sometimiento a la LPDP en contratos"
+    ],
+    "documentos_relacionados": [
+      "Contratos con proveedores"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Proveedores"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 33 inc. 2)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PROV-02",
+    "titulo": "Obligaciones directas del encargado del tratamiento",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 34",
+    "texto_obligacion": "El responsable y, en su caso, el encargado deben limitar el tratamiento a la finalidad consentida, implementar medidas de seguridad y cumplir con las politicas de actuacion de la ACE, y guardar confidencialidad.",
+    "a_quien_aplica": "Responsables y encargados del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Clausulas contractuales que trasladen estas obligaciones al encargado"
+    ],
+    "documentos_relacionados": [
+      "Contratos con encargados (DPA)"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Proveedores"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 34)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PROV-03",
+    "titulo": "Medidas de seguridad tambien obligatorias para el encargado",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 36",
+    "texto_obligacion": "Las medidas de seguridad que la ACE determine para el responsable son tambien de obligatorio cumplimiento para el encargado del tratamiento.",
+    "a_quien_aplica": "Encargados del tratamiento (proveedores, incluidos servicios cloud/SaaS)",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica cuando el cliente utiliza encargados del tratamiento",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Certificaciones o autoevaluaciones de seguridad del proveedor/encargado"
+    ],
+    "documentos_relacionados": [
+      "Contratos con encargados (DPA)"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 5",
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Proveedores"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 36)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PROV-04",
+    "titulo": "No publicar datos de contacto del encargado (infraccion leve)",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 56 lit. a num. 2",
+    "texto_obligacion": "No publicar los datos de contacto del encargado del tratamiento constituye infraccion leve.",
+    "a_quien_aplica": "Responsables que subcontraten encargados del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica cuando el responsable tiene un encargado del tratamiento",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Aviso de privacidad con datos de contacto del encargado publicados"
+    ],
+    "documentos_relacionados": [
+      "Aviso de privacidad"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. a num. 2"
+    ],
+    "modulos_candidatos": [
+      "Proveedores",
+      "Documentos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 56 lit. a num. 2)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRANSF-01",
+    "titulo": "Requisitos de la transferencia nacional de datos",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 40",
+    "texto_obligacion": "Toda transferencia de datos personales debe contar con el consentimiento previo del titular, informarle sobre la finalidad de la transferencia e identificar al cesionario o dar elementos que permitan identificarlo.",
+    "a_quien_aplica": "Responsables que transfieran datos a terceros",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de transferencias con consentimiento e identificacion del cesionario"
+    ],
+    "documentos_relacionados": [
+      "Registro de transferencias",
+      "RAT"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 6"
+    ],
+    "modulos_candidatos": [
+      "Transferencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 40)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRANSF-02",
+    "titulo": "Contrato con el responsable receptor de la transferencia",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 41",
+    "texto_obligacion": "El responsable que transfiere datos debe suscribir un contrato con el responsable receptor, que prevea como minimo las mismas obligaciones a las que esta sujeto el transferente.",
+    "a_quien_aplica": "Responsables que transfieran datos a otro responsable",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica a toda transferencia de datos a otro responsable (no aplica a la relacion con un encargado, que se rige por el Art. 34/36)",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Contrato de transferencia firmado con clausulas equivalentes"
+    ],
+    "documentos_relacionados": [
+      "Contrato de transferencia de datos"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 6"
+    ],
+    "modulos_candidatos": [
+      "Transferencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 41)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRANSF-03",
+    "titulo": "Nivel de proteccion exigido para transferencias internacionales",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 44 inc. 1",
+    "texto_obligacion": "La transferencia internacional de datos personales solo se permite cuando el pais receptor cumpla como minimo con los principios de la LPDP o con estandares internacionales en la materia; las garantias ofrecidas no pueden ser menores a las exigidas en El Salvador. No existe lista oficial de la ACE de paises con nivel adecuado; la evaluacion recae de facto en el responsable.",
+    "a_quien_aplica": "Responsables que transfieran datos fuera de El Salvador (incluye uso de proveedores cloud/SaaS extranjeros)",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica a toda transferencia internacional de datos personales",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Evaluacion documentada del nivel de proteccion del pais receptor"
+    ],
+    "documentos_relacionados": [
+      "Registro de transferencias internacionales"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 5"
+    ],
+    "modulos_candidatos": [
+      "Transferencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 44 inc. 1)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRANSF-04",
+    "titulo": "Consentimiento previo para transferencias internacionales",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 44 inc. final",
+    "texto_obligacion": "En toda transferencia internacional debe mediar el consentimiento previo del titular, salvo excepciones establecidas en instrumentos internacionales que operen reciprocamente entre los paises suscriptores (incluye la excepcion de integracion economica centroamericana del inc. 4, sin desarrollo normativo localizado).",
+    "a_quien_aplica": "Responsables que transfieran datos fuera de El Salvador",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica a toda transferencia internacional salvo excepcion por instrumento internacional reciproco",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Registro de consentimiento especifico para transferencia internacional"
+    ],
+    "documentos_relacionados": [
+      "Registro de transferencias internacionales"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. c num. 6"
+    ],
+    "modulos_candidatos": [
+      "Transferencias",
+      "Consentimiento"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 44 inc. final y 4)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRANSF-05",
+    "titulo": "Puesta en conocimiento de la ACE del flujo transfronterizo",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 45",
+    "texto_obligacion": "En todo caso, el flujo transfronterizo de datos personales debe ponerse en conocimiento de la ACE, incluyendo la informacion requerida para la transferencia y el registro de banco de datos; el responsable puede ademas (de forma opcional) solicitar opinion previa de la ACE. Al 24-sep-2026 la ACE no ha habilitado formulario, plataforma ni procedimiento para cumplir esta obligacion.",
+    "a_quien_aplica": "Responsables que realicen transferencias internacionales de datos",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica a todo flujo transfronterizo de datos personales; el mecanismo de cumplimiento no esta operativo del lado de la ACE",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Constancia de intento de notificacion a la ACE (mientras no exista canal habilitado)"
+    ],
+    "documentos_relacionados": [
+      "Registro de transferencias internacionales"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Transferencias",
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 45); https://ace.gob.sv/page/formularios (consultado 2026-09-24, sin mecanismo habilitado)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-TRANSF-06",
+    "titulo": "Carga de la prueba en transferencias internacionales",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 54 inc. 2",
+    "texto_obligacion": "En transferencias internacionales, la carga de la prueba recae en el responsable de la transferencia, quien debe demostrar que el tratamiento o la transferencia se realizo conforme a la LPDP o a estandares internacionales en la materia.",
+    "a_quien_aplica": "Responsables que realicen transferencias internacionales",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica a toda transferencia internacional",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Expediente probatorio de cumplimiento por cada transferencia internacional"
+    ],
+    "documentos_relacionados": [
+      "Registro de transferencias internacionales",
+      "Contrato de transferencia"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Transferencias",
+      "Evidencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 54 inc. 2)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SEG-01",
+    "titulo": "Caracter imperativo de las politicas de actuacion de la ACE",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144); Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 35 LPDP",
+    "texto_obligacion": "Las politicas de actuacion y manejo de datos personales dictadas por la ACE son imperativas para los sujetos obligados por la LPDP, incluidas las entidades privadas.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Checklist de cumplimiento de las Politicas ACE"
+    ],
+    "documentos_relacionados": [
+      "Politicas de Actuacion ACE"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Controles",
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 35)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SEG-02",
+    "titulo": "Medidas organizativas minimas de las Politicas ACE",
+    "norma": "Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 4 (Medidas Organizativas, lit. a-f)",
+    "texto_obligacion": "Las Politicas ACE exigen seis medidas organizativas: politica de proteccion de datos, delegado de proteccion de datos, capacitacion del personal, Registro de Actividades de Tratamiento (RAT), Evaluaciones de Impacto en la Privacidad (EIPD) y auditorias de cumplimiento, sin definir su contenido, formato ni periodicidad (salvo la auditoria, que es anual).",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Documentos de cada una de las seis medidas organizativas"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad",
+      "RAT",
+      "EIPD",
+      "Plan de capacitacion",
+      "Informe de auditoria"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 5",
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Controles",
+      "RAT",
+      "Riesgos-EIPD",
+      "Capacitacion",
+      "Auditoria"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SEG-03",
+    "titulo": "Medidas tecnicas minimas de las Politicas ACE",
+    "norma": "Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 4 (Medidas Tecnicas)",
+    "texto_obligacion": "Las Politicas ACE exigen medidas tecnicas: control de acceso con contrasenas seguras y autenticacion en dos pasos (2FA), cifrado en reposo y transito, gestion de identidades, respaldos (backups), firewall/antivirus/IDS-IPS, analisis de vulnerabilidades y pentesting, y digitalizacion mediante sistemas especializados que permitan gestionar y documentar el tratamiento.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Configuracion de 2FA",
+      "Evidencia de cifrado",
+      "Reportes de pentesting/analisis de vulnerabilidades",
+      "Bitacoras de backups"
+    ],
+    "documentos_relacionados": [
+      "Politica de seguridad de la informacion"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 5",
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Controles"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SEG-04",
+    "titulo": "Medidas de seguridad especificas para transferencias de datos",
+    "norma": "Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 4 (bloque Medidas de Seguridad en Transferencias de Datos) y Art. 6 lit. d)",
+    "texto_obligacion": "Para transferencias de datos deben implementarse protocolos de comunicacion segura (SSL/TLS), contratos de confidencialidad y de transferencia con terceros, transferencias internacionales solo a paises con proteccion equivalente, y notificacion de brechas de seguridad en un maximo de 72 horas a la ACE, la Fiscalia y los titulares.",
+    "a_quien_aplica": "Empresas privadas que transfieran datos personales a terceros",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Aplica cuando el cliente realiza transferencias de datos personales",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Configuracion SSL/TLS",
+      "Contratos de confidencialidad y transferencia"
+    ],
+    "documentos_relacionados": [
+      "Contrato de transferencia",
+      "Registro de transferencias"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Transferencias",
+      "Controles"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4, 6)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-DOC-01",
+    "titulo": "Establecer y documentar procedimientos ARCO-POL",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 33 inc. 1",
+    "texto_obligacion": "El responsable debe establecer y documentar procedimientos para el ejercicio de los derechos ARCO-POL, con base en las politicas de actuacion de la ACE y las medidas de seguridad minimas necesarias.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Manual o procedimiento documentado de atencion ARCO-POL"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Documentos",
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 33 inc. 1)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-DOC-02",
+    "titulo": "Registro de Actividades de Tratamiento (RAT)",
+    "norma": "Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 4 (Medidas Organizativas, lit. d)",
+    "texto_obligacion": "Debe mantenerse un registro detallado de como se recopilan, almacenan y utilizan los datos personales (RAT), sin que las Politicas ACE definan su contenido minimo, formato ni periodicidad de actualizacion.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "RAT actualizado por actividad de tratamiento"
+    ],
+    "documentos_relacionados": [
+      "RAT"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "RAT"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4 lit. d)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-DOC-03",
+    "titulo": "Evaluaciones de Impacto en la Privacidad (EIPD)",
+    "norma": "Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 4 (Medidas Organizativas, lit. e)",
+    "texto_obligacion": "Deben realizarse Evaluaciones de Impacto en la Privacidad para identificar y mitigar riesgos, sin que exista umbral de riesgo definido que determine cuando es obligatoria una EIPD especifica.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "EIPD documentada para tratamientos de alto riesgo"
+    ],
+    "documentos_relacionados": [
+      "EIPD"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Riesgos-EIPD"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4 lit. e)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-DOC-04",
+    "titulo": "Elaboracion y publicacion de formularios/mecanismos ARCO-POL propios",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 61 inc. 2",
+    "texto_obligacion": "Los sujetos obligados debian establecer mecanismos para que los titulares ejerzan sus derechos ARCO-POL dentro de los 6 meses desde la vigencia de la ley (venciendo el 23-may-2025, plazo ya vencido); estos mecanismos deben mantenerse operativos de forma continua.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 6,
+      "unidad": "meses (plazo transitorio, ya vencido el 23-may-2025)",
+      "inicio": "vigencia de la LPDP (23-nov-2024)"
+    },
+    "evidencia_esperada": [
+      "Canal(es) publicados para presentar solicitudes ARCO-POL (formulario, correo, portal)"
+    ],
+    "documentos_relacionados": [
+      "Formularios ACE",
+      "Politica de privacidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Portal",
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 61 inc. 2)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-INC-01",
+    "titulo": "Notificacion de vulneraciones de seguridad en 72 horas",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 25",
+    "texto_obligacion": "Cuando el responsable tenga conocimiento de una vulneracion de seguridad de datos personales (cualquier dano, perdida, alteracion, destruccion, acceso ilegitimo o uso ilicito o no autorizado, incluso accidental), debe notificar a la ACE, a la Fiscalia General de la Republica y a los titulares afectados, en un plazo maximo de 72 horas desde que se tuvo conocimiento de la vulneracion. No se identifico excepcion expresa a esta obligacion.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 72,
+      "unidad": "horas (computo en horas corridas u habiles no resuelto por la ley; requiere criterio de abogado)",
+      "inicio": "momento en que se tuvo conocimiento de la vulneracion"
+    },
+    "evidencia_esperada": [
+      "Bitacora de deteccion del incidente",
+      "Constancia de notificacion a ACE, FGR y titulares dentro de plazo"
+    ],
+    "documentos_relacionados": [
+      "Registro de incidentes"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. a num. 3"
+    ],
+    "modulos_candidatos": [
+      "Incidentes",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 25)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-INC-02",
+    "titulo": "Revision exhaustiva del incidente dentro de las 72 horas",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 25 inc. 2",
+    "texto_obligacion": "Dentro del mismo plazo de 72 horas, el responsable debe iniciar un proceso de revision exhaustiva para determinar la magnitud de la afectacion y las medidas correctivas y preventivas que correspondan, incluyendo la actualizacion de las politicas de seguridad. La ley exige iniciar la revision en ese plazo, no necesariamente concluirla.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 72,
+      "unidad": "horas (para iniciar, no concluir, la revision)",
+      "inicio": "momento en que se tuvo conocimiento de la vulneracion"
+    },
+    "evidencia_esperada": [
+      "Registro de inicio de la investigacion interna del incidente"
+    ],
+    "documentos_relacionados": [
+      "Registro de incidentes"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. a num. 3"
+    ],
+    "modulos_candidatos": [
+      "Incidentes"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 25 inc. 2)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-INC-03",
+    "titulo": "Contenido minimo de la notificacion de vulneracion",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 25 inc. 3-4",
+    "texto_obligacion": "La notificacion a la ACE debe contener, al menos: naturaleza del incidente, datos personales comprometidos, acciones correctivas generales realizadas de forma inmediata, recomendaciones al titular y medios disponibles para obtener mas informacion. La notificacion a los titulares afectados unicamente debe contener naturaleza del incidente, datos comprometidos, recomendaciones y medios de contacto (se omiten las acciones correctivas internas).",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Plantillas diferenciadas de notificacion (ACE/FGR vs. titulares)"
+    ],
+    "documentos_relacionados": [
+      "Registro de incidentes"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. a num. 3"
+    ],
+    "modulos_candidatos": [
+      "Incidentes"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 25)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-INC-04",
+    "titulo": "Documentacion obligatoria de toda vulneracion con riesgo",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 25 inc. final",
+    "texto_obligacion": "El responsable debe documentar toda vulneracion ocurrida en cualquier fase del tratamiento que ocasione un riesgo en la seguridad de los datos personales, identificando al menos fecha, motivo, hechos relacionados, efectos o implicaciones y medidas correctivas inmediatas y definitivas; el documento debe estar a disposicion de la autoridad.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Expediente documentado de cada vulneracion con riesgo"
+    ],
+    "documentos_relacionados": [
+      "Registro de incidentes"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. a num. 3"
+    ],
+    "modulos_candidatos": [
+      "Incidentes",
+      "Evidencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 25 inc. final)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-INC-05",
+    "titulo": "Reporte de incidentes de ciberseguridad a la ACE (operadores de infraestructura critica)",
+    "norma": "Ley de Ciberseguridad y Seguridad de la Informacion (D.L. 143)",
+    "articulo": "Art. 6 lit. f-g, en relacion con Art. 2 y Art. 8 lit. f-g",
+    "texto_obligacion": "Los sujetos obligados del Decreto 143 deben aplicar y cumplir de manera inmediata y eficaz, y adoptar de forma oportuna, expedita y eficiente, las medidas frente a incidentes de ciberseguridad; no se fija un plazo numerico (tipo 72 horas) para el reporte. Este deber solo aplica a organos de gobierno, entidades publicas y operadores de infraestructura critica calificados formalmente por la ACE mediante resolucion fundada ratificada por el Presidente.",
+    "a_quien_aplica": "Entidades privadas calificadas por la ACE como operadores de infraestructura critica",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si la empresa privada ha sido calificada por la ACE como operador de infraestructura critica (Art. 8 lit. f Decreto 143); no aplica a empresas privadas ordinarias",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Resolucion de calificacion de infraestructura critica (si aplica)",
+      "Bitacora de reporte de incidentes de ciberseguridad"
+    ],
+    "documentos_relacionados": [
+      "Registro de incidentes"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Incidentes",
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\asamblea_decreto_143_ciberseguridad.txt (Art. 2, 6, 8)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-CAP-01",
+    "titulo": "Capacitacion del personal como medida organizativa obligatoria",
+    "norma": "Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 4 (Medidas Organizativas, lit. c)",
+    "texto_obligacion": "Las Politicas ACE exigen la capacitacion del personal como medida organizativa obligatoria, sin fijar contenido, formato o periodicidad especifica (salvo la que fije el propio delegado, si existe).",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Plan de capacitacion del personal",
+      "Constancias de asistencia"
+    ],
+    "documentos_relacionados": [
+      "Plan de capacitacion"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Capacitacion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4 lit. c)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-CAP-02",
+    "titulo": "Plan anual de capacitacion del personal e induccion",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 22",
+    "texto_obligacion": "El delegado debe elaborar un plan anual de capacitacion dirigido al personal, que incluya programas de induccion para el personal nuevo que desempene funciones relacionadas con el tratamiento de datos personales.",
+    "a_quien_aplica": "Empresas privadas con delegado nombrado",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica mientras subsista la figura del delegado en la empresa",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 1,
+      "unidad": "ano (periodicidad del plan)",
+      "inicio": "nombramiento del delegado / cierre del plan anterior"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Si la reforma 659 elimina la obligatoriedad del delegado en el sector privado, esta obligacion especifica dejaria de ser exigible salvo que la empresa mantenga delegado voluntariamente."
+    },
+    "evidencia_esperada": [
+      "Plan anual de capacitacion elaborado por el delegado",
+      "Programa de induccion para personal nuevo"
+    ],
+    "documentos_relacionados": [
+      "Plan de capacitacion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Capacitacion",
+      "Organizacion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 22)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-AUD-01",
+    "titulo": "Auditorias anuales de cumplimiento de las Politicas ACE",
+    "norma": "Politicas de Actuacion ACE N. 001-0309025-DPDP",
+    "articulo": "Art. 8 lit. b)",
+    "texto_obligacion": "Se realizaran auditorias anuales para evaluar el cumplimiento de las Politicas ACE. Nota de verificacion: la propia Politica cita como base el Art. 50 lit. l LPDP, que en realidad atribuye a la ACE la facultad de auditar las certificaciones que ella misma expide, no un deber de auditoria interna de las empresas; la obligacion de auditoria anual proviene del texto expreso de la Politica ACE, no de esa cita legal.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 1,
+      "unidad": "ano (periodicidad)",
+      "inicio": "adecuacion inicial de la empresa / ultima auditoria"
+    },
+    "evidencia_esperada": [
+      "Informe de auditoria anual de cumplimiento"
+    ],
+    "documentos_relacionados": [
+      "Informe de auditoria"
+    ],
+    "infracciones_asociadas": [
+      "Art. 56 lit. b num. 7"
+    ],
+    "modulos_candidatos": [
+      "Auditoria"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 8 lit. b)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-01",
+    "titulo": "Catalogo de infracciones leves, graves y muy graves",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 56",
+    "texto_obligacion": "El Art. 56 clasifica las infracciones en 9 leves (lit. a), 7 graves (lit. b) y 10 muy graves (lit. c); cada obligacion de este catalogo mapea a un modulo funcional del software (ver infracciones_asociadas en cada obligacion correspondiente).",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Matriz de riesgo de infracciones por modulo"
+    ],
+    "documentos_relacionados": [
+      "Matriz de obligaciones"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio",
+      "Controles"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 56)",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-02",
+    "titulo": "Multas por clasificacion de infraccion",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 57",
+    "texto_obligacion": "Las infracciones leves se sancionan con multa de 1 a 10 salarios minimos mensuales del sector comercio; las graves de 11 a 25; las muy graves de 26 a 40. Con el salario minimo vigente (US$408.80, Decreto Ejecutivo 11/2025 del MTPS), los rangos son: leves US$408.80-US$4,088.00; graves US$4,496.80-US$10,220.00; muy graves US$10,628.80-US$16,352.00.",
+    "a_quien_aplica": "Responsables sancionados por la ACE",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando la ACE determina la comision de una infraccion tras el procedimiento sancionador",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Calculo de exposicion economica por tipo de infraccion (uso interno de riesgo)"
+    ],
+    "documentos_relacionados": [
+      "Matriz de obligaciones"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 57); https://www.jurisprudencia.gob.sv/DocumentosBoveda/D/2/2020-2029/2025/05/10A4DA.PDF (Decreto Ejecutivo 11/2025 MTPS)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-03",
+    "titulo": "Medidas adicionales tras la sancion",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 58",
+    "texto_obligacion": "Determinada la procedencia de la sancion, la ACE puede ordenar al infractor que adopte las medidas necesarias para restablecer la legalidad alterada o corregir los derechos o situaciones vulneradas; las sanciones no eximen de responsabilidades civiles o penales derivadas del mismo hecho.",
+    "a_quien_aplica": "Responsables sancionados por la ACE",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando la ACE impone una sancion y ordena medidas correctivas adicionales",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Plan de accion correctiva tras resolucion sancionatoria"
+    ],
+    "documentos_relacionados": [
+      "Resolucion sancionatoria"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 58)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-04",
+    "titulo": "Remision del procedimiento sancionador y prescripcion a la Ley de Ciberseguridad",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 53",
+    "texto_obligacion": "Para el ejercicio de la potestad sancionadora, el desarrollo del procedimiento y las reglas de prescripcion de las infracciones y sanciones de la LPDP se aplica lo dispuesto en la Ley de Ciberseguridad y Seguridad de la Informacion (D.L. 143), desarrollado por la Normativa para el Procedimiento Administrativo Sancionador de la ACE (D.O. 11-ago-2026, vigente 19-ago-2026).",
+    "a_quien_aplica": "Responsables sujetos a un procedimiento sancionador de la ACE",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando se inicia un procedimiento sancionador contra el responsable",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Seguimiento del expediente sancionador y sus plazos"
+    ],
+    "documentos_relacionados": [
+      "Normativa PAS (ACE)"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 53)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-05",
+    "titulo": "Contestacion del emplazamiento en el procedimiento sancionador",
+    "norma": "Normativa para el Procedimiento Administrativo Sancionador (ACE)",
+    "articulo": "Art. 21",
+    "texto_obligacion": "El presunto infractor debe contestar, alegar y proponer prueba en el plazo de 5 dias habiles contados desde el dia siguiente habil a la notificacion; si no comparece, los hechos se tienen por contestados negativamente.",
+    "a_quien_aplica": "Responsables emplazados en un procedimiento sancionador de la ACE",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando la ACE emplaza al responsable dentro de un procedimiento sancionador",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 5,
+      "unidad": "dias habiles",
+      "inicio": "dia siguiente habil a la notificacion del emplazamiento"
+    },
+    "evidencia_esperada": [
+      "Escrito de contestacion y prueba presentada dentro de plazo"
+    ],
+    "documentos_relacionados": [
+      "Expediente sancionador"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\normativa_sancionadora_OCR.txt (Art. 21)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-06",
+    "titulo": "Pago de la multa impuesta",
+    "norma": "Normativa para el Procedimiento Administrativo Sancionador (ACE)",
+    "articulo": "Art. 44",
+    "texto_obligacion": "El sujeto sancionado con multa debe pagar su valor en la Colecturia Central u oficinas regionales de la Direccion General de Tesoreria del Ministerio de Hacienda dentro de los 15 dias habiles siguientes a la notificacion de la resolucion.",
+    "a_quien_aplica": "Responsables sancionados con multa por la ACE",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando la ACE impone una multa firme",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 15,
+      "unidad": "dias habiles",
+      "inicio": "notificacion de la resolucion sancionatoria"
+    },
+    "evidencia_esperada": [
+      "Comprobante de pago de la multa"
+    ],
+    "documentos_relacionados": [
+      "Resolucion sancionatoria"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\normativa_sancionadora_OCR.txt (Art. 44)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-07",
+    "titulo": "Prescripcion de infracciones y sanciones",
+    "norma": "Ley de Ciberseguridad y Seguridad de la Informacion (D.L. 143), por remision del Art. 53 LPDP; Normativa PAS (ACE) Art. 47",
+    "articulo": "Art. 29 D.L. 143; Art. 47 Normativa PAS",
+    "texto_obligacion": "Las infracciones y sanciones de la LPDP prescriben a los 5 anos, con computo segun el Art. 149 de la Ley de Procedimientos Administrativos. Este plazo sirve de referencia minima para la retencion del expediente de cumplimiento como prueba de descargo.",
+    "a_quien_aplica": "Responsables del tratamiento (informativo para gestion de riesgo y retencion de evidencia)",
+    "clasificacion": "RECOMENDADO",
+    "condicion": "Uso recomendado como criterio de retencion minima de evidencia de cumplimiento",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 5,
+      "unidad": "anos",
+      "inicio": "comision de la infraccion (segun regla del Art. 149 LPA)"
+    },
+    "evidencia_esperada": [
+      "Politica de retencion de evidencia de cumplimiento con horizonte minimo de 5 anos"
+    ],
+    "documentos_relacionados": [
+      "Politica de retencion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Evidencias",
+      "Retencion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\asamblea_decreto_143_ciberseguridad.txt (Art. 29); normativa_sancionadora_OCR.txt (Art. 47)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-08",
+    "titulo": "Publicidad de las resoluciones sancionatorias",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 55",
+    "texto_obligacion": "Todas las resoluciones de la ACE que impongan sanciones se difunden publicamente en su sitio web en versiones publicas, siempre que los datos personales esten disociados o anonimizados.",
+    "a_quien_aplica": "ACE (informativo para el responsable sancionado, en relacion a su reputacion)",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando existe una resolucion sancionatoria firme contra el responsable",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Monitoreo del sitio web de la ACE por resoluciones publicadas"
+    ],
+    "documentos_relacionados": [
+      "Resolucion sancionatoria"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 55)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-SANC-09",
+    "titulo": "Derecho de denuncia del titular ante la ACE",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 9 inc. 3 y Art. 31",
+    "texto_obligacion": "El incumplimiento del plazo de rectificacion, o la negativa a tramitar la revocacion del consentimiento, habilitan al titular a presentar denuncia ante la ACE para que se garanticen sus derechos. Al 24-sep-2026 la ACE no publica un formulario especifico de denuncia distinto de los 8 formularios ARCO-POL.",
+    "a_quien_aplica": "Titulares de datos personales (relevante para el responsable como riesgo de denuncia)",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica cuando el responsable incumple los plazos de rectificacion o de tramite de revocacion",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Seguimiento de plazos internos para evitar habilitar la via de denuncia"
+    ],
+    "documentos_relacionados": [
+      "Procedimiento ARCO-POL"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL",
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 9 inc. 3, Art. 31)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PLAZO-01",
+    "titulo": "Regla de computo de plazos (dias y horas habiles)",
+    "norma": "Ley de Procedimientos Administrativos (D.L. 856), supletoria por Art. 62 LPDP",
+    "articulo": "Art. 82 LPA",
+    "texto_obligacion": "Los plazos senalados por dias u horas se computan solo en dias y horas habiles; el computo por dias inicia el dia siguiente a la notificacion o publicacion; los plazos por meses o anos se computan de fecha a fecha; si el ultimo dia del plazo es inhabil, se prorroga al primer dia habil siguiente. Su aplicacion a la relacion titular-empresa privada es discutible porque el Art. 2 LPA limita el ambito subjetivo de esa ley a la Administracion Publica; requiere confirmacion de abogado.",
+    "a_quien_aplica": "Responsables del tratamiento, para el computo de todos los plazos LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "Regla de computo aplicable por remision supletoria del Art. 62 LPDP; su extension a la relacion con el titular privado no esta resuelta de forma expresa",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Motor de calculo de plazos con calendario de dias habiles"
+    ],
+    "documentos_relacionados": [
+      "Calendario de dias inhabiles"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Plazos",
+      "Tareas"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\asamblea_decreto_856_lpa.txt (Art. 82)",
+    "verificada": true,
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PLAZO-02",
+    "titulo": "Calendario de dias inhabiles (asuetos nacionales)",
+    "norma": "Codigo de Trabajo y decretos legislativos de asueto",
+    "articulo": "Art. 190 Codigo de Trabajo, y D.L. 339/2016, D.L. 208/2012",
+    "texto_obligacion": "Son dias de asueto remunerado nacional, aplicables al computo de plazos en dias habiles: 1 de enero; jueves, viernes y sabado de Semana Santa; 1 de mayo; 10 de mayo (Dia de la Madre, D.L. 339); 17 de junio (Dia del Padre, D.L. 208); 6 de agosto; 15 de septiembre; 2 de noviembre; 25 de diciembre; ademas 3 y 5 de agosto en San Salvador o el dia principal de la fiesta patronal local en el resto del pais. La Asamblea puede decretar asuetos adicionales ad hoc.",
+    "a_quien_aplica": "Responsables del tratamiento, para el motor de calculo de plazos",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "evidencia_esperada": [
+      "Calendario anual de dias inhabiles configurado en el sistema"
+    ],
+    "documentos_relacionados": [
+      "Calendario de dias inhabiles"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Plazos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\asamblea_decreto_856_lpa.txt; Codigo de Trabajo Art. 190",
+    "verificada": true,
+    "condicion": "",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PLAZO-03",
+    "titulo": "Plazo transitorio vencido: adecuacion de sujetos obligados tras las Politicas ACE",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 60 inc. 2",
+    "texto_obligacion": "Los sujetos obligados tenian 3 meses desde la emision de las Politicas ACE (2/3-sep-2025, fecha con respaldo solo en fuente secundaria) para adecuarse; ese plazo vencio el 2 o 3 de diciembre de 2025. La obligacion de adecuacion en si (no el plazo, ya vencido) permanece vigente y exigible de forma continua.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 3,
+      "unidad": "meses (plazo transitorio, ya vencido el 2/3-dic-2025)",
+      "inicio": "emision de las Politicas ACE (2-sep-2025, fuente secundaria)"
+    },
+    "evidencia_esperada": [
+      "Plan de adecuacion y evidencia de su ejecucion"
+    ],
+    "documentos_relacionados": [
+      "Plan de adecuacion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Plan",
+      "Diagnostico"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 60 inc. 2)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PLAZO-04",
+    "titulo": "Plazo transitorio vencido: mecanismos de ejercicio de derechos ARCO-POL",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 61 inc. 2",
+    "texto_obligacion": "Los sujetos obligados tenian 6 meses desde la vigencia de la ley (23-nov-2024) para establecer mecanismos de ejercicio de derechos ARCO-POL; el plazo vencio el 23 de mayo de 2025. La obligacion de mantener esos mecanismos operativos permanece vigente de forma continua.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 6,
+      "unidad": "meses (plazo transitorio, ya vencido el 23-may-2025)",
+      "inicio": "vigencia de la LPDP (23-nov-2024)"
+    },
+    "evidencia_esperada": [
+      "Canal(es) de recepcion de solicitudes ARCO-POL operativo desde esa fecha"
+    ],
+    "documentos_relacionados": [
+      "Politica de privacidad",
+      "Formularios ACE"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Portal",
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 61 inc. 2)",
+    "verificada": true,
+    "condicion": "",
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-RET-01",
+    "titulo": "Conservacion de registros mercantiles",
+    "norma": "Codigo de Comercio",
+    "articulo": "Art. 451 y 454",
+    "texto_obligacion": "Los comerciantes deben conservar los registros de su giro en general por 10 anos, y hasta 5 anos despues de la liquidacion de sus negocios mercantiles; esta obligacion se extiende a cartas, telegramas y facturas recibidas y a copias de las expedidas que sirvan de comprobante contable.",
+    "a_quien_aplica": "Empresas con calidad de comerciante bajo el Codigo de Comercio",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica a la conservacion de documentacion mercantil/contable, incluida la que contenga datos personales de clientes/proveedores",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 10,
+      "unidad": "anos (hasta 5 anos adicionales tras liquidacion del negocio)",
+      "inicio": "emision o recibo del registro/documento"
+    },
+    "evidencia_esperada": [
+      "Politica de retencion documental alineada a 10 anos para registros mercantiles"
+    ],
+    "documentos_relacionados": [
+      "Politica de retencion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Retencion",
+      "Documentos"
+    ],
+    "fuente": "Codigo de Comercio, Art. 451 y 454 (texto oficial Asamblea Legislativa)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-RET-02",
+    "titulo": "Conservacion de documentacion tributaria",
+    "norma": "Codigo Tributario",
+    "articulo": "Art. 147",
+    "texto_obligacion": "Las personas o entidades, tengan o no el caracter de contribuyentes, responsables, agentes de retencion o percepcion, deben conservar por un periodo de 10 anos, contados desde su emision o recibo, los libros de contabilidad, comprobantes, registros especiales, declaraciones tributarias y pruebas de retenciones y percepciones.",
+    "a_quien_aplica": "Empresas con obligaciones tributarias en El Salvador",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica a documentacion tributaria y contable que contenga datos personales (empleados, clientes, proveedores)",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 10,
+      "unidad": "anos",
+      "inicio": "emision o recibo del documento"
+    },
+    "evidencia_esperada": [
+      "Politica de retencion documental alineada a 10 anos para documentacion tributaria"
+    ],
+    "documentos_relacionados": [
+      "Politica de retencion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Retencion",
+      "Documentos"
+    ],
+    "fuente": "Codigo Tributario, Art. 147 (texto oficial)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-RET-03",
+    "titulo": "Conservacion de documentacion bajo la Ley Contra el Lavado de Dinero",
+    "norma": "Ley Contra el Lavado de Dinero y de Activos (LCLDA)",
+    "articulo": "Art. 10 lit. b) y Art. 12",
+    "texto_obligacion": "Los sujetos obligados de la LCLDA deben archivar y conservar la documentacion de operaciones por 5 anos desde la finalizacion de cada operacion o relacion comercial (Art. 10 lit. b), y mantener por un periodo no menor de 15 anos los registros de transacciones nacionales e internacionales que permitan reconstruir cada operacion (Art. 12).",
+    "a_quien_aplica": "Sujetos obligados bajo la LCLDA (sector financiero y otros designados por esa ley)",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si el cliente es sujeto obligado bajo el Art. 2 de la LCLDA (determinacion caso por caso)",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 15,
+      "unidad": "anos (minimo, para registros de transacciones); 5 anos para documentacion de operaciones",
+      "inicio": "finalizacion de la operacion o de la relacion comercial"
+    },
+    "evidencia_esperada": [
+      "Politica de retencion sectorial LCLDA"
+    ],
+    "documentos_relacionados": [
+      "Politica de retencion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Retencion"
+    ],
+    "fuente": "Ley Contra el Lavado de Dinero y de Activos, Art. 10 y 12 (texto oficial SSF)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-RET-04",
+    "titulo": "Conservacion de la documentacion del aviso de privacidad",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 31",
+    "texto_obligacion": "La documentacion de la autorizacion y publicacion del aviso de privacidad debe conservarse por el responsable, en formato fisico o digital, durante un plazo minimo de 10 anos.",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "OBLIGATORIO",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 10,
+      "unidad": "anos (minimo)",
+      "inicio": "autorizacion y publicacion del aviso de privacidad"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Este articulo pertenece a los Lineamientos del Delegado; si la reforma 659 elimina el delegado obligatorio en el sector privado, deberia confirmarse si la obligacion de conservacion documental subsiste bajo otra norma."
+    },
+    "evidencia_esperada": [
+      "Archivo historico de versiones del aviso de privacidad con evidencia de publicacion"
+    ],
+    "documentos_relacionados": [
+      "Aviso de privacidad",
+      "Politica de retencion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Retencion",
+      "Documentos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 31)",
+    "verificada": true,
+    "condicion": ""
+  },
+  {
+    "id": "OBL-RET-05",
+    "titulo": "Criterio de retencion del expediente ARCO-POL e incidentes como prueba de descargo",
+    "norma": "Normativa para el Procedimiento Administrativo Sancionador (ACE), por analogia con Art. 47 (prescripcion 5 anos)",
+    "articulo": "Art. 47 Normativa PAS; Art. 5 lit. i LPDP (responsabilidad demostrada)",
+    "texto_obligacion": "No existe en la LPDP, la Normativa sancionadora, los Lineamientos ni las Politicas ACE una norma expresa que fije el plazo de conservacion del expediente de una solicitud ARCO-POL o de un incidente; se recomienda usar como referencia minima el plazo de prescripcion de infracciones y sanciones (5 anos), sin perjuicio de plazos mayores por otras normas (por ejemplo, retencion mercantil o tributaria de 10 anos).",
+    "a_quien_aplica": "Responsables del tratamiento",
+    "clasificacion": "RECOMENDADO",
+    "condicion": "Criterio de diseno recomendado ante ausencia de norma expresa; requiere validacion de abogado",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 5,
+      "unidad": "anos (minimo recomendado)",
+      "inicio": "cierre de la solicitud ARCO-POL o del incidente"
+    },
+    "evidencia_esperada": [
+      "Politica de retencion del expediente ARCO-POL/incidentes"
+    ],
+    "documentos_relacionados": [
+      "Politica de retencion"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Retencion",
+      "Evidencias"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\normativa_sancionadora_OCR.txt (Art. 47)",
+    "verificada": true,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    }
+  },
+  {
+    "id": "OBL-PLAZO-05",
+    "titulo": "Seguimiento de la reforma 659 a la LPDP (pendiente de publicacion)",
+    "norma": "Decreto Legislativo N. 659 (reforma a la LPDP)",
+    "articulo": "Segun fuentes secundarias: deroga Arts. 15 y 17; reforma Arts. 16, 47 y 51",
+    "texto_obligacion": "La Asamblea Legislativa aprobo el 17-sep-2026 (57 votos) una reforma que, segun prensa y la nota oficial de la Asamblea (sin texto oficial del decreto localizado), derogaria la obligatoriedad del delegado de proteccion de datos en el sector privado y trasladaria sus funciones a los 'sujetos obligados', manteniendo los plazos ARCO-POL vigentes (20+20, prevencion 10, devolucion 5, notificacion a terceros 5, revocacion 5). Al 24-sep-2026 no esta confirmada su publicacion en el Diario Oficial: la LPDP vigente sigue siendo el Decreto 144 sin esta reforma.",
+    "a_quien_aplica": "Empresas privadas sujetas a la LPDP (impacto en el modulo de gestion del delegado)",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "No exigible hasta su publicacion en el Diario Oficial y entrada en vigencia (8 dias despues de publicada); mientras tanto sigue vigente el texto actual (delegado obligatorio, Arts. 15 y 17)",
+    "vigencia": "APROBADA-PENDIENTE-PUBLICACION",
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Esta ficha ES la reforma 659; su contenido detallado proviene solo de fuentes secundarias (prensa) y de la nota oficial de la Asamblea, que no reproduce el texto articulado. Debe revalidarse en cuanto se publique el Decreto en el Diario Oficial."
+    },
+    "evidencia_esperada": [
+      "Monitoreo periodico del Diario Oficial y del portal de la Asamblea"
+    ],
+    "documentos_relacionados": [
+      "Alerta regulatoria"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio",
+      "Organizacion"
+    ],
+    "fuente": "https://www.asamblea.gob.sv/node/14116 ; https://www.asamblea.gob.sv/leyes-y-decretos/view/7022 (consultados 2026-09-24, decreto pendiente de publicacion material)",
+    "verificada": false,
+    "plazo": null
+  },
+  {
+    "id": "OBL-SENS-06",
+    "titulo": "Informacion biometrica como dato personal sensible",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 4 lit. g)",
+    "texto_obligacion": "La informacion biometrica (huella dactilar, reconocimiento facial, iris u otro identificador biometrico) esta incluida de forma expresa en la definicion legal de dato personal sensible; el responsable debe aplicarle el mismo regimen reforzado que a las demas categorias sensibles (consentimiento por escrito, EIPD, prohibiciones del Art. 59). Al 2026-09-24 no existe lineamiento especifico de la ACE sobre biometria ni videovigilancia.",
+    "a_quien_aplica": "Empresas que traten datos biometricos, por ejemplo para control de asistencia o acceso",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Inventario de sistemas biometricos",
+      "Clasificacion del dato como sensible en el RAT"
+    ],
+    "documentos_relacionados": [
+      "RAT",
+      "EIPD"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT",
+      "Consentimiento",
+      "Riesgos-EIPD"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 4 lit. g); sweep_consentimiento_bases_sensibles.md (seccion 4.5)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-SENS-07",
+    "titulo": "Consentimiento escrito y alternativa no biometrica para datos biometricos",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 26 inc. 4 y Art. 37",
+    "texto_obligacion": "Cuando el tratamiento de datos biometricos se apoye en consentimiento (por ejemplo, control de asistencia con huella o rostro), este debe constar por escrito con firma autografa o equivalente, con advertencia expresa del derecho a no prestarlo; no existe mandato legal que imponga la biometria en el sector privado. Se recomienda ofrecer una alternativa no biometrica (tarjeta, PIN) para reforzar la libertad del consentimiento, especialmente en la relacion laboral donde la subordinacion pone en duda esa libertad (Art. 27 lit. a); este punto requiere confirmacion de abogado.",
+    "a_quien_aplica": "Empresas que recolecten datos biometricos con base en consentimiento, incluido el ambito laboral",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si la empresa recolecta datos biometricos; la alternativa no biometrica es una recomendacion de diseno, no un mandato expreso",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Formulario de consentimiento biometrico firmado",
+      "Registro de alternativa no biometrica ofrecida"
+    ],
+    "documentos_relacionados": [
+      "Formulario de consentimiento",
+      "Aviso de privacidad"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Consentimiento",
+      "RAT"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 26 inc. 4, Art. 37); sweep_consentimiento_bases_sensibles.md (lineas 366, 690, 706)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-SENS-08",
+    "titulo": "Videovigilancia y reconocimiento facial",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 4 lit. f) y lit. g), Art. 7, Art. 12 lit. b), Art. 16 lit. g)",
+    "texto_obligacion": "La imagen captada por camaras de seguridad es dato personal (Art. 4 lit. f) pero no es sensible por si misma, salvo que el sistema use reconocimiento facial, caso en el que se convierte en dato biometrico sensible (Art. 4 lit. g). La videovigilancia requiere aviso visible en el establecimiento (Art. 7, Art. 16 lit. g) y una base de licitud (tipicamente interes legitimo, ponderado frente al derecho de oposicion del Art. 12 lit. b, o consentimiento). Las Politicas ACE reconocen las camaras como medida fisica de seguridad (Art. 4, Medidas Fisicas lit. b) pero no regulan su tratamiento como dato personal. No existe lineamiento especifico de la ACE sobre videovigilancia al 2026-09-24.",
+    "a_quien_aplica": "Empresas que usen camaras de seguridad, especialmente con reconocimiento facial",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si la empresa usa videovigilancia; el regimen de dato sensible aplica solo si hay reconocimiento facial u otro identificador biometrico",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Aviso de videovigilancia visible",
+      "RAT con base de licitud declarada",
+      "EIPD si hay reconocimiento facial"
+    ],
+    "documentos_relacionados": [
+      "RAT",
+      "Aviso de privacidad",
+      "EIPD"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "RAT",
+      "Documentos",
+      "Riesgos-EIPD"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 4, 7, 12, 16); ace_politicas_protecciondatos.txt (Art. 4, Medidas Fisicas); sweep_consentimiento_bases_sensibles.md (linea 689)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-PROV-05",
+    "titulo": "Subcontratacion en cadena por el encargado (subencargados)",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 33 inc. 2",
+    "texto_obligacion": "Cuando un encargado subcontrata a su vez a otro proveedor (subencargado) con acceso a los datos personales, ese subencargado tambien queda sometido a la LPDP y a los lineamientos que establezcan el responsable y la ACE, por tratarse igualmente de un proveedor subcontratado con acceso a datos personales en el sentido del Art. 33 inc. 2. La LPDP no usa el termino 'subencargado' ni distingue niveles de subcontratacion; esta lectura es una interpretacion extensiva y requiere confirmacion de abogado.",
+    "a_quien_aplica": "Empresas cuyo encargado subcontrate a su vez el tratamiento a un tercero",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si existe una cadena de subcontratacion (el encargado del cliente subcontrata a otro proveedor)",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Mapa de cadena de proveedores con subencargados identificados",
+      "Autorizacion o registro de la subcontratacion"
+    ],
+    "documentos_relacionados": [
+      "Contrato con el encargado",
+      "Inventario de proveedores"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Proveedores"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 33 inc. 2); interpretacion extensiva, sin lineamiento ACE especifico sobre subencargados al 2026-09-24",
+    "verificada": false
+  },
+  {
+    "id": "OBL-PROV-06",
+    "titulo": "Instrucciones documentadas del responsable al encargado",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 34 lit. a), en relacion con Art. 5 lit. i)",
+    "texto_obligacion": "No existe un articulo expreso de la LPDP, las Politicas ACE, los Lineamientos DPO ni la Normativa Sancionadora que obligue a documentar por escrito las instrucciones del responsable al encargado. Se recomienda documentarlas como buena practica, apoyada en el deber del encargado de limitar el tratamiento a la finalidad consentida (Art. 34 lit. a) y en el principio de responsabilidad demostrada (Art. 5 lit. i), que exige poder acreditar el alcance autorizado del tratamiento.",
+    "a_quien_aplica": "Empresas con al menos un encargado del tratamiento",
+    "clasificacion": "RECOMENDADO",
+    "condicion": "Aplica solo si existe un encargado del tratamiento; no hay mandato legal expreso, es buena practica",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Documento de instrucciones firmado o anexo contractual"
+    ],
+    "documentos_relacionados": [
+      "Contrato con el encargado"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Proveedores",
+      "Documentos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 34, Art. 5 lit. i); sin norma expresa localizada, busqueda web complementaria 2026-09-24 (ECIJA, BLP, Central Law) sin cita a articulo especifico",
+    "verificada": false
+  },
+  {
+    "id": "OBL-PROV-07",
+    "titulo": "Devolucion o eliminacion de datos por el encargado al finalizar la relacion",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 34 lit. a), en relacion con Art. 5 lit. h)",
+    "texto_obligacion": "No existe un articulo expreso de la LPDP, las Politicas ACE, los Lineamientos DPO ni la Normativa Sancionadora que obligue al encargado a devolver o eliminar los datos personales al finalizar la relacion contractual con el responsable. Se recomienda pactarlo contractualmente como buena practica, apoyada en el principio de temporalidad (Art. 5 lit. h, la conservacion debe limitarse al periodo necesario para el fin del tratamiento) y en el deber del encargado de limitar el tratamiento a la finalidad consentida (Art. 34 lit. a), que dejaria de existir al terminar el contrato.",
+    "a_quien_aplica": "Empresas con al menos un encargado del tratamiento",
+    "clasificacion": "RECOMENDADO",
+    "condicion": "Aplica solo si existe un encargado del tratamiento y termina la relacion contractual; no hay mandato legal expreso, es buena practica",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Clausula contractual de devolucion o eliminacion",
+      "Constancia de eliminacion o devolucion al cierre del contrato"
+    ],
+    "documentos_relacionados": [
+      "Contrato con el encargado"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Proveedores",
+      "Retencion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 34, Art. 5 lit. h); sin norma expresa localizada, busqueda web complementaria 2026-09-24 (ECIJA, BLP, Central Law) sin cita a articulo especifico",
+    "verificada": false
+  },
+  {
+    "id": "OBL-ARCO-14",
+    "titulo": "Atencion al reclamo del titular ante la Direccion de Proteccion de Datos de la ACE",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 33 inc. 4",
+    "texto_obligacion": "Cuando un titular se considere agraviado por la resolucion emitida por el delegado en un procedimiento ARCO-POL, puede presentar escrito ante la Direccion de Proteccion de Datos Personales de la ACE, dentro de los 10 dias habiles siguientes a la notificacion. Recibido el escrito, la ACE solicitara informe al delegado o responsable para verificar sus actuaciones; el delegado o responsable debe atender ese requerimiento.",
+    "a_quien_aplica": "Empresas con delegado nombrado, cuando un titular reclame contra una resolucion ARCO-POL",
+    "clasificacion": "CONDICIONAL",
+    "condicion": "Aplica solo si el titular presenta el reclamo ante la Direccion de Proteccion de Datos y la ACE requiere informe",
+    "vigencia": "VIGENTE",
+    "plazo": {
+      "valor": 10,
+      "unidad": "dias habiles",
+      "inicio": "notificacion de la resolucion del delegado (plazo del titular para reclamar); sin plazo propio fijado para la respuesta del delegado al requerimiento de informe de la ACE"
+    },
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "Si la reforma 659 elimina el delegado obligatorio, el reclamo se dirigiria contra la resolucion del sujeto obligado en lugar del delegado; se desconoce si el mecanismo ante la Direccion de Proteccion de Datos subsiste igual."
+    },
+    "evidencia_esperada": [
+      "Registro del reclamo recibido de la ACE",
+      "Informe de actuaciones remitido a la ACE"
+    ],
+    "documentos_relacionados": [
+      "Expediente de la solicitud ARCO-POL",
+      "Resolucion del delegado"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL",
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 33 inc. 4)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-ARCO-15",
+    "titulo": "Aceptacion de los formularios oficiales ARCO-POL de la ACE",
+    "norma": "Lineamientos para el Delegado de Proteccion de Datos Personales (ACE)",
+    "articulo": "Art. 32",
+    "texto_obligacion": "Los responsables y delegados deben aceptar los formularios oficiales de la ACE para el ejercicio de los derechos ARCO-POL, aunque cuenten con formularios propios; no pueden rechazar una solicitud presentada en el formulario oficial.",
+    "a_quien_aplica": "Empresas con delegado nombrado bajo el regimen vigente",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Formularios oficiales ACE disponibles para el titular",
+      "Registro de solicitudes recibidas en formulario oficial"
+    ],
+    "documentos_relacionados": [
+      "Formularios ACE version 07-07-2025"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "ARCO-POL"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\lineamientos_dpo_OCR.txt (Art. 32); ace.gob.sv/page/formularios",
+    "verificada": true
+  },
+  {
+    "id": "OBL-SEG-05",
+    "titulo": "Eliminacion segura de documentos y dispositivos",
+    "norma": "Politicas de Actuacion ACE",
+    "articulo": "Art. 4, Medidas Fisicas lit. e)",
+    "texto_obligacion": "Debe implementarse eliminacion segura de documentos: uso de trituradoras de papel para documentos fisicos y borrado seguro de dispositivos electronicos que contengan datos personales.",
+    "a_quien_aplica": "Toda empresa privada sujeta a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Politica de eliminacion segura",
+      "Constancia o certificado de destruccion/borrado",
+      "Contrato con proveedor de destruccion certificada, si aplica"
+    ],
+    "documentos_relacionados": [
+      "Politica de seguridad",
+      "RAT"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Controles",
+      "Retencion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_politicas_protecciondatos.txt (Art. 4, Medidas Fisicas lit. e)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-DPO-08",
+    "titulo": "Deber de asistencia de dependencias, empleados y proveedores al delegado",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 17",
+    "texto_obligacion": "Cada dependencia, empleado o proveedor del responsable debe asistir y atender las peticiones que el delegado canalice en el ejercicio de sus funciones.",
+    "a_quien_aplica": "Empleados y proveedores de empresas privadas con delegado nombrado, mientras el Art. 17 este vigente",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "",
+    "vigencia": "VIGENTE (aprobada su derogacion, pendiente de publicacion; ver OBL-DPO-01)",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": true,
+      "nota": "El Decreto 659 derogaria el Art. 17 junto con el Art. 15, eliminando la obligatoriedad del delegado y, con ella, este deber de asistencia especifico hacia el delegado."
+    },
+    "evidencia_esperada": [
+      "Registro de peticiones internas del delegado y su atencion"
+    ],
+    "documentos_relacionados": [
+      "Bitacora de gestion del delegado"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Organizacion"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 17)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-SEG-06",
+    "titulo": "Infraccion grave por no implementar medidas o controles de la ACE",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 56 lit. b num. 5 y 7",
+    "texto_obligacion": "No implementar las medidas, controles tecnicos o lineamientos de la ACE, o no cumplir las medidas de seguridad de las Politicas de Actuacion, constituyen infracciones graves.",
+    "a_quien_aplica": "Toda empresa privada sujeta a la LPDP",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Checklist de medidas de seguridad con evidencia adjunta, vinculado al riesgo sancionador"
+    ],
+    "documentos_relacionados": [
+      "Checklist de controles tecnicos"
+    ],
+    "infracciones_asociadas": [
+      "Infraccion grave, Art. 56 lit. b num. 5 y 7"
+    ],
+    "modulos_candidatos": [
+      "Controles",
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 56 lit. b num. 5 y 7)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-AUD-02",
+    "titulo": "Facultad de la ACE de crear certificaciones o sellos de proteccion de datos",
+    "norma": "Ley para la Proteccion de Datos Personales (D.L. 144)",
+    "articulo": "Art. 50 lit. j, k, l",
+    "texto_obligacion": "La ACE tiene la facultad de crear certificaciones o sellos de proteccion de datos y de auditar las que ella misma expida. Al 2026-09-24 no existe ningun mecanismo de certificacion o sello para organizaciones habilitado por la ACE (solo un Programa de Certificacion de Delegados, para personas, no organizaciones, que tampoco habia entrado en vigencia).",
+    "a_quien_aplica": "Informativo para toda empresa; no genera una obligacion activa por ahora",
+    "clasificacion": "RECOMENDADO",
+    "condicion": "No hay obligacion activa de certificarse; la referencia es informativa mientras la ACE no habilite el mecanismo",
+    "vigencia": "VIGENTE (facultad de la ACE, sin desarrollo)",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [],
+    "documentos_relacionados": [],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Regulatorio"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\ace_decreto_144.txt (Art. 50 lit. j-l); ace.gob.sv/politicas.php (verificado 2026-09-23 y 2026-09-24, sin resultado)",
+    "verificada": true
+  },
+  {
+    "id": "OBL-RET-06",
+    "titulo": "Requisitos de la conservacion electronica de documentos con relevancia legal",
+    "norma": "Ley de Firma Electronica",
+    "articulo": "Art. 13-A",
+    "texto_obligacion": "Para que la conservacion electronica de un documento cumpla la exigencia legal, la informacion debe ser consultable en cualquier momento, conservarse en el formato original o en uno que la reproduzca con exactitud, y mantenerse integra, legible, completa y sin alteraciones.",
+    "a_quien_aplica": "Toda empresa que conserve electronicamente documentos con relevancia legal (consentimientos, avisos, contratos)",
+    "clasificacion": "OBLIGATORIO",
+    "condicion": "",
+    "vigencia": "VIGENTE",
+    "plazo": null,
+    "afectada_por_reforma_659": {
+      "afectada": false,
+      "nota": ""
+    },
+    "evidencia_esperada": [
+      "Politica de gestion documental electronica",
+      "Controles tecnicos de integridad (hash, sello de tiempo)"
+    ],
+    "documentos_relacionados": [
+      "Politica de retencion documental"
+    ],
+    "infracciones_asociadas": [],
+    "modulos_candidatos": [
+      "Retencion",
+      "Documentos"
+    ],
+    "fuente": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\fuentes\\Ley de Firma Electronica (Art. 13-A); factura.gob.sv",
+    "verificada": true
+  }
+]

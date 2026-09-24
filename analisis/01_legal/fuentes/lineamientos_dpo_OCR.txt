@@ -1,0 +1,548 @@
+
+===== page-01.png =====
+REPUBLICADEEL
+SALVADOR EN LA AMERICA CENTRAL
+DIARIO OFICIAL
+DIRECTOR:OswaldoStanleyMoralesHidalgo
+SANSALVADOR,MARTES11DEAGOSTODE2026
+TOMON452
+NUMERO146
+La Direccion de la Imprenta Nacional hace del conocimiento que toda publicacion en el Diario Oficial se
+transcripciones cuyos originales lleguen en forma ilegible y/o defectuosa y son de exclusiva responsabilidad
+de la persona o institucion que los presento. (Arts.21,22y 23 Reglamento de la lmprenta Nacional)
+SUMARIO
+Pag.
+Pig.
+ORGANOEJECUTIVO
+INSTITUCIONESAUTONOMAS
+MINISTERIO DEEDUCACION,
+AGENCIADECIBERSEGURIDAD
+CIENCIA Y TECNOLOGIA
+DEL'ESTADO
+RAMO DE EDUCACION, CIENCIA Y TECNOLOGIA
+Lineamientos para el Delegado de Proteccion de Datos
+Acuerdo No.15-1105.- Se autoriza a la Universidad
+Personales.
+Salvadoreia Aiberto Masferrer, la prorroga de vigencia de los
+12-21
+planes de estudio en modalidades semipresencial y no presencial
+de diferentes carreras.
+Normativa para el Desarrollo del Procedimiento
+Acuerdos Nos.15-1148, 15-1210,15-1211,15-1212,15-
+Administrativo Sancionador en el Ambito de la Ley para la
+Proteccion de Datos Personales.
+1213y15-1264.-Sereconoce la validez academica de estudios
+22-29
+realizados en otro pais.
+3-6
+MINISTERIO.DELADEFENSANACIONAL
+:DIRECCIONGENERALDEENERGIA,
+HIDROCARBUROSYMINAS
+RAMO DE LADEFENSA NACIONAL
+AcuerdoNo.80/2026.-Se autoriza ala sociedad SMIPetEl
+Acuerdo No.i06.-Se nombra al serior Cnel.Art.Dem
+Salvador, Sociedad Anonima de Capital Variable, la ampliacion
+Jorge Alberto Miranda Martinez,para que desempeie las
+de tanques para consumo privado.
+funciones deDirector Presidente delConsejo Directivo delCentro
+30-31
+Farmaceutico de la Fuerza Armada
+ALCALDIASMUNICIPALES
+ORGANOJUDICIAL
+Decreto No. 10.- Ordenanza Transitoria de Exencion de
+CORTESUPREMADEJUSTICIA
+Intereses y Multas Provenientes de Deudas por Impuestos de los
+Contribuyentes,a favor de los Distritos de Quezaltepeque, San
+Acuerdos Nos.1030-D,1061-D,1086-D,1237-D,
+Pablo Tacachico, San Matias, municipio de La Libertad Norte,
+1254-D, 1258-D, 1263-D, 1270-D, 1274-D, 1286-D y 1308-D.
+Autorizaciones paraejercer la profesion de abogado en todas sus
+departamento de La Libertad.
+32-33
+ramas
+7-9
+Decreto No.12.-Ordenanza Reguladora de Uso de Calles,
+Acuerdos Nos.1417-D,1436-D,1428-D,1432-Dy 1437-D.
+Sedeclaran finalizadas suspensiones impuestas en el ejercicio
+Aceras y Espacios Piblicos, del municipio de La Libertad Norte,
+de la funcion publica del notariado.
+10-11
+departamento de La Libertad.
+34-42
+reo:diariooficial@imprentanacional.gob.sv
+
+===== page-02.png =====
+12
+DIARIO OFICIALTOmO N 452
+INSTITUCIONESAUTONOMAS
+AGENCIA DE CIBERSEGURIDAD DEL ESTADO
+LINEAMIENTOSPARAEL'DELEGADODEPROTECCIONDEDATOSPERSONALES
+ELDIRECTORGENERALDELAAGENCIADECIBERSEGURIDADDELESTADO
+CONSIDERANDO:
+QuemedianteDecretoLegislativoNimero'144,publicado en el DiarioOficial Nimero219,TomoNumero 445,defecha 15de noviembre
+del ario 2024, se emitio la Ley para la Proteccion de Datos Personales, la cual tiene.como objeto regular la proteccion de datos personales,
+determinando los requisitos esenciales para llevar a cabo su tratamiento legitimo e informado, asi como el marco normativo que debe
+seguirse para surecoleccion,uso,procesamiento,almacenamiento y autodeterminacion informativadelas personas naturales.
+II.
+Que de acuerdo con el articulo 15 de la citada Ley, los sujetos obligados nombraran un Delegado de Proteccion de Datos Personales, quien
+posee atribuciones especificas contempladas en dicha normativa y desarrolladas en los presentes lineamientos con la finalidad de garantizar
+la adecuada gestion y tramitacion de las solicitudes relacionadas con el ejercicio de los derechos ARCO-POL.
+III.
+Que, en virtud de las atribuciones reguladas en la Ley para la Proteccion de Datos Personales, es necesario desarrollar un marco normativo
+que regule los lineamientos relativos al perfil, nombramiento, certificacion y facultades del Delegado, a fin de delimitar y acreditar sus
+actuaciones que, conformea derecho,le corresponden.
+IV.-Que la Ley para la Proteccion de Datos Personales y la Ley de Procedimientos Administrativos,facultan a la Agencia a emitirlas presentes
+disposiciones.
+POR TANTO,
+ El Director General de la Agencia de Ciberseguridad del Estado'en uso de sus facultades legales, que establece el articulo 60 de la Ley parala
+Proteccion de Datos Personales y el articuio 159 de la Ley de Procedimientos. Administrativos,
+EMITE, los siguientes:
+LINEAMIENTOS PARA ELDELEGADODEPROTECCIONDEDATOS PERSONALES
+CAPITULO1
+DISPOSICIONESGENERALES
+Definiciones
+tratamiento",mas adelantedenominadocomo"encargado","responsabledeltratamiento"en lo sucesivodenominado comoresponsable,"tratamiento
+dedatos",asi como cualquierotro concepto tecnicorelacionado,se interpretaran conforme a las definiciones establecidas enla Ley para la Proteccion
+de Datos Personales en adelante LPDP.
+Se entendera por ACE o la Agencia, a la Agencia de Ciberseguridad del Estado, quien es la autoridad competente en materia de proteccion de
+datos personales, de conformidad con lo dispuesto en la Ley citada en el inciso anterior.
+Objeto
+Art. 2.- Los presentes lineamientos tienen por objeto desarrollar las atribuciones del Delegado de Proteccion de Datos Personales, en adelante
+"el Delegado", asi como su perfil y nombramiento, ademas de establecer las obligaciones del responsable y encargado; en virtud de su incidencia en
+el ejercicio de las funciones conferidas al Delegado.
+Sujetos obligados
+ponsable; este ltimo,en su calidadde sujeto obligado,ya seacomopersona naturalojuridica,decaracterpiblicoo privado,conforme alodispuesto
+en el articulo 2 de la LPDP.
+
+===== page-03.png =====
+DIARIO OFICIAL.-San Salvador,11 de Agosto de 2026.
+13
+CAPiTULO II
+PERFIL,NOMBRAMIENTOYREGISTRODELDELEGADO
+Del Delegado de Proteccion deDatos Personiales
+Art.4.EI Delegado sera responsable de gestionar y tramitar las.solicitudes relacionadas con el ejercicio de los derechos ARCO-POL,y cumplira
+con las atribuciones establecidas en la LPDP,en los presentes lineamientos y en la normativa queresulte.aplicable.
+Perfil del Delegado
+Art. 5.- Para ser designado Delegado se requiere, como minimo:
+a)
+Contar con un grado universitario, de preferencia profesionales graduados en Ciencias Juridicas.
+b).
+Ser mayor de 21 aios.
+c)
+Acreditar experiencia profesional y/o laboral en.una o varias de las siguientes materias: proteccion de datos personales, procedimientos
+administrativos de naturaleza juridica, cumplimiento normativo, gestion de riesgos,tecnologias de la informacion, seguridad de la infor-
+macion o' ciberseguridad.
+d)
+No haber sido condenado, mediante sentencia firme, por la comision de delitos dolosos, especialmente aquellos relacionados con el uso
+indebido de la informacion, la seguridad de los datos, la administracion piblica, la fe piblica o cualquier otro que, por su naturaleza, com-
+prometa la integridad, independencia y responsabilidad exigida al cargo.Tampoco haber sido sancionado, mediante resolucion firme, por
+infracciones a la LPDP.Adicionialmente,para los Delegados del sector publico se requiere.nohaber sido sancionado por infracciones a la
+Ley de Etica Gubernamental en los cinco anios anteriores al nombramiento.
+Someterse y aprobar el "Programa de Certificacion de Delegados de Proteccion de Datos Personales" que la Agencia desarrolle e imple-
+mente. Este requisito se exigira a partir de la entrada en vigencia del referido programa, debiendo los Delegados ya nombrados cumplirlo
+en el plazo y condiciones que la Agencia establezca mediante disposicion administrativa.
+El referido programa sera de caracter gratuito para el Delegado debidamente nombrado.
+Del nombramiento
+-Art. 6.-El nombramiento del Delegado, se realizara de manera formal.
+En el caso que los responsables sean instituciones piblicas,dicho nombramiento constara en acuerdo,acta oresolucion administrativa debida-
+mentemotivada por la maxima autoridad correspondiente.
+Asimismo, dicho nombramiento podra recaer en el Qficial de Informacion de la institucion respectiva. No obstante, aun cuando sea designado
+bajo esta figura estara sujeto al cumplimiento del literal e),del articulo anterior, debiendo someterse y aprobar obligatoriamente el "Programa de
+Certificacion de Delegados de Proteccion de Datos Personales" cuando entre en vigencia.
+Cuando el responsable sea una persona juridica del sector privado, el nombramiento del Delegado debera constar en acuerdo o acta emitida por
+el Administrador Unico, Junta Directiva, Consejo Directivo, Consejo de Administracion, o segin se le denomine a la maxima autoridad que corres-
+ponda.
+Tratandosedepersonas naturales que tengan la calidad deresponsable,elnombramientodebera constaren acta,con firmamanuscrita debidamente
+iegalizada por notario o firma electronica certificada.
+Para efectos de acreditacion del Delegado, el responsable entregara a éste, certificacion del acuerdo, punto de acta, resolucion administrativa o
+acta del nombramientorealizado.
+Contenidodelnombramiento
+Art. 7.-El nombramiento del Delegado contendra:
+a)
+Nimero de acuerdo,punto de acta oresolucion.
+b)
+Fecha de otorgamiento.
+c)
+Nombrecompleto de la persona natural o juridica de derecho puiblico o privado que tuvierela.calidad deresponsable, seguin corresponda.
+d):
+Consideraciones ofundamento legal quefaculta el nombramiento.
+Nombre completo de la persona natural que ejercera las funciones de Delegado, sus generales, Documento Unico de Identidad o Pasaporte,
+direccion institucional,telefono institucional ycorreoelectronico institucional; en elcaso dela persona juridicanombrada comoDelegado
+se debera consignarla razon o denominacion social, nimero de identificacion tributaria ofiscal, direccion,telefono y correo electronico.
+
+===== page-04.png =====
+14
+DIARIO OFICIAL TOmO N? 452
+f)
+Fecha de inicio de las funciones del Delegado.
+g)
+Plazo de nombramiento o, en su defecto, determinacion de caracter indefinido del cargo.
+h)
+Atribuciones que cumplira el Delegado conforme a lo establecido en la LPDP.
+i)
+Nombre completo y firma, autografa o electronica certificada, de la persona natural o juridica, de derecho piblico o privado, que emite el
+nombramiento.Tratandose del sector privado la firma manuscrita debera estar debidamente legalizada por Notario.
+j).Sello de la Institucion o entidad responsable, si lo hubiere.
+Cuando la certificacion del punto de acta o acuerdo llevefirma electronica certificada, emitida por un proveedor de servicios extranjero, debera
+cumplir al menos con una de las condiciones establecidas en el articulo 45 de la Ley de Firma Electronica y articulo 24 del Reglamento de dicha ley.
+.Sera obligacion del responsable acreditar ante la ACE su validez.
+Delanotificaciondelnombramientoal Delegado
+Art.8Elresponsable notificara por cualquiermedio idoneo,ya sea digitalofisico,al Delegado su nombramiento,dentro delos tres dias habiles
+siguientes a su designacion, indicando la fecha de inicio de sus funciones y el alcance de sus atribuciones.
+Asimismo,debera conservarcopia o constancia de dicha notificacion como respaldo del cumplimiento de sus obligaciones en materia de proteccion
+de datos personales.
+Declaracion juradadel Delegado
+Art. 9.- Toda persona natural o juridica que fuere designada como Delegado, debera, de manera previa a la aceptacion del cargo, otorgar una
+declaracion jurada simple mediante la cual manifieste, si se encuentra o no en-alguna situacion que pudiere generar un conflicto de intereses real,
+potencial o aparente, susceptible de afectar el ejercicio independiente de sus funciones.
+En caso de verificarsela existencia de dichas situaciones,el responsable debera adoptar las correspondientesmedidas correctivas,tales como la
+abstencion de realizar la designacion, la reestructuracion funcional o la revocatoria del nombramiento, segin corresponda.
+Notificaciondel nombramientoalaACEyregistrodelDelegado
+Art.10.-Todo nombramiento dei Delegado sera comunicado por el responsable a la Direccion de Proteccion de Datos Personales de la Agencia,
+a traves de la incorporacion de la informacion en la plataforma informatica del Registro de Delegados que se establezca para tal efecto, dentro del
+plazo maximo de quince dias habiles contados a partir del dia siguiente del nombramiento.
+Elresponsableremitiraala Agenciaa.traves dela plataforma informaticadelregistro,certificacion delacuerdo,acta,puntode actaoresolucion
+con firma manuscrita ofirma electronica certificada, de conformidad con lo dispuesto en el articulo 7, literal i)de estos Lineamientos.Tratandose de
+Delegados por servicios profesionales,adicionalmente remitira fotocopia certificada por notario del contrato respectivo.Asimismo,en el caso del
+sector privado se adjuntaran los documentos que comprueben la existencia legal de la persona juridica que tenga calidad de responsable,asi como la
+personeria juridica del representante legal, los cuales deberan de remitirse en fotocopias debidamente certificadas por notario.
+El responsable tendra la obligacion de mantener la informacion del Delegado debidamente actualizada en la plataforma, debiendo incorporar
+cualquier modificacion dentro del plazo maximo de diezdias habiles.
+La ACE establecera los canales de comunicacion electronica pertinentes para dar cumplimiento a lo dispuesto en los incisos anteriores.
+Del Registro Piblico del Delegado
+Art. 11.- La Agencia, a traves de la Direccion de Proteccion de Datos Personales, levara un Registro Piblico, sistematizado y automatizado de
+los Delegados,emitir credenciales,expedir constancias;entreotros.
+La Agencia establecera los mecanismos tecnicos, lineamientos y guias necesarias para el funcionamiento de dicho registro.
+Ademas,a traves de la plataforma informatica de la Agencia, se mantendra una lista deDelegados que sera accesible para las consultas de la
+ciudadania, a traves del portal web institucional, con el fin de salvaguardar el ejercicio de los derechos ARCO-POL de los titulares de los datos per-
+sonales.
+Emision de la credencial del Delegado
+Art.12.-La Agencia, a traves de la Direccion de Proteccion de Datos Personales, emitira y entregara la credencial de inscripcion correspondiente
+al Delegado dentro de un plazo maximo de quince dias habiles, siempre que se cumplan los requisitos establecidos en los presentes lineamientos y
+cualquier otra normativa aplicable.
+
+===== page-05.png =====
+DIARlO OFICIAL.-San Salvador,11deAgosto de2026.
+15
+En el caso que el Delegado no reciba la credencial de inscripcion por no cumplir los requisitos establecidos, la Agencia notificara el incumpli-
+mientoa losrequisitos contempladosen estos lineamientos y el responsableprocedera anombrarotroDelegado,dentrodel plazodediez diashabiles
+contados a partir de la no inscripcion.
+La inscripcion del Delegado no constituye, por si misma, la validacion automatica'de la idoneidad para el ejercicio del cargo. La verificacion
+del cumplimiento de los requisitos establecidos en estos lineamientos sera realizada por la Agencia, a traves de la Direccion de Proteccion de Datos
+el procedimiento que se estableciere para tal efecto.
+CAPITULO III
+DELEGADOINTERNOOEXTERNOYMODALIDADES
+Delegado interno o externo y modalidad de designacion
+Art. 13.- El Delegado podra ser designado de forma interna, cuando forme parte de la planilla del responsable; o de forma externa, dentro dei
+marcode un contrato deprestacionde servicios profesionales,celebradoyfinalizado librementepor las partes contratantes,conforme-al derecho
+comin.
+La designacion del Delegado podra realizarse por tiempo indefinido.o estar sujeto.a plazo, se considerara que el Delegado habra entrado en
+funciones desde la fecha de notificacion de su nombramientoo suscripcion del contrato.
+En caso de que el Delegado sea designado externamente, podra contratarse a una persona natural o juridica.
+Delegado comopersona juridica
+Art. 14.- Cuando el Delegado sea una persona juridica debera designar expresamente a una persona natural que sera responsable de atender y
+gestionar las solicitudes de derechos ARCO-POL, y demas gestiones relacionadas al cargo; en cuyo caso debera cumplir con el perfil establecido en los
+presentes lineamientos. Asimismo, actuara de manera efectiva como punto de contacto principal entre el responsable,el titular de los datos personales
+y la Agencia.
+Ademas, la persona juridica debera reunir los siguientes requisitos:
+a)
+Contar con experiencia comprobable en la prestacion de servicios relacionados con proteccion de datos personales, gestion de riesgos,
+auditorias, tecnologia de la informacion, seguridad de la informacion, ciberseguridad o privacidad.
+b)
+Debera contar con un equipo tecnico multidisciplinario adecuado con conocimiento especializado comprobable en la materia y experiencia
+en el servicio a prestar,integrado.al menos por in profesional en ciencias juridicas, un experto en ciberseguridad, sistemas informaticos o
+gestion de riesgos.
+Debera contarcon una estructura interna quelepermita gestionar dentro delmarcolegal los derechos ARCO-POL,responder a consultas
+del responsable o-encargado, gestionar incidentes.y cooperar con la autoridad de control correspondiente.
+d)
+Nohaber sido sancionado para contratar con la AdministracionPiblica conforme a la Ley de Compras Piblicas.
+De los Delegados extranjeros
+Art.15.-El Delegado podra ser una persona natural o juridica de nacionalidad salvadoreia o extranjera,debiendo reunir, segtin sea el caso, los
+mismos requisitos contenidos en el articulo5y9 de estos lineamientos.
+Adicionalimente, las personas extranjeras'que desempeien la funcion de Delegados deberan cumplir con los siguientes requisitos:
+a)
+ElDelegado extranjerodebera otorgarunadeclaracion juradaoacta compromiso en.laqueseestablezca sufielcumplimientoa lalegislacion
+salvadorenia en materia de proteccion de datos personales y colaborar diligentemente con las autoridades administrativas y judiciales deEl
+Salvador.
+b)
+Desarrollar sus funciones de acuerdo con el horario y calendarizacion de El Salvador.
+c)
+Cumplirlosrequerimientosquela Agencialeestablezca.
+El responsable que designe a un Delegado de nacionalidad extranjera, debera suscribir con este un contrato que contemple clausulas de
+confidencialidad, responsabilidad y garantia, en el cual se regulen las obligaciones del Delegado en el ejercicio de sus funciones y las consecuencias
+juridicas derivadas de su incumplimiento. Dicho contrato, debera prever que el responsable asuma frente a los titulares de los datos personales yfrente
+a la Agencia toda responsabilidad,o riesgo que se derive de las actuaciones del Delegado extranjero en el desempeio de su cargo.
+
+===== page-06.png =====
+16
+DIARIO OFICIAL Tomo N: 452
+Delegado comin en grupos de sociedades o entidades vinculadas
+Art. 16.- Las entidades del sector privado, podran designar a una misma persona natural o juridica como Delegado, siempre que pertenezcan a
+un mismo grupo de sociedades o mantengan entre si relaciones juridicas o economicas que lo justifiquen.
+Los responsables de cada entidad deberan garantizar queel Delegado comin, pueda ejercer efectivamente sus funciones en cada una de ellas,
+sin que esto genere conflicto de intereses. Asimismo, cada sociedad debera asegurar que el Delegado cuente con los medios orecursos necesarios para.
+el adecuado desempeno de sus funciones, y éste sea plenamente accesible para los titulares, cualquier interesado y el ente regulador, a traves de los
+canales de comunicacion establecidos por cada entidad en su respectivo aviso de privacidad. 
+EI Delegado debera resolver las solicitudes de derechos ARCO-POL de manera separada y debera actuar con independencia, imparcialidad, en
+la gestion de cada entidad que representa.
+Nombramientos de mas de un Delegado y sustituto
+Art.17.-Los responsables podran nombrar a mas de un Delegado en funcion de las siguientes circunstancias:
+a)
+Naturaleza de los datos tratados.
+b)
+Dimension y complejidad del ente obligado.
+c)
+Estructura organizativa.
+d)
+Volumen de solicitudes ARCO-POL.
+Nivel de riesgos en la gestion de datos personales.
+Asimismo, los sujetos obligados si asi lo estiman conveniente,podran nombrar Delegados sustitutos, quienes cumpliran con los mismosrequi-
+sitos establecidos en los presentes lineamientos.El responsable,podra nombrar desde un sustituto.hasta un nimero equivalente al de los Delegados
+propietarios que existan en la entidad.
+Dichos sustitutos podran ejercer la suplencia de uno o varios Delegados propietarios, indistintamente, en casos de cesacion o suspension por
+cualquier motivo.En cuyo caso, el responsable debera de informar dentro del plazo de quince dias habiles el nombramiento del nuevo Delegado a la
+Agencia.
+CAPiTULO IV
+EVALUACION, CESACION O SUSPENSION DEL DELEGADO
+Evaluacion del perfil del Delegado
+Art.18.- Corresponde al responsable la obligacion de verificar que la persona propuesta como Delegado cumpla con el perfil requerido y posea
+la competencia necesaria para el adecuado desempeno del cargo.
+Esta verificacion se realizara previamente al riombramiento o contratacion y contemplara el cumplimiento de los requisitos de idoneidad, capa-
+cidad y experiencia.
+Asimismo, el responsable tendra que asegurarse que dichos requisitos se mantengan vigentes durante todo el periodo del ejercicio de sus fun-
+ciones,realizando verificaciones al menos una vez cada tres aios;para tal efecto, solicitara al Delegado la presentacion delos atestadosque acrediten
+haberrecibido las capacitaciones o las certificaciones de programas de actualizacion en materia de proteccion dedatos o solvencias que respalden su
+idoneidad.
+Designacion ante cesacion o suspension del Delegado
+Art.19.-En caso'de renuncia,fallecimiento, terminacion de contrato, ausencia temporal o cualquier otra causa de cesacion o suspension del
+Delegado, el responsable debera, dentro de los diez dias habiles siguientes a la ocurrencia del hecho, designar un nuevo Delegado, a fin de garantizar
+la atencion de los interesados en el ejercicio de los derechos ARCO-POL.
+CAPiTULO V
+FORMACION Y CERTIFICACION DEL DELEGADO
+Formacion del Delegado
+Art. 20.El Delegado, ademas de los requisitos establecidos en los presentes lineamientos, para desempeiar sus funciones debera cumplir y
+aprobar, el contenido del Programa de estudios que habilite su certificacion.
+
+===== page-07.png =====
+DIARIO OFICIAL.-San Salvador,11de Agosto de2026.
+17
+a)
+Formulario de solicitud.
+b)
+.Curriculum vitae detallado y actualizado.
+.c)
+Certificacion del acuerdo,punto de acta, resolucion administrativa o acta de nombramiento, si fuere aplicable.
+d)
+Acta o comprobantede notificacion del cargo de Delegado, si fuere aplicable.
+Documentacion que acredite el cumplimiento de los requisitos establecidos en la ley, los presentes lineamientos ydemas normativas que
+regulen el "Programa de Certificacion de Delegados de Proteccion de Datos Personales".
+cion.
+Cuando el Delegado sea una persona juridica, el designado por ésta debera recibir u obtener la certificacion del programa de estudios.
+De la certificacion del Delegado
+Art. 21.- Una vez iniciado el "Programa de Certificacion de Delegados de Proteccion de Datos Personales", el Delegado debera cursarlo y apro-
+barlocomo condicion para la validezdesu nombramiento.En casode no aprobar el curso,contara conuna segunda oportunidadlimitada inicamente
+a la realizacion del examen.
+Si nuevamente resultara reprobado, el responsable designara a otra persona que reina los requisitos exigidos para el cargo. El aspirante que no
+logro superar la segunda prueba podra someterse nuevamente pasados seis meses posteriores a su ultimo intento.
+La aprobacion del programa de certificacion sera valida con una calificacion minima de siete sobre diez. El aspirante que supere el programa
+recibira una certificacion expedida por.la Agencia.
+Deber de formacion del Delegado
+Art. 22.- El responsable garantizara que el Delegado reciba, al menos una vez.al aio, capacitacion en materia de proteccion de datos personales
+y en el ejercicio de los derechos ARCO-POL. Para tal efecto, y conforme a la disponibilidad presupuestaria, asignara los recursos necesarios para
+cubrir materiales,cursos u otros programas deformacion quepermitan mantener y actualizar sus conocimientos especializados.
+En ese caso, debera conservar la documentacion que acredite haber recibido la formacion o capacitacion respectiva. Esta formacion podra ser
+impartida directamentepor la-Agencia,a traves.delos programas, cursos o actividades formativas que desarrolleen el ejerciciode sus competencias,
+obien podra ser solicitada por el responsable o Delegado,mediante los canales institucionales que ésta habilite para tal efecto.
+Por su parte, el Delegado elaborara un plan anual de capacitacion dirigido al personal del ente obligado, el cual tambien incluira programas de.
+induccion para el personal nuevo que desemperie funciones relacionadas al tratamiento de datos personales.
+CAPiTULO VI
+INDEPENDENCIA, AUTONOMIA, ATRIBUCIONES E INCOMIPATIBILIDADES DEL DELEGADO
+Independencia y autonomia del Delegado
+Art.23.En cualquiera de las modalidades,ya sea interna o extena, el Delegado ejercera sus funciones con autonomia e independencia funcional.
+El Delegado podra poner en conocimiento de'la ACE cualquier hecho o situacion atribuible al responsable o al encargado del tratamiento que,
+en relacion con el ejercicio de sus funciones, pudiera constituir una infraccion a la normativa de proteccion de datos personales o menoscabar su
+independencia o autonomia.La valoracion que,en su caso,realice la ACE se limitara a la verificacion del cumplimiento de obligaciones enmateria
+de proteccion de datos personales.
+Atribuciones del Delegado
+Art.24.-Las funciones establecidas en el articulo 16 de la LPDP se ejerceran por el Delegado, quien prestara especial atencion a los riesgos
+asociados a las operaciones deltratamiento yconsiderando la naturaleza,alcance,volumen, contexto yfines dedicho tratamiento.
+Elresponsable garantizara qie el Delegado participe de forma adecuada y en tiempo oportuno en todas las cuestiones relativas a la proteccion
+de datos personales. Esta.participacion debe producirse desde la etapa mas temprana posible en el disenio de cualquier nuevo tratamiento, producto o
+servicio.
+Para asegurar lo anterior, el Delegado sera considerado un interlocutor clave dentro de la entidad u organizacion y debera formar parte de los
+correspondientes grupos de trabajo o comites que se ocupan de' las actividades de tratamiento de datos dentro de la organizacion o institucion. Asi-
+mismo,el Delegadorendira cuentas y reportara directamente al mas alto nivel de direccion del responsable.
+
+===== page-08.png =====
+18
+DIARIO OFICIAL TOmO N 452
+Ademas,el Delegadono tendraresponsabilidad porlas decisionesfinales ejecutadas por partedelresponsableo el encargado, siempre quefuere
+capaz de demostrar que actuo de forma diligente en el cumplimiento de la normativa de proteccion de datos personales,caso contrario respondera
+administrativa,civil y/openalmente, segun.corresponda.
+Asimismo,el Delegado podra gestionar con elresponsable la conformacion de iun equipo de apoyo en materia de proteccion de datos personales,
+cuando la magnitud de las funciones de supervision o asesoramiento asi lo requieran, a fin de facilitar el cumplimiento eficaz de sus responsabilida-
+des.
+Garantiasparaeldesempenofuncional
+Art.25.-Con el fin de asegurar el adecuado desempeioreferente ala autonomia eindependencia funcional del Delegado,elresponsable adoptara,
+como minimo, lo siguiente:
+Proveer los recursos necesarios,incluidos infraestructura,herramientas tecnicas y acceso a formacion continua,parael ejercicio efectivo
+de las funciones del Delegado.
+b)
+Evitar que se impartan instrucciones, directas o indirectas al Delegado respecto al criterio tecnico, juridicoo procedimental que deba adoptar
+en el ejercicio de sus funciones.
+Facilitar el acceso oportuno a la informacion y documentacion necesaria para el cumplimiento de sus atribuciones, de conformidad con el
+deber de asistencia previsto en la LPDP.
+(p
+Asegurar la participacion o consulta oportuna del Delegado en las decisiones que incidan o puedan incidir en el tratamiento de datos per-
+sonales, a fin de identificar riesgos, emitir recomendaciones y promover el cumplimiento de la normativa aplicable.
+Desemperio de otras funciones
+Art. 26.- El Delegado podra desempeniar otras funciones y cometidos dentro de la entidad, siempre que no sean incompatibles con el cargo.El
+responsable debera asegurar que el desempeio de dichas funciones no genere un conflicto de intereses.
+Prohibiciones
+personal del responsable, ni aquellas que pudieran comprometer su independencia e imparcialidad. Por consiguiente, tiene prohibido:
+a)Tomar decisiones sobre la finalidad del tratamiento de datos personales, o en relacion con los medios para realizarlo.
+b).Representar a la institucion u organizacion ante la ACE en calidad de responsable o'de encargado, considerando que tales roles son,in-
+separables de quienes legalmente los detentan y, por ende, que no pueden ser objeto de ningin tipo de delegacion, ya fuere de.caracter
+administrativo o de cualquier otra indole.
+Conflicto de Intereses
+Art. 28.- Se considerara que existe conflicto de intereses cuandoel Delegado:
+a)
+Ejecutare una o varias actividades de tratamiento de datos personales, o si participare en el desarrollo de su ejecucion de forma ocasional
+opermanente.
+b)
+Ejerciere acciones de asesoria que, ajenas a sus funciones como Delegado, tuvieren por objetivo salvaguardar los intereses de la entidad u
+organizacion,
+c)Tomare decisiones sobre la organizacion, sus actividades o sus gestiones internas.
+Adicionalmente, se considerara que existe conficto de intereses cuando el Delegado ocupe un cargo que le permita determinar los fines y medios
+del tratamiento de datos personales o que implique funciones de direccion, decision o supervision sobre las areas responsables. Este principio sera
+aplicable tanto en el sector publico como en el sector privado.
+En el sectorpiblico, se entenderacomprendido el personal quedesempenie cargos tales como ministros, directores generales,directores de area,
+subdirectores, coordinadores, jefes, alcaldes, sindicos municipales, miembros del concejo o secretarios municipales. Se exceptian los casos en que
+algin miembro.del concejo o el secretario municipal se desempeie como oficial de informacion del Municipio-correspondiente, antes de la entrada
+envigenciadelos presentes lineamientos.
+Tratandose del sector privado, se'considerara en conficto de intereses al personal que ejerza funciones tales como gerentes, subgerentes, jefes,
+coordinadores o cualquier otro puesto ejecutivo, de direccion o maxima autoridad.
+No obstante, podra designarse como Delegado a quien ostente un cargo de direccion, gerencia,jefatura o coordinacion siempre que sus funciones
+esten limitadas exclusivamente al cumplimiento de las atribuciones propias del Delegado de Proteccion de Datos Personales, y que cuente con un
+equipo tecnico que le brinde apoyo directo.
+
+===== page-09.png =====
+DIARIO OFICIAL.- San Salvador,11 de Agosto de 2026.
+19
+Enlaceinstitucional
+:Art. 29.-El Delegado sera el enlace institucional oficial entre la entidad, organizacion o persona natural que representa y la Direccion de Pro-
+teccion de Datos Personales de la Agencia, sin perjuicio de la obligacion del responsable de acatar cualquier requerimiento formulado por la Agencia
+en el marcode las atribuciones legales contempladas en los articulos 50 y60de la LPDP.
+En su rol de enlace, el Delegado debera cooperar activamente con la ACE en el desempeio de sus fines y atribuciones,actuando como punto de
+contacto con ésta, para todas las cuestiones relativas al tratamiento de datos personales.
+Asimismo,el Delegado debera, en la medida delo posible,atender las convocatorias dereuniones,talleres, congresos y capacitaciones que
+organice la Agencia, en el marco de sus facultades.
+CAPITULO VII
+PRESENTACIONDEINFORMESYAVISODEPRIVACIDAD
+Deberde informar
+Art.30.-El Delegado informara al responsable, cuando sea necesario y al menos dos veces al aio, sobre el desarrollo de sus funiciones,la gestion
+del tratamiento de datos personales, las estadisticas de solicitudes de derechos ARCO-POL-tramitadas y cualquier otra informacion relevante.Lo
+anterior se entiende dejando a salvo que la Agencia pueda requerir informes sobre los mismos aspectos.
+Asimismo, sin perjuicio de las atribuciones establecidas en el articulo 16 de la LPDP, el Delegado podra:
+a)Emitir recomendaciones relacionadas con susfunciones al responsable.Cuando éstas no.sean acatadas,dejara constancia expresade ello,
+a fin de acreditar que su rol tecnico ha sido ejercido de manera eficiente y que la responsabilidad correspondera al responsable.
+c)
+Informaroportunamente al responsable sobre la implementacion,efectividad y mejora de los mecanismos o procedimientos internos apli-
+cados en la gestion de las solicitudes de derechos ARCO-POL.
+Deber de publicidad del Aviso de Privacidad
+Art. 31.- EI Delegado publicara el Aviso de Privacidad en el sitio web del responsable o en su establecimiento fisico, siempre que dicho aviso
+haya sido previamente autorizado por el responsable y cumpla con lo establecido en el articulo 24 de la LPDP y demas normativa aplicable que se
+emita al respecto.
+La autorizacion y cualquier operacion relacionada con su publicacion seran documentadas por el Delegado.Esta documentacion se conservara
+por el responsable, en formato fisico o digital, durante un plazo minimo de diez afios, sin perjuicio de lo que dispongan otras leyes o tratados interna-
+cionales aplicables.
+CAPITULO VIII
+DELEJERCICIODELOSDERECHOSARCO-POL
+Deber de disponer de formularios para el ejercicio de los derechos ARCO-POL
+Art,32.En cumplimiento delo dispuesto en el articulo16 de la LPDP,el Delegado, en el ejerciciodela atribucion derecibir, tramitar yresolver
+las solicitudes de los derechos ARCO-POL,promovera el uso de los formularios elaborados por la Agencia como estandar minimo para facilitar el
+ejercicio de tales derechos por parte de los titulares.
+El Delegado podra incorporar elementos adicionales a los formularios elaborados por la Agencia, siempre que éstos se encuentren debidamente
+justificados y respondan a necesidades especificas de la institucion u organizacion.Bajo ningin supuesto dichoselementos podran obstaculizar,des-
+motivar-o.impedir el ejercicio de los derechos ARCO-POL por parte de los titulares.
+Por lo tanto, los formularios elaborados por la Agencia seran aceptados por todos los responsables y Delegados aun cuando cuenten con mode-
+los propios. En consecuencia, el Delegado no podra negarse a admitir una solicitud presentada mediante los formularios oficiales elaborados por la
+Agencia.
+
+===== page-10.png =====
+20
+DIARIO OFICIALTomo N?452
+En atencion al principio de transparencia, los responsables sean éstos piblicos o privados,pondran a disposicion del publico los formularios para
+el ejercicio de los derechos ARCO-POL,a traves de sus sitios web,plataformas digitales,oficinas fisicas u otros medios institucionales adecuados.En
+todo caso,cuando serequiera, los responsables garantizaran la existencia deformularios en formato fisico y el acceso efectivo a los mismos en todas:
+sus sedes, de manera que se promueva el ejercicio pleno de los derechos por parte de los titulares, sin restricciones derivadas del medio empleado.
+Deberderesolverydocumentarlasactuaciones
+Art.33.-EIDelegado resolvera todas las solicitudes de derechos ARCO-POL, emitiendo la resolucion correspondiente, seguin proceda: admision,
+prevencion, subsanacion, reconocimiento del derecho, incompetencia, denegatoria o resolucion final.
+Todas las actuaciones mencionadas en el inciso anterior se documentaran y notificaran al interesado, o a su representante, dentro del plazo de
+tres dias habiles contados a partir de su emision.
+Si la solicitud del interesado es procedente, en la resolucion correspondiente, el Delegado senialara la fecha en que se hara efectivo el derecho
+reconocido, dentro del plazo seialado para tal efecto, salvo impedimento debidamente justificado y documentado.
+Cuando un titular se considere agraviado porla resolucion que emita el Delegado, dentro del procedimiento del ejercicio de un derecho ARCO-
+POL,podra presentar escrito a la Direccion de Proteccion de Datos Personales de la'Agencia, senialando los motivos y las pruebas por las cuales
+considera que la resolucion emitida le causa perjuicios, dentro del plazo de diez dias habiles siguientes a la notificacion.
+Recibido el escrito, la Agencia solicitara informe al Delegado o responsable,a fin de verificar sus actuaciones dentro del procedimiento admi-
+nistrativo que se trate.
+Plazos de respuesta del Delegado
+Art.34.-El Delegado entregara al titular o a su representante, la respuesta a la solicitud de derechos ARCO-POL dentro del plazode veinte dias
+habiles seialado en el articulo 20 de la LPDP
+Si hubiese prorroga, el Delegado motivara su decision y notificara al interesado dentro del plazo de tres dias habiles, siempre que dicha notifi-
+cacion se realice dentro del plazo ordinario de respuesta seialado en el primer inciso, garantizando siempre la debida diligencia en el ejercicio de sus
+funciones y adoptando las medidas necesarias para garantizar oportunamente la respuesta.
+Incompetencia del responsable del tratamiento
+ARCO-POL cuando:
+a)
+No se posea'en sus registros la informacion requerida.
+b)
+No se encuentre legalmente habilitado para el tratamiento de los datos personales solicitados, por corresponder a un derecho diferente a lo
+regulado en la LPDP.
+Deber de confidencialidad
+ocasion del ejercicio de sus funciones. Esta obligacion subsistira aun despues de haber cesado en el cargo, en el plazo de cinco aios.
+.No obstante, lo anterior, la obligacion de mantenerel secreto o la confidencialidad no prohibira al Delegado contactar a la Agencia nirecabar su
+asesoramiento en'el marco de sus funciones, incluyendo la realizacion de consultas sobre cualquier asuntorelativo al tratamiento dedatos personales
+y al cumplimientonormativo.
+Asimismo, el Delegado promovera la cuitura de confidencialidad y seguridad de la informacion dentro de la entidad u organizacion.
+Deber de asistencia
+Art.37.- Ademas de lo dispuesto en el articulo 17 de la LPDP, los sujetos obligados respaldaran al Delegado facilitandole el recurso humano,
+tecnico y material para el adecuado desempenio de sus funciones, permitiendo el acceso a los datos personales y a las operaciones de tratamiento.
+
+===== page-11.png =====
+DIARIO OFICIAL.-San Salvador,11de Agosto de 2026.
+21
+Costos
+Art. 38.- El responsable publicara, preferentemente en formato electronico o en su sitio web, los costos aplicables a la reproduccion, certificacion
+y envio de los datos personales que sean solicitados por los titulares, los cuales seran comunicados oportunamente al interesado antes de la entrega de
+lainformacion.
+CAPiTULO IX
+NORMATIVA INTERNA
+Creacion.denormativainterna
+Art.39.Los sujetos obligados,conforme'al articulo 2 dela LPDP,podran elaborar manuales,guias,procedimientos administrativos o cualquier
+otra normativa interna que apoye, facilite y colabore con el ejercicio de las funciones del Delegado, asi como con los requerimientos que éste formule
+en el marco de sus atribuciones.
+El Delegado, en el ejercicio de sus funciones, propondra al responsable o al encargado mecanismos y procedimientos internos que garanticen la
+adecuada proteccion de los datos personales y el ejercicio de los derechos ARCO- POL, asi como la actualizacion de los ya existentes.
+CAPITULO X
+DISPOSICIONESTRANSITORIASYFINALES
+Disposicion transitoria
+Art. 40.- Los nombramientos de Delegados efectuados con anterioridad a la entrada en vigencia de ios presentes lineamientos y que no cumplan
+con los requisitos establecidos en los mismos, se tendran por validos:
+.No obstante, lo anterior, deberan someterse y aprobar el programa de certificacion que emitira la Agencia.
+Mientras no se encuentre habilitada la plataforma informatica del registro de Delegados,las comunicaciones de nombramiento,modificacion o
+cesacion se realizaran mediante oficio, escrito o correo institucional dirigido a la Direccion de Proteccion de Datos Personales de la ACE, dentro de
+los veintedias habiles de la entrada en vigencia de estos lineamientos:
+Remisiones
+Art.41.-Para lo no regulado expresamente en los presentes lineamientos,seran aplicables en loque corresponda,las disposiciones contenidas
+en la LPDP, leyes especiales,y en la normativa que emita la Agencia.
+Vigencia
+Art. 42.- Los presentes lineamientos entraran en vigencia ocho dias despues contados a partir del dia siguiente de su publicacion en el Diario
+Oficial.
+DADO EN LA AGENCIA DE CIBERSEGURIDAD DEL ESTADO: Distrito de San Salvador y Capital de la Republica, Municipio de San
+Salvador Centro, Departamento de San Salvador, a los veinticuatro dias del mes de julio del aio dos mil veintiseis.
+EDUARDOALEXIS RODRiGUEZRODRiGUEZ,
+DIRECTORGENERALDELAAGENCIADECIBERSEGURIDADDELESTADO.
+(Registro No.F40427)

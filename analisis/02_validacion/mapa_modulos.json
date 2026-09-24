@@ -1,0 +1,959 @@
+[
+  {
+    "codigo": "MOD-001",
+    "nombre": "Organizacion y Personas",
+    "etapa": "Empezar",
+    "proposito": "Registra la identidad legal de la empresa cliente, su estructura interna (sucursales, unidades, departamentos) y administra el modelo de roles y permisos (RBAC) que usan todos los demas modulos. Es el punto de partida obligatorio antes de usar cualquier otro modulo. No incluye al Delegado / Responsable Interno de Datos, elevado a modulo propio (MOD-002).",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "8.1",
+      "8.2"
+    ],
+    "depende_de": [
+      "MOD-003"
+    ],
+    "alimenta_a": [
+      "MOD-002",
+      "MOD-003",
+      "MOD-004",
+      "MOD-005",
+      "MOD-006",
+      "MOD-007",
+      "MOD-008",
+      "MOD-009",
+      "MOD-010",
+      "MOD-011",
+      "MOD-012",
+      "MOD-013",
+      "MOD-014",
+      "MOD-015",
+      "MOD-016",
+      "MOD-017",
+      "MOD-018",
+      "MOD-019",
+      "MOD-020",
+      "MOD-021",
+      "MOD-022",
+      "MOD-023",
+      "MOD-024",
+      "MOD-025",
+      "MOD-026"
+    ],
+    "entidades_principales": [
+      "Organization",
+      "BusinessUnit/Sucursal",
+      "User",
+      "Role"
+    ],
+    "notas_reforma_659": "No posee obligaciones afectadas directamente; conserva la identidad de organizacion y usuarios sin cambios entre regimenes.",
+    "obligaciones_propietarias": [],
+    "obligaciones_colaboradoras": [
+      "OBL-AMB-01"
+    ]
+  },
+  {
+    "codigo": "MOD-002",
+    "nombre": "Delegado / Responsable Interno de Datos",
+    "etapa": "Empezar",
+    "proposito": "Gestiona el ciclo de vida completo de la figura que hoy la ley llama Delegado de Proteccion de Datos (Arts. 15 y 17 vigentes) y que la reforma 659 renombraria a responsable interno / sujeto obligado: nombramiento, comunicacion a la ACE, reverificacion periodica, informes, capacitacion especifica y confidencialidad post-cese. Modela el doble estado de la reforma 659 con una sola entidad y un atributo de tipo de rol. Se eleva de submodulo de Organizacion a modulo propio de primer nivel: concentra 8 obligaciones OBLIGATORIO vigentes hoy y es, segun 02_validacion_de_la_idea.md (decision 2.7.7), el hallazgo estructural mas importante de toda la validacion; enterrarlo como bullet reducia su visibilidad para el usuario no especialista.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [],
+    "depende_de": [
+      "MOD-001",
+      "MOD-024"
+    ],
+    "alimenta_a": [
+      "MOD-007",
+      "MOD-008",
+      "MOD-011",
+      "MOD-017",
+      "MOD-018",
+      "MOD-021",
+      "MOD-023",
+      "MOD-024"
+    ],
+    "entidades_principales": [
+      "ResponsableDelProgramaDeDatos (tipo_rol: DELEGADO | RESPONSABLE_INTERNO)"
+    ],
+    "notas_reforma_659": "Modulo directamente regido por el doble estado: aloja las 8 obligaciones DPO (OBL-DPO-01 a 08), afectadas en su totalidad por la reforma 659. Ver seccion 5 del documento principal.",
+    "obligaciones_propietarias": [
+      "OBL-DPO-01",
+      "OBL-DPO-02",
+      "OBL-DPO-03",
+      "OBL-DPO-04",
+      "OBL-DPO-05",
+      "OBL-DPO-06",
+      "OBL-DPO-07",
+      "OBL-DPO-08"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-CAP-02",
+      "OBL-PLAZO-05"
+    ]
+  },
+  {
+    "codigo": "MOD-003",
+    "nombre": "Onboarding",
+    "etapa": "Empezar",
+    "proposito": "Guia a la persona designada, sin conocimiento juridico previo, a traves de la alta inicial de organizacion, usuarios y roles en la primera sesion. Entrega como salida una organizacion configurada, lista para el Diagnostico. No posee obligaciones legales propias: ejecuta el alta de MOD-001.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "8.3"
+    ],
+    "depende_de": [],
+    "alimenta_a": [
+      "MOD-001",
+      "MOD-002",
+      "MOD-004"
+    ],
+    "entidades_principales": [],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [],
+    "obligaciones_colaboradoras": []
+  },
+  {
+    "codigo": "MOD-004",
+    "nombre": "Diagnostico de Cumplimiento",
+    "etapa": "Diagnosticar",
+    "proposito": "Cuestionario guiado y repetible que traduce preguntas sencillas (empleados, camaras, CV, CRM, app movil, biometria, salud, cloud, datos fuera del pais, marketing, menores) en tratamientos, tareas, documentos y riesgos sugeridos. Detecta las exclusiones del Art. 3 antes de sobre-obligar a la empresa.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "9"
+    ],
+    "depende_de": [
+      "MOD-003"
+    ],
+    "alimenta_a": [
+      "MOD-005",
+      "MOD-006",
+      "MOD-008",
+      "MOD-014",
+      "MOD-021"
+    ],
+    "entidades_principales": [
+      "DiagnosticoRespuesta"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-AMB-01",
+      "OBL-AMB-02",
+      "OBL-AMB-03",
+      "OBL-AMB-04"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-PLAZO-03"
+    ]
+  },
+  {
+    "codigo": "MOD-005",
+    "nombre": "Plan de Cumplimiento",
+    "etapa": "Planificar",
+    "proposito": "Convierte el resultado del diagnostico en una lista priorizada de acciones (criticas, importantes, recomendadas), cada una con responsable, fecha, fundamento normativo, evidencia esperada y estado.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "10"
+    ],
+    "depende_de": [
+      "MOD-004"
+    ],
+    "alimenta_a": [
+      "MOD-021",
+      "MOD-020"
+    ],
+    "entidades_principales": [
+      "AccionDelPlan"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-PLAZO-03"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-PRIN-01",
+      "OBL-PRIN-02"
+    ]
+  },
+  {
+    "codigo": "MOD-006",
+    "nombre": "RAT y Mapa de Datos",
+    "etapa": "Registrar",
+    "proposito": "Registro de actividades de tratamiento como fuente unica de verdad de que datos trata la empresa, con que finalidad, base juridica, categorias y sistemas. El Mapa de datos es una vista sobre esta misma informacion. Incluye el catalogo de sistemas.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "11",
+      "12"
+    ],
+    "depende_de": [
+      "MOD-004"
+    ],
+    "alimenta_a": [
+      "MOD-007",
+      "MOD-008",
+      "MOD-009",
+      "MOD-010",
+      "MOD-013",
+      "MOD-014",
+      "MOD-015",
+      "MOD-016",
+      "MOD-018"
+    ],
+    "entidades_principales": [
+      "Treatment",
+      "Purpose",
+      "LegalBasis",
+      "DataCategory",
+      "System"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-DOC-02",
+      "OBL-PRIN-02",
+      "OBL-SENS-01",
+      "OBL-SENS-04",
+      "OBL-SENS-06",
+      "OBL-SENS-08",
+      "OBL-TRAT-01",
+      "OBL-TRAT-03"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-ARCO-03",
+      "OBL-PRIN-01",
+      "OBL-SEG-02",
+      "OBL-SENS-03",
+      "OBL-SENS-05",
+      "OBL-TRAT-02"
+    ]
+  },
+  {
+    "codigo": "MOD-007",
+    "nombre": "Consentimiento",
+    "etapa": "Registrar",
+    "proposito": "Registra el consentimiento cuando es la base juridica elegida, con evidencia de finalidad, canal, version del aviso mostrado y fecha; gestiona la revocacion como flujo de dos plazos encadenados (5 + 5 dias habiles); refuerza datos sensibles, biometria y menores de edad.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "16"
+    ],
+    "depende_de": [
+      "MOD-006",
+      "MOD-008"
+    ],
+    "alimenta_a": [
+      "MOD-009",
+      "MOD-011",
+      "MOD-019"
+    ],
+    "entidades_principales": [
+      "Consent",
+      "ConsentWithdrawal"
+    ],
+    "notas_reforma_659": "OBL-CONS-03 (revocacion) esta afectada: el destinatario de la notificacion de revocacion depende del estado vigente del responsable del tramite (MOD-002).",
+    "obligaciones_propietarias": [
+      "OBL-CONS-01",
+      "OBL-CONS-02",
+      "OBL-CONS-03",
+      "OBL-CONS-04",
+      "OBL-CONS-05",
+      "OBL-CONS-06",
+      "OBL-PRIN-01",
+      "OBL-PRIN-04",
+      "OBL-SENS-02",
+      "OBL-SENS-03",
+      "OBL-SENS-07",
+      "OBL-TRAT-02"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-PRIN-02",
+      "OBL-SENS-01",
+      "OBL-SENS-04",
+      "OBL-SENS-06",
+      "OBL-TRANSF-04",
+      "OBL-TRAT-01"
+    ]
+  },
+  {
+    "codigo": "MOD-008",
+    "nombre": "Documentos y Politicas",
+    "etapa": "Registrar",
+    "proposito": "Gestor documental regulatorio que produce y versiona la Politica de Proteccion de Datos, la Politica de Privacidad y el Aviso de Privacidad, con flujo de aprobacion configurable por tipo de documento. Motor documental generico reutilizado por referencia (por ejemplo, Contratos/DPA dentro de Proveedores).",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "15"
+    ],
+    "depende_de": [
+      "MOD-004",
+      "MOD-006"
+    ],
+    "alimenta_a": [
+      "MOD-007",
+      "MOD-009",
+      "MOD-012",
+      "MOD-016",
+      "MOD-019"
+    ],
+    "entidades_principales": [
+      "Document",
+      "DocumentVersion",
+      "PrivacyNotice",
+      "PrivacyPolicy"
+    ],
+    "notas_reforma_659": "No aplica directamente; el Aviso de Privacidad puede requerir revision tras un cambio de estado (ver seccion 5, punto 5 del documento principal).",
+    "obligaciones_propietarias": [
+      "OBL-AVISO-01",
+      "OBL-AVISO-02",
+      "OBL-AVISO-03",
+      "OBL-AVISO-04",
+      "OBL-AVISO-05",
+      "OBL-DOC-01"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-DPO-06",
+      "OBL-PROV-04",
+      "OBL-PROV-06",
+      "OBL-RET-01",
+      "OBL-RET-02",
+      "OBL-RET-03",
+      "OBL-RET-04",
+      "OBL-RET-06",
+      "OBL-SENS-08"
+    ]
+  },
+  {
+    "codigo": "MOD-009",
+    "nombre": "Proveedores y Encargados",
+    "etapa": "Registrar",
+    "proposito": "Registra encargados del tratamiento, terceros/receptores y subencargados, con sus contratos/DPA, medidas de seguridad y evaluacion de riesgo, como tres tipos de entidad con obligaciones propias.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "17"
+    ],
+    "depende_de": [
+      "MOD-006"
+    ],
+    "alimenta_a": [
+      "MOD-008",
+      "MOD-010",
+      "MOD-019"
+    ],
+    "entidades_principales": [
+      "Encargado",
+      "TerceroReceptor",
+      "Subencargado",
+      "Contrato/DPA"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-PROV-01",
+      "OBL-PROV-02",
+      "OBL-PROV-03",
+      "OBL-PROV-04",
+      "OBL-PROV-05",
+      "OBL-PROV-06",
+      "OBL-PROV-07"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-ARCO-05",
+      "OBL-ARCO-11",
+      "OBL-AVISO-02",
+      "OBL-AVISO-04",
+      "OBL-CONS-03",
+      "OBL-TRANSF-02"
+    ]
+  },
+  {
+    "codigo": "MOD-010",
+    "nombre": "Transferencias Internacionales",
+    "etapa": "Registrar",
+    "proposito": "Registra cada flujo de datos hacia otro pais (tratamiento, proveedor, pais, base juridica, salvaguarda, evidencia de puesta en conocimiento a la ACE), detectando transferencias no documentadas al cruzar Proveedores con el RAT.",
+    "transversal": false,
+    "mvp": "SHOULD HAVE",
+    "areas_prompt": [
+      "18"
+    ],
+    "depende_de": [
+      "MOD-006",
+      "MOD-009"
+    ],
+    "alimenta_a": [
+      "MOD-007",
+      "MOD-015",
+      "MOD-019",
+      "MOD-024"
+    ],
+    "entidades_principales": [
+      "Transfer"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-TRANSF-01",
+      "OBL-TRANSF-02",
+      "OBL-TRANSF-03",
+      "OBL-TRANSF-04",
+      "OBL-TRANSF-05",
+      "OBL-TRANSF-06"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-ARCO-05",
+      "OBL-ARCO-11",
+      "OBL-SEG-04"
+    ]
+  },
+  {
+    "codigo": "MOD-011",
+    "nombre": "ARCO-POL",
+    "etapa": "Operar",
+    "proposito": "Gestiona el ciclo de vida completo de una solicitud de un titular (acceso, rectificacion, cancelacion, oposicion, portabilidad, olvido, limitacion), desde la verificacion de identidad hasta el cierre, con tres ramas: incompetencia, notificacion a receptores y reclamo ante la ACE.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "13"
+    ],
+    "depende_de": [
+      "MOD-012",
+      "MOD-007",
+      "MOD-002"
+    ],
+    "alimenta_a": [
+      "MOD-009",
+      "MOD-010",
+      "MOD-019",
+      "MOD-021",
+      "MOD-022",
+      "MOD-023",
+      "MOD-024"
+    ],
+    "entidades_principales": [
+      "PrivacyRequest",
+      "IdentityVerification"
+    ],
+    "notas_reforma_659": "5 obligaciones afectadas (OBL-ARCO-01, 08, 10, 11, 14): la resolucion y aprobacion de casos depende del estado vigente del responsable del tramite en MOD-002.",
+    "obligaciones_propietarias": [
+      "OBL-ARCO-01",
+      "OBL-ARCO-02",
+      "OBL-ARCO-03",
+      "OBL-ARCO-04",
+      "OBL-ARCO-05",
+      "OBL-ARCO-06",
+      "OBL-ARCO-07",
+      "OBL-ARCO-08",
+      "OBL-ARCO-09",
+      "OBL-ARCO-10",
+      "OBL-ARCO-11",
+      "OBL-ARCO-12",
+      "OBL-ARCO-13",
+      "OBL-ARCO-14",
+      "OBL-ARCO-15"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-CONS-06",
+      "OBL-DOC-01",
+      "OBL-DOC-04",
+      "OBL-PLAZO-04",
+      "OBL-PRIN-04",
+      "OBL-RET-05",
+      "OBL-SANC-09"
+    ]
+  },
+  {
+    "codigo": "MOD-012",
+    "nombre": "Portal del Titular",
+    "etapa": "Operar",
+    "proposito": "Canal publico opcional para que el titular consulte el aviso y la politica, presente ARCO-POL y consulte el estado de su solicitud de forma autenticada. En el MVP la obligacion legal de mecanismos de ejercicio de derechos ya se satisface con el formulario interno seguro de MOD-011; el portal publico con autoregistro es una capa adicional posterior.",
+    "transversal": false,
+    "mvp": "SHOULD HAVE",
+    "areas_prompt": [
+      "33"
+    ],
+    "depende_de": [
+      "MOD-008"
+    ],
+    "alimenta_a": [
+      "MOD-011",
+      "MOD-019",
+      "MOD-023"
+    ],
+    "entidades_principales": [
+      "Titular"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-DOC-04",
+      "OBL-PLAZO-04"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-ARCO-15"
+    ]
+  },
+  {
+    "codigo": "MOD-013",
+    "nombre": "Incidentes de Seguridad",
+    "etapa": "Operar",
+    "proposito": "Gestiona el ciclo completo de una vulneracion de seguridad (deteccion, contencion, analisis, decision, notificacion, remediacion, cierre) con dos hitos de 72 horas modelados por separado: notificacion externa a la ACE/Fiscalia/titulares e inicio de la revision interna.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "19"
+    ],
+    "depende_de": [
+      "MOD-006",
+      "MOD-015"
+    ],
+    "alimenta_a": [
+      "MOD-019",
+      "MOD-021",
+      "MOD-022",
+      "MOD-023",
+      "MOD-024"
+    ],
+    "entidades_principales": [
+      "Incident"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-INC-01",
+      "OBL-INC-02",
+      "OBL-INC-03",
+      "OBL-INC-04",
+      "OBL-INC-05"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-RET-05"
+    ]
+  },
+  {
+    "codigo": "MOD-014",
+    "nombre": "Riesgos y EIPD",
+    "etapa": "Operar",
+    "proposito": "Evalua tratamientos de alto riesgo (biometria, salud, menores, monitoreo, transferencias, gran escala) y genera Evaluaciones de Impacto en la Privacidad, seleccionando controles del catalogo unico de MOD-015. El resultado siempre requiere aprobacion humana, nunca es una conclusion legal automatica.",
+    "transversal": false,
+    "mvp": "SHOULD HAVE",
+    "areas_prompt": [
+      "20"
+    ],
+    "depende_de": [
+      "MOD-004",
+      "MOD-006"
+    ],
+    "alimenta_a": [
+      "MOD-015",
+      "MOD-019",
+      "MOD-021"
+    ],
+    "entidades_principales": [
+      "DPIA",
+      "Risk/RiskAssessment"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-DOC-03"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-SEG-02",
+      "OBL-SENS-04",
+      "OBL-SENS-06",
+      "OBL-SENS-08"
+    ]
+  },
+  {
+    "codigo": "MOD-015",
+    "nombre": "Controles de Seguridad",
+    "etapa": "Operar",
+    "proposito": "Catalogo unico de controles tecnicos, organizativos y fisicos (MFA, cifrado, backups, eliminacion segura) con evidencia de implementacion, responsable, vigencia y estado. Registra evidencia, no ejecuta ni sustituye herramientas de seguridad.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "21"
+    ],
+    "depende_de": [
+      "MOD-006",
+      "MOD-010"
+    ],
+    "alimenta_a": [
+      "MOD-013",
+      "MOD-014",
+      "MOD-018",
+      "MOD-019"
+    ],
+    "entidades_principales": [
+      "Control"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [
+      "OBL-SEG-01",
+      "OBL-SEG-02",
+      "OBL-SEG-03",
+      "OBL-SEG-04",
+      "OBL-SEG-05",
+      "OBL-SEG-06",
+      "OBL-SENS-05"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-PRIN-03",
+      "OBL-PROV-03"
+    ]
+  },
+  {
+    "codigo": "MOD-016",
+    "nombre": "Retencion y Eliminacion",
+    "etapa": "Operar",
+    "proposito": "Dos motores de retencion separados: retencion de datos personales del titular (por finalidad, con fecha efectiva igual al maximo entre todos los OBL-RET aplicables) y retencion documental de cumplimiento propio (avisos 10 anios, expedientes ARCO-POL/incidentes 5 anios).",
+    "transversal": false,
+    "mvp": "SHOULD HAVE",
+    "areas_prompt": [
+      "22"
+    ],
+    "depende_de": [
+      "MOD-006",
+      "MOD-008"
+    ],
+    "alimenta_a": [
+      "MOD-011",
+      "MOD-019"
+    ],
+    "entidades_principales": [
+      "RetentionRule"
+    ],
+    "notas_reforma_659": "OBL-RET-04 (conservacion del aviso 10 anios) esta afectada: el contenido del aviso a conservar puede versionar segun el estado vigente al momento de su publicacion.",
+    "obligaciones_propietarias": [
+      "OBL-RET-01",
+      "OBL-RET-02",
+      "OBL-RET-03",
+      "OBL-RET-04",
+      "OBL-RET-05",
+      "OBL-RET-06"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-PROV-07",
+      "OBL-SANC-07",
+      "OBL-SEG-05"
+    ]
+  },
+  {
+    "codigo": "MOD-017",
+    "nombre": "Capacitacion",
+    "etapa": "Operar",
+    "proposito": "Dos programas de capacitacion: registro minimo obligatorio de que el personal recibio capacitacion (todo el personal), y capacitacion especifica anual del Delegado / Responsable Interno (MOD-002).",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "23"
+    ],
+    "depende_de": [
+      "MOD-001",
+      "MOD-002"
+    ],
+    "alimenta_a": [
+      "MOD-019",
+      "MOD-020"
+    ],
+    "entidades_principales": [
+      "TrainingProgram",
+      "TrainingRecord"
+    ],
+    "notas_reforma_659": "OBL-CAP-02 (capacitacion especifica del Delegado) esta afectada: se mantiene mientras el estado sea ACTUAL; en estado FUTURO pasa a buena practica voluntaria si la empresa mantiene al Responsable Interno.",
+    "obligaciones_propietarias": [
+      "OBL-CAP-01",
+      "OBL-CAP-02"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-DPO-04",
+      "OBL-DPO-05",
+      "OBL-SEG-02"
+    ]
+  },
+  {
+    "codigo": "MOD-018",
+    "nombre": "Auditoria de Cumplimiento",
+    "etapa": "Demostrar",
+    "proposito": "Programa sustantivo de auditoria anual (alcance, hallazgos, plan de accion, cierre), distinto del registro tecnico de trazabilidad (AuditLog, funcion transversal embebida en todos los modulos). Genera el recordatorio anual anclado a la ultima auditoria registrada.",
+    "transversal": false,
+    "mvp": "SHOULD HAVE",
+    "areas_prompt": [
+      "24"
+    ],
+    "depende_de": [
+      "MOD-015",
+      "MOD-006",
+      "MOD-019"
+    ],
+    "alimenta_a": [
+      "MOD-019",
+      "MOD-020",
+      "MOD-021"
+    ],
+    "entidades_principales": [
+      "ComplianceAudit",
+      "AuditLog (consultado, embebido en todos los modulos)"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "notas_dependencia": "MOD-018 y MOD-019 son el unico par de modulos del mapa donde depende_de es reciproco (MOD-018 depende_de incluye MOD-019 y MOD-019 depende_de incluye MOD-018). Esto es intencional y no un error de copia: representa una dependencia de datos bidireccional y continua, no un orden de construccion/inicializacion. MOD-018 consulta la evidencia acumulada en MOD-019 para elaborar sus hallazgos de auditoria, y a su vez el informe y los hallazgos de MOD-018 se registran como nueva evidencia en MOD-019 (ver 06_mapa_definitivo_de_modulos.md, seccion 4 regla 6 y seccion 6.1). Al leer depende_de como grafo de orden estricto de inicializacion, este es el unico ciclo del mapa y debe tratarse como excepcion documentada, no como precedencia real.",
+    "obligaciones_propietarias": [
+      "OBL-AUD-01"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-AUD-02",
+      "OBL-DPO-07",
+      "OBL-PRIN-03",
+      "OBL-SEG-02"
+    ]
+  },
+  {
+    "codigo": "MOD-019",
+    "nombre": "Centro de Evidencias",
+    "etapa": "Demostrar",
+    "proposito": "Responde que evidencia tenemos de esta obligacion, conectando tres entidades separadas (Documento, Evidencia, AuditLog) sin mezclarlas; el paquete exportable es una vista sobre las tres, con verificacion de integridad (hash o firma) en cada exportacion. Funciona de forma semi-transversal (recibe evidencia de MOD-007 a MOD-017 de forma continua) aunque se ubica en la etapa Demostrar por ser su destino natural en el recorrido.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "25"
+    ],
+    "depende_de": [
+      "MOD-007",
+      "MOD-008",
+      "MOD-009",
+      "MOD-010",
+      "MOD-011",
+      "MOD-012",
+      "MOD-013",
+      "MOD-014",
+      "MOD-015",
+      "MOD-016",
+      "MOD-017",
+      "MOD-018"
+    ],
+    "alimenta_a": [
+      "MOD-018",
+      "MOD-020",
+      "MOD-024"
+    ],
+    "entidades_principales": [
+      "Evidence",
+      "EvidencePackage"
+    ],
+    "notas_reforma_659": "No aplica directamente; conserva evidencia de ambos regimenes sin alterar retroactivamente expedientes cerrados.",
+    "notas_dependencia": "MOD-019 y MOD-018 son el unico par de modulos del mapa donde depende_de es reciproco (MOD-019 depende_de incluye MOD-018 y MOD-018 depende_de incluye MOD-019). Esto es intencional y no un error de copia: MOD-019 recibe evidencia de forma continua de MOD-007 a MOD-017 y tambien del informe y los hallazgos de auditoria de MOD-018; a su vez MOD-018 consulta la evidencia acumulada en MOD-019 para elaborar esos mismos hallazgos (ver 06_mapa_definitivo_de_modulos.md, seccion 4 regla 6 y seccion 6.1). Al leer depende_de como grafo de orden estricto de inicializacion, este es el unico ciclo del mapa y debe tratarse como excepcion documentada, no como precedencia real.",
+    "obligaciones_propietarias": [
+      "OBL-PRIN-03"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-CONS-05",
+      "OBL-INC-04",
+      "OBL-RET-05",
+      "OBL-SANC-07",
+      "OBL-TRANSF-06"
+    ]
+  },
+  {
+    "codigo": "MOD-020",
+    "nombre": "Dashboard y Reportes",
+    "etapa": "Demostrar",
+    "proposito": "Vista principal por perspectiva (Gerencia: vision general; Responsable: pendientes; Legal/Delegado: riesgos y decisiones; Auditor: evidencias), mas reportes exportables. La perspectiva Legal/Delegado puede filtrar por los ocho clusters legales (Nucleo organizativo, Entrada y hoja de ruta, Registro y gobernanza, Relacion con el titular, Relacion con terceros, Gestion de crisis y control, Documentacion, Relacion con la autoridad) como vista alternativa a las 6 etapas del recorrido. Usa siempre lenguaje de estado del programa, nunca cumplimiento legal X%.",
+    "transversal": false,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "26",
+      "28"
+    ],
+    "depende_de": [
+      "MOD-005",
+      "MOD-019",
+      "MOD-021"
+    ],
+    "alimenta_a": [],
+    "entidades_principales": [],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [],
+    "obligaciones_colaboradoras": []
+  },
+  {
+    "codigo": "MOD-021",
+    "nombre": "Centro de Tareas",
+    "etapa": "Transversal",
+    "proposito": "Convierte cada obligacion en una accion concreta con titulo, fundamento, responsable, fecha, dependencia, evidencia requerida y estado (Pendiente, En proceso, Bloqueada, En revision, Aprobada, Completada, Vencida). Alimentado por Diagnostico, ARCO-POL, Incidentes, Proveedores, Riesgos, Documentos y Auditoria.",
+    "transversal": true,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "14"
+    ],
+    "depende_de": [
+      "MOD-004",
+      "MOD-005",
+      "MOD-011",
+      "MOD-013",
+      "MOD-002"
+    ],
+    "alimenta_a": [
+      "MOD-022",
+      "MOD-023",
+      "MOD-020"
+    ],
+    "entidades_principales": [
+      "Task",
+      "Approval"
+    ],
+    "notas_reforma_659": "No aplica directamente; las tareas dependientes de MOD-002 se marcan \"no aplica bajo el estado regulatorio actual, ver historial\" en vez de eliminarse cuando cambia el estado (ver seccion 4).",
+    "obligaciones_propietarias": [],
+    "obligaciones_colaboradoras": [
+      "OBL-INC-01",
+      "OBL-PLAZO-01",
+      "OBL-SANC-03",
+      "OBL-SANC-05",
+      "OBL-SANC-06"
+    ]
+  },
+  {
+    "codigo": "MOD-022",
+    "nombre": "Notificaciones",
+    "etapa": "Transversal",
+    "proposito": "Envia alertas por evento (tarea proxima a vencer, plazo de 72 horas, prevencion ARCO-POL sin resolver, documento por vencer) con destinatario, prioridad, frecuencia y escalamiento configurables, sin asumir todos los canales posibles.",
+    "transversal": true,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "27"
+    ],
+    "depende_de": [
+      "MOD-021",
+      "MOD-023",
+      "MOD-011",
+      "MOD-013"
+    ],
+    "alimenta_a": [],
+    "entidades_principales": [
+      "Notification"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [],
+    "obligaciones_colaboradoras": []
+  },
+  {
+    "codigo": "MOD-023",
+    "nombre": "Calendario y Motor de Plazos",
+    "etapa": "Transversal",
+    "proposito": "Centraliza el calculo de dias y horas habiles y asuetos nacionales configurables por anio, y expone un unico servicio de plazos consultado por ARCO-POL, Incidentes, Delegado y Procedimiento sancionador.",
+    "transversal": true,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "30"
+    ],
+    "depende_de": [],
+    "alimenta_a": [
+      "MOD-002",
+      "MOD-011",
+      "MOD-013",
+      "MOD-021",
+      "MOD-022",
+      "MOD-024"
+    ],
+    "entidades_principales": [
+      "CalendarEvent/HolidayCalendar"
+    ],
+    "notas_reforma_659": "No aplica directamente; el motor de plazos es el mismo en ambos regimenes.",
+    "obligaciones_propietarias": [
+      "OBL-PLAZO-01",
+      "OBL-PLAZO-02"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-ARCO-08",
+      "OBL-ARCO-09",
+      "OBL-ARCO-10",
+      "OBL-DPO-02",
+      "OBL-DPO-03",
+      "OBL-INC-01",
+      "OBL-INC-02",
+      "OBL-SANC-05"
+    ]
+  },
+  {
+    "codigo": "MOD-024",
+    "nombre": "Centro Regulatorio",
+    "etapa": "Transversal",
+    "proposito": "Muestra el marco normativo aplicable clasificado como VIGENTE, FUTURO, DEROGADO o MODIFICADO, gestiona la bandera de activacion manual del doble estado de la reforma 659, y aloja el Procedimiento Sancionador y los Tramites ante la ACE. El contenido informativo y el flujo operativo con dinero y plazos reales deben separarse visualmente en la UI.",
+    "transversal": true,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "31",
+      "32"
+    ],
+    "depende_de": [],
+    "alimenta_a": [
+      "MOD-002",
+      "MOD-011",
+      "MOD-007",
+      "MOD-017",
+      "MOD-015",
+      "MOD-021"
+    ],
+    "entidades_principales": [
+      "RegulatoryInstrument",
+      "RegulatoryRuleVersion",
+      "ReformaActivationFlag",
+      "SanctionProcedure",
+      "ACEFiling"
+    ],
+    "notas_reforma_659": "Aloja la bandera de activacion del doble estado (regimen_reforma_659) y OBL-PLAZO-05 (afectada). Es el unico modulo que decide que estado esta vigente.",
+    "obligaciones_propietarias": [
+      "OBL-AUD-02",
+      "OBL-PLAZO-05",
+      "OBL-SANC-01",
+      "OBL-SANC-02",
+      "OBL-SANC-03",
+      "OBL-SANC-04",
+      "OBL-SANC-05",
+      "OBL-SANC-06",
+      "OBL-SANC-07",
+      "OBL-SANC-08",
+      "OBL-SANC-09"
+    ],
+    "obligaciones_colaboradoras": [
+      "OBL-ARCO-14",
+      "OBL-DPO-01",
+      "OBL-INC-05",
+      "OBL-SEG-01",
+      "OBL-SEG-06",
+      "OBL-TRANSF-05"
+    ]
+  },
+  {
+    "codigo": "MOD-025",
+    "nombre": "Busqueda Global",
+    "etapa": "Transversal",
+    "proposito": "Busqueda sobre tratamientos, solicitudes ARCO-POL, proveedores, documentos, incidentes y tareas, para que un usuario no especialista encuentre informacion sin memorizar en que modulo vive.",
+    "transversal": true,
+    "mvp": "COULD HAVE",
+    "areas_prompt": [
+      "29"
+    ],
+    "depende_de": [],
+    "alimenta_a": [],
+    "entidades_principales": [],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [],
+    "obligaciones_colaboradoras": []
+  },
+  {
+    "codigo": "MOD-026",
+    "nombre": "Centro de Ayuda",
+    "etapa": "Transversal",
+    "proposito": "Ayuda contextual por modulo (que es, por que debo registrarlo, fundamento normativo, cuando necesito asesoria juridica externa), coherente con el principio de lenguaje claro (Art. 5 lit. e LPDP).",
+    "transversal": true,
+    "mvp": "MUST HAVE",
+    "areas_prompt": [
+      "34"
+    ],
+    "depende_de": [],
+    "alimenta_a": [],
+    "entidades_principales": [
+      "HelpArticle"
+    ],
+    "notas_reforma_659": "No aplica directamente.",
+    "obligaciones_propietarias": [],
+    "obligaciones_colaboradoras": []
+  }
+]

@@ -1,0 +1,135 @@
+[
+ {
+  "lens": "ley_base_vigencia",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_ley_base_vigencia.md",
+  "resumen": "Sweep exhaustivo (724 lineas, 29 bloques de obligacion) sobre identidad de la LPDP (D.L. 144), ambito Art. 2/3, definiciones Art. 4 y principios Art. 5, transitorios Arts. 60-61 (todos vencidos), barrido de reformas 2024-2026 (Decreto 659 como unica reforma a la LPDP), Ley de Ciberseguridad (D.L. 143) y su remision via Art. 53 LPDP, y LPA como supletoria (Art. 62).",
+  "veredicto_resumen": "29 de 30 claims CONFIRMADAS (una NO_VERIFICABLE: la afirmacion negativa exhaustiva de que el Decreto 659 es la unica reforma a la LPDP no pudo re-auditarse por completo). Sin REFUTADAS.",
+  "incertidumbres_clave": [
+   "Texto oficial del Decreto 659 no localizado; contenido conocido solo por prensa.",
+   "Fecha/tomo de Diario Oficial de las Politicas ACE no confirmado en fuente primaria.",
+   "Ambito territorial de la LPDP no resuelto por el texto legal.",
+   "Multa coercitiva del Art. 27 D.143 aplicable a LPDP: dudoso.",
+   "Computo de 72 horas del Art. 25 (corridas vs habiles) sin resolver."
+  ],
+  "correcciones_relevantes": []
+ },
+ {
+  "lens": "reforma_659",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_reforma_659.md",
+  "resumen": "El JSON de afirmaciones a verificar para este lente llego con datos de plantilla (placeholders), por lo que no hubo verificacion afirmacion-por-afirmacion formal. En su lugar se hizo verificacion sustantiva directa del informe contra fuentes primarias (asamblea.gob.sv/leyes-y-decretos/view/7022, node/14116, imprentanacional.gob.sv) el 2026-09-24.",
+  "veredicto_resumen": "Ninguna afirmacion del informe resulto refutada o requirio correccion en fecha, articulo, cifra o clasificacion de vigencia. Confirmado que el Decreto 659 (17-sep-2026, 57 votos) sigue en estado 'Pendiente de Publicacion Material en el Diario Oficial y de Entrada en Vigencia' tambien al 2026-09-24.",
+  "incertidumbres_clave": [
+   "Texto oficial del Decreto 659 no localizado ni al 2026-09-24.",
+   "Contenido articulo por articulo (derogatoria Arts. 15 y 17, reforma 16/47/51) depende de fuentes secundarias de prensa.",
+   "API de diariooficial.gob.sv no reproducible con los parametros documentados por el sweep."
+  ],
+  "correcciones_relevantes": [
+   "Confirmado por fuente primaria (WebFetch) que el Art. 11 de la Ley Especial contra Delitos Informaticos (Decreto 332/2025) fue el reformado para el fraude informatico, no el Art. 10."
+  ]
+ },
+ {
+  "lens": "arco_pol",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_arco_pol.md",
+  "resumen": "Cobertura completa de los 7 derechos ARCO-POL, procedimiento Arts. 15-23, representacion/herederos/NNA, formularios oficiales ACE, infracciones y multas relacionadas, cambios de la reforma 659.",
+  "veredicto_resumen": "39 claims verificadas, la mayoria CONFIRMADAS. Varias CORREGIDAS por atribucion incorrecta del sujeto obligado: el texto vigente de los Arts. 18, 19, 21, 30 atribuye la prevencion/devolucion/notificacion al 'delegado', no genericamente 'al responsable'. Claim sobre carga de la prueba en solicitudes ARCO-POL (Art. 54) CORREGIDA: el Art. 54 solo cubre consentimiento y aviso de privacidad, no ARCO-POL expresamente (extension por analogia). Dato de salario minimo (US$408.80) CONFIRMADO en fuente primaria (Decreto Ejecutivo 11/2025 MTPS).",
+  "incertidumbres_clave": [
+   "Numero de decreto '659' no confirmado en ninguna fuente primaria revisada (solo en fuentes secundarias convergentes).",
+   "Forma del poder del representante (LPA Art. 69) solo verificada por fuente secundaria en esta ronda, luego confirmada contra PDF oficial.",
+   "Conservacion del expediente ARCO-POL sin plazo legal expreso."
+  ],
+  "correcciones_relevantes": [
+   "Arts. 18 (prevencion), 19 (incompetencia) y 21 (notificacion a receptores): el sujeto obligado textual es 'el delegado', no 'el responsable' en general.",
+   "Art. 54 no menciona ARCO-POL expresamente; su aplicacion a la carga de prueba de atencion de solicitudes es extension por analogia (Art. 5 lit. i), no mandato literal.",
+   "Art. 26 inc. 3 (personas incapaces): el texto solo remite al derecho comun, no menciona expresamente 'a traves de su representante' (inferencia razonable, no literal)."
+  ]
+ },
+ {
+  "lens": "incidentes",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_incidentes.md",
+  "resumen": "Vulneraciones de seguridad (Art. 25 LPDP): plazo de 72h, contenido de notificacion, documentacion obligatoria. Ley de Ciberseguridad (D.143): ambito restringido, sin plazo numerico salvo el deber de la ACE hacia la FGR. Reforma 2025 a la Ley Especial contra Delitos Informaticos (Decreto 332): nuevas definiciones, endurecimiento del fraude informatico (Art. 11), legitimacion procesal de custodios de datos.",
+  "veredicto_resumen": "31 claims, la gran mayoria CONFIRMADAS. Varias CORREGIDAS por error de cita de linea/imagen OCR (Arts. 58 vs 59, mecanismos de denuncia de las Politicas ACE). Clasificacion de 'mecanismos de denuncia y notificacion de brechas' de las Politicas ACE corregida de RECOMENDADO a OBLIGATORIO (las Politicas se declaran expresamente de cumplimiento obligatorio en su Art. 2).",
+  "incertidumbres_clave": [
+   "Computo de 72 horas (corridas vs habiles) sin resolver.",
+   "Definicion de 'conocimiento' de la vulneracion no esta en la ley.",
+   "Numeracion exacta de tipos penales de la Ley Especial contra Delitos Informaticos no verificable con las herramientas disponibles."
+  ],
+  "correcciones_relevantes": [
+   "Politicas ACE Art. 2: 'de cumplimiento obligatorio para todas las entidades publicas y privadas' -> notificacion de brechas y mecanismos de denuncia son OBLIGATORIO, no RECOMENDADO.",
+   "Art. 11 (no Art. 10) de la Ley Especial contra Delitos Informaticos es el articulo reformado en 2025 para el fraude informatico."
+  ]
+ },
+ {
+  "lens": "consentimiento_bases_sensibles",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_consentimiento_bases_sensibles.md",
+  "resumen": "Seis bases de licitud (Art. 5 lit. g) en tension con el 'principio de consentimiento y finalidad' (Art. 5 lit. c, 27); datos sensibles (Art. 4 lit. g vs Art. 59 lit. b, divergencia real); ninez/adolescencia (LPDP + Ley Crecer Juntos, tension Art. 77 vs Art. 56 lit. c num. 3); datos laborales; marketing directo; cookies; fuentes de acceso publico; firma electronica.",
+  "veredicto_resumen": "42 claims, casi todas CONFIRMADAS con cita literal verificada contra fuente primaria (incluidos varios PDF oficiales descargados: Ley de Comercio Electronico, Ley de Proteccion al Consumidor, Ley de Firma Electronica, Codigo de Trabajo, Reglamento ISSS, LGPRLT, Ley Crecer Juntos). Dos correcciones menores de atribucion (Arts. 30 delegado vs responsable, ya cubierto en arco_pol).",
+  "incertidumbres_clave": [
+   "Alcance de la infraccion muy grave por tratar sin consentimiento frente a tratamientos con otra base de licitud.",
+   "Test de interes legitimo sin definicion legal.",
+   "Divergencia Art. 4 lit. g vs Art. 59 lit. b en el catalogo de datos sensibles.",
+   "Biometria/videovigilancia sin regulacion especifica de la ACE."
+  ],
+  "correcciones_relevantes": [
+   "Art. 30 (revocacion): sujeto obligado textual es 'el delegado', no 'el responsable' (mismo patron que en arco_pol)."
+  ]
+ },
+ {
+  "lens": "encargados_transferencias",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_encargados_transferencias.md",
+  "resumen": "Definiciones de responsable/encargado/transferencia (Art. 4); obligaciones del encargado (Arts. 33-36); contratos (Arts. 41, 49, 50 lit. p); transferencias nacionales (Art. 40) e internacionales (Art. 44); Art. 45 (flujo transfronterizo y 'registro de banco de datos', sin mecanismo habilitado por la ACE); cloud/SaaS como encargados.",
+  "veredicto_resumen": "35 claims, casi todas CONFIRMADAS. Se corrigio la afirmacion sobre el numero de decreto de la reforma 2026: NO es verificable en fuente oficial (el listado de la Asamblea solo llega al Decreto 649 al momento de la verificacion); dos busquedas web devolvieron numeros distintos (659 y 660) para la misma reforma, ninguno confirmado. Se elimino toda mencion puntual a 'Decreto 659' y se reemplazo por 'decreto de reforma (numero no confirmado)'.",
+  "incertidumbres_clave": [
+   "Numero exacto del decreto de reforma de septiembre 2026: NO CONFIRMADO EN FUENTE PRIMARIA (tratar con cautela adicional respecto de otros sweeps que si usan '659').",
+   "Si el encargado en el extranjero se rige por transferencia (Art. 4 lit. u) o por flujo transfronterizo (Art. 45).",
+   "Quien declara 'nivel de proteccion adecuado' bajo el Art. 44: no esta atribuido a ningun organo.",
+   "Registro de bancos de datos del Art. 45: sin mecanismo habilitado por la ACE."
+  ],
+  "correcciones_relevantes": [
+   "El numero de decreto de la reforma LPDP de septiembre 2026 no esta confirmado en fuente primaria al 2026-09-24; distinto de lo asumido en otros sweeps."
+  ]
+ },
+ {
+  "lens": "seguridad_documentacion_dpo",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_seguridad_documentacion_dpo.md",
+  "resumen": "Politicas ACE (24 medidas organizativas/tecnicas/fisicas/transferencia), Lineamientos DPO (42 articulos: perfil, nombramiento, registro, certificacion, plazos, informe semestral), inventario de 23 documentos obligatorios/recomendados/condicionales, medidas tecnicas con base normativa, ausencia de certificaciones/sellos ACE.",
+  "veredicto_resumen": "32 claims, todas CONFIRMADAS. Metadatos del PDF de las Politicas ACE verificados con pypdf (creacion 4-sep-2025). Confirmada la ausencia de fuente primaria para la publicacion en Diario Oficial de las Politicas ACE y para el Decreto 659.",
+  "incertidumbres_clave": [
+   "Publicacion en Diario Oficial de las Politicas ACE 001-0309025-DPDP no confirmada.",
+   "Alcance indeterminado de RAT, EIPD, auditorias (sin guias oficiales de contenido/formato/umbral).",
+   "Destino de los Lineamientos DPO para el sector privado si la reforma 659 entra en vigencia."
+  ],
+  "correcciones_relevantes": [
+   "Confianza del computo de vigencia de los Lineamientos DPO (19-ago-2026) puede subirse de media a alta por ser identico al patron ya usado en el Art. 64 LPDP."
+  ]
+ },
+ {
+  "lens": "sanciones_procedimiento",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_sanciones_procedimiento.md",
+  "resumen": "Catalogo Art. 56 (9 leves, 7 graves, 10 muy graves), multas Art. 57 (1-10, 11-25, 26-40 SM), valor SM 2026 (US$408.80 confirmado en Decreto Ejecutivo 11 oficial), Normativa PAS de la ACE (diligencias preliminares, emplazamiento, resolucion final, recursos, prescripcion 5 anos), remision de la LPDP a la Ley de Ciberseguridad (Art. 53).",
+  "veredicto_resumen": "35 claims, todas CONFIRMADAS (dos CORREGIDAS por error de cita de pagina/imagen OCR: Arts. 29-32 Normativa PAS estan en page-07.png, no page-08/09; y el Art. 32 tiene 4 incisos, no 3 - la clausula 'sin recurso en via simplificada' es el inciso 4, no el 3). Hallazgo negativo confirmado: los criterios 'tamano de empresa, reincidencia, participacion, condicion del afectado' NO existen en ninguna fuente primaria (LPDP, LCSI, Normativa PAS, LPA) - no deben incorporarse como obligacion legal.",
+  "incertidumbres_clave": [
+   "Aplicabilidad de la multa coercitiva del Art. 27 LCSI a infracciones LPDP.",
+   "Computo de plazos LPA (dias habiles) vs LCSI para resolucion (15 dias vs 'ultima actuacion').",
+   "Reforma 659 pendiente de publicacion; no se anuncian cambios al regimen sancionador."
+  ],
+  "correcciones_relevantes": [
+   "Normativa PAS Art. 32: la clausula de 'no hay recurso en via simplificada' es el inciso 4, no el inciso 3 (el inciso 3 trata de datos sensibles).",
+   "Arts. 29, 30 y el primer parrafo del Art. 32 de la Normativa PAS estan en la imagen page-07.png, no en page-08/09 como cito el sweep original."
+  ]
+ },
+ {
+  "lens": "plazos_calendario_retencion",
+  "file": "C:\\Proyects\\PRIV-SV\\analisis\\01_legal\\sweep_plazos_calendario_retencion.md",
+  "resumen": "Motor de plazos: computo LPA Art. 82, calendario de dias inhabiles (Codigo de Trabajo Art. 190, D.L. 339 Dia de la Madre, D.L. 208 Dia del Padre, asuetos ad hoc), tabla exhaustiva de plazos LPDP/Lineamientos/Normativa PAS, periodos de retencion en Codigo de Comercio, Codigo Tributario, Codigo de Trabajo, LCLDA/Instructivo UIF, Norma Tecnica del Expediente Clinico, Ley de Firma Electronica.",
+  "veredicto_resumen": "40 claims, la gran mayoria CONFIRMADAS con verificacion directa contra PDF oficiales descargados (Codigo Civil, Codigo de Comercio, Codigo Tributario, Codigo de Trabajo, LCLDA, Instructivo UIF, Norma Tecnica Expediente Clinico, Ley de Firma Electronica, Ley de Comercio Electronico, D.L. 523). Una CORREGIDA: el D.L. 208 (Dia del Padre) fue decretado el 28-nov-2012 (no 20-dic-2012, que es la fecha de publicacion) y su texto no dice expresamente 'sector publico y privado' (eso es interpretacion del MTPS).",
+  "incertidumbres_clave": [
+   "Si el Art. 82 LPA es aplicable por supletoriedad del Art. 62 LPDP a la relacion titular-empresa privada (el Art. 2 LPA limita su ambito a la Administracion Publica).",
+   "Si el sabado debe tratarse como dia inhabil para plazos frente a una empresa privada.",
+   "Plazo de conservacion documental especifico para entidades SSF (Ley de Bancos/NRP-23) y para planillas previsionales (LISP): no localizado.",
+   "Dies a quo del plazo de 3 meses del Art. 60 inc. 2 para cada nuevo instrumento de la ACE."
+  ],
+  "correcciones_relevantes": [
+   "D.L. 208 (Dia del Padre, 17 de junio): decretado 28-nov-2012, sancionado 18-dic-2012, publicado D.O. 20-dic-2012; el texto del decreto no dice expresamente 'sector publico y privado' (extension del MTPS, no literal de la norma)."
+  ]
+ }
+]

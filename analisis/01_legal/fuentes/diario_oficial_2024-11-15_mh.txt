@@ -1,0 +1,1639 @@
+
+===== PAGINA 1 =====
+1
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+ORGANO   LEGISLATIVO
+ 
+Decreto No. 143.- Ley de Ciberseguridad y Seguridad de 
+la Información............................................................................
+ 
+Decreto No. 144.- Ley para la Protección de Datos 
+Personales...................................................................................
+ORGANO EJECUTIVO
+MINISTERIO DE ECONOMIA
+Ramo de Economia
+ 
+Acuerdo No. 937.- Se autoriza a la sociedad Concentrix 
+CVG Global Services El Salvador, Sociedad Anónima de Capital 
+Variable, la disminución de sus instalaciones de conformidad a 
+la Ley de Servicios Internacionales y de su Reglamento...........
+ 
+Acuerdo No. 1005.- Se rectifican diferentes acuerdos  
+relacionados con la sociedad Celeritas Manufacturing, Sociedad 
+Anónima de Capital Variable.....................................................
+MINISTERIO DE EDUCACION,
+CIENCIA Y TECNOLOGiA
+Ramo de Educacion, Ciencia y Tecnologia
+ 
+Acuerdos Nos. 15-1414, 15-1522, 15-1581 y 15-1854.- 
+Se reconoce validez académica de estudios realizados en otro 
+país. ...........................................................................................
+MINISTERIO DE MEDIO AMBIENTE Y 
+RECURSOS NATURALES
+Ramo de Medio Ambiente
+y Recursos Naturales
+ 
+Decreto No. 17.- Manual de Valoración de Ecosistemas 
+Naturales y Agroecosistemas.....................................................
+ORGANO JUDICIAL
+Corte Suprema de Justicia
+ 
+Acuerdos Nos. 1248-D, 989-D, 1558-D, 1809-D, 1819-D, 
+2048-D, 2102-D, 2116-D, 2125-D y 2210-D.- Autorizaciones 
+para ejercer la profesión de abogado en todas sus ramas...........
+INSTITUCIONES AUTONOMAS
+Direccion General de Energia, 
+Hidrocarburos y Minas
+ 
+Acuerdo No. 83.- Se autoriza al señor Tony Alberto Pérez, 
+la ampliación de la estación de servicio, denominada “Uno 
+Quezaltepeque”...........................................................................
+Alcaldias Municipales
+ 
+Estatutos de la Asociación de Desarrollo Comunal Hacienda 
+El Capricho, del Cantón Palo Pique y Acuerdo No. 22, emitido 
+por la Alcaldía Municipal de Ahuachapán Centro, distrito de 
+Ahuachapán, aprobándolos y confiriéndoles el carácter de persona 
+jurídica........................................................................................
+Diario Oficial
+S U M A R I O
+1
+REPUBLICA DE EL SALVADOR EN LA AMERICA  CENTRAL
+ 
+TOMO Nº 445 
+SAN SALVADOR, VIERNES 15 DE NOVIEMBRE de 2024 
+NUMERO 219
+-La Dirección de la Imprenta Nacional hace del conocimiento que toda publicación en el Diario Oficial se 
+procesa por transcripción directa y fiel del original, por consiguiente la institución  no se hace responsable por 
+transcripciones cuyos originales lleguen en forma ilegible y/o defectuosa y son de exclusiva responsabilidad 
+de la persona o institución que los presentó. (Arts. 21, 22 y 23 Reglamento de la Imprenta Nacional).
+Pág.
+69-71
+72-73
+74-75
+76-80
+Dirección: 4a. C. Pte. y 15 Av. Sur # 829 S.S. Tel.: 2527-7800 • Página Web: www.imprentanacional.gob.sv • Correo: diariooficial@imprentanacional.gob.sv
+DIRECTORA: Nilda Verónica Menéndez Gil
+Pág.
+3-23
+24-62
+63-64
+65-66
+67-68
+o
+
+
+===== PAGINA 2 =====
+24
+DIARIO  OFICIAL  Tomo  Nº 445
+DECRETO N.° 144
+LA ASAMBLEA LEGISLATIVA DE LA REPUBLICA DE EL SALVADOR,
+CONSIDERANDO:
+I.
+Que el articulo 1 de la Constitucldn de la Republica establece que: "El Salvador
+reconoce a la persona humana como el origen y el fin de la actividad del
+Estado"; y que esta organizado para la consecucion de la justicia y de la
+seguridad juridical asimismo, el articulo 2 establece que toda persona tiene
+derecho a la integridad flsica y moral, y a ser protegida en la conservacion y
+defensa de los mismos; y que se debe garantizar el derecho al honor, a la
+intimidad personal y a la propia imagen.
+II.
+Que el tratamiento de los datos personales de las personas naturales debe
+realizarse de acuerdo con los principios, mbtodos y tecnologlas que garanticen
+la confidencialidad y el buen uso de ellos, lo que demanda asegurar la mayor
+protection posible, as!como establecer las sanciones correspondientes cuando
+estos sean violentados.
+III.
+Que debido a que las nuevas tecnologlas permiten transmitir con gran facilidad
+los datos de las personas naturales a nivel mundial, resulta necesario establecer
+las condiciones mlnimas y estandarizadas para compartir datos con otros
+paises, salvaguardando la seguridad de la informacibn de acuerdo con los
+convenios internacionales que El Salvador ha ratificado.
+IV.
+Que, en virtud de lo anterior, resulta necesario se emita un cuerpo normativo
+que garantice la proteccibn de los datos de car^cter personal que se encuentren
+en posesion de otros distintos de sus titulares, y que ademas facilite la inversion,
+especialmente en centros de almacenamiento de datos como requisito
+ineludible para la generacibn de empleos en cadenas de alto valor.
+POR TANTO,
+en uso de sus facultades constitucionales y a iniciativa del presidente de la
+Republica, por medio del ministro de Justicia y Seguridad Publica,
+
+
+===== PAGINA 3 =====
+25
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+DECRETA la siguiente:
+LEY PARA LA PROTECCION DE DATOS PERSONALES
+TITULO I
+DISPOSICIONES GENERALES
+CAPITULO I
+OBJETO Y AMBITO DE APLICACION
+Objeto
+Art. 1.- La presente ley tiene por objeto establecer la regulacion para la
+proteccion de los datos personates, determinando los requisitos esenciales para
+realizar el tratamiento legitimo e informado de estos y el marco normativo que debe
+seguirse en su recoleccidn, uso, procesamiento, almacenamiento y otras actividades
+relacionadas a ellos; todo en aras de garantizar el derecho a la intimidad y a la
+autodeterminacion informativa de las personas naturales.
+Ambito de aplicacion
+Art. 2.- Esta ley se aplicara a toda persona natural o jurfdica, de caracter publico
+o privado, que lleve a cabo actividades relativas o conexas al tratamiento de datos
+personates, ya sea de manera manual, parcial o totalmente automatizado o a traves
+de terceros. Se entenderan incluidos incluso aquellos sujetos que realicen las referidas
+actividades sin cumplir con los requisitos y limites dispuestos en la presente ley.
+Los
+organos del
+Estado,
+sus dependences,
+las instituciones
+oficiales
+autonomas, las autoridades municipales y cualquier otra entidad u organismo,
+independientemente de su forma, naturaleza o situacion juridica, mediante las cuales
+se administren recursos publicos, bienes del Estado o ejecuten actos de la
+administraciOn publica en general, as! como los servidores publicos y personas que
+laboren en ellas, dentro o fuera del territorio de la Republica, estaran sujetos
+especificamente a las disposiciones que se establecen en el Titulo III de la presente
+ley.
+Exclusiones
+Art. 3.- Quedan excluidos de la aplicacion de la presente ley:
+a) El tratamiento de datos de historial crediticios que realicen los sujetos obligados
+en los supuestos de la Ley de Regulacion de los Servicios de Informacion sobre
+el Historial de Creditos de las Personas. Sin embargo, esta exclusion no aplicara
+a los integrantes del Sistema Financiero y demas supervisados por la
+Superintendencia del Sistema Financiero, sobre aquella informacion que no sea
+relativa al historial crediticio de sus usuarios.
+Pag. n.° 2
+
+
+===== PAGINA 4 =====
+26
+DIARIO  OFICIAL  Tomo  Nº 445
+b) El tratamiento de datos personates destinados exclusivamente a actividades en
+el marco de la vida familiar o domestica, mientras no tengan como proposito
+una divulgacion o utilization comercial.
+c) El tratamiento de datos personates u actividades que tengan por objeto la
+seguridad
+publica,
+la
+defensa,
+la
+seguridad
+del
+Estado,
+prevention,
+investigation, detection y represion del delito, todo en observance al debido
+proceso y respeto a los Derechos Humanos.
+d) Cualquier tratamiento de los datos personales realizados en los registros
+publicos, asi como, en el registro del estado familiar de las alcaldlas, en los
+procedimientos establecidos en la Ley Transitoria del Registro del Estado
+Familiar y de los Regimenes Patrimoniales del Matrimonio. Se excluye ademSs
+todo tratamiento de datos personales efectuado en aplicacion de la Ley Especial
+Reguladora de la Emision del Documento Unico de Identidad, Ley de Emision
+del Documento Onico de Identidad en el Exterior, Ley del Nombre de la Persona
+Natural por el Registro del Estado Familiar de las Personas Naturales.
+CAPITULO II
+DEFINICIONES Y PRINCIPOS RECTORES
+Definiciones
+Art. 4.- Para los efectos de esta ley o disposiciones juridicas relacionadas se
+entendera por:
+a) Autodeterminacidn informativa: facultad de toda persona para ejercer sus
+derechos y accionar los mecanismos que la presente ley otorga sobre la
+information personal que le concierne, contenida en registros publicos o
+privados, especialmente, pero no exclusivamente ni limitado, a los almacenados
+mediante medios digitales e informaticos. Es decir, es la capacidad del individuo
+para determinar la divulgacion y el uso de sus datos personales, controlar y
+determinar lo que terceros podrlan conocer sobre su vida personal en cada
+momento.
+Pag. n.° 3
+
+
+===== PAGINA 5 =====
+27
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+b) Base de datos o repositorio: conjunto organizado de datos personates que sean
+objeto de tratamiento o procesamiento, electronico o no, cualquiera que fuere
+la modalidad de su formation, almacenamiento, organizacibn o acceso.
+c) Bloqueo de datos: restriccion temporal o permanente de cualquier acceso o
+tratamiento de los datos almacenados.
+d) Consentimiento:
+manifestacibn
+libre,
+especifica,
+informada,
+expresa
+e
+individualizada de la voluntad del titular de los datos, mediante la cual acepta,
+ya sea a traves de una declaracibn o una clara accibn afirmativa, que se efectue
+el tratamiento de estos en los casos en que no exista otro fundamento legal para
+ello.
+e) Cookie: pequena informacion enviada por un sitio web y almacenada en el
+navegador del usuario, de manera que el sitio web pueda consultar la actividad
+previa del navegador. Sus principales funciones son recordar accesos y conocer
+informacion sobre los habitos de navegacibn.
+f)
+Datos personates: informacion concerniente a una persona natural identificada
+o identificable. Se consideran datos personates aquella informacibn en texto,
+imagen o audio que permita la identificacion de una persona, su domicilio,
+nacionalidad, estado familiar y canales de contacto, entendiendose estos
+ultimos como su numero telefonico, direccibn electrbnica, o cualquier dato que
+aporte informacibn numbrica, alfabetica, grbfica, fotogrbfica, acustica o de
+cualquier otro tipo. No se tratan como datos personales aquellos que no
+permiten identificar o localizar a una persona.
+g) Datos personales sensibles: son los datos personales que se refieren a las
+caracteristicas fisicas o morales de las personas o a hechos o circunstancias
+de su vida privada o intimidad, que afectan a la esfera mbs intima de su titular
+y cuya utilizacibn indebida puedan dar origen a discriminacion, afectar
+gravemente el derecho al honor, a la intimidad personal y familiar y a la propia
+imagen. De manera enunciativa pero no limitativa, generalmente son los que
+revelan aspectos como creencias y convicciones religiosas, origen etnico,
+afiliacibn o ideologias politicas, afiliacion sindical, preferencias sexuales, salud
+fisica y mental, informacibn biometrica, genetica, situacibn moral y familiar,
+hbbitos personales y otras informaciones intimas de similar naturaleza.
+Pbg. n.° 4
+
+
+===== PAGINA 6 =====
+28
+DIARIO  OFICIAL  Tomo  Nº 445
+h) Disociaci6n o Anonimizacibn: procedimiento irreversible mediante el cual los
+datos personales dejan de asociarse a su titular o de permitir, por su estructura,
+contenido o grado de desagregacion, la identificacibn de bste.
+i)
+Derechos ARCO-POL: derechos personalisimos e independientes de Acceso,
+Rectificacibn, Cancelacibn, Oposicibn, Portabilidad, Olvido y Limitacibn, por
+medio de los cuales el titular de los datos personales puede ejercer el control
+sobre el tratamiento de bstos.
+j)
+Encargado del tratamiento (Encargado): persona natural o jurldica, publica o
+privada, que sola o en conjunto con otros, realice el tratamiento de datos
+personales por cuenta del responsable del tratamiento.
+k) Emisor de datos personales: titular del banco de datos personales, o aquel que
+resulte encargado de su tratamiento en El Salvador, que realice una
+transferencia de datos personales a otro pais de conformidad a lo dispuesto en
+la presente ley.
+I)
+Fuentes de acceso publico: aquellas bases de datos o repositorios de
+administracibn publica o privada cuya consulta puede ser realizada por
+disposicibn de ley por cualquier persona o medio, por el abono de una
+contraprestacibn o tarifa.
+m) Limitacibn en el tratamiento de datos personales: permite al titular, cuyos datos
+personales son objeto de tratamiento, solicitar al responsable del tratamiento
+que aplique medidas sobre sus datos personales para, evitar su modificacion o,
+en su caso, su borrado o supresibn.
+n) Medidas de Seguridad: pollticas, acciones o procedimientos de control o grupo
+de controles que garanticen la proteccibn de los datos personales contenidos
+en registros o archivos fisicos o electronicos, de accesos no autorizados
+garantizando la confidencialidad, integridad y disponibilidad.
+o) Receptor de datos personales: toda persona natural o juridica, publica o
+privada, que recibe los datos en caso de transferencia internacional, ya sea
+como titular, encargado de datos personales o tercero.
+p) Responsable de tratamiento (Responsable): persona natural o jurldica, publica
+o privada, administradora de la base de datos y/o repositorio, o quien decida
+sobre la finalidad y medios del tratamiento de los datos personales que
+administre o posea.
+Pbg. n.° 5
+
+
+===== PAGINA 7 =====
+29
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+q) Seudonimizacibn: procedimiento de tratamiento de datos personales a efectos
+de que estos ya no pueden asociarse con el titular de estos, sin utilizar
+informacibn adicional, siempre y cuando dicha informacibn adicional se
+encuentre separada, oculta, clasificada y resguardada bajo medidas tecnicas y
+organizativas que garanticen que tales datos personales no pueden ser
+atribuidos a una persona flsica identificada o identificable.
+r)
+Sitios de Contingencia: sitio alterno o secundario en el cual se replican de forma
+continua o discontinua los datos almacenados en servidores informbticos flsico
+o virtuales que residen en un lugar principal.
+s) Titular: toda persona natural cuyos datos sean objeto del tratamiento al que se
+refiere la presente ley.
+t)
+Tratamiento de datos: cualquier operacion o conjunto de operaciones
+efectuadas mediante procedimientos automatizados o manuales y aplicadas a
+datos personales. Estas se relacionan con la obtencibn, uso, registro,
+organizacion, conservacion, difusion, almacenamiento, posesion, acceso,
+manejo y divulgacion de datos personales.
+u) Transferencia de datos personales: toda comunicacion de datos personales
+realizada a persona distinta del responsable o encargado del tratamiento, con
+el consentimiento previo e informado de su titular.
+Principios rectores
+Art. 5.- Los principios rectores para la proteccibn de datos son:
+a) Principio de la exactitud de los datos: los datos personales deberan mantenerse
+exactos, completos y actualizados hasta donde sea posible para las finalidades
+de su tratamiento, de tal manera que no se altere su veracidad. Se adoptaran
+todas las medidas razonables para que se supriman o rectifiquen sin dilacion
+los datos personales que sean inexactos con respecto a los fines para los que
+se
+tratan.
+Se presumiran exactos y actualizados los datos obtenidos
+directamente de su titular.
+Pbg. n.° 6
+
+
+===== PAGINA 8 =====
+30
+DIARIO  OFICIAL  Tomo  Nº 445
+b) Principio de lealtad: el responsable tratard los datos personales en su posesibn,
+privilegiando la proteccibn de los intereses de sus titulares y abstenibndose de
+tratar o recabar bstos a traves de medios fraudulentos, desleales y/o illcitos.
+c) Principio de consentimiento y finalidad: en el tratamiento y recoleccion de datos
+personales debe existir un consentimiento libre, especifico, informado, expreso
+e individualizado del titular, que establezca el fin, propbsito y periodo de
+almacenamiento y tratamiento.
+d) Principio de minimizacion de datos: los datos personales recopilados y
+utilizados deben ser suficientes, pertinentes y no excesivos en relacion con el
+propbsito especifico y legitimo.
+e) Principio de Transparencia: consiste en informar al titular de los datos
+personales de todas las caracteristicas del tratamiento al que serbn sometidos
+sus datos y, asimismo, exige que esa informacibn se facilite en forma concisa,
+de facil acceso y con un lenguaje claro y sencillo. Se prohibe recurrir a textos
+extensos, terminologias tbcnicas o legates y/o letra pequena en la aplicacion de
+este principio.
+f)
+Principio de Seguridad de Datos: se refiere a garantizar la seguridad, integridad,
+disponibilidad y confidencialidad de los datos personales, a fin de evitar su
+alteration, perdida, consulta o tratamiento no autorizado, asi como detectar
+desviaciones de informacibn, intencionales o no, que provengan de la action
+humana o de un medio tecnico.
+g) Principio de Licitud: El tratamiento de datos personales debe realizarse en
+cumplimiento a lo establecido en la presente ley y la normativa aplicable, para
+lo cual debe cumplirse al menos una de las siguientes condiciones:
+1.
+El tratamiento de los datos se base en el consentimiento expreso otorgado por
+el titular para una o varias finalidades.
+2.
+El tratamiento sea necesario para la ejecucion de un contrato, del cual forma
+parte el titular, o para la ejecucion de medidas precontractuales.
+3.
+El tratamiento sea necesario para el cumplimiento, por parte del responsable,
+de alguna obligacibn legal.
+Pag. n.° 7
+
+
+===== PAGINA 9 =====
+31
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+El tratamiento sea necesario para garantizar la proteccion de los intereses
+vitales del titular u otra persona afectada.
+4.
+El tratamiento sea necesario para el cumplimiento de un fin de interns pCiblico o
+para que el responsable pueda ejercer los poderes publicos que le han sido
+conferidos.
+5.
+El tratamiento sea necesario para que el responsable pueda satisfacer sus
+intereses legltimos, siempre y cuando esos intereses no atenten contra los
+derechos o libertades de los titulares de los datos personates.
+6.
+h) Principio de temporalidad: la conservacion de los datos personales debe
+limitarse al periodo en el que se lograran los fines que se persiguen para su
+tratamiento.
+Principio de responsabilidad demostrada: una entidad que recoge y efectua el
+tratamiento de datos personales debe ser responsable del cumplimiento
+efectivo de las medidas que implementen para proteger la privacidad de sus
+titulares y de garantizar una efectiva proteccion de datos personales.
+i)
+J)
+Principio de ejercicio progresivo de las facultades: Los derechos y garantias
+reconocidos a las ninas, nifios y adolescentes seran ejercidos de manera
+progresiva tomando en consideracion el desarrollo evolutivo de sus facultades,
+su condicion o situation individual, la direction y orientation apropiada de sus
+padres, madres o de quien ejerza la representation legal, y las disposiciones
+establecidas en la legislacibn vigente.
+CAPITULO III
+DERECHOS DE LOS TITULARES DE LOS DATOS PERSONALES Y SU
+EJERCICIO
+SECCION A
+DERECHOS ARCO-POL
+Derecho a la proteccion de los datos personales
+Art. 6.- Toda persona, por si mismo o por medio de su representante con
+facultades especiales, tendra derecho a conocer si sus datos personales estan siendo
+procesados para garantizar la proteccibn de los mismos, cuando sea procedente podrb
+solicitar la rectification, cancelation o bloqueo de bstos; a oponerse al tratamiento de
+sus datos; y, a solicitar que se limite su tratamiento en el futuro para usos distintos a
+los consentidos.
+PSg. n.° 8
+
+
+===== PAGINA 10 =====
+32
+DIARIO  OFICIAL  Tomo  Nº 445
+Asimismo, tendran derecho a obtener una reproduction ineligible de sus datos
+personales y a transferirlos cuando asi lo consideren pertinente.
+Tratandose de los datos personales de personas fallecidas, le corresponded a
+sus herederos o sucesores ejercer los derechos correspondientes, debiendo acreditar
+con documentation que demuestre su calidad de heredero o sucesor.
+Derecho de informacidn frente a la recoleccion de datos
+Art. 7.- El titular de sus datos personales tendra derecho a conocer quienes
+resguardadn estos. Este derecho incluye tambien a los proveedores de servicios de
+almacenamiento tercerizados, como el encargado del tratamiento de datos personales
+que fue contratado por el responsable a tales efectos y que utiliza como medio de
+almacenamiento la nube u otra infraestructura.
+La information debera ser almacenada en forma tal que se garantice
+plenamente el derecho de acceso por el titular de la misma. Asimismo, cuando se
+recaben datos personales se debera informar previamente a sus titulares en forma
+expresa, precisa e inequivoca, lo siguiente:
+a) El proposito o finalidad para la que seran recolectados y tratados, asi como
+quidnes pueden ser sus destinatarios o clase de destinatarios.
+b) La existencia de la base de datos o repository, asi como los respaldos y sitios
+de contingency, en el caso que aplique.
+c) La identidad, domicilio, correo electrdnico, nurnero telefonico y cualquier
+informacidn que facilite contactar al responsable y al encargado del tratamiento,
+o a sus respectivos representantes.
+d) El contenido de los derechos ARCO-POL y los mecanismos para ejercerlos.
+e) Las medidas y mecanismos de protection y seguridad que el responsable ha
+tornado y mantiene activas para salvaguardar la information.
+La informacidn brindada de conformidad a los literates anteriores no tendra
+costo alguno, y podrd ser proporcionada mediante la publicacion de politicas de
+privacidad de forma fisica y/o electrdnica, las que deben ser facilmente accesibles e
+identificables.
+Pdg. n.° 9
+
+
+===== PAGINA 11 =====
+33
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+Cuando se proyecte un tratamiento de datos distinto de aquel para el cual se
+recolectaron, se proporcionara al titular informacibn sobre esta finalidad ulterior y
+cualquier otra informacion adicional pertinente. El titular tendril derecho de tevocar la
+autorizacibn otorgada inicialmente y deberb emitir una nueva autorizacibn para que
+sus datos sean tratados conforme a la nueva finalidad.
+En todo caso, se debera notificar a las partes, los efectos de proporcionarlos,
+de la negativa a hacerlo o de su inexactitud.
+Derecho de acceso a datos personales
+Art. 8.- El titular de datos personales tendrb derecho a obtener toda la
+informacibn que sobre si mismo se encuentre en bases de datos o registros flsicos.
+Este derecho de acceso sera ejercido en forma gratuita conforme a lo establecido en
+la presente ley.
+La informacion personal a la cual se concedera acceso debera sersuministrada:
+a) En forma clara y exenta de codificaciones, la cual debera ser acompanada de
+una explicacion de los terminos que se utilicen, los sujetos que han consultado
+dicha informacibn y con qub propbsito.
+b) De manera completa, siempre y cuando la misma no haya sido objeto de
+seudonimizacibn o disociacion, en cuyo caso se dejara constancia de dichas
+circunstancias. En ningun caso el informe podra revelar datos pertenecientes a
+terceros, aun cuando se vinculen con el titular.
+Esta informacibn podra obtenerse mediante la mera consulta de su titular o su
+representante, previa identificacion de su identidad y de los datos que por medio de su
+visualizacibn pretende conocer, o tambien se podra obtener con la indicacibn de los
+datos que son objeto de tratamiento por medios electronicos o por cualquier otro medio
+que la tecnologia permita y cuyo contenido sea legible e ineligible; esto sin utilizar
+claves o cbdigos que requieran el uso de dispositivos mecanicos especificos,
+imagenes o cualquier otro medio usado para dicho propbsito.
+Adicionalmente, se debe comunicar si se ha realizado un intercambio de su
+informacibn personal con otras instituciones o entidades.
+Pag. n.° 10
+
+
+===== PAGINA 12 =====
+34
+DIARIO  OFICIAL  Tomo  Nº 445
+Derecho de Rectification
+Art. 9.- El titular tendra derecho a solicitar al responsable la rectificacidn o
+correccion de sus datos personates, cuando 6stos sean inexactos, incompletos o no
+se encuentren actualizados. Ademas, el titular podra solicitar la rectificacidn y
+actualizacion de sus datos personales, en el caso de que 6stos hayan sido sometidos
+a tratamiento en inobservancia de las disposiciones de la presente ley.
+El titular deber£ ofrecer la documentacidn que acredite que es procedente la
+rectificacidn de sus datos personales o podra informar la ubicacion en la cual se
+encuentra almacenada o registrada la misma.
+El responsable del tratamiento deber£ cumplir con lo solicitado por el titular o su
+representante de manera gratuita, y resolver en el sentido que corresponda en el plazo
+de veinte dias habiles, contados a partir de la recepcidn de la solicitud. El
+incumplimiento de esta obligacidn dentro del plazo determinado habilitara al interesado
+para presentar la denuncia correspondiente ante la Entidad Rectora a efecto de que
+se garanticen sus derechos.
+Durante el proceso de verificacidn para rectificar la informacidn de los datos
+personales, el responsable del banco de datos, base de datos, repositorio o de los
+sistemas o registros, tanto manuales como informaticos, bloqueara aquellos que se
+est6n analizando para su rectification, dando a conocer que se encuentra en revisidn
+o actualizacion, segun lo solicitado.
+Derecho de cancelacidn o supresion
+Art. 10.- El titular de los datos personales o sus representantes podran solicitar
+al responsable la eliminacibn de los datos personales que le conciernan sin dilaciones
+indebidas. Dicha solicitud podra presentarse cuando concurra al menos uno de los
+siguientes casos:
+a) Los datos personales ya no sean necesarios con relation a los fines para los
+cuales fueron tratados.
+b) El titular retire su consentimiento, siempre y cuando dicho consentimiento haya
+sido el supuesto que haya legitimado el tratamiento de dichos datos por parte
+del responsable, y su tratamiento no se base en otro supuesto de licitud
+establecido en la presente ley.
+Pag. n.° 11
+
+
+===== PAGINA 13 =====
+35
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+c) El titular se oponga al tratamiento de bstos, y no prevalezcan otros motivos
+legltimos para el almacenamiento de los mismos.
+d) Los datos personates hayan sido obtenidos o tratados ilicitamente.
+e) Los datos personales deban suprimirse para el cumplimiento de una obligation
+legal aplicable al responsable.
+f)
+Los datos personales se hayan obtenido en relation con la oferta de servicios
+de la sociedad de la informacibn mencionados, en el caso de oferta directa a
+nifios.
+g) Los datos personales se hayan obtenido en relacion con la oferta de servicios
+de instituciones publicas o privadas.
+Sin embargo, no procederb la solicitud de cancelacibn o supresibn en los
+siguientes casos:
+Cuando causen perjuicios a derechos o intereses legltimos de terceros, siempre
+y cuando existiere resolucibn judicial u orden administrativa de conservar dichos
+datos.
+a)
+b) Si contraviene lo establecido por una obligacion legal.
+Cuando sean necesarios para ejercer el derecho a la libertad de expresibn, de
+informacibn y prensa. Los datos utilizados en estos casos deben cumplir con el
+principio de exactitud, es decir, no se pueden utilizar o difundir datos personales
+que sean inexactos, incompletos o desactualizados.
+c)
+d) Cuando los datos personales hayan sido objeto de disociacibn.
+Cuando tengan fines de investigacibn cientifica, histbrica o estadisticos,
+siempre y cuando, los datos personales hayan sido seudonimizados o en su
+caso disociados.
+e)
+f)
+Con fines de archivo en interes publico; o para la formulacion, el ejercicio o la
+defensa de reclamaciones.
+Pag. n.° 12
+
+
+===== PAGINA 14 =====
+36
+DIARIO  OFICIAL  Tomo  Nº 445
+El titular tambien podra ejercer el derecho al olvido de sus datos personates,
+cuando estos hayan sido publicados en el entorno electronico, debiendo el
+responsable informar a otros responsables del tratamiento de dichos datos personates
+para que 6stos sean suprimidos de los enlaces, copias o replicas que los contengan.
+Este derecho incluye ademas el de solicitar que se eliminen de los motores de
+busqueda en Internet las listas de resultados que se obtuvieran al realizar una
+busqueda a partir de los datos personates del titular de los enlaces publicados que
+contuvieran informaci6n relativa al mismo, cuando 6stos sean inadecuados, inexactos,
+no pertinentes, no actualizados o excesivos o hubieren devenido como tales por el
+transcurso del tiempo, teniendo en cuenta los fines para los que se recogieron o
+trataron, el tiempo transcurrido, la naturaleza e interns publico de dicha informacidn.
+Bloqueo de datos personates
+Art. 11.- El derecho de supresion o cancelacidn de datos personates podrd dar
+lugar al bloqueo de dichos datos, conserveindose unicamente estos a disposicidn de la
+Administration Publica, Jueces y Tribunates en el ejercicio estricto de sus funciones,
+para la atencidn de las posibles responsabilidades nacidas del tratamiento, en los
+plazos establecidos para el resguardo segun las leyes aplicables.
+Derecho de oposicion
+Art. 12.- Es el derecho del interesado a solicitar el cese en el tratamiento de sus
+datos personates, incluida la elaboration de perfiles o clasificaciones con fines
+comerciales o de mercadotecnia directa. No obstante, el derecho de oposicion no
+podra ejercerse en los siguientes escenarios:
+a) Cuando el tratamiento sea necesario para el cumplimiento de una mision
+realizada en interns pdblico o en el ejercicio de facultades conferidos al
+responsable.
+b) Cuando el tratamiento sea necesario para la satisfaction de intereses legitimos
+perseguidos por el responsable o por un tercero, siempre que sobre dichos
+intereses
+no
+prevalezcan
+los
+intereses
+o
+los
+derechos
+y
+libertades
+fundamentales del titular que requiera la proteccidn de sus datos personates,
+en particular cuando el titular sea un nino o nifia.
+Derecho a la limitation
+Art. 13. El titular de los datos personates o su representante tendrS derecho a
+solicitar al responsable la limitacidn del tratamiento de sus datos cuando se cumpla
+alguna de las siguientes condiciones:
+a) El titular o su representante impugne la exactitud de los datos personates,
+durante un plazo que permita al responsable verificar la exactitud de estos.
+PSg. n.° 13
+
+
+===== PAGINA 15 =====
+37
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+b) El tratamiento sea illcito y el titular o su representante se oponga a la supresibn
+de los datos personales y solicite en su lugar la limitacibn de su uso.
+c) El responsable ya no necesite los datos personales para los fines del
+tratamiento, pero el titular los necesite para la formulacion, el ejercicio o la
+defensa de reclamaciones ante ese responsable o cualquier otro responsable o
+autoridad publica.
+d) El titular o su representante se haya opuesto al tratamiento de los mismos
+mientras se verifica si los motivos legitimos manifestados por el responsable
+prevalecen sobre los del titular.
+Los efectos de la limitacibn operaran mientras subsistan las razones que
+motivaron al titular o su representante para ejercer su derecho.
+Derecho a la portabilidad
+Art. 14.- Es el derecho del titular a recibir los datos personales que haya
+facilitado al responsable, en un formato estructurado, de uso comun, de lectura
+mecanica e interoperable, y el derecho a transmitirlos a otro responsable si este as!lo
+desea.
+El ejercicio de este derecho exige dos requisitos: que el tratamiento este
+fundado en el consentimiento del titular y que dicho tratamiento sea efectuado por
+medios
+automatizados. Para
+facilitar
+este proceso, es necesario motivar
+la
+interoperabilidad entre los servicios.
+Es obligacion de los responsables realizar con agilidad y sin costo para el titular,
+todos los tramites para la migracion de los datos de este a otro responsable del
+tratamiento, en un formato estructurado, de uso comun y facil lectura, cuando asi lo
+solicite legitimamente.
+SECCION B
+DEL EJERCICIO DE LOS DERECHOS ARCO-POL
+Delegado de proteccibn de datos personales
+Art. 15.- Los sujetos obligados por la presente ley deberan de nombrar un
+delegado de proteccibn de datos personales, en adelante delegado, quien se
+encargarb de gestionar y tramitar las solicitudes para el ejercicio de los derechos
+ARCO-POL.
+Pbg. n.
+u 14
+
+
+===== PAGINA 16 =====
+38
+DIARIO  OFICIAL  Tomo  Nº 445
+Atribuciones
+Art. 16.- El delegado tendra las siguientes atribuciones:
+a) Recibir, tramitar y resolver las solicitudes para el ejercicio de los derechos
+ARCO- POL.
+b) Auxiliar y orientar al responsable en las actividades que lo requiera con relation
+al ejercicio del derecho de los titulares de datos personates.
+c) Establecer mecanismos para asegurar que los datos personates solo se
+entreguen a su titular o al representante de bste que se encuentre debidamente
+acreditado.
+d) Proponer procedimientos internos que aseguren y fortalezcan con mayor
+eficiencia la gestibn de las solicitudes para el ejercicio de los derechos ARCO-
+POL.
+e) Asesorar a las breas en materia de protection de datos personates.
+f)
+Realizar actividades de formation en el personal de la institution relativas a los
+derechos y obligaciones establecidos en la presente ley.
+g) Publicar el aviso de privacidad en el sitio web del responsable o en lugares
+fisibles dentro de los establecimientos de bste, segun se determine en los
+lineamientos aplicables.
+Deber de asistencia
+Art. 17.- Sera obligacion de cada dependencia, empleado o proveedor del
+responsable del tratamiento de datos de asistir y atender a las peticiones canalizadas
+por el delegado en el ejercicio de sus funciones.
+De la Solicitud.
+Art. 18.- El titular o su representante podrbn solicitar al responsable del banco
+de datos, base de datos, repositorio o de los sistemas o registros, tanto manuales
+como informaticos, en los casos establecidos en la presente ley, el ejercicio de sus
+derechos ARCO-POL. Los requisitos que debera contener dicha solicitud son los
+siguientes:
+Pag. n.° 15
+
+
+===== PAGINA 17 =====
+39
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+a) El nombre del titular o su representante, su domicilio y los medios para recibir
+notificaciones.
+b) Los documentos que acrediten la identidad del titular y, en su caso, de la
+persona que le represente.
+De ser posible, hacer mencion del area del responsable que trata los datos
+personales.
+c)
+d) La descripcion clara y precisa de los datos personales respecto de los que se
+busca ejercer alguno de los derechos ARCO-POL, salvo que se trate del
+derecho de acceso.
+e) La descripcibn del derecho ARCO-POL que se pretende ejercer, o bien, lo que
+solicita el titular.
+f)
+Cualquier otro elemento o documento que facilite la localization de los datos
+personales, en su caso.
+9) Firma del titular o de la persona que lo representa, o cualquier otro medio
+equivalente que permite establecer la anuencia de estos.
+La presentation de la solicitud de derechos ARCO-POL debera realizarse al
+delegado. Cuando se tratb de una solicitud de acceso a datos personales, el titular
+debera senalar la modalidad en la que prefiere que estos se reproduzcan. El delegado
+debera atender la solicitud en la modalidad requerida por el titular, salvo que exista
+una imposibilidad flsica o juridica que lo limite a reproducir los datos personales en
+dicha modalidad, en este caso debera ofrecer otras modalidades de entrega de los
+datos personales, fundando y motivando dicha actuation.
+En caso de que la solicitud de protection de datos no cumpla con alguno de los
+requisitos a que se refiere este artlculo o se requiera information adicional, el delegado
+debera realizar la prevention respectiva por una sola ocasibn, para que subsane las
+omisiones dentro de un plazo de diez dias habiles contados a partir del dia siguiente
+al de la notificacibn. Si el interesado no realiza la actuacibn requerida en el plazo
+previsto o la realiza sin atender a las prevenciones realizadas, se archivarb su escrito
+sin mas trbmite y quedarb a salvo su derecho de presentar una nueva solicitud.
+Pbg, n.° 16
+
+
+===== PAGINA 18 =====
+40
+DIARIO  OFICIAL  Tomo  Nº 445
+Incompetencia del responsable
+Art 19.- Si de la verificacion de la solicitud de derechos ARCO-POL, el delegado
+advirtiera que el responsable no es el competente para atenderla o que la solicitud
+corresponde a un derecho diferente de los previstos en la presente ley, deberb hacerlo
+del conocimiento del titular y le devolvera la petition dentro de los cinco dias hbbiles
+posteriores a su recepcibn.
+Plazos de respuesta
+Art. 20.- El delegado deberb entregar al titular o su representante la respuesta
+respectiva a la solicitud de derechos ARCO-POL en el plazo de veinte dias hbbiles,
+pudiendo prorrogarse este plazo por causas justificadas y sin que dicha prbrroga
+exceda otros veinte dias habiles.
+Entrega de la information
+Art. 21.- La obligation de acceso a la informacibn se darb por cumplida cuando
+se pongan a disposicion del titular los datos personates mediante la expedicion de
+copias simples, copias certificadas, consulta directa, documentos electronicos o
+cualquier otro medio analogo.
+Durante el proceso de rectificacibn de datos personates, el delegado debera
+dejar constancia que dicha informacibn se encuentra sometida a un proceso de
+rectificacibn ante el requerimiento de terceros para acceder a la misma.
+En el supuesto de comunicacibn o transferencia de datos personates, el
+delegado deberb notificar la rectificacibn, actualizacibn o eliminacion de dichos datos
+a quienes hayan recibido los mismos, dentro de los cinco dias habiles posteriores a la
+determinacibn de la procedencia de la solicitud del titular.
+Excepciones al ejerciclo de los derechos de ARCO-POL
+Art. 22.- El delegado podrb denegar el acceso a los datos personates o a
+realizar la rectificacibn, cancelacion, portabilidad, olvido o conceder la oposicibn o
+limitacion al tratamiento de estos, en los siguientes supuestos:
+a) Cuando el solicitante no sea el titular de los datos personates, o el representante
+no este debidamente acreditado para ello.
+b) Cuando en el banco de datos, base de datos, repositorio, sistemas o registros,
+tanto manuales como informaticos, no se encuentren los datos personates del
+solicitante.
+Pbg. n.° 17
+
+
+===== PAGINA 19 =====
+41
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+c) Cuando se perjudiquen los derechos e intereses legltimos de un tercero.
+d) Ante un notorio error del solicitante respecto a la identification de los datos
+personates o falsedad de los hechos descritos por el solicitante que
+supuestamente posibilitarian el ejercicio de los derechos ARCO-POL.
+e) Cuando exista un impedimento legal, o la resolucibn de una autoridad
+competente, que restrinja el acceso a los datos personates, o no permita la
+rectificacibn, supresion u oposicibn de estos.
+f)
+Cuando la cancelation u oposicibn haya sido previamente realizada.
+g) Cuando el responsable no sea competente.
+h) En los demas casos establecidos en la presente ley y otras leyes aplicables.
+La negativa a que se refiere este artlculo podra ser parcial en cuyo caso el
+responsable efectuara el acceso, rectificacibn, cancelacion o supresion, oposicion,
+portabilidad, olvido o limitation solo de los datos que considero procedente modificar.
+En todos los casos anteriores, el delegado debera notificar a travbs de una
+resolucibn motivada, las razones de su decision y comunicarla al titular, o en su caso,
+al representante, en los plazos de tres dlas hbbiles a la adoption de la decision. La
+notificacibn debera efectuarse por el mismo medio senalado por el titular y debera
+acompanarse, en su caso, de las pruebas y cualquier documentacion que se tomb en
+cuenta al momento de emitir el pronunciamiento respectivo.
+Costos
+Art 23.- El ejercicio de los derechos ARCO-POL es gratuito y solo podran
+realizarse cobros de los costos de reproduccibn, certificacibn o envlo. La reproduccion
+o envlo de la informacion sera sufragada por el solicitante, sin embargo, su valor no
+podra ser superior al de los materiales utilizados o de los costos de remisibn. El
+responsable deberb publicar y comunicar a los interesados de los costos de
+reproduccibn y envlo de sus datos personates
+En caso de que los datos personales deban entregarse en dispositivos
+magneticos o electrbnicos, el interesado debera aportar el medio en que seran
+almacenados. Para el envlo por via electronica no tendra costo alguno, siempre y
+cuando sea posible realizar a travbs de dicho mecanismo.
+Pag. n.° 18
+
+
+===== PAGINA 20 =====
+42
+DIARIO  OFICIAL  Tomo  Nº 445
+TITULO II
+DE LAS ACTIVIDADES REALIZADAS SOBRE LOS DATOS PERSONALES
+CAPITULO I
+PRIVACIDAD DE LOS DATOS PERSONALES
+Aviso de privacidad
+Art. 24.- El aviso de privacidad es el documento fisico, electronico o digital
+mediante el cual el responsable, previo al tratamiento y recoleccion de datos, informa
+al titular sobre los tbrminos bajo los cuales seran tratados sus datos personales. Este
+aviso debera ser consistente con la politica de privacidad que debera elaborar el
+responsable para tal efecto.
+El contenido del aviso de privacidad tendra, al menos, la siguiente informacibn:
+a) El domicilio del responsable.
+b) Los datos personales que seran sometidos a tratamiento, identificando aquellos
+que son sensibles.
+c) El fundamento legal que faculta al responsable para realizar el tratamiento.
+d) Las finalidades del tratamiento para las cuales se obtienen los datos personales,
+distinguiendo aquellas que requieren el consentimiento del titular.
+e) Los mecanismos, medios y procedimientos disponibles para ejercer los
+derechos ARCO-POL y los mecanismos para revocar el consentimiento.
+f)
+Indication del nombre del delegado y lugar o medios para presentar la solicitud
+de derechos ARCO-POL.
+g) Los medios a traves de los cuales el responsable comunicara a los titulares los
+cambios al aviso de privacidad.
+h) Los datos de contacto de la entidad subcontratada encargada del tratamiento
+de datos personates, en caso de existir.
+Pag. n.° 19
+
+
+===== PAGINA 21 =====
+43
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+i)
+El uso de cookies.
+El aviso de privacidad podra ser difundido por los medios fisicos o electronicos
+al titular de los datos personales, debiendo ser redactado y estructurado de manera
+clara y sencilla. En ningun caso el responsable podr£ eximirse de la obligation de
+comunicarlo por escrito al titular al momento de que este otorgue su consentimiento
+informado para que sus datos puedan ser tratados.
+Notificacion de vulneraciones a la seguridad de los datos personales
+Art. 25.- Cuando el responsable tenga conocimiento de una vulneracidn de
+seguridad
+de
+datos
+personales
+ocurrida
+en
+cualquier
+fase
+del
+tratamiento,
+entendiendose esta como cualquier dano, perdida, alteracion, destruccidn, acceso
+ilegitimo, y en general, cualquier uso ilicito o no autorizado de los datos personales
+aun cuando ocurriera de manera accidental, notificar£ a la Agenda de Ciberseguridad
+del Estado, a la Fiscalia General de la Republica y a los titulares afectados dicho
+acontecimiento, para lo cual se establece un plazo m^ximo de setenta y dos horas
+desde que se tuvo conocimiento de la vulneracidn de seguridad.
+Dentro de este mismo plazo. el responsable debera iniciar un proceso de
+revision exhaustiva para determinar la magnitud de la afectacion, y las medidas
+correctivas y preventivas que correspondan, asi como la actualizacidn de las politicas
+de seguridad del responsable de la base de datos para evitar nuevas vulneraciones
+La notificacion que realice el responsable a la Entidad Rectora estara redactada
+en un lenguaje claro y sencillo y contendra, al menos, la siguiente informacion:
+a) La naturaleza del incidente.
+b) Los datos personales comprometidos.
+c) Las acciones correctivas generates realizadas de forma inmediata.
+d) Las recomendaciones al titular sobre las medidas que £ste pueda adoptar para
+proteger sus interese.
+e) Los medios disponibles al titular para obtener mayor informacion al respecto.
+La notificacion dirigida a los titulares afectados Cinicamente debera contener lo
+establecido en los literales a), b), d) y e).
+Pag. n.° 20
+
+
+===== PAGINA 22 =====
+44
+DIARIO  OFICIAL  Tomo  Nº 445
+Asimismo, el responsable documentary toda vulneracion ocurrida en cualquier
+fase del tratamiento que ocasione un riesgo en la seguridad de los datos personales,
+identificando de manera enunciativa mas no limitativa, la fecha en que ocurrid, el
+motivo de la vulneracion, los hechos relacionados con ella, sus efectos o implicaciones
+y las medidas correctivas implementadas de forma inmediata y definitiva, la cual estard
+a disposition de la autoridad encargada de la materia.
+CAPITULO II
+DEL PREVIO CONSENTIMIENTO INFORMADO
+Formas del consentimiento
+Art. 26.- El consentimiento deberd ser expreso, y se podrd manifestar de
+manera verbal, por escrito o a travds de signos inequivocos, siempre y cuando conste
+por medios fisicos, electr6nicos o cualquier otro medio tecnoldgico.
+En el caso del consentimiento de los ninos, nifias y adolescentes para
+proporcionar sus datos personales se tomara en cuenta el Principio de Ejercicio
+Progresivo de las Facultades, en lo pertinente y adecuado para la aplicacion de la
+presente ley.
+Cuando se trate de datos personales de personas declaradas incapaces se
+estard a lo dispuesto por el derecho comun.
+Tratandose de datos personales sensibles, el responsable deberd obtener el
+consentimiento por escrito del titular para su tratamiento, a travds de su firma autografa
+o su equivalente.
+Requisites del consentimiento
+Art. 27.- Para el tratamiento de los datos personales, y en especial de los datos
+personales sensibles, sera necesaria la obtencidn del consentimiento del titular o en
+su caso de su representante, debiendo ser dicho consentimiento:
+a) Libre: no debe mediar error, mala fe, dolo, violencia fisica, psicoldgica o
+cualquier otra forma de violencia, que puedan afectar la manifestacidn de
+voluntad del titular.
+b) Especifico: referido a una o varias finalidades determinadas y definidas que
+justifiquen el tratamiento.
+Pdg. n.
+® 21
+
+
+===== PAGINA 23 =====
+45
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+c) Informado: que el titular tenga conocimiento previo al tratamiento, a qu6 ser£n
+sometidos
+sus
+datos
+personates
+y
+las
+consecuencias
+de
+otorgar
+su
+consentimiento.
+d) Expreso. debe ser inequivoco, de forma tal que pueda demostraise su
+otorgamiento. El consentimiento puede ser obtenido por medios flsicos o
+electrdnicos.
+e) Individualizado: debe existir al menos un otorgamiento del consentimiento por
+parte de cada titular de los datos personates.
+Excepciones del Consentimiento
+Art. 28.- No sera necesario el previo consentimiento para el tratamiento de los
+datos personales en los casos siguientes:
+a) Cuando los datos personales figuren en fuentes de acceso publico, siempre y
+cuando no constituyan datos personales sensibles.
+b) Cuando el titular de los datos personales no este en condiciones de otorgar el
+consentimiento y este sea necesario para efectuar un tratamiento para la
+prevention, diagndstico, la prestacion de asistencia sanitaria, tratamientos
+medicos o la gestion de servicios sanitarios, en los terminos que establece las
+disposiciones juridicas aplicables, y que dicho tratamiento de datos personales
+se realice por una persona sujeta al secreto profesional u obligation
+equivalente.
+c) Cuando exista una situation de emergencia que potencialmente pueda danar a
+un individuo en su persona o en sus bienes o tenga por finalidad proteger un
+interns vital del titular o de otra persona fisica que no este capacitada para dar
+su consentimiento o no pueda darlo en ese momento.
+d) Cuando los datos personales se sometan a un procedimiento previo de
+disociacion.
+e) Cuando el titular de los datos personales sea una persona reportada como
+desaparecida en los terminos de la ley aplicable para tales efectos.
+f)
+Cuando deriven de una relation contractual, cientifica o profesional del titular
+de los datos personales, y sean necesarios para su desarrollo o cumplimiento.
+P3g. n.° 22
+
+
+===== PAGINA 24 =====
+46
+DIARIO  OFICIAL  Tomo  Nº 445
+g) Cuando se trate de datos personales que el titular ha hecho ya manifiestamente
+publicos.
+h) Cuando formen parte de archivos histbricos, se recaben para fines de
+investigacibn cientifica o histdrica o fines estadisticos siempre y cuando sea
+probable que los derechos citados anteriormente imposibiliten u obstaculicen
+gravemente el logro de los fines cientlficos y cuanto esas excepciones sean
+necesarias para alcanzar esos fines.
+De la revocacion del consentimiento
+Art. 29.- En cualquier momento, el titular podrb revocar de forma expresa su
+consentimiento para el tratamiento de sus datos personales, sin efecto retroactivo,
+para lo cual el responsable deberb establecer mecanismos expeditos, sencillos y
+gratuitos, que permitan al titular realizar dicha revocacion.
+Esta revocacion no afectara la licitud del tratamiento posterior que realice el
+responsable, si este es ejecutado sobre la base de otras de las causales establecidas
+en la presente ley que lo justifiquen.
+Trbmite de la revocacion
+Art. 30.- El delegado, ante la presentation de la solicitud de revocacion del
+consentimiento, contara con un plazo de cinco dias hdbiles a partir de su recepcibn
+para proceder conforme a la revocacion. Si estos datos personales tambien son
+tratados por un encargado del tratamiento, el delegado debera informarle de la
+resolucibn de revocacion en el plazo de cinco dias habiles a partir de la fecha de
+emision de esta, para que la ejecute inmediatamente.
+Negativa a la revocacion
+Art. 31.- En caso de negativa por parte del responsable a tramitar la revocacion
+del consentimiento, el titular, sin perjuicio de otras acciones que conforme al
+ordenamiento juridico pudiera ejercer, podrb presentar su denuncia ante la Entidad
+Rectora de la presente ley.
+CAPITULO III
+DEL TRATAMIENTO DE DATOS PERSONALES
+Tratamiento de datos personales
+Art. 32.- El tratamiento de datos personales por parte de todos los responsables
+solo podra efectuarse respecto de los fines previamente informados y con sujecion a
+las normas aplicables. En el caso de las instituciones o empresa privada, unicamente
+Pbg. n.° 23
+
+
+===== PAGINA 25 =====
+47
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+debera realizar el tratamiento de los datos personates que tengan relacidn directa con
+la naturaleza de los servicios que prestarSn o prestaron al titular, en ningun caso
+podr^n transferir o tratar datos personates de terceros para ofrecer otro tipo de
+servicios o cualquier finalidad diferente a la que estos fueron recabados, sin previa
+autorizacion del titular.
+Procedimientos para el ejerclcio de los derechos ARCO-POL
+Art. 33.- El responsable establecera y documentary procedimientos para el
+ejercicio de los derechos ARCO-POL sobre los datos personales objetos de
+tratamiento, con base en las pollticas de actuacidn emitidas por la Entidad Rectora y
+las medidas de seguridad mlnimas necesarias.
+En los casos en el que el responsable subcontrate servicios en los cuales se
+conceda acceso a los datos personales, estos proveedores deberan someterse a la
+presente ley y a los lineamientos que el responsable y la Entidad Rectora establezca
+para garantizar el adecuado tratamiento de los datos personales.
+Obligaciones para el tratamiento de datos personales
+Art. 34.- El responsable, y en su caso el encargado del tratamiento de datos,
+ademas del cumplimiento de los principios establecidos en la presente ley, tendra las
+obligaciones siguientes:
+a) Limitar el tratamiento de los datos personales de conformidad a la finalidad para
+la que se emitid el consentimiento por parte del titular.
+b) Implementar las medidas de seguridad y cumplir con las pollticas de actuation
+conforme a la presente ley.
+c) Guardar confidencialidad en el tratamiento de los datos personales.
+d) Cualquier otra obligation que le atribuya la presente ley.
+De las pollticas de actuacion y manejo de datos personales
+Art. 35.- La Entidad Rectora dietary las pollticas de actuacidn y manejo de datos
+personales, las cuales seran imperativas a los sujetos obligados por la presente ley.
+pyg. n.° 24
+
+
+===== PAGINA 26 =====
+48
+DIARIO  OFICIAL  Tomo  Nº 445
+De las medidas de seguridad en el tratamiento de datos personales
+Art. 36.- El responsable debera acatar y mantener las medidas de seguridad
+establecidas por la Entidad Rectora para el resguardo y el tratamiento de los datos
+personales y que garanticen el cumplimiento de las caracterlsticas minimas de
+seguridad de la informacidn, tales como integridad, disponibilidad y confidencialidad.
+El responsable debera aplicar los mecanismos tecnoldgicos, regulatorios y
+procedimentales que garanticen el cumplimiento de las caracterlsticas de seguridad
+de information. Lo dispuesto en este artlculo tambten ser£ de obligatorio cumplimiento
+para el encargado del tratamiento de datos personales.
+CAPITULO IV
+DEL TRATAMIENTO DE DATOS SENSIBLES
+Datos sensibles
+Art. 37.- Ninguna persona puede ser obligada a proporcionar sus datos
+personales
+sensibles. £stos
+sdlo
+podrSn
+ser
+objeto
+de
+tratamiento
+con el
+consentimiento expreso e inequlvoco del titular de conformidad con lo establecido en
+la presente ley, advirtiendo en todo caso al titular de dichos datos sobre su derecho a
+no prestarlo.
+Excepcionalmente podran ser objeto de tratamiento los datos a que se refiere
+el parrafo anterior cuando sea necesario para salvaguardar la vida del titular de los
+mismos o de otra persona, en el supuesto de que este se encuentre flsica o
+jurldicamente incapacitado para dar su consentimiento.
+No obstante lo dispuesto en el inciso primero de este artlculo, podran ser objeto
+de tratamiento los datos personales relativos a la salud, cuando dicho tratamiento
+resulte necesario para la prevention o para el diagnostico medico, la prestacion de
+asistencia sanitaria o tratamientos medicos o la gestidn de servicios sanitarios, siempre
+que dicho tratamiento de datos se realice por un profesional sanitario sujeto al secreto
+profesional o por otra persona sujeta a una obligation equivalente al secreto,
+garantizSndose as!la confidencialidad de los datos y que ellos no puedan ser utilizados
+para propositos diferentes.
+De la recoleccion de datos sensibles
+Art. 38.- Los datos personales sensibles solo pueden ser recolectados y ser
+objeto de tratamiento en los casos establecidos por la presente ley, cuando medien
+razones de interns general autorizadas por otras disposiciones legates aplicables o
+cuando el responsable tenga un mandato legal para hacerlo.
+PSg. n.° 25
+
+
+===== PAGINA 27 =====
+49
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+Tambien podr£n ser tratados con finalidades estadisticas o cientificas cuando
+se disocien de sus titulares.
+Datos relativos a la salud
+Art. 39.- Los establecimientos de salud y los profesionales vinculados a las
+ciencias de la salud podran recolectar y tratar los datos personales relativos a la salud
+flsica o mental de los pacientes que acudan a los mismos o que esten o hubieren
+estado bajo tratamiento de aquellos, respetando el secreto profesional, los derechos
+de los pacientes establecidos en la Ley de Deberes y Derechos de los Pacientes y
+Prestadores de Servicios de Salud, la normativa especifica aplicable y lo establecido
+en la presente ley.
+CAPITULO V
+DE LA TRANSFERENCIA DE DATOS
+Transferencia de datos
+Art. 40.- Los datos personales objeto de tratamiento solo pueden ser
+transferidos para el cumplimiento de los fines directamente relacionados con el interes
+legitimo del titular de los mismos o del responsable de la base de datos, y con el previo
+consentimiento del primero de estos, a quien se debera informar sobre la finalidad de
+la transferencia e identificar al cesionario o los elementos que permitan hacerlo. El
+consentimiento otorgado podra revocarse cuando el titular de la information asi lo
+decidiere.
+Contrato para la transferencia de datos
+Art. 41.- El responsable de la transferencia de datos personales debera
+suscribir un contrato con el responsable receptor, en el cual se prevean como minimo
+las mismas obligaciones a las que se encuentra sujeto el responsable de la
+transferencia de dichos datos.
+Interes superior de las ninas, ninos y adolescentes
+Art. 42.- En cualquier tipo de tratamiento de datos personales se garantizara el
+interes superior de las ninas, ninos y adolescentes, de conformidad con lo dispuesto
+en las leyes vigentes o tratados internacionales aplicables a dicha materia.
+PSg. n.° 26
+
+
+===== PAGINA 28 =====
+50
+DIARIO  OFICIAL  Tomo  Nº 445
+El ejercicio de los derechos de los nifias, nifios y adolescentes implica
+previamente informarles tanto a bstos, como a sus progenitores o tutores legales,
+sobre su contenido y como ejercerlos. La information a los nifias, nifios y adolescentes
+debera ser presentada en un lenguaje claro, sencillo y adaptado a su edad y capacidad
+de comprension, debiendo estar la informacibn y los datos accesibles en todo
+momento, todo de acuerdo al Principio del Ejercicio Progresivo de las Facultades.
+Otras garantias
+Art. 43.- En cualquier tipo de tratamiento de datos se deberan observar los
+preceptos establecidos en las leyes vigentes y tratados internacionales en materias
+relativas a los derechos de grupos especlficos y que por su condition se encuentran
+en situacibn de desventaja, tales como personas con discapacidad, adultos mayores,
+poblacion indlgena, entre otros.
+Transferencia internacional de datos personates
+Art. 44.- La transferencia de datos personates de cualquier tipo con paises u
+organismos internacionales sera permitida solamente cuando el pals receptor o
+importador de datos personates cumpla como mlnirno con los principios de protection
+de datos personates definidos en la presente ley o por los estandares internacionales
+en la materia. De ninguna manera, las garantias ofrecidas deberbn ser menores a las
+exigidas por el ordenamiento jurldico vigente en El Salvador.
+En caso de que el pals receptor o importador de datos personates no cuente
+con un nivel de proteccion adecuado, el pals emisor deberb garantizar que el
+tratamiento de los datos personates se efectue conforme a lo dispuesto por la presente
+ley.
+Sin perjuicio de las transferencias de datos personates que se realicen a paises
+que tienen un nivel adecuado de protection, los responsables, en virtud del principio
+de responsabilidad demostrada, deberan de implementar las medidas apropiadas y
+efectivas a fin de garantizar el adecuado tratamiento de los datos personates que
+transfieren al pais receptor y la seguridad a los registros al momento de efectuar dicha
+transferencia.
+Queda exceptuado el caso de los tratados de Integracibn Econbmica
+Centroamericana, ya que por la naturaleza comercial en la region se podrb optar a la
+transferencia de datos conforme a lo adoptado y acordado legalmente entre los paises
+miembros del mismo tratado.
+Pbg. n.° 27
+
+
+===== PAGINA 29 =====
+51
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+En todo caso debera mediar el consentimiento previo del titular de los datos
+personates, salvo se establezcan excepciones en los instrumentos internacionales
+pertinentes y estas operen reclprocamente entre los paises que los suscriban.
+Participation de la Entidad Rectora
+Art. 45.- Los responsables de los bancos de datos, bases de datos, repositories
+o de los sistemas o registros, tanto manuales como informaticos, podran solicitar la
+opinion del Entidad Rectora, respecto a si el flujo transfronterizo de datos personales
+que realiza o realizara cumple con lo dispuesto por la presente ley.
+En cualquier caso, el flujo transfronterizo de datos personales se pondra en
+conocimiento de dicho organismo, incluyendo la informacidn que se requiere para la
+transferencia de datos personales y el registro de banco de datos.
+TITULO III
+CAPITULO UNICO
+ENTIDADES PUBLICAS Y RELACIONADAS
+Tratamiento de datos del sector publico
+Art. 46.- Los sujetos mencionados en el inciso segundo del articulo 2 de la
+presente ley podran recopilar y realizar el tratamiento de los datos personales a los
+que tuvieran acceso en atencion al ejercicio de sus competencias o facultades legates,
+aun sin el consentimiento expreso de los titulares de estos.
+Sin embargo, los titulares o sus representantes podran ejercer respecto de
+dichos datos, en los casos que fuera aplicable, los siguientes derechos:
+a) Derecho de acceso a datos personates, segun se dispone en el articulo 8 de la
+presente ley.
+b) Derecho de rectification, segun se dispone en el articulo 9 de la presente ley.
+c) Derecho de cancelacibn o supresion, solo en el supuesto del literal e), inciso
+primero del articulo 10 de la presente ley.
+d) Derecho de oposicion, segun lo dispone el articulo 12 de la presente ley.
+e) Derecho a la limitation, solo en el supuesto del literal a), c) y d) del articulo 13
+de la presente ley.
+Pag. n.° 28
+
+
+===== PAGINA 30 =====
+52
+DIARIO  OFICIAL  Tomo  Nº 445
+Ejercicio de derechos
+Art. 47.- Para el ejercicio de los derechos contemplados en el articulo anterior,
+se debera cumplir con lo dispuesto en la Seccibn B, Capltulo III del Tltulo I de la
+presente ley. Para tales efectos, el nombramiento del delegado podra recaer en el
+Oficial de Information de la institution pertinente.
+Obligacibn de informar
+Art. 48.- Los sujetos mencionados en el inciso segundo del articulo 2 deberbn
+informar a sus usuarios de la posibilidad de que sus datos personates sean recopilados
+y sometidos a tratamientos, asi como la informacion de contacto del delegado y los
+medios para ejercer sus derechos.
+Esta informacibn debera comunicarse a traves de avisos en sus sitios web,
+plataformas digitales, sus formularios o por cualquier otro medio adecuado para tal fin.
+Transferencias y difusibn
+Art. 49.- Los sujetos obligados por el presente capltulo no podran transferir,
+difundir, distribuir o comercializar los datos personales obtenidos en el ejercicio de sus
+competencias o facultades legates, salvo que haya mediado el consentimiento expreso
+y libre, por escrito o por un medio equivalente, de sus titulares.
+Se podrb transferir o difundir los datos personates, aun sin el consentimiento
+del titular, bnicamente en los siguientes casos:
+a) Cuando fuere necesario por razones estadisticas, cientificas o de interbs
+general, siempre que los mismos sean disociados o seudonimizados.
+b) Cuando se transmitan entre instituciones publicas u organos del Estado,
+siempre y cuando se destinen al ejercicio de sus facultades legates.
+c) Cuando se trate de la investigacibn de delitos e infracciones administrativas, en
+cuyo caso se seguirbn los procedimientos previstos en las leyes pertinentes.
+d) Cuando exista orden judicial.
+e) Cuando contraten o recurran a terceros para la prestacibn de un servicio que
+demande el tratamiento de datos personates.
+Pag. n.
+8 29
+
+
+===== PAGINA 31 =====
+53
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+En el caso contemplado en el literal e), los terceros deberan suscribir un
+acuerdo de confidencialidad con la entidad publica involucrada y estaran sujetos a
+todas las obligaciones para la proteccibn de datos personales contempladas en la
+presente ley.
+TITULO IV
+DE LA ENTIDAD RECTORA Y EL REGIMEN SANCIONADOR
+CAPITULO I
+ENTIDAD RECTORA
+Entidad Rectora y sus atribuciones
+Art. 50.- La aplicacibn y supervisibn de la presente ley corresponded a la
+Agenda de Ciberseguridad del Estado, en adelante "ACE" o la "Agenda", para lo cual
+ejercera las siguientes atribuciones:
+a) Controlar, inspeccionar y supervisar a las instituciones obligadas en el marco
+de aplicacibn de la presente ley.
+b) Ejercer la potestad sancionadora en materia de proteccibn de datos personales
+y en los tbrminos fijados por la presente ley.
+c) Dictar, modificar o anular medidas provisionales segun lo dispuesto en la Ley
+de Procedimientos Administrativos.
+d) Garantizar la efectiva proteccion de datos personales de acuerdo con las
+facultades que le otorga la presente ley.
+Promover programas de divulgacibn de esta ley dirigidos a los sujetos obligados
+al cumplimiento de la misma y a la poblacion en general, con bnfasis en la
+sensibilization del pOblico y comprension de los riesgos, normas, garantias y
+derechos en relation con el tratamiento de datos personales, con especial
+entasis en la niftez, adolescencia y adultos mayores.
+e)
+f>
+Resolver las controversias que se susciten entre los titulares, los responsables
+y
+los
+encargados
+del
+tratamiento,
+con
+relacibn
+a
+la
+clasificacibn
+y
+desclasificacion de datos personales sensibles.
+9) Proporcionar cuando sea requerido apoyo tbcnico a los responsables del
+tratamiento, en la elaboracion y ejecucion de sus programas de proteccibn de
+datos personales.
+Pbg. n.° 30
+
+
+===== PAGINA 32 =====
+54
+DIARIO  OFICIAL  Tomo  Nº 445
+h) Cooperar, en particular compartiendo information, siempre que no se trate de
+datos personates o datos personates sensibles, con otras autoridades de control
+en el ejercicio de sus funciones y prestar asistencia mutua con el fin de
+garantizar la coherencia en la aplicacion y ejecucibn de la presente ley.
+i)
+Dictar las pollticas de actuacibn sobre el manejo y mantenimiento de los datos
+personates, as! como las medidas de seguridad y protection de los mismos,
+procurando la implementation, en lo que fuera aplicable, de las buenas
+prbcticas a nivel internacional.
+j)
+Crear mecanismos de certificacibn de la proteccion de datos y de sellos y
+marcas para los mismos efectos, asl como aprobar que terceros emitan
+certificaciones sobre dicha materia.
+k) Realizar una revisibn periodica de las certificaciones expedidas a que se refiere
+el literal anterior, siempre que fuera procedente.
+I)
+Realizar auditorias anuales de las certificaciones expedidas.
+m) Impartir capacitaciones a los instituciones publicas y privadas, asl como a sus
+miembros, en materia de proteccibn de datos personales y su administracion.
+n) Dictar las guias de implementacibn de la presente ley, las cuales deberan ser
+publicadas en su pbgina web, redes sociales y cualquier otro medio que
+considere pertinente.
+o) Asesorar y cooperar con los entes obligados en el cumplimiento de esta ley.
+p) Recomendar clausulas contractuales que garanticen la proteccion de los datos
+personales de acuerdo con la presente ley.
+q) Elaborar los modelos de formularios para la realizacion de solicitudes de los
+derechos ARCO-POL y la revocacibn del consentimiento de los titulares de los
+datos personales.
+r) Realizar o apoyar las investigaciones cientlficas o acadbmicas sobre la
+aplicacion de la presente ley.
+Pag. n.“ 31
+
+
+===== PAGINA 33 =====
+55
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+s) Asistir y asesorar a los ciudadanos que lo requieran sobre los alcances de la
+presente ley y de los medios legates de que disponen para la defensa de los
+derechos que bsta garantiza.
+t)
+Solicitar a las entidades publicas y privadas la informacion referida a los
+antecedentes, documentos,
+programas u
+otros
+elementos
+relativos
+al
+tratamiento de los datos personates, garantizando la integridad, seguridad y
+confidencialidad de la informacion y elementos suministrados.
+u) Asesorar en la forma pertinente al organo Ejecutivo en la consideracion de los
+proyectos de ley que se refieran total o parcialmente a proteccion de datos
+personates.
+v) Las dembs que le confiera esta ley, reglamentos u otras disposiciones legates
+aplicables.
+En el ejercicio de sus atribuciones, la Agenda podrb emplear procedimientos
+automatizados de acuerdo con las herramientas tecnologicas a su alcance.
+Ejercicio de potestades
+Art. 51.- El Director General de la ACE ejercera las atribuciones y facultades
+que le correspondan segun lo dispuesto en la presente ley, a excepcion de la potestad
+para imponer sanciones.
+Para asistir al Director General en el ejercicio de sus funciones, sera nombrado
+un Director de Proteccion de Datos Personates. Este funcionario tambien conocera de
+los procedimientos administrativos para imponer las sanciones que establece la
+presente ley, y podra delegar la instruccibn y sustanciacion de estos procedimientos,
+no asi la imposicion de la sancion, en un empleado o funcionario de la ACE distinto del
+Director General.
+La
+Agenda
+establecera
+las
+dependencias
+o
+unidades
+administrativas
+necesarias para realizar todas las actividades necesarias en materia de proteccibn de
+datos personates.
+Requisitos
+Art. 52.- Para ser Director de Proteccion de Datos Personates se requiere:
+Pag. n.° 32
+
+
+===== PAGINA 34 =====
+56
+DIARIO  OFICIAL  Tomo  Nº 445
+a) Tener un grado universitario, nacional o extranjero, de preferencia en ciencias
+juridicas, informbtica, ciencias de la computacibn, ingenieria en sistemas,
+telecomunicaciones u otras areas relacionadas.
+b) Acreditar experiencia profesional y laboral en materia de proteccibn de datos
+personales o seguridad de la information.
+c) Ser de reconocida honorabilidad y probidad.
+d) Haberse desempefiado en forma destacada en asuntos profesionales, de
+servicio publico o academico.
+Con relacibn a lo relativo a los impedimentos, incompatibilidades y cesacibn del
+cargo del Director de Proteccibn de Datos Personales, se aplicarb lo dispuesto en la
+Ley de Ciberseguridad y Seguridad de la Informacion.
+CAPITULO II
+DEL PROCEDIMIENTO SANCIONADOR
+Procedimiento sancionador
+Art. 53.- Para el ejercicio de potestad sancionadora, el desarrollo del
+procedimiento y las reglas de prescription de las infracciones y sanciones
+contemplada en la presente ley se aplicarb lo dispuesto en la Ley de Ciberseguridad y
+Seguridad de la Informacion.
+Carga de la prueba
+Art. 54.- Para efectos de demostrar la obtencion del consentimiento o la
+comunicacibn de la politica o del aviso de privacidad, la carga de la prueba recaerb
+especlficamente en el responsable, conforme a las formas que se establecen en la
+presente Ley. Esto sin perjuicio de la facultad de aportar prueba a los otros
+intervinientes de los pracedimientos administrativos sancionadores, segun previstos
+poresta ley y otras disposiciones juridicas aplicables a dichos procedimientos.
+Tratandose de transferencias internacionales de datos personales, la carga de
+la prueba recaerb en el responsable de la transferencia, el cual debera demostrar que
+el tratamiento o la transferencia fue realizado conforme a la presente ley o de acuerdo
+con los estandares internacionales en la materia.
+Pag. n.° 33
+
+
+===== PAGINA 35 =====
+57
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+Publicidad de las resoluciones
+Art. 55.- Todas las resoluciones emitidas por la ACE respecto a la imposition
+de sanciones de conformidad con la presente ley seran difundidas publicamente en su
+sitio web, en versiones publicas, siempre y cuando los datos personales sean
+disociados o anonimizados.
+CAPlTULO III
+DE LAS INFRACCIONES Y SANCIONES
+Infracciones
+Art. 56.- Las infracciones se clasificaran en leves, graves y muy graves:
+a) Son consideradas infracciones leves, las siguientes:
+1.
+No informar al titular de los datos personales acerca de sus derechos antes de
+ser recolectados.
+2.
+No publicar los datos de contacto del encargado del tratamiento.
+3.
+Omitir notificar respecto de las vulneraciones a la seguridad de los datos
+personales acaecidas a los sujetos pertinentes, de conformidad con lo dispuesto
+en el articulo 25 de la presente ley.
+4.
+Acceder a un banco de datos, base de datos, repositorio, sistemas o registros,
+tanto manuales como informaticos, sin autorizacidn del responsable de estos.
+5.
+Dar un tratamiento a los datos personales de forma inexacta o falsa.
+6.
+Modificar los datos suministrados en el documento que autoriza el tratamiento
+de datos personales.
+7.
+Exigir pago para atender las solicitudes que en la presente ley se establecen
+como gratuitas.
+8.
+Incumplir con el Derecho de Informacidn frente a la Recoleccion de Datos
+contenido en el articulo 7 o la obligation de informar del articulo 48, ambos de
+la presente ley.
+Pag. n.° 34
+
+
+===== PAGINA 36 =====
+58
+DIARIO  OFICIAL  Tomo  Nº 445
+No atender las solicitudes realizadas por parte de la ACE en materia de
+protection de datos personales.
+9.
+b) Son consideradas infracciones graves, las siguientes:
+Proporcionar de forma incompleta o inexacta la informacibn relativa a los datos
+personales que del titular se traten, ya sean recolectados o inferidos, cuando
+este ejerza su derecho de acceso.
+1.
+No atender las solicitudes de derechos ARCO-POL, en el tiempo y forma
+establecidos por la presente ley.
+2.
+Procesar, recopilar o destinar datos personales con finalidad diferente para la
+que se otorgb el consentimiento o se habilito su tratamiento.
+3.
+Obstaculizar el desarrollo de las auditorias o inspecciones que realice la ACE.
+4.
+No implementar las medidas, controles tecnicos o lineamientos que establezca
+la ACE en materia de proteccion de datos.
+5.
+Incurrir en las prohibiciones establecidas en el artlculo 59 de la presente ley.
+6.
+No cumplir con las medidas de seguridad establecida en las politicas de
+actuation emitidas por la Agenda.
+7.
+Son consideradas infracciones muy graves, las siguientes:
+c)
+Tratar datos personales sin el consentimiento previo, de conformidad con lo
+establecido en el articulo 26 de la presente ley.
+Denegar las solicitudes realizadas para el ejercicio de los derechos ARCO-POL
+en contravencibn a lo establecido en esta ley.
+1.
+2.
+El uso de los datos personales de nifios, ninas y adolescentes sin el previo
+consentimiento de sus padres, representantes o tutores, de conformidad con
+las leyes vigentes o tratados internacionales debidamente suscritos y ratificados
+por El Salvador.
+3.
+Tratar
+datos
+personales
+de
+personas
+declaradas
+incapaces
+sin
+el
+consentimiento de su titular o su representante.
+4.
+Pbg. n.° 35
+
+
+===== PAGINA 37 =====
+59
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+5.
+Realizar transference internacional de datos personates a palses que no
+cumplan como mfnimo con el nivel de protection exigido por la presente ley.
+6.
+Realizar transferencia de datos personates sin el consentimiento de su titular o
+su representante, o en contravention de las excepciones que establezca la ley.
+7.
+Comercializar datos personates a cualquier tltulo sin el consentimiento de su
+titular.
+8.
+Revertir la seudonimizacibn de los datos personates sin el consentimiento del
+titular.
+9.
+Tratar datos personates a pesar de la revocation del consentimiento otorgado
+por el titular.
+10. No hacer efectiva la revocacion del consentimiento ante la solicitud del titular
+cuando esta proceda.
+Multas
+Art. 57.- Sin perjuicio de las responsabilidades penales a que diere lugar, las
+infracciones determinadas en la presente ley seran sancionadas con las siguientes
+multas:
+a) Las infracciones leves se sancionaran con multa de uno hasta un maximo de
+diez salarios mmimos mensuales vigentes del sector comercio.
+b) Las infracciones graves se sancionaran con multa de once hasta un maximo de
+veinticinco salarios mmimos mensuales vigentes del sector comercio.
+c) Las infracciones muy graves se sancionaran con multa de veintisbis hasta un
+maximo de cuarenta salarios mmimos mensuales vigentes del sector comercio.
+Medidas adicionales
+Art. 58.- Determinada la procedencia de la sancibn, la Agenda podra ordenar
+al infractor o el sujeto obligado relacionado que adopte las medidas que fueren
+necesarias para restablecer la legalidad alterada por la infraction o que permita la
+correction de los derechos o las situaciones vulneradas.
+Pag. n.° 36
+
+
+===== PAGINA 38 =====
+60
+DIARIO  OFICIAL  Tomo  Nº 445
+Todas las sanciones determinadas en la presente ley no eximen al infractor de
+las
+responsabilidades
+civiles
+o
+penales
+derivadas
+de
+las
+investigaciones
+correspondientes a que dieren lugar.
+Prohibiciones
+Art. 59.- Queda prohibido a los sujetos obligados por la presente ley lo
+siguiente:
+a) Crear bases de datos que contengan datos personales sensibles,
+en
+contravencibn a lo dispuesto en la presente ley o la normativa aplicable para
+tales efectos.
+b) El tratamiento de datos personales que revelen el origen racial o btnico,
+nacionalidad,
+afiliacion
+partidaria,
+convicciones
+religiosas,
+espirituales o
+filosoficas, as! como los relativos a la salud, la vida y la orientation sexual, sin
+observar lo establecido en el capltulo IV del Tltulo II de esta ley o la normativa
+aplicable para tales efectos.
+c) Revelar, difundir o comercializar por cualquier medio los datos personales que
+ha tenido acceso con ocasion de su cargo, sin observar los requisitos que
+establece esta ley o la normativa aplicable para tales efectos.
+d) Utilizar, transferir, compartir y comercializar a cualquier tltulo y destino la
+information de las personas que conste en sus bancos de datos, bases de
+datos, repositories, sistemas o registros, tanto manuales como informaticos, en
+contravention a lo dispuesto en la presente ley o la normativa aplicable para
+tales efectos.
+TITULO V
+CAPITULO UNICO
+DISPOSICIONES TRANSITORIAS Y FINALES
+Emision de disposiciones y aplicacion de la Ley
+Art. 60.- La ACE debera dictar las pollticas, medidas, gulas y cualquier otra
+disposition necesaria para la aplicacion de la presente ley a mas tardar tres meses
+contados a partir de la vigencia de la misma.
+Pag. n.° 37
+
+
+===== PAGINA 39 =====
+61
+DIARIO OFICIAL.- San Salvador, 15 de Noviembre de 2024. 
+Los sujetos obligados tendran un plazo de tres meses a partir de la emision de
+las referidas disposiciones para adecuar e implementar lo regulado respecto a la
+protection de datos personates.
+De la recopilacion y tratamiento de datos personates en poder de los sujetos
+obligados
+Art. 61.- A partir de la entrada en vigencia de la presente ley, los sujetos
+obligados deberan adoptar las medidas de proteccion de datos personates que
+establezca la ACE para aquellos datos personates obtenidos previo a la entrada en
+vigencia de la misma.
+Asimismo, tendran un plazo de seis meses contados a partir de la vigencia de
+la presente ley para establecer mecanismos para que los titulares de los datos
+personates ejercen sus derechos en el marco de la proteccion de datos personates.
+Ley supletoria
+Art. 62.- En todo lo no previsto en la presente ley se estara a lo dispuesto en la
+Ley de Procedimientos Administrativos.
+Especialidad y derogatoria
+Art. 63.- La presente ley tendrci caracter especial en su aplicacibn respecto de
+otras leyes que regulen la materia de proteccion de datos personates por parte de
+todos los sujetos obligados, en ese sentido, quedan derogadas expresamente todas
+las disposiciones contenidas en leyes generates o especiales que la contraries
+Adicionalmente, se deroga expresamente el literal h) del articulo 3; literates a)
+y b) del articulo 6, el titulo III, literal b) del articulo 50, literates i) y j) del articulo 58,
+literates a) y b) del articulo 83 y cualquier otra mencibn que haga alusion a los datos
+personates en la Ley de Acceso a la Informacion Publica, aprobada por Decreto
+Legislative n.° 534, de fecha 2 de diciembre de 2010, publicado en el Diario Oficial n.°
+70, Tomo n 0 391, del 8 de abril de 2011.
+Vigencia
+Art. 64.- El presente decreto entrara en vigencia ocho dias despues de su
+publicacion en el Diario Oficial.
+
+
+===== PAGINA 40 =====
+62
+DIARIO  OFICIAL  Tomo  Nº 445
+ 
+DADO EN EL SALÓN AZUL DEL PALACIO LEGISLATIVO: San Salvador, a los doce días del 
+mes de noviembre del año dos mil veinticuatro.
+ERNESTO ALFREDO CASTRO ALDANA,
+PRESIDENTE.
+ 
+SUECY BEVERLEY CALLEJAS ESTRADA, 
+KATHERYN ALEXIA RIVAS GONZÁLEZ,
+ 
+PRIMERA VICEPRESIDENTA. 
+SEGUNDA VICEPRESIDENTA.
+ 
+ELISA MARCELA ROSALES RAMÍREZ, 
+REYNALDO ANTONIO LÓPEZ CARDOZA,
+ 
+PRIMERA SECRETARIA. 
+SEGUNDO SECRETARIO.
+REINALDO ALCIDES CARBALLO CARBALLO,
+TERCER SECRETARIO.
+ 
+CASA PRESIDENCIAL: San Salvador, a los catorce días del mes de noviembre de dos mil veinticuatro.
+PUBLÍQUESE,
+NAYIB ARMANDO BUKELE ORTEZ,
+Presidente de la República.
+HÉCTOR GUSTAVO VILLATORO, 
+Ministro de justicia y Seguridad Pública.
