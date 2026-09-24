@@ -485,3 +485,28 @@ Consolidado de los anti-features 1, 8, 9 y 10 de `02_validacion/22_anti_features
 - El texto de ayuda al cargar evidencia manual advierte explicitamente sobre esto en cada modulo que permite adjuntos (patron documentado primero en MOD-019 seccion D.2, replicado en MOD-013, MOD-016 y MOD-018).
 
 ---
+## Contradicciones y huecos detectados
+
+### Contradicciones (entre fichas, o entre una ficha y el mapa)
+
+1. **Dependencia no declarada entre MOD-016 y MOD-011/MOD-013 para OBL-RET-05.**
+   - Archivos: `02_validacion/mapa_modulos.json` y `03_modulos/MOD-016_ficha.md` (seccion L, "Nota de coherencia con el mapa de modulos").
+   - Que dice cada fuente: `mapa_modulos.json` declara `depende_de` de MOD-016 = [MOD-006, MOD-008] y el `alimenta_a` de MOD-011 y de MOD-013 no incluye a MOD-016. La propia ficha de MOD-016 (seccion L) disena la automatizacion G.3 (crear o actualizar la regla de retencion documental de OBL-RET-05 cuando un expediente ARCO-POL o de incidente se cierra) de forma que MOD-016 necesita leer la fecha de cierre de MOD-011 y de MOD-013, lo que exige esa dependencia adicional no declarada en el mapa.
+   - Cual se adopto: el mecanismo que describe la ficha propietaria de OBL-RET-05 (MOD-016), es decir, que MOD-016 lea la fecha de cierre de MOD-011 y de MOD-013 para calcular y vigilar el plazo de conservacion del expediente. Esta seccion documenta la ausencia en `mapa_modulos.json` como un hueco a corregir en una siguiente iteracion del mapa (agregar MOD-011 y MOD-013 al `depende_de` de MOD-016, y MOD-016 al `alimenta_a` de ambos), no como una funcionalidad que esta seccion deba omitir.
+   - Por que: la jerarquia de esta tarea situa a la ficha del modulo propietario de la obligacion por encima de un campo de metadatos de dependencias que la misma ficha ya senala como incompleto; sin esa lectura, la automatizacion que exige OBL-RET-05 no podria ejecutarse.
+
+2. **Referencia informativa de MOD-013 a MOD-009 (Proveedores y Encargados) no declarada en el mapa.**
+   - Archivos: `02_validacion/mapa_modulos.json` y `03_modulos/MOD-013_ficha.md` (seccion L, "Nota sobre MOD-009").
+   - Que dice cada fuente: `mapa_modulos.json` no incluye a MOD-009 en `depende_de` ni en `alimenta_a` de MOD-013. La ficha MOD-013 modela un campo "Proveedor/Encargado relacionado" para documentar la causa de un incidente cuando se origina en un proveedor, citando la clausula de aviso de incidentes de `01_legal/sweep_encargados_transferencias.md` seccion 5.6.
+   - Cual se adopto: el campo informativo que describe la ficha MOD-013, sin proponerlo como una dependencia estructural nueva del mapa, tal como la propia ficha ya lo distingue ("referencia informativa... sin ser dependencia formal").
+   - Por que: no hay una instruccion contraria de una fuente de mayor jerarquia (matriz de obligaciones o mapa definitivo) que la contradiga; es una omision de metadatos senalada por la propia ficha, no una contradiccion sustantiva de contenido.
+
+### Huecos (piezas que ninguna ficha define)
+
+3. **Estructura formal de campos del AuditLog.** Ninguna de las 26 fichas define, en una tabla de campos (equivalente a la seccion D.1 de Evidence en MOD-019), la estructura formal de un evento de AuditLog; todas lo describen de forma narrativa ("quien hizo que, cuando"). La tabla de la subseccion 13.3.3 de esta seccion es una propuesta de esta seccion, no presente literalmente en las fichas, construida a partir del patron repetido en ellas.
+
+4. **Reporte de exportacion del AuditLog crudo.** Ninguna ficha describe una exportacion del AuditLog completo sin acotarlo a una obligacion o a un expediente especifico: toda exportacion documentada pasa por un EvidencePackage de MOD-019 o por el paquete especifico de una auditoria (MOD-018) o de un incidente (MOD-013). Si una organizacion necesita el registro tecnico completo ante un requerimiento amplio de la ACE, ningun modulo describe ese reporte especifico; esta seccion no lo inventa, solo senala el vacio.
+
+5. **Plazo de retencion definitivo para el informe de auditoria (MOD-018) y para la evidencia tecnica de MOD-015.** Ambas fichas declaran su propia evidencia como "conservacion indefinida con archivado manual hasta que el motor de retencion documental (MOD-016) defina un plazo especifico" (MOD-018 seccion J; MOD-015 seccion J, mismo criterio). No es una contradiccion entre fichas (ambas coinciden en el mismo criterio provisional), pero es un hueco real: el catalogo fijo de tipos de documento de cumplimiento de MOD-016 (seccion D.2) solo cubre hoy tres tipos (aviso de privacidad publicado, expediente ARCO-POL cerrado, expediente de incidente cerrado), sin incluir todavia el informe de auditoria ni la evidencia tecnica de controles como un cuarto y quinto tipo con plazo propio. Esta seccion no fija ese plazo por su cuenta, conforme a la regla de no inventar plazos que ninguna fuente defina.
+
+6. **Plazo de conservacion de OBL-RET-05 (expediente ARCO-POL e incidentes).** No es un hueco ni una contradiccion en si mismo (el criterio de 5 anos esta documentado de forma consistente en MOD-016, MOD-013 y MOD-019), pero se deja constancia aqui de que su clasificacion es RECOMENDADO y su condicion expresa en `matriz_obligaciones.json` es "criterio de diseno recomendado ante ausencia de norma expresa; requiere validacion de abogado". Esta seccion mantiene esa marca en toda referencia al plazo (13.2, 13.6.1, 13.7.4), sin tratarlo como una regla legal cerrada.

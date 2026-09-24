@@ -2,7 +2,7 @@
 
 Fecha de elaboracion: 2026-09-24. Fase: analisis funcional (sin codigo, sin SQL, sin APIs, sin stack, sin infraestructura).
 
-Alcance de esta seccion: consolida y cruza lo que ya decidieron `analisis/03_modulos/MOD-020_ficha.md` (Dashboard y Reportes, fuente principal y ficha propietaria de este modulo) y las secciones M (Dashboard) y N (Reportes) de las otras 25 fichas ya redactadas (`analisis/03_modulos/MOD-001_ficha.md` a `MOD-019_ficha.md` y `MOD-021_ficha.md` a `MOD-026_ficha.md`), extraidas con `awk '/^## M[.]/,\/^## N[.]/'` y `awk '/^## N[.]/,\/^## O[.]/'` sobre cada archivo. No inventa funcionalidades que ninguna ficha define; donde el prompt del cliente exige algo que ninguna ficha cubre de forma literal, se marca de forma explicita como "propuesta de esta seccion, no presente en las fichas". Fuentes adicionales: `analisis/02_validacion/mapa_modulos.json`, `analisis/02_validacion/06_mapa_definitivo_de_modulos.md` (secciones 5, 6.1, 7 y 8), `analisis/02_validacion/05_tipos_de_usuario.md` (seccion 5.3), `analisis/02_validacion/22_anti_features.md`, `analisis/01_legal/matriz_obligaciones.json` y `analisis/00_prompt_analisis_funcional.md` (areas 26 y 28).
+Alcance de esta seccion: consolida y cruza lo que ya decidieron `analisis/03_modulos/MOD-020_ficha.md` (Dashboard y Reportes, fuente principal y ficha propietaria de este modulo) y las secciones M (Dashboard) y N (Reportes) de las otras 25 fichas ya redactadas (`analisis/03_modulos/MOD-001_ficha.md` a `MOD-019_ficha.md` y `MOD-021_ficha.md` a `MOD-026_ficha.md`), extraidas con `awk '/^## M[.]/,/^## N[.]/'` y `awk '/^## N[.]/,/^## O[.]/'` sobre cada archivo. No inventa funcionalidades que ninguna ficha define; donde el prompt del cliente exige algo que ninguna ficha cubre de forma literal, se marca de forma explicita como "propuesta de esta seccion, no presente en las fichas". Fuentes adicionales: `analisis/02_validacion/mapa_modulos.json`, `analisis/02_validacion/06_mapa_definitivo_de_modulos.md` (secciones 5, 6.1, 7 y 8), `analisis/02_validacion/05_tipos_de_usuario.md` (seccion 5.3), `analisis/02_validacion/22_anti_features.md`, `analisis/01_legal/matriz_obligaciones.json` y `analisis/00_prompt_analisis_funcional.md` (areas 26 y 28).
 
 **Convencion de la columna Version usada en todo el catalogo.** El prompt del cliente organiza la salida final en secciones 19 (MVP), 20 (V1) y 21 (V2/Enterprise), mientras que `mapa_modulos.json` y la seccion Q de cada ficha clasifican cada pieza como MUST HAVE, SHOULD HAVE, COULD HAVE o FUTURE. Esta seccion traduce ambas escalas con la equivalencia MUST HAVE = MVP, SHOULD HAVE = V1, COULD HAVE = V2, FUTURE = V2/Enterprise. Cuando el catalogo no distingue version por indicador o por reporte individual (las 25 fichas de origen no lo hacen: la unica excepcion es la propia MOD-020, cuya seccion Q si desglosa version por funcionalidad interna), la version de un indicador o de un reporte es la version del modulo que lo produce, porque el indicador es una lectura directa de los datos de ese modulo (principio M.1 de MOD-020: "MOD-020 nunca recalcula ni reinterpreta el valor de un indicador").
 
@@ -266,7 +266,7 @@ Regla comun a las 4 perspectivas, valida para toda esta seccion: todo indicador 
 
 Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extraido con `awk '/^## M[.]/,/^## N[.]/' analisis/03_modulos/MOD-*.md`, y verificado contra el mismo catalogo ya consolidado en `MOD-020_ficha.md`, seccion M.3.1). Se agrupa por modulo fuente en vez de repetir la columna "Modulo fuente" en cada fila (la agrupacion por subtitulo cumple la misma funcion, con menos ruido visual; es la misma convencion que ya usa `MOD-020_ficha.md` para este catalogo). La formula se resume de forma breve; el detalle completo, con los umbrales exactos y las notas de opinion de producto, vive en la seccion M de la ficha de origen, que esta tabla indexa sin reemplazar. Ningun indicador se expresa como "porcentaje de cumplimiento legal" (seccion 14.1).
 
-### MOD-001 Organizacion y Personas (Version: MVP)
+### 14.3.1 MOD-001 Organizacion y Personas (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -276,7 +276,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Separacion de funciones | Estado activada / recomendada no activada / no aplica | Verde si activada o bajo umbral; amarillo si no | Legal, Auditor, Gerencia |
 | Ultimo cambio de estructura | Fecha del ultimo alta, baja o cambio de rol | Informativo | Auditor, Seguridad/IT |
 
-### MOD-002 Delegado / Responsable Interno de Datos (Version: MVP)
+### 14.3.2 MOD-002 Delegado / Responsable Interno de Datos (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -287,7 +287,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Evidencia disponible del modulo | X de Y evidencias requeridas disponibles | Verde/amarillo/rojo | Auditor, Legal |
 | Alertas activas del modulo | Conteo por nivel INFO/WARNING/HIGH/CRITICAL | Semaforo por nivel | Gerencia (HIGH/CRITICAL), Responsable (todas) |
 
-### MOD-003 Onboarding (Version: MVP)
+### 14.3.3 MOD-003 Onboarding (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -296,7 +296,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Estado de la designacion del Delegado | Heredado de MOD-002 desde el paso correspondiente del onboarding | Verde/amarillo/rojo | Legal/Delegado, Gerencia |
 | Fecha y usuario de creacion de la organizacion | Dato directo del evento de auditoria | Informativo | Auditor |
 
-### MOD-004 Diagnostico de Cumplimiento (Version: MVP)
+### 14.3.4 MOD-004 Diagnostico de Cumplimiento (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -307,7 +307,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Nivel de madurez inicial de la organizacion | Regla propia (Inicial/En desarrollo/En consolidacion) | Rojo/amarillo/verde | Gerencia, Legal/Delegado |
 | Dias desde el ultimo diagnostico cerrado | Hoy menos fecha de cierre de la ultima sesion | Verde/amarillo/rojo segun ciclo configurado | Administrador, Delegado |
 
-### MOD-005 Plan de Cumplimiento (Version: MVP; dependencia estructural de MOD-020)
+### 14.3.5 MOD-005 Plan de Cumplimiento (Version: MVP; dependencia estructural de MOD-020)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -317,7 +317,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Acciones por modulo de ejecucion | Distribucion por modulo | Sin semaforo | Legal, Responsable de area |
 | Vigencia de la version actual del plan | Fecha de aprobacion y version | Amarillo si mas de 90 dias sin recalculo | Administrador, Delegado, Auditor |
 
-### MOD-006 RAT y Mapa de Datos (Version: MVP)
+### 14.3.6 MOD-006 RAT y Mapa de Datos (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -329,7 +329,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Sistemas sin pais confirmado | Conteo con pais pendiente de confirmar | Amarillo/rojo segun cantidad | Seguridad/IT, Delegado |
 | Antiguedad promedio del RAT | Dias desde la ultima revision confirmada | Verde menor a 180, amarillo 180-365, rojo mayor a 365 | Gerencia, Auditor |
 
-### MOD-007 Consentimiento (Version: MVP)
+### 14.3.7 MOD-007 Consentimiento (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -339,7 +339,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Consentimientos sensibles/biometricos incompletos | Presentados sin firma por mas de 2 dias | Rojo si mayor a 0 | Responsable, Legal |
 | Evidencia disponible | Registros con snapshot y adjunto completos | Verde/amarillo/rojo | Auditor, Legal |
 
-### MOD-008 Documentos y Politicas (Version: MVP)
+### 14.3.8 MOD-008 Documentos y Politicas (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -348,7 +348,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Tiempo promedio de aprobacion | Dias habiles EN_REVISION -> APROBADO | Sin semaforo | Gerencia, Legal |
 | Ultima publicacion del Aviso de Privacidad | Fecha de la version vigente y dias transcurridos | Amarillo si supera el intervalo configurado | Responsable/Legal, Auditor |
 
-### MOD-009 Proveedores y Encargados (Version: MVP)
+### 14.3.9 MOD-009 Proveedores y Encargados (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -360,7 +360,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Proveedores suspendidos por incidente | Conteo SUSPENDIDO | Rojo | Gerencia, Legal/Compliance, Seguridad/IT |
 | Evidencia disponible por proveedor activo | Porcentaje con contrato, riesgo y revision al dia | Verde/amarillo/rojo | Auditor |
 
-### MOD-010 Transferencias Internacionales (Version: V1)
+### 14.3.10 MOD-010 Transferencias Internacionales (Version: V1)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -371,7 +371,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Contratos de transferencia vencidos o por vencer | Conteo por vencer o vencidos | Verde/amarillo/rojo | Legal, Seguridad/IT, Gerencia |
 | Cobertura de evidencia de transferencias | Porcentaje con expediente completo | Verde 90-100%, amarillo 70-89%, rojo menor a 70% | Auditor, Legal, Gerencia |
 
-### MOD-011 ARCO-POL (Version: MVP; contribuye al "dashboard basico")
+### 14.3.11 MOD-011 ARCO-POL (Version: MVP; contribuye al "dashboard basico")
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -384,7 +384,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Reclamos ante la Direccion de Proteccion de Datos abiertos | Conteo sin informe remitido | Rojo si mayor o igual a 1 | Gerencia, Legal/Delegado, Auditor |
 | Expedientes con evidencia completa vs incompleta | Porcentaje del checklist de evidencia esperada completo | Verde/amarillo/rojo | Auditor, Legal/Delegado |
 
-### MOD-012 Portal del Titular (Version: V1)
+### 14.3.12 MOD-012 Portal del Titular (Version: V1)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -394,7 +394,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Disponibilidad del contenido publicado | Aviso/Politica mostrados = version vigente en MOD-008 | Verde al dia, rojo version vencida | Legal, Auditor |
 | Cobertura de evidencia | Porcentaje de solicitudes del Portal con comprobante documentado en MOD-019 | Se muestra como evidencia disponible | Auditor |
 
-### MOD-013 Incidentes de Seguridad (Version: MVP)
+### 14.3.13 MOD-013 Incidentes de Seguridad (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -405,7 +405,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Incidentes por origen | Distribucion interno/proveedor/terceros | Informativo | Legal, Auditor |
 | Expedientes con documentacion incompleta (OBL-INC-04) | Riesgo=Si con campos incompletos | Rojo si mas de 72 horas en ese estado | Responsable, Legal |
 
-### MOD-014 Riesgos y EIPD (Version: V1)
+### 14.3.14 MOD-014 Riesgos y EIPD (Version: V1)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -416,7 +416,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Distribucion por nivel de riesgo | Conteo Bajo/Medio/Alto/Critico | Semaforo por franja | Gerencia, Legal, Auditor |
 | Controles pendientes originados en una EIPD | Conteo en MOD-015 con origen EIPD | Amarillo/rojo segun escalamiento | Seguridad/IT, Gerencia |
 
-### MOD-015 Controles de Seguridad (Version: MVP)
+### 14.3.15 MOD-015 Controles de Seguridad (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -425,7 +425,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Proximas revisiones (30 dias) | Conteo con revision proxima | Informativo | Seguridad/IT |
 | Excepciones activas | Conteo No aplica-Exceptuado | Amarillo si hay pendientes de aprobar | Legal/Delegado, Aprobador, Gerencia |
 
-### MOD-016 Retencion y Eliminacion (Version: V1)
+### 14.3.16 MOD-016 Retencion y Eliminacion (Version: V1)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -435,7 +435,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Intentos bloqueados de eliminacion anticipada (90 dias) | Conteo de eventos de la automatizacion propia | Rojo si mayor a 0 | Auditor, Gerencia |
 | Cobertura del motor de retencion | X de Y tratamientos con regla definida | Conteo, sin semaforo de porcentaje | Responsable, Legal, Gerencia |
 
-### MOD-017 Capacitacion (Version: MVP)
+### 14.3.17 MOD-017 Capacitacion (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -445,7 +445,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Estado del plan anual de capacitacion e induccion | Estado cruzado con la bandera regimen_reforma_659 | Verde/amarillo/rojo/gris (no aplica) | Delegado, Gerencia, Auditor |
 | Capacitacion por rol cubierta | Personas con registro de capacitacion por rol sobre total con ese rol | Amarillo/rojo segun brecha | Responsable de area, Delegado |
 
-### MOD-018 Auditoria de Cumplimiento (Version: V1)
+### 14.3.18 MOD-018 Auditoria de Cumplimiento (Version: V1)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -454,7 +454,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Hallazgos abiertos por severidad | Conteo Abierto/En correccion por severidad | Rojo si 1+ Critico | Legal/Delegado, Seguridad/IT, Gerencia |
 | Acciones correctivas vencidas | Conteo con fecha limite pasada | Rojo si mayor a 0 | Legal/Delegado, Responsable de la accion, Gerencia |
 
-### MOD-019 Centro de Evidencias (Version: MVP; dependencia estructural de MOD-020)
+### 14.3.19 MOD-019 Centro de Evidencias (Version: MVP; dependencia estructural de MOD-020)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -464,7 +464,7 @@ Catalogo completo, consolidado a partir de la seccion M de las 26 fichas (extrai
 | Paquetes de evidencia generados en el periodo | Conteo por tipo | Informativo | Legal/Delegado, Auditor, Gerencia |
 | Tiempo promedio de aprobacion de evidencia manual | Promedio dias En revision -> Disponible | Verde menor a 5, amarillo 5-10, rojo mayor a 10 | Legal/Delegado, Administrador |
 
-### MOD-020 Dashboard y Reportes: meta-indicadores propios de la herramienta (Version: ver seccion 14.8)
+### 14.3.20 MOD-020 Dashboard y Reportes: meta-indicadores propios de la herramienta (Version: ver seccion 14.8)
 
 Los siguientes 3 indicadores no miden el programa de proteccion de datos de la empresa: miden el uso y la cobertura del propio Dashboard, y solo se muestran al Administrador (`MOD-020_ficha.md`, seccion M.2).
 
@@ -476,7 +476,7 @@ Los siguientes 3 indicadores no miden el programa de proteccion de datos de la e
 
 Ademas, el "estado del programa por etapa y por cluster" (seccion 14.1.1) es un indicador de sintesis propio de MOD-020, sin modulo fuente unico (agrega varios), version MVP en su calculo por etapa y V1 en su calculo por cluster (ver seccion 14.8, coincide con la clasificacion Q de `MOD-020_ficha.md`).
 
-### MOD-021 Centro de Tareas (Version: MVP; dependencia estructural de MOD-020)
+### 14.3.21 MOD-021 Centro de Tareas (Version: MVP; dependencia estructural de MOD-020)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -488,7 +488,7 @@ Ademas, el "estado del programa por etapa y por cluster" (seccion 14.1.1) es un 
 | Tareas archivadas por cambio de regimen | Conteo acumulado desde la activacion de FUTURO | Informativo | Delegado/Resp. interno, Legal, Auditor |
 | Carga de trabajo por responsable | Conteo de tareas activas por usuario | Amarillo si supera el umbral configurado | Administrador, Gerencia |
 
-### MOD-022 Notificaciones (Version: MVP)
+### 14.3.22 MOD-022 Notificaciones (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -499,7 +499,7 @@ Ademas, el "estado del programa por etapa y por cluster" (seccion 14.1.1) es un 
 | Notificaciones agrupadas vs individuales | Proporcion en resumen sobre el total | Informativo | Administrador |
 | Roles criticos sin titular activo | Conteo de reglas con destinatario resuelto vacio | Rojo si mayor a 0 | Gerencia, Administrador, Auditor |
 
-### MOD-023 Calendario y Motor de Plazos (Version: MVP)
+### 14.3.23 MOD-023 Calendario y Motor de Plazos (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -510,7 +510,7 @@ Ademas, el "estado del programa por etapa y por cluster" (seccion 14.1.1) es un 
 | Cobertura de fuente verificada en asuetos locales | Porcentaje de sucursales con fuente verificada en 24 meses | Verde 100%, amarillo 80-99%, rojo menor a 80% | Administrador, Auditor |
 | Casos con criterio de computo ambiguo en su valor alternativo | Conteo de cambios de criterio por defecto | Amarillo si mayor a 0 | Legal/Compliance, Delegado/Resp. interno, Auditor |
 
-### MOD-024 Centro Regulatorio (Version: MVP)
+### 14.3.24 MOD-024 Centro Regulatorio (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -523,11 +523,11 @@ Ademas, el "estado del programa por etapa y por cluster" (seccion 14.1.1) es un 
 | Historial de sanciones y apercibimientos (RECOMENDADO) | Conteo acumulado de expedientes cerrados con sancion | Informativo | Legal, Auditor, Gerencia |
 | Alertas activas del modulo | Conteo por nivel INFO/WARNING/HIGH/CRITICAL | Semaforo por nivel | Gerencia (HIGH/CRITICAL), Responsable Legal (todas) |
 
-### MOD-025 Busqueda Global (Version: V2)
+### 14.3.25 MOD-025 Busqueda Global (Version: V2)
 
 No aporta indicadores de estado del programa al Dashboard principal (`MOD-020_ficha.md`, seccion M.3.1: "No aporta indicadores de estado del programa al Dashboard principal"): sus 3 indicadores propios (consultas ejecutadas, proporcion sin resultados, volumen de consultas en ambito sensible) son de gestion interna de la propia busqueda y se muestran unicamente al Administrador, nunca en las 4 perspectivas de MOD-020.
 
-### MOD-026 Centro de Ayuda (Version: MVP)
+### 14.3.26 MOD-026 Centro de Ayuda (Version: MVP)
 
 | Indicador | Formula (resumen) | Semaforo | Perspectiva(s) |
 |---|---|---|---|
@@ -539,4 +539,387 @@ No aporta indicadores de estado del programa al Dashboard principal (`MOD-020_fi
 Al igual que MOD-025, estos 4 indicadores de MOD-026 no miden el estado del programa de proteccion de datos de la empresa cliente: miden uso y calidad del contenido de ayuda, por lo que no aparecen en la sintesis por etapa o por cluster de la seccion 14.1.1, solo en este catalogo consolidado.
 
 ---
+
+## 14.4 Vista alternativa por los 8 clusters legales
+
+Ademas de navegar el Dashboard por las 6 etapas del recorrido (la vista por defecto en las 4 perspectivas), la perspectiva Legal/Delegado puede activar una vista alternativa que agrupa los mismos indicadores y reportes por 8 temas legales ("clusters"), util cuando quien consulta necesita revisar un tema legal completo sin importar en que etapa vive cada modulo (por ejemplo, todo lo relacionado con "Relacion con la autoridad"). Esta vista alternativa es Version V1 (`MOD-020_ficha.md`, seccion Q): en el MVP el Dashboard solo navega por las 6 etapas.
+
+Origen del mapeo: `propuesta_mapa_obligaciones.md`, seccion 1, definio estos 8 clusters sobre 16 modulos "de proceso" con su propia numeracion; `06_mapa_definitivo_de_modulos.md`, seccion 3 (ficha de MOD-020), adopto el injerto como vista alternativa; `MOD-020_ficha.md`, seccion M.4, es quien traduce el mapeo a los 26 codigos de modulo definitivos y resuelve los casos que la propuesta original no cubria. Esta seccion retoma esa traduccion ya resuelta, sin reabrirla.
+
+| Cluster legal | Modulos incluidos |
+|---|---|
+| A. Nucleo organizativo | MOD-001 (Organizacion y Personas, incluye Usuarios y Roles), MOD-002 (Delegado / Responsable Interno) |
+| B. Entrada y hoja de ruta | MOD-003 (Onboarding), MOD-004 (Diagnostico de Cumplimiento), MOD-005 (Plan de Cumplimiento) |
+| C. Registro y gobernanza | MOD-006 (RAT y Mapa de Datos), MOD-007 (Consentimiento), MOD-014 (Riesgos y EIPD), MOD-016 (Retencion y Eliminacion) |
+| D. Relacion con el titular | MOD-011 (ARCO-POL), MOD-012 (Portal del Titular) |
+| E. Relacion con terceros | MOD-009 (Proveedores y Encargados), MOD-010 (Transferencias Internacionales) |
+| F. Gestion de crisis y control | MOD-013 (Incidentes de Seguridad), MOD-015 (Controles de Seguridad), MOD-017 (Capacitacion) |
+| G. Documentacion | MOD-008 (Documentos y Politicas) |
+| H. Relacion con la autoridad | MOD-024 (Centro Regulatorio, incluye Procedimiento Sancionador y Tramites ante la ACE) |
+
+**Modulos fuera de los 8 clusters.** Los 6 modulos de la barra transversal (MOD-021 a MOD-026) y los dos modulos semi-transversales de la etapa Demostrar (MOD-018 Auditoria de Cumplimiento y MOD-019 Centro de Evidencias, ademas del propio MOD-020) no tienen casilla propia en la tabla anterior. Cuando el usuario filtra la vista Legal/Delegado por un cluster especifico, el panel muestra tambien, de forma cruzada, las tareas (MOD-021), la evidencia (MOD-019) y los hallazgos de auditoria (MOD-018) cuyo modulo de origen pertenece a ese cluster, en vez de asignarles un cluster propio que no les corresponde con precision. Esta ambiguedad de origen (que ningun mapa previo resuelve de forma explicita para MOD-018 y MOD-019) y la decision de diseno que la resuelve se documentan tambien en "Contradicciones y huecos detectados" al final de este archivo.
+
+**Maqueta ASCII de la vista por clusters (perspectiva Legal/Delegado, filtrada a un cluster especifico):**
+
+```
++------------------------------------------------------------------+
+| DASHBOARD - Perspectiva: LEGAL / DELEGADO                         |
+| Vista: ( 6 etapas del recorrido ) / [ 8 clusters legales ]        |
+| Cluster: [ E. Relacion con terceros v ]                            |
++------------------------------------------------------------------+
+| ESTADO DEL CLUSTER: Operando                                       |
+|                                                                    |
+| MOD-009 PROVEEDORES Y ENCARGADOS                                   |
+|  Proveedores sin contrato/DPA vigente vinculado ..... 0  (verde)  |
+|  Proveedores fuera de El Salvador sin transferencia .. 1 (rojo)-->|
+|                                                                    |
+| MOD-010 TRANSFERENCIAS INTERNACIONALES                            |
+|  Transferencias sin evaluacion de pais completa ...... 2 (amar.)-|
+|  Puestas en conocimiento a la ACE pendientes .......... 0 (verde)|
+|                                                                    |
+| CRUZADO DESDE MODULOS TRANSVERSALES (origen en este cluster)       |
+|  Tareas pendientes del cluster (MOD-021) .............. 3        |
+|  Evidencia disponible del cluster (MOD-019) ........... 88%      |
+|  Hallazgos de auditoria abiertos del cluster (MOD-018)  0        |
+|                                                                    |
+| [ Exportar Reporte de transferencias derivadas (MOD-009) ]        |
++------------------------------------------------------------------+
+```
+
+---
+
+## 14.5 Catalogo consolidado de reportes (secciones N)
+
+Catalogo completo, consolidado a partir de la seccion N de las 26 fichas (extraido con `awk '/^## N[.]/,/^## O[.]/' analisis/03_modulos/MOD-*.md`). Igual que en la seccion 14.3, se agrupa por modulo fuente; la columna "Version" es la version del modulo que produce el reporte (convencion fijada en la introduccion de esta seccion, antes de 14.1).
+
+### 14.5.1 Reportes propios de MOD-020 (combinan varios modulos)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia | Version |
+|---|---|---|---|---|---|---|
+| Informe gerencial consolidado | Sintesis del estado del programa por las 6 etapas y por los 8 clusters, indicadores criticos de cada modulo MUST HAVE, avance del Plan de Cumplimiento (MOD-005) | Por etapa, por cluster, por periodo o foto mensual | PDF | Gerencia, Administrador | Si | V1 |
+| Informe para Junta Directiva | Version ejecutiva del informe gerencial: menos detalle operativo, mas enfasis en riesgos criticos, avance del plan y proximos hitos regulatorios (por ejemplo, la reforma 659) | Por periodo (tipicamente trimestral o semestral) | PDF | Junta Directiva (destinatario externo, no es un rol del sistema) | Si | V1 |
+| Enlace al paquete de evidencia para la ACE | Referencia al paquete que arma MOD-019 (general o de preparacion de inspeccion), con fecha, alcance y estado, sin duplicar su contenido | Por tipo de paquete, por fecha de generacion | Enlace mas metadatos (el archivo lo genera MOD-019) | Delegado/Responsable interno, Legal/Compliance, Administrador | Si (por remision directa) | V1 |
+| Reporte comparativo de tendencia (fotos periodicas) | Evolucion de los indicadores de la seccion 14.1.1 y 14.3 entre dos o mas cierres mensuales elegidos | Por rango de fechas, por modulo o cluster | PDF, XLSX | Gerencia, Legal/Delegado, Auditor | Si | V1 |
+| Exportacion de la vista de Dashboard vigente | Fotografia en PDF de la pantalla tal como la ve el usuario, con sus filtros aplicados | Los mismos filtros de vista de la perspectiva activa | PDF | El usuario que exporta, para compartir puntualmente | No (salvo uso como respaldo puntual) | V1 |
+
+### 14.5.2 MOD-001 Organizacion y Personas (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de usuarios y roles vigentes | Nombre, correo, cargo, area, rol(es), estado, fecha de alta | Por area, por rol, por estado | PDF, XLSX, CSV | Auditor interno o externo, Administrador | Si |
+| Ficha de organizacion | Razon social, NIT, sector, tamano, sucursales, estructura | Ninguno | PDF | Uso interno, Gerencia | Complementario (evidencia de OBL-AMB-01, no reporte independiente para la ACE) |
+| Historial de cambios de estructura | Cada evento de alta, baja o cambio de rol, con fecha, usuario y motivo | Por rango de fechas, por tipo de evento, por usuario | CSV, PDF | Auditor, Responsable de Seguridad | Si |
+
+### 14.5.3 MOD-002 Delegado / Responsable Interno de Datos (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Ficha del responsable del programa de datos | Datos vigentes del registro ACTIVO mas resumen del historico | Por organizacion, por periodo | PDF | Auditoria interna, asesor externo | Si |
+| Bitacora de plazos del Delegado | Todos los plazos calculados por MOD-023 para este modulo, cumplidos y vencidos, con fechas | Por rango de fechas, por tipo de plazo | XLSX, CSV | Gerencia, Junta Directiva | Si |
+| Paquete de evidencia del Delegado | Acta, declaracion jurada, atestados, informes periodicos, comunicaciones a la ACE, con manifiesto y hash de integridad | Por periodo, por estado del regimen (ACTUAL/FUTURO) | ZIP con manifiesto firmado | Auditoria anual (MOD-018), requerimiento de la ACE | Si (via MOD-019) |
+| Informe de gestion periodico del Delegado (OBL-DPO-07) | Estadisticas ARCO-POL del periodo, recomendaciones emitidas, seguimiento a las no acatadas | Por periodo cubierto | PDF | Responsable de la organizacion, Junta Directiva | Si |
+
+### 14.5.4 MOD-003 Onboarding (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Resumen de configuracion inicial | Datos de la organizacion, usuarios y roles asignados, estado de la designacion del Delegado al cierre, fecha y usuario que lo completo | Ninguno | PDF | Administrador | Si |
+| Historial de invitaciones y aceptaciones | Cada invitacion enviada, con fecha de envio, fecha de aceptacion o de vencimiento, rol asignado | Rango de fechas, estado (pendiente / aceptada / vencida) | CSV o XLSX | Administrador, Auditor | Si |
+
+### 14.5.5 MOD-004 Diagnostico de Cumplimiento (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Resultado del diagnostico | Respuestas por bloque, nivel de madurez, conteo de acciones por prioridad, fecha y responsables | Por sesion, por bloque | PDF | Administrador, Delegado, Gerencia | Si, con hash de integridad |
+| Historial comparativo de diagnosticos | Evolucion del nivel de madurez y del conteo de acciones entre sesiones sucesivas | Por rango de fechas | PDF, XLSX | Delegado, Auditor interno | Si |
+| Detalle de disparadores activados | Lista completa de disparadores activados en una sesion, con su OBL-ID y modulo de destino | Por sesion, por prioridad | XLSX, CSV | Legal/Compliance, Auditor externo | Si |
+
+### 14.5.6 MOD-005 Plan de Cumplimiento (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Plan de Cumplimiento vigente | Listado completo de acciones de la version Vigente, con fundamento, estado y evidencia esperada | Por prioridad, por modulo de ejecucion, por responsable, por estado | PDF, XLSX | Administrador, Delegado, Legal | Si |
+| Plan de adecuacion | Version historica congelada de una version aprobada, con hash de integridad | Por version o rango de fechas de aprobacion | PDF firmado, ZIP con hash | Auditor interno o externo, ACE si se requiere | Si (instrumento central de OBL-PLAZO-03) |
+| Acciones vencidas | Listado de acciones en estado Vencida, con dias de retraso | Por responsable, por modulo, por prioridad | CSV, XLSX | Administrador, Delegado, Legal | Si |
+| Historial de recalculos del plan | Lista de todas las versiones generadas, con fecha, motivo del recalculo y version anterior archivada | Por rango de fechas | PDF | Auditor, Legal | Si |
+
+### 14.5.7 MOD-006 RAT y Mapa de Datos (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| RAT consolidado | Todas las fichas con sus campos principales | Area, estado, base de licitud, sensibilidad, riesgo | PDF, XLSX/CSV | Delegado, Legal, Gerencia, Auditor | Si |
+| RAT de datos sensibles | Solo fichas con categoria sensible marcada, con justificacion y controles enlazados | Categoria sensible, area | PDF | Legal, Delegado, Auditor | Si |
+| Mapa de Datos exportado | Visualizacion origen -> sistema -> area -> proveedor -> pais -> eliminacion | Area, pais, tipo de sistema | PDF / imagen | Gerencia, Delegado, Auditor externo | Si |
+| Reporte de transferencias no documentadas | Lista de alertas con fecha de deteccion y estado de resolucion | Estado (abierta/cerrada), fecha | PDF / CSV | Delegado, Legal | Si |
+| Historial de cambios de una ficha | Version anterior y nueva de cada campo, autor y fecha | Rango de fechas | PDF | Auditor, Legal | Si |
+| Paquete de evidencia del RAT | RAT consolidado mas historial mas aprobaciones mas verificacion de integridad | - | ZIP con hash | Auditor externo, ACE (a criterio de la empresa) | Es el paquete mismo |
+
+### 14.5.8 MOD-007 Consentimiento (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Consentimientos vigentes | Lista con finalidad, tipo, fecha y version del aviso | Por tratamiento, finalidad, tipo, rango de fechas | XLSX, CSV | Responsable, Legal, Gerencia | Si |
+| Revocaciones procesadas | Lista con fechas de recepcion, ejecucion y notificacion, y si cumplieron el plazo | Por rango de fechas, por estado (a tiempo/vencida) | XLSX, CSV | Legal, Auditor (OBL-AUD-01) | Si |
+| Expediente individual de consentimiento | Snapshot del texto, version del aviso, archivo de firma, historial de estados, hash de integridad | Por consentimiento especifico | PDF firmado/hash | Delegado/Responsable interno, respuesta a un reclamo o a la ACE | Si |
+| Consentimientos sensibles y biometricos | Lista filtrada por tipo Sensible/Biometrico/Parental, con estado de la alternativa no biometrica ofrecida | Por tipo, por area | XLSX | Legal, Riesgos/EIPD (MOD-014) | Si |
+
+### 14.5.9 MOD-008 Documentos y Politicas (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Inventario de documentos regulatorios | Nombre, tipo, version vigente, fecha de publicacion, proxima revision, estado | Tipo de documento, estado, sucursal | PDF, XLSX | Gerencia, Auditor | Si |
+| Historial de versiones de un documento | Todas las versiones, autores, aprobadores, fechas, hash de cada una | Documento especifico, rango de fechas | PDF, CSV | Auditor, requerimiento de la ACE | Si |
+| Paquete de evidencia documental | PDF firmado de cada documento vigente mas verificacion de integridad de cada uno | Tipo de documento, fecha de corte | ZIP | Auditoria de Cumplimiento (MOD-018), requerimiento de la ACE | Si |
+| Checklist de contenido minimo del Aviso de Privacidad | Estado de cada literal del Art. 24 y de cada elemento del Art. 7 en la version vigente | Version especifica | PDF | Legal/Compliance, Delegado/Responsable interno | Si |
+
+### 14.5.10 MOD-009 Proveedores y Encargados (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de proveedores/encargados | Nombre, tipo, pais, estado, nivel de riesgo, contrato vigente hasta | Tipo de entidad, estado, pais, nivel de riesgo | XLSX, CSV, PDF | Delegado, Auditor | Si |
+| Reporte de vencimientos | Contratos y revisiones proximas a vencer, ordenados por fecha | Rango de fechas, area | PDF, XLSX | Responsable de area, Gerencia | No (operativo, seguimiento interno) |
+| Paquete de evidencia de un proveedor especifico | Ficha completa, contrato vinculado, evaluaciones de riesgo, revisiones, notificaciones enviadas, con hash o firma | Un proveedor a la vez | PDF y ZIP firmado | Auditor interno, Auditor externo, la empresa para la ACE | Si |
+| Reporte de transferencias derivadas | Cruce de proveedores con pais distinto de El Salvador contra MOD-010 | Pais, estado del registro de transferencia | XLSX | Legal/Compliance, Delegado | Si (alimenta evidencia de MOD-010) |
+
+### 14.5.11 MOD-010 Transferencias Internacionales (Version: V1)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de transferencias | Todas con estado, pais, receptor, base juridica y fecha de ultima revision | Estado, tipo (nacional/internacional), pais, receptor, rango de fechas | XLSX, CSV | Legal, Gerencia | No |
+| Expediente individual de transferencia | Ficha completa con historial de estados y adjuntos | Una transferencia especifica | PDF | Auditor, Delegado, asesor externo invitado | Si |
+| Paquete de evidencia de transferencias | Expedientes ACTIVAS o del periodo, con hash de integridad | Rango de fechas, estado | ZIP (PDF y adjuntos originales) | Auditor externo, auditoria anual (OBL-AUD-01) | Si |
+| Transferencias pendientes o con riesgo abierto | Registros pendientes de confirmar, nota de riesgo abierta, o contrato vencido | Tipo de pendiente | PDF, XLSX | Delegado, Gerencia | No |
+| Registro de puestas en conocimiento a la ACE | Historial de intentos de notificacion a la ACE por transferencia, con su estado | Rango de fechas, estado | PDF | Delegado, Auditor externo | Si |
+
+### 14.5.12 MOD-011 ARCO-POL (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Reporte de solicitudes ARCO-POL | Listado de expedientes con estado, derecho ejercido, fechas y cumplimiento de plazo | Periodo, estado, derecho, responsable | PDF, XLSX | Delegado, Gerencia | Si |
+| Estadisticas ARCO-POL para el informe periodico del Delegado (OBL-DPO-07) | Volumen por derecho, tiempo promedio de resolucion, incidencias de plazo vencido | Periodo (semestral) | PDF | Delegado | Si |
+| Paquete de evidencia de un expediente individual | Todo el expediente, con verificacion de integridad | Numero de expediente | ZIP con hash/firma | Auditor, ACE (si se entrega ante un requerimiento) | Si |
+| Reporte de reclamos ante la Direccion de Proteccion de Datos | Listado de reclamos, estado del informe de actuaciones | Periodo, estado | PDF, XLSX | Delegado, Legal | Si |
+| Reporte de tarifas cobradas | Listado de cobros de reproduccion/envio efectivamente realizados, con su fundamento en la tabla publicada | Periodo | XLSX | Administrador, Auditor | Si |
+
+### 14.5.13 MOD-012 Portal del Titular (Version: V1)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Solicitudes recibidas por el Portal | Fecha, tipo de derecho, tipo de solicitante, estado actual, tiempo hasta triage | Rango de fechas, tipo de derecho, estado | XLSX, CSV | Responsable ARCO-POL, Gerencia | Si |
+| Accesos y verificaciones del Portal | Fecha y hora, resultado de la verificacion, expediente relacionado (sin exponer el documento de identidad) | Rango de fechas, resultado | CSV, PDF firmado | Responsable de Seguridad/IT, Auditor | Si |
+| Constancia de mecanismo operativo | Desde cuando el Portal esta activo, versiones del Aviso mostradas, disponibilidad en el periodo | Rango de fechas | PDF | Delegado/Responsable interno, Gerencia | Si (evidencia de OBL-DOC-04 y OBL-PLAZO-04) |
+
+### 14.5.14 MOD-013 Incidentes de Seguridad (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de incidentes del periodo | Titulo, fechas clave, severidad, estado, si hubo notificacion y si fue dentro de plazo | Rango de fechas, severidad, estado, origen | PDF, XLSX, CSV | Gerencia, Legal | No (reporte gerencial) |
+| Expediente individual de un incidente | Todos los campos del expediente, bitacora completa, constancias de notificacion | Un incidente especifico | PDF, ZIP (con adjuntos) | Auditor, la ACE si lo requiere | Si |
+| Reporte de cumplimiento de plazos de notificacion | Cuantos casos vencieron el plazo de 72 horas, cuanto tiempo de exceso, justificacion registrada | Rango de fechas | PDF, XLSX | Legal, Auditor, Gerencia | Si |
+| Reporte de incidentes por proveedor | Incidentes cuyo origen fue un proveedor/encargado, con el tiempo de aviso del proveedor frente al plazo pactado | Rango de fechas, proveedor especifico | PDF, XLSX | Responsable de Proveedores, Legal | Si |
+| Paquete de evidencia para auditoria anual (OBL-AUD-01) | Todos los expedientes cerrados del periodo, con constancias de notificacion y hash de integridad | Rango de fechas | ZIP firmado | Auditor externo | Si |
+
+### 14.5.15 MOD-014 Riesgos y EIPD (Version: V1)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de EIPD | Todas las EIPD con estado, nivel de riesgo, responsable y fecha de proxima revision | Estado, nivel de riesgo, motivo de apertura, rango de fechas | PDF, XLSX | Delegado, Gerencia | Si (indice del paquete general) |
+| Expediente EIPD individual | Version completa: cuestionario, mitigaciones, aprobacion, historial de estados | Una EIPD especifica | PDF (con verificacion de integridad) | Auditor, ACE (si se requiere), Legal | Si |
+| Reporte de riesgos por nivel | Conteo y detalle por nivel (Bajo/Medio/Alto/Critico), con tendencia si hay historico | Rango de fechas, area | XLSX, CSV | Gerencia, Delegado | Si |
+| Reporte de mitigaciones y controles pendientes | Mitigaciones registradas, estado de implementacion y control asociado en MOD-015 | Estado del control, responsable | XLSX | Responsable de Seguridad/IT, Delegado | Si |
+| Paquete de evidencia de una EIPD | Expediente individual mas adjuntos mas AuditLog filtrado, con hash | Una EIPD especifica | ZIP firmado | Auditor externo, ACE (si se requiere) | Es el paquete mismo |
+
+### 14.5.16 MOD-015 Controles de Seguridad (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Checklist de controles de seguridad | Catalogo completo con categoria, tipo, estado, responsable y fecha de ultima revision | Categoria, estado, responsable, rango de fechas | PDF, XLSX | Responsable de Seguridad/IT, Delegado, Gerencia | Si |
+| Reporte de excepciones y justificaciones | Lista de controles exceptuados, su justificacion y su aprobador | Estado, rango de fechas | PDF | Legal/Delegado, Auditor | Si |
+| Paquete de evidencia de seguridad | Checklist mas archivos de evidencia adjuntos, con verificacion de integridad | Por obligacion (OBL-SEG-01 a 06, OBL-SENS-05) o por control especifico | ZIP, generado via MOD-019 | Auditor externo, la empresa para la ACE | Si |
+| Historial de cambios de un control | Linea de tiempo de un control especifico: quien cambio que y cuando | Un control especifico | CSV o vista en pantalla | Auditor interno, Responsable Legal/Compliance | Si |
+
+### 14.5.17 MOD-016 Retencion y Eliminacion (Version: V1)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Inventario de reglas de retencion | Todas las reglas, estado, fundamento, fecha efectiva | Modulo de origen, estado, categoria de datos | PDF / XLSX | Delegado, Gerencia, Auditor | Si |
+| Historial de eliminaciones | Eventos ELIMINADO con constancia, aprobador, metodo | Rango de fechas, tipo de dato o documento | PDF / CSV / ZIP (con adjuntos) | Auditor, ACE en caso de requerimiento | Si |
+| Excepciones y eliminaciones anticipadas | Casos donde se forzo una eliminacion antes del plazo minimo documental, con motivo y doble aprobacion | Rango de fechas | PDF | Delegado, Auditor | Si |
+| Reglas sin fundamento sectorial confirmado | Reglas creadas con fundamento propio, pendientes de validacion legal | Por area | XLSX | Responsable Legal | No (gestion interna) |
+
+### 14.5.18 MOD-017 Capacitacion (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de capacitaciones por persona | Todos los registros de una persona, con fecha, tema, constancia | Por persona, por rango de fechas | PDF / XLSX | RRHH, Delegado, Auditor | Si |
+| Historial de capacitaciones por area o rol | Conteo y detalle agrupados por area o por rol destinatario | Por area, por rol, por periodo | XLSX | Responsable de area, Gerencia | Si |
+| Plan anual de capacitacion e induccion (version vigente y anteriores) | Contenido completo del documento, con historial de versiones | Por anio | PDF | Delegado, Auditor, ACE si la requiere | Si |
+| Vencimientos e inducciones pendientes | Lista de personas con capacitacion vencida o induccion pendiente | Por estado, por area | CSV | RRHH, Delegado | No (gestion interna) |
+
+### 14.5.19 MOD-018 Auditoria de Cumplimiento (Version: V1)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Informe de auditoria anual | Alcance, hallazgos, plan de accion, conclusion | Por periodo, por tipo (interna/externa/mixta) | PDF | Gerencia, Auditor externo, ACE si la requiere | Si |
+| Plan de accion exportable | Acciones, responsables, fechas y estado | Por auditoria, por severidad | XLSX | Legal/Delegado, Resp. Seguridad/IT | Si |
+| Historico de auditorias | Lista de todos los ciclos con fecha, tipo, hallazgos totales y estado | Rango de fechas | CSV | Auditor interno, Gerencia | Si |
+| Paquete de evidencia de la auditoria | Informe mas anexos, con verificacion de integridad, generado via MOD-019 | Por auditoria especifica | ZIP con hash o firma | Auditor externo, ACE | Si |
+
+### 14.5.20 MOD-019 Centro de Evidencias (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Informe de brecha de evidencia | Obligaciones aplicables sin evidencia Disponible, con clasificacion y modulo sugerido | Por clasificacion, por area, por modulo | XLSX, PDF | Delegado/Resp. interno, Gerencia | No (orienta antes de generar el paquete) |
+| Paquete de evidencia general | Evidencia y documentos por los filtros elegidos, con manifiesto y verificacion de integridad | Por periodo, por obligacion, por modulo de origen | ZIP con manifiesto, o PDF/XLSX/CSV segun el tipo | Auditor interno o externo, ACE, cliente en due diligence | Si (es el paquete mismo) |
+| Paquete para auditoria anual (MOD-018) | Evidencia del alcance de la auditoria en curso, mas checklist de MOD-015 y MOD-006 relacionado | Por auditoria especifica | ZIP con hash o firma | Auditor (interno o externo invitado) | Si |
+| Paquete para procedimiento sancionador (MOD-024) | Evidencia relacionada con la obligacion o el hecho investigado, incluida la bloqueada por el propio expediente | Por expediente sancionador especifico | ZIP con hash o firma | Responsable Legal/Compliance, Delegado/Resp. interno | Si |
+| Paquete de preparacion de inspeccion | Evidencia completa por obligacion OBLIGATORIO, generado bajo demanda ante un aviso de diligencia preliminar | Por las 105 obligaciones, priorizando OBLIGATORIO | ZIP con manifiesto | Delegado/Resp. interno, Gerencia | Si |
+| Historico de exportaciones | Lista de todos los paquetes exportados, con fecha, tipo, destinatario declarado y aprobadores | Rango de fechas, por tipo de paquete | CSV | Auditor interno, Gerencia | Si |
+
+### 14.5.21 MOD-021 Centro de Tareas (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de tareas | Todas las tareas con sus campos principales | Estado, tipo, responsable, area, rango de fechas, obligacion relacionada | XLSX, CSV | Administrador, Delegado/Responsable interno, Legal/Compliance | Si |
+| Tareas vencidas | Tareas con bandera Vencida activa o historica, con dias de atraso | Rango de fechas, tipo, area | XLSX, PDF | Gerencia, Auditor | Si |
+| Historial de una tarea especifica | Linea de tiempo completa: creacion, cambios de estado, comentarios, adjuntos, aprobacion | Una tarea puntual | PDF | Auditor, Auditor externo, Legal/Compliance | Si |
+| Historial de aprobaciones | Todas las aprobaciones resueltas, con identidad del aprobador y fecha | Rango de fechas, tipo de aprobacion, rol | XLSX, PDF | Auditor, Auditor externo, Delegado/Responsable interno | Si |
+| Carga de trabajo por area o responsable | Conteo de tareas activas, completadas y vencidas por persona o area | Rango de fechas, area | XLSX | Gerencia, Administrador | No (uso interno) |
+| Paquete de tareas archivadas por cambio de regimen | Listado completo de tareas marcadas "No aplica" tras el cambio de bandera, con motivo | Rango de fechas | ZIP (PDF resumen mas anexos) | Delegado/Responsable interno, Auditor | Si |
+
+### 14.5.22 MOD-022 Notificaciones (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Listado de notificaciones | Todas con sus campos principales (familia, nivel, destinatario, estados de entrega, lectura y acuse) | Familia, nivel, destinatario, rango de fechas, modulo de origen | XLSX, CSV | Administrador, Delegado/Responsable interno, Legal/Compliance | Si |
+| Notificaciones CRITICAL con su acuse | Todas las de nivel CRITICAL del periodo, con fecha y hora de generacion, entrega, lectura y acuse (o su ausencia) | Rango de fechas, familia, modulo de origen | XLSX, PDF | Auditor, Auditor externo, Gerencia | Si |
+| Historial de una notificacion especifica | Linea de tiempo completa: generacion, envio por canal, entrega, lectura, acuse, escalamiento | Una notificacion puntual | PDF | Auditor, Auditor externo, Legal/Compliance | Si |
+| Entregas fallidas y sus reintentos | Notificaciones que fallaron por canal externo, con motivo y numero de reintentos | Rango de fechas, canal, destinatario | XLSX | Administrador | No (uso interno) |
+| Configuracion vigente de reglas de notificacion | Foto de las reglas activas por familia (destinatario, canal, escalamiento) en un momento dado | Fecha de corte | PDF | Auditor, Auditor externo | Si |
+
+### 14.5.23 MOD-023 Calendario y Motor de Plazos (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Calendario oficial vigente por anio | Todas las fechas inhabiles aplicables, con su fuente | Anio, capa | PDF, XLSX | Administrador, Auditor, Auditor externo | Si |
+| Historial de calculos de plazo | Cada calculo realizado, con evento de inicio, tipo de computo, fecha limite, version de calendario usada | Rango de fechas, modulo de origen, OBL-ID | XLSX, CSV | Delegado/Responsable interno, Legal/Compliance, Auditor | Si |
+| Historial de recalculos | Cada recalculo aplicado, con fecha anterior, fecha nueva y motivo | Rango de fechas, modulo de origen | PDF, XLSX | Legal/Compliance, Auditor | Si |
+| Registro de cambios de criterio de computo | Cada cambio de criterio ambiguo, con identidad de ambos aprobadores y fecha | Rango de fechas | PDF | Delegado/Responsable interno, Legal/Compliance, Auditor externo | Si |
+| Paquete de evidencia de un calculo especifico | Desglose completo, snapshot del calendario usado, fuente de cada fecha excluida, con verificacion de integridad | Un calculo puntual | ZIP (PDF resumen mas anexos, mas verificacion de integridad) | Auditor, Auditor externo | Si |
+
+### 14.5.24 MOD-024 Centro Regulatorio (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Marco normativo vigente | Lista completa de instrumentos con su estado, fuente y fecha de consulta | Por tipo de instrumento, por estado | PDF, XLSX | Gerencia, Legal, Auditor | Si |
+| Catalogo de infracciones y multas | Las 26 infracciones del Art. 56 con su rango de multa orientativo | Por categoria (leve/grave/muy grave) | PDF | Legal, Gerencia | Si |
+| Bitacora de actualizaciones normativas | Cada cambio publicado, con fecha, obligaciones y modulos afectados, y estado de revision | Por rango de fechas | XLSX, CSV | Legal, Auditor | Si |
+| Expediente completo de un Procedimiento Sancionador | Resolucion de inicio, contestacion, pruebas, resolucion final, recursos, comprobante de pago, con manifiesto y hash | Por expediente, por periodo | ZIP con manifiesto firmado | Auditoria interna (MOD-018), asesor externo, requerimiento de la ACE | Si (via MOD-019) |
+| Registro de tramites ante la ACE | Todos los tramites con su estado, canal usado y resultado | Por tipo de tramite, por modulo de origen, por periodo | XLSX, CSV | Gerencia, Legal, Auditor | Si |
+| Historial del regimen de la reforma 659 | Cada cambio de bandera, fecha, motivo y organizaciones notificadas | Por periodo | PDF | Legal, Auditoria | Si |
+
+### 14.5.25 MOD-025 Busqueda Global (Version: V2)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Registro agregado de consultas en ambito sensible | Conteo de consultas por usuario, por ambito y por resultado (con/sin coincidencias), sin el termino exacto conservado | Rango de fechas, usuario, ambito | XLSX | Administrador, Auditor interno | No (salvo respaldo puntual ante una investigacion de uso indebido) |
+| Catalogo de sinonimos vigente | Lista completa de equivalencias termino comun -> termino tecnico o modulo | Ninguno | CSV | Administrador, equipo de producto | No |
+
+### 14.5.26 MOD-026 Centro de Ayuda (Version: MVP)
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|---|
+| Catalogo completo de articulos de ayuda | Todos los articulos publicados, con modulo asociado, version, fecha y revisor de la ultima revision legal | Por modulo, por estado, por regimen aplicable | CSV o PDF | Equipo de contenido; Auditor | No (puede adjuntarse como material de referencia complementario) |
+| Reporte de retroalimentacion y confusion | Articulos con mas votos "no fue util", agrupados por modulo, sin identificar usuarios individuales | Rango de fechas, modulo | CSV o PDF | Equipo de contenido del producto | No |
+| Uso de la ayuda por modulo | Vistas agregadas de la tarjeta de ayuda y del Glosario, por modulo y por periodo | Rango de fechas, modulo | CSV o PDF | Gerencia, Responsable (Administrador) | No |
+
+---
+
+## 14.6 Reportes minimos del area 28, informe a Junta Directiva y paquete para la ACE
+
+El area 28 del prompt de analisis funcional exige, como minimo, reportes gerencial, ARCO-POL, incidentes, proveedores, RAT, auditoria y seguridad (7 reportes). Ninguno se duplica desde cero en MOD-020: cada uno ya existe, con mayor detalle, en la seccion N de su modulo de origen (seccion 14.5); el rol de MOD-020 es ofrecer un unico punto de entrada donde encontrarlos todos, ademas del Informe para Junta Directiva y el enlace al paquete para la ACE, que si son exclusivos de este modulo.
+
+| Reporte minimo del area 28 | Se satisface con (modulo y reporte de origen) |
+|---|---|
+| Gerencial | Informe gerencial consolidado (14.5.1, propio de MOD-020), que agrega el Plan de Cumplimiento vigente y el Plan de adecuacion de MOD-005 |
+| ARCO-POL | Reporte de solicitudes ARCO-POL y Estadisticas ARCO-POL para el informe periodico del Delegado, ambos de MOD-011 (14.5.12) |
+| Incidentes | Listado de incidentes del periodo y Reporte de cumplimiento de plazos de notificacion, ambos de MOD-013 (14.5.14) |
+| Proveedores | Listado de proveedores/encargados y Reporte de vencimientos, ambos de MOD-009 (14.5.10) |
+| RAT | RAT consolidado y RAT de datos sensibles, ambos de MOD-006 (14.5.7) |
+| Auditoria | Informe de auditoria anual y Plan de accion exportable, ambos de MOD-018 (14.5.19); complementado por el Historico de exportaciones de MOD-020 mismo |
+| Seguridad | Checklist de controles de seguridad y Reporte de excepciones y justificaciones, ambos de MOD-015 (14.5.16) |
+
+**Informe para Junta Directiva.** No es un rol del sistema (no aparece entre los 12 roles de `05_tipos_de_usuario.md`, seccion 5.3): es, igual que ya lo modelan MOD-002 y MOD-005 en sus propios reportes, unicamente un destinatario externo de un reporte exportado (14.5.1), que recibe el documento fuera del sistema y nunca inicia sesion como usuario para ver el Dashboard en vivo. Sintetiza el estado por etapa y por cluster, los indicadores de mayor severidad y el avance del Plan de Cumplimiento; requiere validacion de la organizacion antes de enviarse fuera del sistema, porque combina datos de varios modulos y su interpretacion final es responsabilidad de quien lo firma.
+
+**Paquete para la ACE.** MOD-020 nunca genera un paquete de evidencia propio y paralelo: enlaza el paquete que arma MOD-019 (paquete de evidencia general o paquete de preparacion de inspeccion), mostrando su fecha de generacion, alcance y estado. Generar o enviar el paquete sin que una persona autorizada lo revise y lo confirme es una decision que el Dashboard nunca automatiza (texto de advertencia: "Este enlace prepara el paquete de evidencia; su envio a la ACE requiere la revision y confirmacion de la organizacion"), coherente con el anti-feature 13 (el sistema no presenta tramites ante la ACE en nombre de la empresa sin que esta lo autorice y ejecute).
+
+---
+
+## 14.7 Reglas de datos
+
+### 14.7.1 Sin datos personales de titulares en los dashboards
+
+Ningun indicador de las 4 perspectivas contiene, ni permite inferir de forma directa, un dato personal de un titular externo (empleado, cliente, ex empleado, candidato). Regla de minimizacion (privacy by design), heredada de `MOD-020_ficha.md`, seccion D.4, y del anti-feature 8 (`22_anti_features.md`: "Copiar o centralizar la base de datos completa del cliente"):
+
+1. Todo indicador es un conteo, un porcentaje, una fecha o un estado agregado (por ejemplo, "3 solicitudes ARCO-POL abiertas"), nunca el nombre, la identificacion ni ningun otro dato del titular al que pertenece un expediente individual.
+2. Los reportes exportables que si incluyen contenido detallado (por ejemplo, un listado de expedientes ARCO-POL con su estado) son en realidad reportes del modulo de origen (MOD-011, MOD-013, etc.) que MOD-020 enlaza o reempaqueta para exportacion consolidada; el contenido y las reglas de minimizacion de cada uno siguen definidas en la ficha de su modulo de origen, que ya excluye el dato sensible del titular salvo el adjunto puntual estrictamente necesario de un expediente (anti-feature 9).
+3. Un indicador que cuenta "tratamientos con dato sensible" respeta siempre la subclasificacion por categoria (salud, biometria, afiliacion sindical, etc.) que ya define el modulo fuente, en vez de mostrar una unica cifra que equipare categorias de riesgo distinto; tampoco introduce por su cuenta una categoria generica de "datos laborales" como si fuera, en si misma, una categoria sensible (anti-feature 23).
+
+### 14.7.2 Permisos siempre en el detalle (drill-down)
+
+Todo enlace de detalle (bajar del indicador agregado al registro fuente) respeta primero los permisos que el rol del usuario ya tiene en el modulo de destino, antes que el filtro de perspectiva, cluster o etapa: si el rol no puede ver el expediente individual en su modulo de origen, tampoco puede verlo llegando desde el Dashboard. El enlace simplemente no se muestra, o redirige a un mensaje neutro de "sin acceso", sin revelar si el registro existe (misma regla de "no revelar existencia" que aplica MOD-025 a la Busqueda Global). Un Responsable de area nunca ve el agregado de otra area; un Auditor externo invitado o un Asesor externo invitado quedan siempre acotados al alcance temporal y de modulos habilitado para su caso puntual (`MOD-020_ficha.md`, secciones B y C).
+
+### 14.7.3 Periodicidad: tiempo real y cierre mensual
+
+Toda vista de Dashboard se recalcula en tiempo real cada vez que el usuario la abre o cambia de filtro: no existe una copia intermedia desactualizada dentro de una misma sesion de consulta. Ademas del tiempo real, el Administrador configura un dia del mes (por defecto, el ultimo dia habil, via MOD-023) en el que el sistema genera automaticamente una foto periodica (cierre mensual), que congela el valor de todos los indicadores de esa fecha. El recalculo manual de una foto ya generada es excepcional y exige registrar el motivo (quien y por que).
+
+### 14.7.4 Fotos historicas: se conservan, nunca se editan ni se borran
+
+Una foto periodica, una vez generada, no puede editarse; solo puede archivarse por antiguedad segun la regla de retencion que fije MOD-016 para este tipo de registro tecnico (mientras esa regla no exista, se aplica por defecto un periodo largo, propuesta inicial 5 anios, [opinion de producto, sin obligacion legal que fije este plazo especifico], equiparable al de los expedientes de MOD-011/MOD-013). Un recalculo manual conserva el snapshot anterior en el historial, nunca lo sobrescribe en silencio. Eliminar en forma definitiva una foto periodica no esta permitido ni siquiera a pedido del Administrador (anti-feature 19: "Permitir que un usuario borre o modifique el historial de auditoria"), porque son evidencia de la evolucion del estado del programa en el tiempo.
+
+### 14.7.5 Toda exportacion queda auditada y verificable
+
+Cada exportacion (de cualquier reporte de la seccion 14.5, del Informe gerencial o del Informe para Junta Directiva) registra en el AuditLog transversal: usuario, fecha y hora, reporte exportado, filtros aplicados y formato; ademas, el archivo exportado incluye siempre un mecanismo de verificacion de integridad (hash o firma validable de forma independiente), calculado a traves del mecanismo unico que expone MOD-019, sin que MOD-020 reinvente su propio formato (anti-feature 25: "Exportar un paquete de evidencias sin ningun mecanismo que permita verificar despues que no fue alterado"). El acceso a una perspectiva o a un reporte marcado con nivel de confidencialidad reforzado (por ejemplo, el Informe para Junta Directiva) por un rol distinto del habitual (Administrador o Delegado/Responsable interno) tambien queda registrado, igual que ya lo hacen MOD-021 y MOD-025 con sus propios contenidos sensibles.
+
+---
+
+## 14.8 Que entra en MVP y que despues
+
+Tabla consolidada a partir de la seccion Q de `MOD-020_ficha.md` (el propio desglose interno del modulo, ya que MOD-020 en su conjunto es MUST HAVE / MVP segun `mapa_modulos.json`), mas la version de cada modulo fuente ya usada en las secciones 14.3 y 14.5 (convencion fijada en la introduccion de esta seccion, antes de 14.1).
+
+| Funcionalidad | Version | Justificacion resumida |
+|---|---|---|
+| Dashboard basico por perspectiva (Gerencia, Responsable, Legal/Delegado, Auditor) con indicadores de pendientes, vencidos, tratamientos, solicitudes | MVP | Justificacion explicita de MUST HAVE de la propia entrada de MOD-020 en `mapa_modulos.json`; sin esto el producto no cumple su promesa de dar una vision general desde el primer dia |
+| Indicadores agregados desde MOD-005, MOD-019 y MOD-021 (dependencia estructural minima) | MVP | Son los 3 modulos MUST HAVE de los que depende la version minima; sin ellos no hay avance del plan, evidencia disponible ni tareas que mostrar |
+| Filtro por sucursal o unidad, y drill-down al registro fuente respetando permisos | MVP | Sin drill-down el Dashboard es solo una foto sin accion posible |
+| Regla de minimizacion (nunca datos personales de titulares) y prohibicion de lenguaje de cumplimiento legal | MVP | Instrumentacion directa de los anti-features 5 y 8, no postergable desde el primer dia |
+| Toda exportacion queda en el AuditLog, con verificacion de integridad via MOD-019 | MVP | Cierra el anti-feature 25; sin esto ningun reporte de este modulo es verificable despues |
+| Catalogo de indicadores de los modulos MUST HAVE (seccion 14.3: MOD-001 a MOD-009, MOD-011, MOD-013, MOD-015, MOD-017, MOD-019, MOD-021 a MOD-024, MOD-026) | MVP | Son los 20 modulos MUST HAVE del mapa definitivo; sus indicadores deben estar disponibles desde el primer dia |
+| Estado del programa por las 6 etapas del recorrido (sintesis de alto nivel, seccion 14.1.1) | MVP (por etapa) | Sintesis directa sobre datos ya MVP |
+| Estado del programa por los 8 clusters legales y vista alternativa por cluster (seccion 14.4) | V1 | Injerto de un solo juez, no parte de la propuesta ganadora original; la navegacion por las 6 etapas (MVP) ya cubre la necesidad de encontrar informacion |
+| Fotos periodicas (cierres mensuales) y reporte comparativo de tendencia | V1 | Util desde el inicio, pero el mismo resultado puede obtenerse revisando manualmente el Dashboard en distintos momentos mientras no exista el snapshot automatico |
+| Reportes exportables avanzados por area (los 7 minimos del area 28) mas alla del listado basico ya MVP en cada modulo de origen | V1 | Cada modulo de origen ya exporta su propio reporte MVP; lo que se difiere es la conveniencia de encontrarlos todos consolidados desde MOD-020 |
+| Informe gerencial consolidado e Informe para Junta Directiva | V1 | Valor claro para clientes con Junta Directiva formal, pero no bloquea la operacion de una pyme sin ese organo |
+| Enlace al paquete de evidencia para la ACE | V1 | Depende de que MOD-019 tenga su paquete de evidencia general ya armado; no urgente mientras la ACE no abra un requerimiento activo |
+| Indicadores de modulos SHOULD/COULD HAVE mostrados como "no disponible en esta version" (MOD-010, MOD-012, MOD-014, MOD-016, MOD-018, MOD-025) | V1 | Mejora de claridad de UX; no bloquea la utilidad basica del Dashboard |
+| Personalizacion completa de umbrales de semaforo por la empresa, para cada indicador del catalogo | V2 | Los umbrales por defecto de cada modulo fuente cubren el caso general |
+| Vista consolidada multi-sociedad del Dashboard (filtro por sociedad activo) | V2/Enterprise (FUTURE) | El MVP no soporta grupos multi-sociedad (decision 2.7.31 de `02_validacion_de_la_idea.md`); el filtro por sociedad queda modelado pero inactivo hasta esa capacidad |
+| Meta-indicadores de uso del propio Dashboard (perspectiva mas consultada, etc.) mas alla de la cobertura basica de fotos mensuales | V2 | Util para el equipo de producto, no para el programa de proteccion de datos de la empresa cliente |
+
+**Version minima vendible del modulo.** El Dashboard basico por las 4 perspectivas, con los indicadores de MOD-005 (avance del plan), MOD-019 (evidencia disponible) y MOD-021 (tareas pendientes y vencidas) mas los indicadores de los demas 17 modulos MUST HAVE ya construidos al momento del lanzamiento, filtrado por sucursal/unidad, con drill-down respetando permisos, sin lenguaje de cumplimiento legal y con toda exportacion verificable via MOD-019. Esto ya resuelve la pregunta central que motiva este modulo ("como vamos", desde cualquier perspectiva).
+
+---
+
+## Contradicciones y huecos detectados
+
+1. **Ambiguedad de origen: a que cluster legal pertenecen MOD-018 y MOD-019 (y el propio MOD-020) dentro de la vista de los 8 clusters.** `propuesta_mapa_obligaciones.md` (seccion 1, propuesta perdedora segun `06_mapa_definitivo_de_modulos.md`, seccion 12) definio los 8 clusters sobre 16 modulos "de proceso", dejando fuera de cualquier cluster a los 9 modulos que en esa propuesta eran transversales (incluyendo Dashboard, Reportes, Auditoria y Evidencias, agrupados sin distincion en un cluster "I"). El mapa definitivo vigente reorganizo esos modulos de forma distinta: mantuvo 6 modulos transversales (MOD-021 a MOD-026) pero saco a Auditoria (MOD-018) y Evidencias (MOD-019) de esa barra para ubicarlos en la etapa Demostrar, como semi-transversales. Ninguna fuente de diseno (ni la propuesta perdedora, ni el mapa definitivo, ni el objetivo del producto) resuelve de forma explicita a que cluster pertenecen MOD-018 y MOD-019 bajo esta nueva organizacion. Se adopta la solucion ya fijada por `MOD-020_ficha.md`, seccion M.4 (ficha propietaria del modulo Dashboard, jerarquia mas alta disponible para esta decision especifica de presentacion): MOD-018, MOD-019, el propio MOD-020 y los 6 modulos transversales quedan fuera de la clasificacion por cluster y aparecen en la vista de un cluster especifico solo de forma cruzada (tareas, evidencia y hallazgos de auditoria cuyo modulo de origen pertenece a ese cluster). Se reproduce aqui, sin reabrirla, porque afecta directamente el diseno de la seccion 14.4 de este documento.
+2. **El enunciado de esta tarea pide filtrar el Dashboard por "sucursal, unidad o sociedad", mientras que el alcance MVP ya decidido limita la organizacion a una sola razon social.** `MOD-001_ficha.md` (seccion Q) y la decision de alcance 2.7.31 de `02_validacion_de_la_idea.md` establecen que el MVP solo soporta "una razon social con sucursales", no varias sociedades de un mismo grupo; esa capacidad, junto con la "vision consolidada multi-sociedad en el dashboard", queda declarada V1/Enterprise en la propia tabla Q de MOD-001. Se adopta la solucion ya fijada por `MOD-020_ficha.md` (jerarquia: ficha propietaria del modulo Dashboard, coherente con MOD-001 que es la ficha propietaria de la entidad Organization/Sucursal): el filtro "Sociedad" se modela en la seccion de filtros de vista (perspectivas 14.2) para que el diseno ya contemple esa dimension cuando la capacidad exista, pero se marca explicitamente inactivo mientras la organizacion tenga una sola sociedad dada de alta, y la "vision consolidada multi-sociedad" se clasifica V2/Enterprise (FUTURE) en la seccion 14.8, coherente con MOD-001. No es un supuesto incorrecto de la tarea, sino una instruccion redactada pensando en el diseno completo del modulo (que debe estar preparado para esa dimension) mas que en el alcance exacto del MVP.
+3. **Asimetria entre la dependencia estructural declarada de MOD-020 (3 modulos) y su consumo real de datos (24 modulos), documentada por la propia ficha propietaria y no una inconsistencia a corregir aqui.** `mapa_modulos.json` declara `depende_de: ["MOD-005", "MOD-019", "MOD-021"]` para MOD-020. El catalogo consolidado de esta seccion (14.3 y 14.5), igual que el de `MOD-020_ficha.md`, confirma que MOD-020 en realidad consume indicadores y reportes de los 25 modulos restantes. `MOD-020_ficha.md` (Nota final, punto 1) ya explica esta asimetria con el mismo criterio que `06_mapa_definitivo_de_modulos.md`, seccion 6.1, usa para MOD-001, MOD-023 y MOD-024: `depende_de` registra la dependencia estructural minima de construccion, mientras que el consumo de datos por referencia es, por diseno, mas amplio. Se documenta aqui unicamente porque el catalogo de esta seccion depende de esa misma asimetria (extrae de 25 fichas, no solo de las 3 del `depende_de`), sin proponer ningun cambio a `mapa_modulos.json`.
+
+## Huecos (piezas que ninguna ficha define de forma completa)
+
+1. **Detalle exacto de la maqueta ASCII de cada perspectiva (seccion 14.2) y de la vista por cluster (14.4).** Ninguna de las 26 fichas incluye una maqueta de pantalla en ASCII (las fichas usan ASCII solo para diagramas de estado, seccion F de cada una). Las maquetas de esta seccion son, por tanto, una propuesta de esta seccion, no presente en las fichas: combinan los bloques, indicadores y acciones que si define `MOD-020_ficha.md` (secciones B, D, E y M) en una disposicion de pantalla concreta, pero esa disposicion visual especifica (que bloque va arriba, que orden tienen los indicadores) no esta decidida en ninguna ficha y requeriria validacion de UX con usuarios reales, igual que ya advierte el anti-feature 24 para cualquier segmentacion de la interfaz.
+2. **Umbral y regla de calculo exactos para pasar a "no disponible en esta version" cuando un modulo SHOULD HAVE ya esta parcialmente construido (por ejemplo, MOD-018 con datos de un primer ciclo de auditoria pero sin el segundo).** `MOD-020_ficha.md`, seccion G y M.1, define la regla para un modulo completamente ausente, pero ninguna ficha (ni la de MOD-020 ni las de los modulos SHOULD HAVE) especifica el criterio para una cobertura parcial intermedia (por ejemplo, un modulo recien activado, con menos de un ciclo de datos). Queda marcado como pendiente de una decision de producto especifica, no resuelta por ninguna fuente disponible.
+3. **Formula exacta y umbrales especificos de los indicadores de "estado del programa por cluster" cuando un cluster mezcla modulos de distinta version (MVP y V1) en la misma fila del catalogo 14.1.1.** Por ejemplo, el cluster C "Registro y gobernanza" combina MOD-006 y MOD-007 (MVP) con MOD-014 y MOD-016 (V1); ninguna ficha (ni `MOD-020_ficha.md` ni las de los modulos involucrados) precisa como debe leerse el estado agregado de un cluster cuando parte de sus modulos aun no existen en la version contratada por el cliente, mas alla de la regla general "no disponible en esta version" pensada para un indicador individual, no para un cluster completo. Requiere una decision de producto especifica antes de construirse.
+
 

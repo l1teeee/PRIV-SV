@@ -456,3 +456,284 @@ Nota especifica del modulo: toda separacion de funciones relevante ya esta resue
 
 ---
 
+## 11.3 Separacion de funciones y doble control
+
+Regla general (`05_tipos_de_usuario.md`, seccion 5.4): el rol Auditor (interno o externo) es siempre de solo lectura en los 26 modulos, sin excepcion; nunca coincide con quien carga evidencia, aprueba o cierra la accion que audita. Por debajo de un umbral configurable de tamano de empresa (propuesta inicial: 50 empleados, **[opinion de producto, umbral sin respaldo legal expreso]**), el sistema permite que una misma persona acumule roles que en empresa mediana o corporativo estarian separados, pero siempre muestra una advertencia visible de "autorrevision"; por encima del umbral, el sistema bloquea la acumulacion para las combinaciones marcadas como "sin excepcion de tamano" en la tabla siguiente. Ninguna de las dos filas de "Eliminar" existe realmente en el sistema: los 26 modulos son de historial append-only (archivar, nunca eliminar un registro con historial), conforme al anti-feature 19 de `22_anti_features.md`.
+
+Catalogo de acciones que exigen doble control o que quien las creo no puede aprobar, por modulo:
+
+| Modulo | Accion | Quien no puede aprobar lo que creo / quien exige segunda firma | Justificacion | Excepcion de tamano (pyme) |
+|---|---|---|---|---|
+| MOD-001 | Cambio de rol propio del Administrador | El Administrador no se aprueba a si mismo; exige un segundo Administrador o el Responsable Legal | Control de acceso al modulo que gobierna todos los demas | No hay excepcion: si no existe un segundo Administrador, decide el Responsable Legal |
+| MOD-001 | Cambio de rol a Aprobador o Auditor por encima del umbral | Quien crea o modifica el rol no puede ser quien lo aprueba | Evitar que una sola persona se autoasigne un rol de control | Si, con advertencia de autorrevision por debajo del umbral |
+| MOD-002 | Aprobar el acta de nombramiento del Delegado y cada reverificacion periodica | Quien registro el nombramiento (Administrador) no deberia ser el unico que lo aprueba en empresa mediana/corporativo | Investidura formal de la figura que hoy la ley exige (Arts. 15 y 17) | Si, con advertencia de autorrevision |
+| MOD-002 | Aprobar el cambio de `tipo_rol` (mantener Delegado voluntariamente o migrar a Responsable Interno bajo el estado FUTURO) | Quien lo propone (Delegado o Administrador) no puede ser la unica firma; exige ademas Aprobador o Responsable Legal | Decision estrategica sobre el regimen aplicable a la empresa | No, doble control siempre |
+| MOD-004 | Aprobar el cierre de una sesion de diagnostico con al menos una accion CRITICA | Segunda confirmacion (Legal/Compliance o Aprobador) distinta de quien respondio el cuestionario | El resultado alimenta directamente el Plan de Cumplimiento (MOD-005) | Si, se recomienda pero no se bloquea por debajo del umbral |
+| MOD-005 | Aprobar una version del plan como "Vigente" | Quien genera o propone el plan (Administrador, Delegado) nunca es quien la aprueba; exige el rol Aprobador | El plan dispara tareas y compromisos con plazo legal | No, doble control siempre (con advertencia de autorrevision si el Aprobador coincide con quien propuso) |
+| MOD-005 | Descartar una accion ligada a una obligacion OBLIGATORIO | Quien la propone (responsable o Delegado) y quien la valida (Legal o Delegado, si no fue quien la propuso) | Evitar que una obligacion legal se descarte sin segundo criterio | No, doble control siempre |
+| MOD-006 | Aprobar el paso de una ficha de tratamiento de riesgo alto o con datos sensibles a "Vigente" | Quien la registro (Responsable de area) no puede aprobarla; exige Aprobador o Legal/Compliance | Evitar que una sola persona valide su propio registro de un tratamiento sensible | Si, con advertencia de autorrevision |
+| MOD-006 | Exportar el RAT completo para auditoria | Exige rol Administrador, Delegado o Legal; nunca un Responsable de area por si solo | Evitar que una sola persona decida que se muestra a un auditor | No aplica excepcion (regla de rol, no de doble firma) |
+| MOD-007 | Aprobar una plantilla de consentimiento reforzado (sensible, biometrico, parental) | Quien captura el consentimiento (Responsable de area, IT) no puede aprobar la plantilla que uso | Evitar que quien recolecta valide su propio instrumento de recoleccion | No indicado como excepcion pyme en la ficha |
+| MOD-007 | Cierre de una revocacion con datos sensibles o riesgo de reclamo ante la ACE | Exige aprobacion explicita del Delegado/Responsable interno antes de notificar | El sistema nunca emite la notificacion de forma automatica | No aplica (regla de aprobacion humana, no de doble firma entre pares) |
+| MOD-008 | Aprobar/publicar un Aviso de Privacidad o Politica de Privacidad | Quien redacta o edita el borrador no debe ser la unica persona que lo aprueba; exige un aprobador distinto del autor | Son los dos documentos que la ley exige tener siempre vigentes | Si, con advertencia de autorrevision |
+| MOD-008 | Archivar un Aviso de Privacidad o Politica de Privacidad | Doble aprobacion (quien lo solicita y una segunda persona con rol Delegado/Responsable interno o Administrador) | Descontinuar estos documentos sin sustituto deja a la empresa sin el documento exigido | No, doble aprobacion siempre |
+| MOD-009 | Aprobar la activacion de un proveedor de riesgo Alto | Quien ejecuta la evaluacion tecnica (Seguridad/IT) no puede ser quien aprueba (Aprobador o Delegado) | Evitar que quien evalua tecnicamente valide tambien la activacion | Si, con advertencia de autorrevision |
+| MOD-010 | Aprobar el paso de una transferencia a ACTIVA y aprobar el envio de la puesta en conocimiento a la ACE | Quien crea o redacta (Legal/Compliance o Delegado) no aprueba; exige rol Aprobador; a partir del umbral, bloqueo total | El envio a la ACE y la activacion de un flujo internacional son actos de riesgo regulatorio | Si por debajo del umbral (con advertencia); bloqueo total por encima del umbral |
+| MOD-011 | Aprobar y emitir la prevencion, la incompetencia, la resolucion final o la notificacion a receptores | Quien redacta el borrador (Responsable ARCO-POL) nunca es quien aprueba y emite (Delegado/Responsable interno), sin excepcion, ni siquiera en pyme (ahi exige una segunda confirmacion explicita del mismo usuario en dos roles distintos, con advertencia) | Todo acto legalmente atribuido hoy a la figura del Delegado (Arts. 15, 17-22) | No hay excepcion real: incluso en pyme se exige una segunda confirmacion explicita separada del guardado del borrador |
+| MOD-011 | Escalar a un segundo revisor una denegatoria con datos sensibles o riesgo de reclamo ante la ACE | Aprobador como segundo revisor, distinto de quien resolvio | Denegatoria indebida es infraccion muy grave (Art. 56) | Disponible a partir de empresa mediana; en pyme queda como opcion |
+| MOD-012 | Aprobar la activacion del Portal o el cambio del metodo de verificacion de identidad | Quien configura (Administrador) no deberia ser quien aprueba, a partir del umbral | Cambios de superficie de exposicion publica de datos | Si, con advertencia de autorrevision |
+| MOD-013 | Cerrar un incidente investigado y gestionado por una sola persona | Exige segunda firma del Aprobador por encima del umbral | Ninguna norma exige dos personas, pero la decision de cierre debe quedar evidenciada (OBL-INC-04) | Si, con advertencia de autorrevision por debajo del umbral |
+| MOD-013 | Aprobar la notificacion externa (ACE, FGR, titulares) | Exige accion explicita del Delegado/Responsable interno, distinta de quien redacto el borrador | El sistema nunca envia una notificacion externa sin esa aprobacion humana | No aplica excepcion de tamano (es aprobacion humana obligatoria, no doble firma de pares) |
+| MOD-014 | Aprobar una EIPD de riesgo Alto o Critico | Quien completo el cuestionario y registro mitigaciones (Responsable de area o Seguridad/IT) no puede dar la aprobacion final; exige un segundo revisor (Aprobador) | No existe mandato legal expreso de "cuatro ojos", pero es la unica forma de que el riesgo residual no se autoapruebe | No, doble control siempre para riesgo Alto/Critico |
+| MOD-015 | Aprobar una excepcion de control ("No aplica / Exceptuado") | Quien crea o adjunta la evidencia del control no debe ser la unica persona que aprueba la excepcion; exige Aprobador | Una excepcion mal justificada es la puerta de entrada al riesgo de infraccion grave (Art. 56 lit. b) | Si, con advertencia de autorrevision |
+| MOD-016 | Aprobar una regla de retencion o una eliminacion | Exige Aprobador, distinto de quien la solicito | Evitar que la misma persona decida y ejecute la eliminacion de datos | Si, con advertencia de autorrevision |
+| MOD-016 | Aprobar una excepcion de eliminacion anticipada de un documento de cumplimiento (OBL-RET-04/05) | Doble aprobacion siempre (Delegado y Responsable Legal) | Protege la capacidad probatoria minima del programa | No, doble control siempre, sin excepcion de tamano |
+| MOD-017 | Aprobar/publicar el Plan anual de capacitacion | Exige un Aprobador distinto de quien lo elaboro (Delegado o Legal) | Separacion entre quien redacta el plan y quien lo valida | Si, con advertencia de autorrevision |
+| MOD-018 | Aprobar el cierre de una auditoria (informe final) o un "riesgo aceptado" en vez de corregir un hallazgo | Exige Aprobador, distinto de quien registro los hallazgos (Delegado o Legal) | Sobre todo relevante cuando la auditoria encontro hallazgos criticos | Si, con advertencia de autorrevision |
+| MOD-019 | Aprobar evidencia cargada manualmente antes de "Disponible" | Quien la carga no debe ser la unica persona que la aprueba | Integridad del Centro de Evidencias | Si, con advertencia de autorrevision |
+| MOD-019 | Aprobar la exportacion de un EvidencePackage con destino externo a la organizacion | Doble control obligatorio: quien genera propone, y una segunda persona (Aprobador, o Delegado/Legal actuando como primer control) aprueba antes de que el archivo quede disponible | El riesgo de un envio irreversible a un tercero (ACE, auditor externo, cliente) es distinto del riesgo de una autorrevision interna | No, doble control siempre, sin excepcion de pyme para este paso especifico |
+| MOD-021 | Aprobar (Approval) una tarea que la misma persona dejo en "En revision" | El sistema bloquea que el mismo usuario apruebe su propio trabajo | Regla general de separacion de funciones aplicada al motor transversal de tareas | Si, con advertencia de autorrevision |
+| MOD-022 | Ampliar o reducir el umbral de escalamiento de una alerta CRITICAL ya en curso | El Administrador propone, requiere confirmacion de una segunda persona (Delegado/Responsable interno o Legal/Compliance) | Evitar que se relaje unilateralmente el escalamiento de un plazo legal critico (por ejemplo, las 72 horas) | No, doble control siempre |
+| MOD-023 | Cambiar el criterio de computo por defecto de un plazo con ambiguedad juridica documentada (por ejemplo, horas corridas vs. habiles para las 72 horas) | Doble control entre Delegado/Responsable interno y Legal/Compliance (o un Aprobador designado); nunca lo decide el Administrador por si solo | Es la unica decision de este modulo con impacto legal directo sobre todos los casos abiertos de ese tipo | No, doble control siempre |
+| MOD-024 | Aprobar y enviar cualquier tramite ante la ACE (contestacion, recurso, comprobante de pago, ACEFiling) | Quien redacta no puede ser la unica firma; exige Aprobador o un segundo Responsable Legal | Actos con efecto directo ante la autoridad sancionadora | Si por debajo del umbral (con advertencia); a partir de empresa mediana se exige segundo firmante |
+| MOD-026 | Publicar un `HelpArticle` (fuera del RBAC de la organizacion cliente) | Quien redacta el contenido (autor) no puede ser quien lo revisa juridicamente, ni quien lo publica; tres roles distintos del equipo del proveedor | Protege al usuario final de recibir contenido sin revision juridica | No aplica al cliente: gobernanza interna del proveedor, ver 11.7 |
+
+En todos los casos donde la tabla dice "Si, con advertencia de autorrevision" la mecanica es identica: por debajo del umbral configurable de tamano de empresa, el sistema permite que una misma persona ocupe ambos roles de la cadena, pero muestra siempre una advertencia visible de "autorrevision" y dicha advertencia queda registrada en el historial de la accion (no es una advertencia silenciosa). Ninguna fila de la tabla anterior habilita eliminar un registro: "aprobar" o "cerrar" siempre significa cambiar de estado con historial preservado, nunca borrar.
+
+**Modo pyme: acumulacion de roles con advertencia de autorrevision y umbral de separacion de funciones.** El umbral propuesto (50 empleados) y el propio mecanismo de advertencia visible en vez de bloqueo duro son, en conjunto, **[opinion de producto, sin respaldo legal expreso, `05_tipos_de_usuario.md` seccion 5.4 y notas finales de MOD-001]**. Debajo del umbral, la pyme tipica (perfil Karla Hernandez, `05_tipos_de_usuario.md` seccion 5.1) opera con una sola persona ocupando Administrador, Delegado y, con frecuencia, tambien Aprobador; el sistema no le impide operar, pero en cada accion de la tabla anterior que le corresponda aprobar sobre su propio trabajo, muestra el texto de advertencia y dicha aprobacion queda marcada como "autorrevision" en el historial y en los reportes de auditoria (MOD-018) y de evidencia (MOD-019), para que un auditor externo o la propia ACE puedan identificarla sin ambiguedad. Al cruzar el umbral configurable, el Administrador recibe la alerta "Umbral de separacion de funciones alcanzado" (MOD-001, seccion I) y debe activar explicitamente el bloqueo, o dejar registrada su decision de mantenerlo desactivado.
+
+---
+
+## 11.4 Roles personalizados, suplencias y ausencias, alta y baja de usuarios, revision periodica de accesos
+
+### 11.4.1 Roles personalizados
+
+Fuente: `MOD-001_ficha.md`, seccion D.3. Cuando los 12 roles estandar no dan suficiente granularidad (tipico en empresa mediana o corporativo), el Administrador puede crear un rol personalizado con estos campos:
+
+| Campo | Que permite | Que no permite |
+|---|---|---|
+| Nombre del rol | Texto libre, unico dentro de la cuenta (por ejemplo, "Coordinador de Marketing Digital") | No puede duplicar el nombre de uno de los 12 roles estandar |
+| Basado en rol estandar (opcional) | Tomar como punto de partida los permisos de uno de los 12 roles estandar y ajustarlos | No cambia el nombre ni el proposito del rol estandar original; el rol estandar sigue existiendo aparte |
+| Permisos por modulo y por accion | Marcar exactamente que puede ver y hacer esa persona en cada modulo, con el mismo catalogo de acciones de la seccion 11.2 (ver, crear, modificar, aprobar, eliminar/archivar, exportar, asignar) | Debe tener al menos un permiso marcado; no puede otorgar una accion que ningun modulo ofrezca a ningun rol (por ejemplo, "eliminar" un expediente ARCO-POL, que no existe para nadie, ver 11.3) |
+| Descripcion | Texto libre para explicar el uso del rol | No sustituye la matriz de permisos; es solo documentacion |
+
+**Que nunca se puede personalizar (permisos que nunca se delegan).** Ninguna ficha admite que un rol personalizado adquiera alguno de los siguientes puntos, porque son reglas de diseno fijas del sistema, no configuraciones de permisos:
+
+- La condicion de que el rol Auditor (interno o externo) sea siempre de solo lectura (11.3): un rol personalizado no puede combinar capacidad de auditoria con capacidad de crear, aprobar o adjuntar evidencia sobre lo mismo que audita.
+- Las acciones que este documento marca "Doble" en 11.2 y 11.3 (por ejemplo, aprobar el cambio de `tipo_rol` del Delegado, aprobar la exportacion de un paquete de evidencia con destino externo, aprobar el cambio de criterio de computo de un plazo ambiguo): estas exigen siempre una segunda persona distinta, sin que un rol personalizado pueda saltarse esa segunda firma.
+- Los actos que la ley atribuye hoy a la figura del Delegado / Responsable interno mientras el estado sea ACTUAL (aprobar y emitir la prevencion, la incompetencia, la resolucion final y la notificacion a receptores en MOD-011; aprobar la notificacion externa de un incidente en MOD-013; el enlace institucional con la ACE): un rol personalizado no puede asumir estos actos por si mismo, solo puede ejecutarlos si a esa misma persona tambien se le asigna el rol estandar Delegado / Responsable interno.
+- La activacion de la bandera `regimen_reforma_659` y la edicion del contenido del Centro Regulatorio (MOD-024) y del Centro de Ayuda (MOD-026): estas quedan siempre fuera del catalogo de roles de la organizacion cliente, sea estandar o personalizado (ver 11.7).
+- El acceso de solo lectura del Titular a su propio expediente (MOD-011, MOD-012): un rol personalizado de la organizacion cliente no puede sustituir ni ampliar el acceso del Titular externo.
+
+Esta lista es una consolidacion de reglas ya dispersas en las fichas (11.2 y 11.3); no agrega ninguna restriccion nueva, solo las agrupa en un solo lugar como exige el punto 4 de esta tarea.
+
+### 11.4.2 Suplencias y ausencias
+
+Ninguna ficha modela un mecanismo generico de "suplente" aplicable a los 12 roles estandar como tal; el unico mecanismo de suplencia explicito en el corpus es especifico del Delegado de Proteccion de Datos:
+
+- **MOD-002, campo `delegado_sustituto`** (referencia opcional a otro registro, fundamento Art. 17 Lineamientos DPO): permite designar una o mas personas que suplan al Delegado en caso de ausencia, exigiendo que el sustituto cumpla el mismo perfil minimo del Art. 5 Lineamientos DPO (grado universitario, mayor de 21 anos, experiencia acreditada).
+- Para el resto de roles (Aprobador, Responsable de area, Responsable de Seguridad/IT, etc.), ninguna ficha define un campo o flujo equivalente de suplencia formal; lo mas cercano es la reasignacion manual de tareas y aprobaciones que ya prevé MOD-021 ("Asignar / reasignar") y la reasignacion de un destinatario de alerta en MOD-022 ("Reasignar el destinatario resuelto de una regla, por ejemplo, activar un suplente"), pero ambas son mecanismos generales de reasignacion de trabajo, no un concepto formal de "suplencia de rol" con vigencia y reversion automatica.
+
+**Hueco detectado:** un mecanismo generico de "suplente temporal de un rol" (por ejemplo, para vacaciones o incapacidad del Responsable ARCO-POL o del Aprobador, con fecha de inicio y fin y reversion automatica) no esta definido en ninguna ficha fuera del caso especifico del Delegado. Se marca en "Contradicciones y huecos detectados" al final de este documento.
+
+### 11.4.3 Alta y baja de usuarios
+
+Fuente: `MOD-001_ficha.md`, secciones F.2 y F.3 (ciclo de vida del Usuario). Estados: INVITADO -> ACTIVO -> SUSPENDIDO -> DADO DE BAJA (terminal), mas EXPIRADO como rama de INVITADO.
+
+```
+   [Administrador invita]
+            |
+            v
+      +-----------+   acepta invitacion   +----------+
+      | INVITADO  | ---------------------> |  ACTIVO  |
+      +-----------+                        +----------+
+            |                                  |    ^
+            | vence invitacion (30 dias)        |    |
+            v                                  |    | reactivar
+      +-----------+                             |    |
+      | EXPIRADO  |                             v    |
+      +-----------+                       +------------+
+      (Administrador puede reenviar)       | SUSPENDIDO |
+                                            +------------+
+                                                  |
+                                                  | dar de baja
+                                                  v
+                                          +----------------+
+                                          | DADO DE BAJA   |  (estado terminal,
+                                          +----------------+   historial preservado)
+```
+
+Reglas clave:
+
+- El alta exige correo valido y no duplicado, y al menos un rol seleccionado; genera una tarea "completar perfil" en MOD-021.
+- La invitacion vence a los 30 dias (**[opinion de producto, sin respaldo legal expreso, valor propuesto pendiente de validacion por el equipo del producto]**); el Administrador puede reenviarla.
+- Suspender o dar de baja exige siempre un motivo declarado; si el usuario es titular unico de un rol critico (por ejemplo, el unico Delegado o el unico Administrador), el sistema exige asignar reemplazo o confirmar una advertencia explicita antes de completar la baja.
+- Dar de baja es un estado terminal: el usuario deja de poder iniciar sesion, pero su historial de acciones pasadas permanece intacto y vinculado a su identidad; nunca se elimina ni se reasigna a otra persona (coherente con el anti-feature 19 y con la regla general de preservacion de historial de `06_mapa_definitivo_de_modulos.md`, seccion 2, principio 8).
+- Un cambio de rol hacia un rol sensible (Aprobador, Auditor) exige, a partir del umbral configurable de separacion de funciones, la aprobacion de un segundo Administrador o del Responsable Legal (ver 11.3).
+
+### 11.4.4 Revision periodica de accesos
+
+Fuente: `MOD-001_ficha.md`, seccion I (Alertas). El sistema no ejecuta una revision periodica de accesos por si mismo (eso exigiria una decision organizativa), pero genera dos alertas que la disparan:
+
+| Alerta | Disparador | Nivel | Destinatario | Se apaga cuando |
+|---|---|---|---|---|
+| Invitacion pendiente de aceptar | Un usuario invitado no activo su cuenta | INFO | Administrador | El usuario acepta, o el Administrador cancela la invitacion |
+| Estructura sin actualizar | Ningun cambio de usuarios, roles o sucursales en un periodo prolongado (por ejemplo, 6 meses) | INFO | Administrador, Responsable de Seguridad | Se realiza cualquier cambio, o el Administrador confirma explicitamente que reviso y no hay cambios pendientes |
+| Umbral de separacion de funciones alcanzado | El numero de empleados declarado supera el umbral configurable sin que la separacion de funciones este activada | WARNING (escala a Legal a los 30 dias) | Administrador | Se activa la separacion de funciones, o el Administrador confirma su decision de mantenerla desactivada |
+
+La confirmacion de que se revisaron los accesos vigentes ("el Administrador confirma que reviso y no hay cambios pendientes") queda registrada en el historial del modulo (MOD-001, seccion O) y es, junto con el listado exportable de usuarios y roles con hash de integridad, la evidencia principal que MOD-018 y MOD-019 usan para acreditar que la organizacion revisa sus accesos, sin que exista un modulo o expediente propio de "revision periodica de accesos" mas alla de estas alertas y de la exportacion firmada.
+
+**Hueco detectado:** ninguna ficha define una periodicidad recomendada de la revision de accesos (por ejemplo, "cada 6 meses" o "cada cambio de personal"), ni un formulario o checklist especifico para esa revision (a diferencia de la reverificacion periodica que si esta bien definida para el Delegado en MOD-002). Se marca en "Contradicciones y huecos detectados".
+
+---
+
+## 11.5 Roles externos y temporales
+
+Tres roles del catalogo estandar no son personal interno de la empresa cliente: Auditor externo (invitado), Asesor externo invitado y Titular (formulario externo). Fuente: `05_tipos_de_usuario.md`, seccion 5.1, perfiles 7 a 10, y seccion C de las fichas de modulo citadas en 11.2.
+
+### 11.5.1 Auditor externo (invitado)
+
+- **Alcance.** Acceso de solo lectura al paquete de evidencias exportado (MOD-019) y, segun el modulo, a expedientes o registros especificos habilitados para su auditoria puntual (RAT en MOD-006, proveedores en MOD-009, incidentes en MOD-013, EIPD en MOD-014, controles en MOD-015, documentos en MOD-008, plan de cumplimiento en MOD-005, procedimiento sancionador en MOD-024). Nunca crea, modifica, aprueba, comenta con capacidad de decision ni adjunta evidencia salvo la excepcion puntual de MOD-018, donde puede adjuntar su propio informe de auditoria como evidencia de la auditoria concreta para la que fue invitado.
+- **Vigencia.** Siempre acotada en el tiempo ("ventana de auditoria" o "periodo de la auditoria puntual"); el acceso vence al cerrarse esa ventana. Ninguna ficha fija una duracion maxima en dias; el criterio queda en manos de quien invita (Administrador o Delegado), marcado aqui como **hueco**: no hay un plazo maximo por defecto ni una alerta automatica de "acceso de auditor externo por vencer" en el catalogo de alertas de MOD-022.
+- **Restricciones sobre datos personales.** Solo ve los datos personales de titulares estrictamente necesarios para verificar la evidencia del alcance acordado (por ejemplo, que un expediente ARCO-POL se resolvio a tiempo), nunca el listado completo de titulares de la organizacion ni datos de otras auditorias. En MOD-019, el paquete de evidencia le llega ya generado y aprobado por doble control (ver 11.3); no puede generar sus propios paquetes.
+
+### 11.5.2 Asesor externo invitado
+
+- **Alcance.** Acceso puntual y acotado a un caso o modulo especifico para el que fue invitado (por ejemplo, dictaminar sobre una denegatoria ARCO-POL compleja, una base juridica dudosa, un conflicto de intereses del Delegado, o una transferencia internacional en disputa). Puede comentar y dejar su opinion registrada como evidencia del expediente puntual, y en algunos modulos (MOD-024) puede "colaborar" en la redaccion de una contestacion sin ser quien la aprueba. Nunca ve el resto de la organizacion fuera del caso asignado.
+- **Vigencia.** Por invitacion puntual a un caso concreto, sin licencia permanente ni facturacion como usuario fijo del sistema (perfil Douglas Quintanilla, `05_tipos_de_usuario.md` seccion 5.1: "no quiere una licencia de usuario permanente ni que se le facture como usuario fijo del sistema"). Ninguna ficha fija automaticamente cuando expira el acceso al cerrarse el caso; se infiere que el acceso deberia cerrarse cuando el expediente que motivo la invitacion se cierra o archiva, pero ninguna ficha lo declara como una transicion automatica explicita, lo que se marca como **hueco**.
+- **Restricciones sobre datos personales.** Ve unicamente el expediente o los datos del caso puntual para el que fue invitado (por ejemplo, el contenido de una solicitud ARCO-POL especifica), nunca el RAT completo, el listado de titulares ni otros expedientes de la misma organizacion.
+
+### 11.5.3 Titular (formulario externo)
+
+- **Alcance.** Presenta y da seguimiento a su propia solicitud ARCO-POL (MOD-011) y, cuando el Portal del Titular este activo (MOD-012, SHOULD HAVE), consulta el Aviso y la Politica de Privacidad vigentes y el estado de su expediente. No tiene cuenta interna de la organizacion, no ve la estructura, los usuarios ni ningun otro modulo (MOD-001, MOD-006, MOD-009, MOD-013 a MOD-019, MOD-024 le son opacos por completo).
+- **Vigencia.** Esporadica: tipicamente una o dos veces por titular (perfil Cecilia Marroquin, `05_tipos_de_usuario.md` seccion 5.1). En el MVP, el canal es un formulario interno seguro (no un portal publico con autoregistro, decision 2.7.30 de `02_validacion_de_la_idea.md`), con verificacion de identidad segun el tipo de solicitante que reconoce el Art. 6 (titular, representante, herederos).
+- **Restricciones sobre datos personales.** Es el unico rol que SI procesa datos personales directos como objeto legitimo del proceso (nombre, documento de identidad, domicilio, contenido de su solicitud); mientras su solicitud siga en Borrador sin enviar, es tambien el unico que puede corregir sus propios datos. Una vez enviada, el formulario y los documentos adjuntos quedan de solo lectura para el propio Titular y para el personal interno solo dentro del expediente correspondiente; el acceso de lectura del personal a sus documentos de identidad queda restringido a Responsable ARCO-POL y Delegado/Responsable interno, y cada lectura se registra (ver 11.6).
+
+---
+
+## 11.6 Acceso a datos sensibles y de titulares (necesidad de saber) y registro de accesos de lectura
+
+Ninguna ficha usa literalmente la expresion "necesidad de saber" como principio general codificado en un solo lugar; el criterio aparece de forma consistente, modulo por modulo, restringiendo el acceso de lectura a datos personales sensibles o de titulares a los roles que efectivamente los necesitan para su funcion, con registro obligatorio de cada lectura. Esta subseccion consolida esas reglas dispersas.
+
+### 11.6.1 Catalogo de datos con acceso restringido y registro de lectura obligatorio
+
+| Modulo | Dato restringido | Roles con acceso de lectura | Registro de cada lectura |
+|---|---|---|---|
+| MOD-002 | Documento de identidad de la persona designada como Delegado / Responsable interno | Administrador de la organizacion, Aprobador, Responsable Legal | Si, en el historial (seccion O de la ficha) |
+| MOD-006 | Ficha de tratamiento con datos sensibles | Todo acceso de lectura a una ficha con datos sensibles queda como evento de auditoria (no se restringe el rol, se registra el acceso) | Si, entrada append-only en el AuditLog transversal (MOD-019) |
+| MOD-007 | Archivo de firma o documento de relacion parental (casos de menores, NNA) | Acceso restringido por rol a los archivos adjuntos sensibles | Si, obligatorio en el historial (seccion O) |
+| MOD-011 | Documentos de identidad del titular (DUI, partidas, poderes) adjuntos a una solicitud ARCO-POL | Exclusivamente Responsable ARCO-POL y Delegado/Responsable interno; nunca Colaboradores ni Responsables de area | Si, registro de quien vio el documento y cuando, conservado 5 anos desde el cierre del expediente |
+| MOD-014 | Expediente completo de una EIPD, para Auditor externo o Asesor externo invitado | Se registra el acceso de lectura de estos dos roles externos (los roles internos con acceso permanente no generan un registro adicional, mas alla del evento general de apertura de sesion) | Si, para roles externos |
+| MOD-015 | Evidencia tecnica sensible (por ejemplo, un reporte de pentest que detalla vulnerabilidades reales) | Responsable de Seguridad/IT, Administrador y Auditor con acceso concedido explicitamente | Si, registro de quien la consulto y cuando **[opinion de producto, buena practica de seguridad, no exigida expresamente por la LPDP]** |
+| MOD-019 | Evidencia sensible en general (cadena de custodia de MOD-013) | Segun el rol y el alcance de cada obligacion (ver 11.2) | Si, evento de auditoria en cada acceso de lectura a evidencia sensible |
+| MOD-024 | Numero de expediente y datos de la persona natural del presunto infractor en un procedimiento sancionador | Administrador, Responsable Legal, Aprobador | Si, en el historial (seccion O) |
+| MOD-025 | Registro de consultas de busqueda (Search Log) | Administrador (con justificacion registrada) y Auditor interno (solo lectura, como evidencia de minimizacion) | Si, la propia consulta al Search Log se registra igual que un acceso de lectura de nivel reforzado, para que el mecanismo de minimizacion no se convierta en una nueva via de exposicion |
+
+### 11.6.2 Principio de necesidad de saber aplicado por rol
+
+- **Responsable de area:** por diseno, ve solo los tratamientos, proveedores, controles, incidentes y evidencia de su propia area o sucursal (columna "Si\*, solo su area" repetida en 11.2 para MOD-006, MOD-009, MOD-013 a MOD-017, MOD-021), nunca el agregado de otras areas.
+- **Auditor (interno y externo):** ve el contenido necesario para verificar de forma independiente, pero nunca puede coincidir con quien carga la evidencia, aprueba o cierra la accion que audita (regla transversal de 11.3).
+- **Asesor externo invitado:** ve unicamente el caso o expediente puntual para el que fue invitado (11.5.2), nunca el resto de la organizacion.
+- **Responsable ARCO-POL:** en MOD-009 y MOD-010, su visibilidad de receptores, encargados o transferencias queda filtrada a los que estan vinculados a un caso ARCO-POL propio, no al catalogo completo.
+- **Titular:** nunca ve el RAT, el Mapa de Datos, el catalogo de proveedores, los controles de seguridad ni el listado de otros titulares; su acceso se limita a su propio expediente y, cuando exista, a los documentos publicados (Aviso, Politica).
+
+### 11.6.3 Minimizacion como regla de diseno del dato mismo, no solo del acceso
+
+Ademas de restringir quien lee un dato, varias fichas minimizan el dato mismo antes de que exista una decision de acceso que tomar: MOD-006 y MOD-009 solo referencian el Tratamiento o el registro de origen (no copian bases de datos completas del cliente); MOD-011 guarda los documentos de identidad como adjuntos cifrados en vez de campos de texto libre replicados en otros modulos; MOD-001 declara una excepcion explicita e intencional a este principio (si necesita datos reales de personas reales para el control de acceso del propio sistema, decision de alcance 2.7.21 de `02_validacion_de_la_idea.md`).
+
+**Hueco detectado:** ninguna ficha consolida un catalogo unico y transversal de "necesidad de saber" (una matriz dato sensible x rol x justificacion, mantenida en un solo modulo, por ejemplo MOD-019 o MOD-025); el criterio existe pero esta repartido modulo por modulo, como se muestra en la tabla 11.6.1. Se marca en "Contradicciones y huecos detectados".
+
+---
+
+## 11.7 Roles internos del proveedor del software
+
+Fuente: `MOD-024_ficha.md` (seccion B) y `MOD-026_ficha.md` (secciones B, C y F). Ninguno de estos roles pertenece a los 12 roles estandar de `05_tipos_de_usuario.md` seccion 5.3 porque no son usuarios de ninguna organizacion cliente: son personal del proveedor del software, documentados aqui unicamente porque gobiernan contenido centralizado que todas las organizaciones clientes consultan. Ninguna accion de estos roles se ejecuta dentro de una cuenta de cliente ni aparece en las tablas de permisos de la seccion 11.2, que solo cubren roles de la organizacion cliente.
+
+| Rol interno del proveedor | Que gobierna | Que puede ver | Que NUNCA puede ver de los datos del cliente |
+|---|---|---|---|
+| Editor de contenido regulatorio (MOD-024) | El catalogo de instrumentos normativos (RegulatoryInstrument, RegulatoryRuleVersion), incluida la version de cada regla, y es quien activa el cambio de la bandera `regimen_reforma_659` de ACTUAL a FUTURO, con revision juridica y de forma consultiva junto con el Responsable Legal de cada organizacion cliente (que solo puede recomendar, nunca activar, ver 11.2) | El contenido normativo mismo (leyes, normativa ACE, lineamientos, catalogo de infracciones y multas), identico para todas las organizaciones clientes | Ningun expediente de procedimiento sancionador de un cliente especifico, ningun tratamiento del RAT, ningun expediente ARCO-POL, ninguna evidencia, ningun dato personal de titulares ni de personal interno de ninguna organizacion cliente. La ficha es explicita: "ninguna accion de este rol se ejecuta dentro de una cuenta de cliente" |
+| Equipo de contenido del producto: autor, revisor legal y responsable de contenido/publicador (MOD-026) | El ciclo de vida de cada `HelpArticle` (Glosario y tarjetas de ayuda de 4 partes), con separacion de funciones propia: quien redacta nunca es quien revisa juridicamente, ni quien publica | El texto de ayuda generico y, cuando exista, retroalimentacion agregada y anonima de uso ("fue util / no fue util") | Ningun dato personal de titulares con los que trata la empresa cliente (la propia ficha lo declara expresamente: "no recopila ni conserva datos personales de los titulares"); ningun registro de negocio de ningun modulo (MOD-026 es de solo lectura sobre el resto del sistema, igual que MOD-025); ninguna evidencia legal de ninguna obligacion (MOD-026 "no genera evidencia que pruebe el cumplimiento de ninguna obligacion") |
+| Equipo de soporte del producto (canal comercial/postventa) | Consultas de uso de la plataforma que la ayuda contextual no resuelve ("Solicitud de escalamiento a soporte del producto sin resolver", MOD-026 seccion I) | **[Hueco: ninguna ficha define el alcance de este rol]**, ver nota abajo | **[Hueco]** |
+
+**Nota sobre el equipo de soporte del producto.** `MOD-026_ficha.md` (seccion I, tabla de alertas) menciona explicitamente a este actor una sola vez, y lo declara "fuera del alcance funcional de este analisis" (textual: "canal de soporte del proveedor... Segun la politica de soporte del proveedor (fuera de esta ficha)"). Ninguna otra ficha desarrolla que puede ver o no ver el personal de soporte de los datos de un cliente (por ejemplo, si puede entrar a una cuenta cliente para depurar un problema, si necesita el consentimiento explicito del Administrador de esa cuenta cada vez, o si tiene acceso de solo lectura a metadatos tecnicos pero nunca a datos personales de titulares). Esto es un **hueco real del corpus**, no una omision de esta seccion: el propio documento fuente lo declara fuera de su alcance. Se listan como propuesta de esta seccion, marcada explicitamente como tal y sujeta a validacion del equipo de producto y, en lo que toca a datos personales, a validacion legal:
+
+**[Propuesta de esta seccion, no presente en las fichas]** Reglas minimas que deberia cumplir cualquier acceso de soporte a una cuenta cliente, coherentes con el resto del sistema:
+1. Todo acceso de una persona del equipo de soporte a una cuenta cliente especifica requiere autorizacion explicita y registrada del Administrador de esa cuenta (analoga a la invitacion temporal de un Auditor externo o Asesor externo invitado, 11.5).
+2. El acceso queda acotado en el tiempo y se registra en el historial de la organizacion cliente (visible para su Administrador y su Auditor interno), igual que cualquier acceso de lectura reforzado (11.6).
+3. El acceso de soporte nunca sustituye ni ejecuta un acto que la ley atribuye a un rol de la organizacion cliente (por ejemplo, nunca aprueba ni emite una resolucion ARCO-POL, nunca activa la bandera `regimen_reforma_659` en nombre del cliente, ver 11.7).
+4. Requiere validacion de la organizacion o asesoria especializada antes de fijarse como regla de producto definitiva, porque el alcance final depende de decisiones contractuales y de seguridad del proveedor que exceden el analisis funcional.
+
+---
+
+## 11.8 Efecto de la reforma 659 sobre el rol Delegado / Responsable interno
+
+Fuente: `05_tipos_de_usuario.md` seccion 5.2, `06_mapa_definitivo_de_modulos.md` seccion 5, y `MOD-002_ficha.md`. Estado al 2026-09-24: el Decreto Legislativo 659 fue aprobado el 17-sep-2026, pero su publicacion en el Diario Oficial no esta confirmada; mientras no se publique y transcurran los 8 dias de vacatio legis, rige el regimen ACTUAL (Arts. 15 y 17 LPDP vigentes, Delegado obligatorio en el sector privado). Todo lo que sigue sobre el contenido articulado de la reforma se basa en fuentes secundarias, no en el texto oficial del decreto, que no ha sido localizado (OBL-PLAZO-05); se marca "requiere validacion de asesoria juridica" donde corresponda.
+
+### 11.8.1 Modelo de una sola entidad, un atributo y una bandera
+
+El rol no se duplica en dos modulos ni en dos roles del catalogo: existe un unico modulo (MOD-002) y una unica entidad conceptual ("Responsable del Programa de Datos") con:
+
+1. Un atributo `tipo_rol` en el registro de la persona designada, que toma el valor `DELEGADO` (regimen ACTUAL) o `RESPONSABLE_INTERNO` (regimen FUTURO). El formulario de alta, el historial, las tareas asociadas y la capacitacion (MOD-017) son los mismos campos y pantallas; solo cambia la etiqueta y el conjunto de obligaciones activas.
+2. Una bandera global `regimen_reforma_659` (ACTUAL | FUTURO), alojada en MOD-024, activada manualmente solo por el Editor de contenido regulatorio del proveedor (11.7) tras confirmar la publicacion oficial; el sistema nunca la activa por la sola fecha de aprobacion legislativa.
+
+### 11.8.2 Que cambia en el rol para cada regimen
+
+| Aspecto del rol | Regimen ACTUAL (vigente al 2026-09-24) | Regimen FUTURO (si la reforma se confirma y activa) |
+|---|---|---|
+| Obligatoriedad de la figura | Obligatoria en el sector privado (Arts. 15 y 17 vigentes) | Dejaria de ser obligatoria en el sector privado; las funciones pasarian al "sujeto obligado" (la empresa misma), segun fuentes secundarias (reforma al Art. 16) |
+| Nombramiento formal ante la ACE | Exige comunicacion a la ACE en 15 dias habiles (OBL-DPO-03) y reverificacion periodica | Ya no exigiria nombramiento formal ante la ACE; el sistema deja de solicitar los pasos que la reforma volveria opcionales |
+| Recepcion de solicitudes ARCO-POL | El Delegado o Responsable del tramite tramita el caso; el Delegado aprueba y emite todo acto legalmente atribuido a esa figura (prevencion, incompetencia, resolucion, notificacion a receptores) | Las solicitudes ARCO-POL se presentarian directamente ante la empresa; el rol configurable "Responsable del tramite ARCO-POL / Delegado de Proteccion de Datos" sigue existiendo, pero sin investidura legal obligatoria |
+| Continuidad voluntaria | No aplica (la figura es obligatoria) | Una empresa que ya nombro Delegado certificado bajo ACTUAL puede mantenerlo voluntariamente bajo FUTURO; el sistema no fuerza el cese |
+| Capacitacion especifica anual (OBL-CAP-02, MOD-017) | Obligatoria | Pasa a buena practica voluntaria si la empresa mantiene al Responsable Interno |
+| Notificacion de revocacion de consentimiento (OBL-CONS-03, MOD-007) | El destinatario de la notificacion es el Delegado | El destinatario depende del estado vigente del responsable del tramite (mismo campo, distinto valor) |
+| Conservacion del aviso de privacidad (OBL-RET-04, MOD-016) | El aviso vigente cita al Delegado como contacto (Art. 24 lit. h) | El contenido del aviso a conservar puede versionar segun el estado vigente al momento de su publicacion; MOD-024 dispara una tarea de revision, nunca reescribe el aviso ya publicado automaticamente |
+| Obligaciones DPO propias (OBL-DPO-01 a 08, MOD-002) | Las 8 estan activas | Las 8 cambian de clasificacion segun el nuevo articulado (no se eliminan del sistema, se marcan "no aplica bajo el estado regulatorio actual, ver historial") |
+
+En total, 17 obligaciones de la matriz cambian de estado con el cambio de bandera (OBL-DPO-01 a 08, OBL-ARCO-01/08/10/11/14, OBL-CONS-03, OBL-CAP-02, OBL-RET-04, OBL-PLAZO-05), sin cambiar nunca de modulo propietario (ver `06_mapa_definitivo_de_modulos.md`, seccion 5).
+
+### 11.8.3 Preservacion de historial
+
+Cuando la bandera pasa de ACTUAL a FUTURO, las tareas y registros de MOD-021 que dependian de pasos exclusivos del regimen ACTUAL (reverificacion trienal, informes semestrales, comunicacion formal a la ACE) no se eliminan: se marcan "no aplica bajo el estado regulatorio actual, ver historial". Un expediente ARCO-POL o un registro del Delegado ya cerrado antes del cambio de bandera conserva las reglas vigentes en el momento de su cierre; un nombramiento certificado bajo ACTUAL no se reinterpreta retroactivamente.
+
+**Nota de incertidumbre juridica, requiere validacion de asesoria juridica:** el numero mismo del decreto (659), su fecha de publicacion y el contenido articulado exacto de la reforma (que articulos deroga o modifica en detalle) provienen de fuentes secundarias (prensa y nota oficial de la Asamblea Legislativa), no del texto oficial del decreto, que no ha sido localizado. Ninguna afirmacion de esta seccion sobre el contenido especifico de la reforma debe tratarse como un hecho verificado contra fuente primaria.
+
+---
+
+## 11.9 Quien aprueba cada acto critico (tabla consolidada)
+
+Consolida, en una sola tabla, quien tiene la aprobacion final de los actos criticos que el prompt del cliente exige revisar de forma transversal. "Aprueba" significa siempre una confirmacion humana registrada; el sistema calcula, redacta el borrador o alerta, pero nunca ejecuta el acto sin esa confirmacion (seccion H de cada ficha, "Decisiones que NO debe automatizar").
+
+| Acto critico | Modulo | Quien aprueba (regimen ACTUAL) | Segundo control / doble firma | Fundamento (OBL-ID, articulo) |
+|---|---|---|---|---|
+| Denegatoria motivada de una solicitud ARCO-POL | MOD-011 | Delegado de Proteccion de Datos / Responsable interno | Aprobador, como segundo revisor, si hay datos sensibles o riesgo de reclamo ante la ACE (a partir de empresa mediana) | OBL-ARCO-12, Art. 22 |
+| Prevencion unica de una solicitud ARCO-POL | MOD-011 | Delegado de Proteccion de Datos / Responsable interno | Ninguno adicional; quien redacta el borrador (Responsable ARCO-POL) nunca es quien aprueba y emite | OBL-ARCO-08, Art. 18 |
+| Notificacion de vulneracion de seguridad (a la ACE, la FGR y los titulares) | MOD-013 | Delegado de Proteccion de Datos / Responsable interno | Responsable Legal/Compliance puede co-revisar segun politica interna; el Responsable de Seguridad/IT solo prepara el borrador, nunca aprueba | OBL-INC-01, OBL-INC-02, OBL-INC-03, Art. 25 |
+| Cierre de un incidente de seguridad | MOD-013 | Responsable de Seguridad/IT o Delegado (quien gestiono el caso) | Aprobador, como segunda firma, por encima del umbral configurable de separacion de funciones; por debajo, advertencia de autorrevision | OBL-INC-04, Art. 25 inciso final; OBL-PRIN-03, Art. 5 lit. i |
+| Aprobacion de documentos regulatorios (Aviso de Privacidad, Politica de Privacidad) | MOD-008 | Segun la cadena de aprobacion configurada, tipicamente Aprobador | Doble aprobacion obligatoria para archivar estos dos tipos de documento (quien lo solicita y una segunda persona con rol Delegado/Responsable interno o Administrador) | OBL-AVISO-01 a 05, Art. 24; OBL-DOC-01 |
+| EIPD (paso a estado Vigente) | MOD-014 | Aprobador, distinto de quien completo el cuestionario | Responsable Legal/Compliance es corresponsable cuando el riesgo calculado es Alto o Critico (doble control sin excepcion de tamano) | OBL-DOC-03, Art. 4 Medidas Organizativas lit. e |
+| Aceptacion de riesgo residual (en vez de corregir un hallazgo de auditoria, o en una EIPD) | MOD-014, MOD-018 | Aprobador | Ninguno adicional mas alla del rol Aprobador, distinto de quien registro el hallazgo o el riesgo | Sin OBL-ID propio (decision de gestion de riesgo); MOD-018 propietario OBL-AUD-01 |
+| Exportacion de un paquete de evidencia con destino externo a la organizacion | MOD-019 | Delegado/Responsable interno o Responsable Legal (primer control) | Aprobador (segundo control, obligatorio, sin excepcion de tamano de empresa) | OBL-PRIN-03, Art. 5 lit. i (responsabilidad demostrada) |
+| Activacion de la bandera `regimen_reforma_659` (ACTUAL -> FUTURO) | MOD-024 | Editor de contenido regulatorio del proveedor del software (rol interno del proveedor, ver 11.7); ningun rol de la organizacion cliente la activa | Responsable Legal/Compliance de cada organizacion cliente solo puede recomendar, de forma consultiva y no vinculante | OBL-PLAZO-05 (requiere validacion de asesoria juridica sobre el contenido exacto de la reforma) |
+| Aprobar y enviar cualquier tramite ante la ACE (contestacion de un emplazamiento, recurso, comprobante de pago) | MOD-024 | Responsable Legal/Compliance | Aprobador o un segundo Responsable Legal (doble control; en pyme, Administrador con advertencia de autorrevision) | Procedimiento sancionador, Art. 53 (remite a la Ley de Ciberseguridad) |
+| Cambio de tipo_rol del Delegado (mantenerlo voluntariamente o migrar a Responsable Interno bajo estado FUTURO) | MOD-002 | Aprobador o Responsable Legal | Doble control siempre; nunca lo decide una sola persona | OBL-DPO-01 a 08 (afectadas por la reforma 659) |
+
+---
+
+## Contradicciones y huecos detectados
+
+### Contradicciones resueltas (fuente en conflicto, version adoptada y por que)
+
+1. **Numero y nombres de los roles estandar citados por las fichas de modulo.** Algunas fichas (por ejemplo, la plantilla `00_plantilla_ficha_modulo.md`, seccion B) listan un catalogo de ejemplo distinto y mas corto ("Administrador de organizacion, Responsable de privacidad, Gestor ARCO-POL, Legal, IT/Seguridad, RRHH, Marketing, Responsable de area, Aprobador, Auditor/Lectura, Titular externo") que no incluye separadamente al Delegado, al Auditor externo, al Asesor externo invitado ni distingue Auditor interno de Auditor externo. Se adopto el catalogo de 12 roles estandar de `05_tipos_de_usuario.md` seccion 5.3, que es la fuente jerarquicamente superior para roles y la que efectivamente usan las 26 fichas en sus propias secciones B y C (la nota final de `MOD-001_ficha.md` ya deja esta misma aclaracion por escrito: la plantilla es una version anterior, no un error a corregir en cada ficha).
+2. **Rol interno del proveedor para el Centro Regulatorio y el Centro de Ayuda.** `MOD-024_ficha.md` documenta un "Editor de contenido regulatorio" y `MOD-026_ficha.md` documenta un "equipo de contenido del producto" (autor, revisor legal, publicador) como roles separados, cada uno propio de su modulo, sin unificarlos explicitamente en un solo catalogo de "roles del proveedor". Para esta seccion se adopto tratarlos como dos funciones de gobernanza de contenido distintas pero analogas (11.7), sin fusionarlas en un rol unico, porque ninguna ficha los declara equivalentes y cada uno gobierna un catalogo de datos distinto (normativo vs. de ayuda); fusionarlos habria sido una invencion no sustentada por las fichas.
+3. **Alcance temporal del acceso del Auditor externo y del Asesor externo invitado.** Las fichas describen el acceso como "temporal", "acotado a una ventana de auditoria" o "acotado al caso", pero ninguna fija un numero de dias por defecto ni un mecanismo de expiracion automatica explicito (a diferencia de la invitacion de un usuario interno en MOD-001, que si expira a los 30 dias). No se adopto un plazo por defecto no sustentado por ninguna ficha; en su lugar, se documenta como hueco (ver mas abajo) en vez de inventar una cifra.
+
+### Huecos detectados (piezas que ninguna ficha define)
+
+1. **Mecanismo generico de suplencia de rol.** Fuera del campo `delegado_sustituto` de MOD-002 (especifico del Delegado), ninguna ficha define un mecanismo formal de "suplente temporal" para el resto de los 12 roles (por ejemplo, para vacaciones o incapacidad del Aprobador o del Responsable ARCO-POL), con fecha de inicio, fecha de fin y reversion automatica del rol al titular original. Ver 11.4.2.
+2. **Periodicidad y checklist de la revision periodica de accesos.** MOD-001 genera alertas que sugieren revisar accesos ("Estructura sin actualizar"), pero ninguna ficha fija una periodicidad recomendada (por ejemplo, semestral) ni un formulario o checklist especifico de esa revision, a diferencia de la reverificacion periodica bien definida para el Delegado en MOD-002. Ver 11.4.4.
+3. **Plazo maximo por defecto del acceso de un Auditor externo o un Asesor externo invitado, y su expiracion automatica.** Ninguna ficha fija cuantos dias dura por defecto una invitacion externa ni declara una transicion automatica que cierre el acceso cuando el caso o la auditoria concluyen; queda a criterio de quien invita, sin alerta propia en el catalogo de MOD-022 para "acceso externo por vencer". Ver 11.5.1 y 11.5.2.
+4. **Alcance funcional del equipo de soporte del producto sobre los datos del cliente.** `MOD-026_ficha.md` (seccion I) menciona al "equipo de soporte del producto" y lo declara textualmente "fuera del alcance funcional de este analisis"; ninguna ficha del corpus define que puede o no puede ver este rol de los datos de un cliente, si necesita autorizacion explicita del Administrador de la cuenta, ni como queda registrado ese acceso. Esta seccion propone reglas minimas marcadas explicitamente como "propuesta de esta seccion, no presente en las fichas" (11.7), pendientes de validacion del equipo de producto y, en lo referente a datos personales, de asesoria juridica.
+5. **Catalogo unico y transversal de "necesidad de saber".** El principio de necesidad de saber se aplica de forma consistente pero esta repartido modulo por modulo (tabla 11.6.1); ninguna ficha lo consolida en una sola matriz dato-sensible x rol x justificacion mantenida en un modulo especifico. Ver 11.6.3.
+6. **Diferenciacion explicita de ocupantes tipicos del rol por tamano de empresa (mediana vs. corporativo).** `05_tipos_de_usuario.md` seccion 5.3 diferencia solo "pyme" de "quien lo suele ocupar" en general; la columna que separa "empresa mediana" de "corporativo" en la tabla de 11.1 es una elaboracion de esta seccion a partir de los perfiles narrativos de la seccion 5.1, marcada explicitamente como propuesta y no como una tabla que ya existiera en esa forma en el corpus.
+
+

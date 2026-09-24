@@ -615,3 +615,152 @@ Modulo de solo lectura: no genera alertas de negocio propias, salvo el indicador
 | Sugerencia de evaluar asesoria juridica externa | Automatizacion 4 (clic en "necesito ayuda juridica" o 3+ articulos de alerta en la misma sesion) | INFO | Delegado/Responsable interno o Legal/Compliance | Tarea en MOD-021 y aviso via MOD-022 | Una vez por caso | Ninguno automatico | Se marca atendida o descartada | No |
 
 ---
+
+## 12.4 Modelo de niveles, canales y anti-fatiga (MOD-022 Notificaciones)
+
+MOD-022 es el unico modulo que decide como, a quien, con que prioridad y con que frecuencia se avisa de un evento que ya ocurrio en otro modulo. Ningun modulo de recorrido envia notificaciones por su cuenta; todos entregan el evento y MOD-022 resuelve el resto (regla de conexion 2 de `06_mapa_definitivo_de_modulos.md`).
+
+### 12.4.1 Los cuatro niveles
+
+| Nivel | Que significa | Ejemplo tipico |
+|---|---|---|
+| INFO | Informativo, sin urgencia | "Su plan anual de capacitacion vence en 60 dias" |
+| WARNING | Requiere atencion en los proximos dias | "Faltan 5 dias habiles para el plazo general de una solicitud ARCO-POL" |
+| HIGH | Requiere atencion inmediata, riesgo de vencimiento cercano | "Faltan 6 horas para el vencimiento de la notificacion de una vulneracion" (justo antes de subir a CRITICAL) |
+| CRITICAL | Plazo legal en riesgo inminente o ya vencido, o hecho que exige decision de la organizacion sin demora | Cronometro de 72 horas de un incidente a menos de 6 horas; emplazamiento de un procedimiento sancionador recien recibido |
+
+El nivel de una familia puede subir automaticamente al acercarse el vencimiento (por ejemplo, WARNING a HIGH a 5 dias, HIGH a CRITICAL a 24 horas), nunca baja salvo que el evento de origen se resuelva.
+
+### 12.4.2 Canales por nivel
+
+| Nivel | Canal minimo (MVP) | Puede sumar |
+|---|---|---|
+| INFO | Plataforma | Resumen diario/semanal si el usuario lo configura |
+| WARNING | Plataforma + correo | Resumen diario/semanal si el usuario lo configura (nunca si la familia tiene piso minimo legal) |
+| HIGH | Plataforma + correo | Canal adicional si la organizacion lo activa |
+| CRITICAL | Plataforma + correo, sin excepcion configurable | Canal adicional (por ejemplo SMS o push) si esta configurado; nunca se agrupa ni se retrasa |
+
+Canales evaluados para V1/V2 segun demanda, seguridad y costo (nunca asumidos por defecto en el MVP): Microsoft Teams, Slack, SMS, WhatsApp. El MVP de MOD-022 se limita a Plataforma y Correo (`MOD-022_ficha.md`, seccion Q).
+
+### 12.4.3 Escalamiento estandar
+
+Cuando el destinatario resuelto no responde (leer, acusar o resolver el objeto de origen) dentro del umbral configurado de su familia, la notificacion se marca Escalada y se genera una nueva notificacion vinculada hacia el destinatario de escalamiento (tipicamente el superior de area, el Delegado/Responsable interno, el Administrador o, en el ultimo nivel, la vista de Gerencia del dashboard). El catalogo de 12.3 detalla el escalamiento concreto de cada alerta; ningun escalamiento reasigna automaticamente la aprobacion o la tarea a otra persona: solo copia el aviso a un destinatario adicional (ver 12.4.6 y MOD-022, seccion H).
+
+### 12.4.4 Acuse de recibo
+
+Toda notificacion de nivel CRITICAL exige Acuse de recibo explicito ("Confirmar que revise esto") antes de considerarse Resuelta; la sola apertura del correo nunca sustituye esa confirmacion, aunque el proveedor de correo reporte que se abrio. El acuse queda registrado con identidad, fecha y hora, como evidencia de que una persona identificada realmente atendio el aviso mas urgente del sistema (sostiene OBL-PRIN-03, responsabilidad demostrada, Art. 5 lit. i LPDP). El acuse confirma solo que la persona vio el aviso; nunca prueba por si mismo que la obligacion de fondo se resolvio (ver el texto de descargo estandar de 12.4.6).
+
+### 12.4.5 Reglas anti-fatiga
+
+- **Resumen diario o semanal.** Configurable por cada usuario para niveles INFO y WARNING; nunca aplica a HIGH ni a CRITICAL, ni a ninguna familia con piso minimo de plazo legal.
+- **Horario silencioso.** Rango horario configurable en el que se retrasan los avisos no CRITICAL hasta el fin de ese horario; las notificaciones CRITICAL nunca se retrasan.
+- **Deduplicacion.** Si dos o mas notificaciones de la misma familia y el mismo objeto de origen se generarian en una ventana corta, el sistema entrega una sola notificacion consolidada.
+- **Silenciar una alerta individual.** Permitido para el propio usuario sobre casos puntuales no obligatorios ("no volver a avisar de este caso"); nunca disponible sobre una familia con piso minimo legal.
+
+### 12.4.6 Que es configurable y que tiene un piso minimo no configurable
+
+| Configurable por la organizacion o el usuario | Piso minimo, nunca configurable (ni por el Administrador) |
+|---|---|
+| Destinatarios por defecto de cada familia no obligatoria, canal adicional, umbrales de escalamiento (dentro de rangos), resumen diario/semanal, horario silencioso, silenciar un caso puntual no obligatorio | Toda familia ligada a un plazo legal (por ejemplo, las 72 horas de OBL-INC-01, los 20+20 dias de OBL-ARCO-10, los 15 dias de OBL-DPO-03): se entrega siempre de forma individual e inmediata, nunca agrupada ni silenciada |
+| El texto de la plantilla de mensaje (dentro de las variables permitidas) | El nivel CRITICAL siempre exige Canal Plataforma + Correo como minimo y Acuse de recibo explicito antes de Resuelta |
+| Umbral de escalamiento de una alerta CRITICAL ya en curso (por ejemplo, alargar la ventana antes de escalar el cronometro de 72 horas), pero solo con doble control entre Delegado/Responsable interno y Legal/Compliance | Ninguna plantilla de canal externo (correo u otro) puede incluir un dato personal de titular ni el detalle sustantivo de un caso; el sistema bloquea la generacion, no pregunta |
+| Que canales adicionales activar (dentro de los evaluados) | El historial de notificaciones nunca se elimina, solo se archiva al llegar a Resuelta (`22_anti_features.md`, item 19) |
+
+El texto de descargo que acompana a los indicadores de notificaciones en el dashboard es siempre el estandar de `04_objetivo_exacto_del_producto.md`, seccion 1.3: los indicadores se expresan como "notificaciones entregadas / acusadas / escaladas", nunca como "obligacion cumplida".
+
+---
+
+## 12.5 Integracion con el Motor de Plazos (MOD-023 Calendario y Motor de Plazos)
+
+MOD-021 y MOD-022 nunca calculan un plazo por su cuenta: siempre lo piden a MOD-023, el unico modulo que calcula dias y horas habiles (regla de conexion 3 de `06_mapa_definitivo_de_modulos.md`; OBL-PLAZO-01, Art. 82 Ley de Procedimientos Administrativos, D.L. 856, supletoria por Art. 62 LPDP; OBL-PLAZO-02, calendario de asuetos, Art. 190 Codigo de Trabajo y D.L. 339/2016 y 208/2012).
+
+### 12.5.1 Como se calculan y muestran las fechas limite
+
+Cada modulo con plazo legal (MOD-002, MOD-006 a MOD-018, MOD-021, MOD-024) entrega a MOD-023 el evento de inicio, la duracion, el tipo de computo (dias habiles, dias corridos, horas corridas, horas habiles, meses o anos de fecha a fecha) y la capa de calendario aplicable (empresa frente al titular, capas 0 a 4; o empresa frente a la autoridad ACE, capa 5). MOD-023 calcula la fecha resultante aplicando el calendario de dias inhabiles vigente (fin de semana, calendario nacional, asuetos ad hoc, asuetos locales por sede, y para la capa 5, ademas los periodos colectivos de la Ley de Asuetos de los Empleados Publicos), y devuelve la fecha limite mas su desglose completo al modulo solicitante, que la muestra siempre en lenguaje simple primero ("responder antes del [fecha]"), con el desglose tecnico disponible como vista expandible opcional (regla de oro de la plantilla: fundamento legal en segundo nivel).
+
+### 12.5.2 Desglose visible
+
+Junto a cada fecha limite calculada, el sistema muestra siempre, como vista expandible:
+
+- El dia 1 del computo (evento de inicio).
+- Cada dia u hora excluido y el motivo (fin de semana, asueto nacional, asueto local, asueto ad hoc, capa de la autoridad).
+- La fecha resultante.
+- El "criterio de computo mostrado" cuando el plazo tiene una ambiguedad juridica documentada (por ejemplo, "Horas corridas (criterio conservador)" para las 72 horas del Art. 25, o "Dias habiles, sin suspension durante la prevencion" para el plazo general ARCO-POL), con la advertencia estandar de `04_objetivo_exacto_del_producto.md`, seccion 1.3: "La ley no precisa si este plazo se cuenta en horas corridas u horas habiles. El sistema aplica por defecto el criterio mas conservador (horas corridas). Verifique este criterio con asesoria legal si el caso es critico."
+- La version exacta del calendario (HolidayCalendar) usada para ese calculo especifico, como snapshot inmutable, aunque el calendario cambie despues.
+
+Cuando el calendario cambia mientras un plazo sigue abierto (por ejemplo, se confirma un asueto ad hoc dentro de la ventana del plazo), MOD-023 recalcula automaticamente, conserva el valor anterior en el historial y notifica al modulo de origen y a MOD-022: ningun plazo se mueve en silencio.
+
+### 12.5.3 Que pasa con un plazo vencido
+
+Un plazo que se cumple sin que el modulo de origen marque el caso resuelto nunca se oculta: se activa la bandera VENCIDA (o su equivalente HIGH/CRITICAL en la alerta correspondiente, ver 12.3), visible de forma permanente junto al registro, y queda registrado en el historial aunque la tarea o el expediente se completen despues fuera de tiempo. En el caso mas critico del sistema, la notificacion de vulneraciones (OBL-INC-01), la ficha de Incidentes lo deja explicito: la alerta de plazo vencido "nunca se apaga del todo: la notificacion enviada tardiamente registra el incumplimiento de forma permanente en el historial, aunque la alerta activa deje de repetirse" (`MOD-013_ficha.md`, seccion I). Ninguna vista del sistema permite borrar, editar o disimular un vencimiento ya ocurrido (`22_anti_features.md`, item 19); el sistema tampoco decide por si mismo si ese vencimiento ya configura una infraccion sancionable: esa evaluacion queda siempre para el Delegado/Responsable interno o para asesoria especializada (texto estandar de MOD-022, seccion H).
+
+---
+
+## 12.6 Calendario central (area 30 del prompt de analisis funcional)
+
+La vista de calendario central, alojada dentro de MOD-023, es la unica pantalla donde el usuario no especialista ve, en un solo lugar, todos sus plazos legales, revisiones periodicas, auditorias, vencimientos, tareas y casos de ARCO-POL e incidentes, filtrables por modulo, por responsable o por sucursal (MOD-023, seccion Q, condicion MUST HAVE del MVP).
+
+| Que aparece | Para quien |
+|---|---|
+| Plazos legales en curso (ARCO-POL, incidentes, Delegado, procedimiento sancionador) | Responsable de cada expediente, Delegado/Responsable interno, Legal/Compliance |
+| Tareas propias asignadas, con su fecha limite | Cada usuario, filtrado a lo que le corresponde (Usuario de consulta ve solo lo suyo) |
+| Revisiones periodicas programadas (RAT, documentos, proveedores, transferencias, EIPD, controles, retencion) | Responsable de area de cada registro, Delegado |
+| Auditorias planificadas y su ciclo anual | Delegado/Responsable interno, Administrador, Auditor |
+| Vencimientos de contratos/DPA y de evidencias | Responsable de area, Delegado |
+| Fechas de recalculo o de cambio de calendario | Auditor, Delegado, Administrador |
+
+El Administrador ve el calendario completo de la organizacion; un Responsable de area lo ve filtrado a su area o sucursal; el Auditor (interno o externo) lo consulta en solo lectura; el Titular no accede a esta vista: solo ve, a traves de MOD-012, el numero de dias restantes de su propia solicitud, sin el desglose tecnico (MOD-023, seccion C).
+
+---
+
+## 12.7 Efecto de la reforma 659 sobre tareas y alertas
+
+Contexto (ver `00_contexto_para_agentes.md`, seccion 3, y `01_legal/03_hallazgos_regulatorios.md`, secciones 3 y 9): el Decreto Legislativo 659 fue aprobado el 17 de septiembre de 2026, pero a la fecha de esta seccion (24-sep-2026) no esta confirmada su publicacion en el Diario Oficial. Mientras no se publique, el regimen vigente exige Delegado obligatorio en el sector privado (Arts. 15 y 17 del Decreto 144). El sistema modela un unico modulo (MOD-002) y una unica entidad ("Responsable del Programa de Datos") para ambos regimenes, con un atributo `tipo_rol` (DELEGADO o RESPONSABLE_INTERNO) y una bandera unica `regimen_reforma_659` (ACTUAL o FUTURO) alojada en MOD-024, activable solo de forma manual por el equipo del producto tras confirmar la publicacion oficial y transcurrir la vacatio legis de 8 dias (`06_mapa_definitivo_de_modulos.md`, seccion 5). 17 obligaciones de la matriz quedan marcadas como afectadas por esta reforma (verificado contra `matriz_obligaciones.json`, campo `afectada_por_reforma_659.afectada = true`): OBL-DPO-01 a 08, OBL-ARCO-01/08/10/11/14, OBL-CONS-03, OBL-CAP-02, OBL-RET-04 y OBL-PLAZO-05.
+
+**Efecto sobre el sistema de tareas y alertas, especificamente:**
+
+1. **El cambio de bandera nunca es automatico por la sola fecha de aprobacion legislativa.** MOD-024 registra la fecha del cambio para trazabilidad; MOD-021, MOD-022 y MOD-023 nunca deciden por si mismos si el regimen ya cambio: solo reaccionan a la bandera (MOD-021, seccion H; MOD-022, seccion A).
+2. **Al activarse el estado FUTURO, MOD-024 emite un evento hacia MOD-002, MOD-007, MOD-008, MOD-011, MOD-015 y MOD-017** (ver 12.2.21), y crea, para cada organizacion, la tarea unica "Revisar el impacto del cambio de regimen normativo", dirigida al Administrador.
+3. **Las tareas de tipos exclusivos del regimen ACTUAL se archivan como "No aplica bajo el estado regulatorio actual, ver historial", nunca se eliminan.** Ejemplos concretos que MOD-021 y MOD-002 documentan: la reverificacion trienal del Delegado (OBL-DPO-04), el informe semestral al responsable (OBL-DPO-07) y la comunicacion formal a la ACE (OBL-DPO-03) dejan de generar su tarea recordatoria obligatoria bajo el estado FUTURO, salvo que la empresa mantenga voluntariamente al Delegado (ver punto 6 de `06_mapa_definitivo_de_modulos.md`, seccion 5); el registro historico de cada tarea ya generada bajo el regimen ACTUAL se conserva intacto.
+4. **Cualquier tarea que dependia de una tarea archivada recibe una alerta para que su responsable decida si tambien deja de aplicar** o si necesita una tarea de reemplazo; esa decision nunca se automatiza mas alla del caso expresamente configurado del cambio de regimen (MOD-021, seccion H).
+5. **Los avisos publicados (MOD-008) no se reescriben automaticamente.** El cambio de bandera solo crea la tarea "revisar avisos publicados tras el cambio de regimen"; nadie edita ni republica un documento por si solo.
+6. **MOD-017 deja de exigir la tarea recordatoria obligatoria del plan anual de capacitacion del Delegado bajo el estado FUTURO sin Delegado voluntario activo, pero el registro general de capacitacion del personal (OBL-CAP-01) continua exactamente igual**, sin cambio de estado.
+7. **La aprobacion de los actos hoy atribuidos al Delegado (prevencion, incompetencia, notificacion a receptores, revocacion) sigue exigiendose siempre**, sin importar el regimen: solo cambia quien tiene la investidura para aprobar (la persona con `tipo_rol = DELEGADO` hoy, cualquier persona designada `RESPONSABLE_INTERNO` despues); los expedientes ya cerrados conservan la regla vigente en el momento de su cierre.
+8. **Ninguna alerta ni tarea del catalogo de 12.2 y 12.3 relacionada con las 17 obligaciones afectadas se recalcula retroactivamente**: la clasificacion anterior (OBLIGATORIO o CONDICIONAL bajo el regimen en el que se genero) queda preservada en el historial de cada registro, coherente con la regla de preservacion de historial de `06_mapa_definitivo_de_modulos.md`, seccion 5, punto 6.
+
+**Texto estandar que acompana toda pantalla afectada:** "El Decreto Legislativo 659 (numero pendiente de confirmar contra el texto oficial) fue aprobado por la Asamblea Legislativa pero, a la fecha, no esta confirmada su publicacion en el Diario Oficial. Mientras tanto, aplica el regimen vigente del Delegado de Proteccion de Datos (Arts. 15 y 17 del Decreto 144)." (`04_objetivo_exacto_del_producto.md`, seccion 1.3).
+
+---
+
+## 12.8 Frontera entre avisos internos (MOD-022) y comunicaciones formales a titulares, ACE o Fiscalia (MOD-011 / MOD-013)
+
+Esta frontera es, segun la propia ficha de MOD-022, "la pieza de diseno mas sensible del modulo" (`MOD-022_ficha.md`, seccion A.1), porque el documento maestro original no la trazaba con claridad.
+
+- **MOD-022 gestiona exclusivamente avisos internos** dirigidos a usuarios de la organizacion cliente (los 12 roles estandar de `05_tipos_de_usuario.md`, seccion 5.3, salvo el rol Titular). Ejemplos: "falta 1 dia habil para el vencimiento de la notificacion de la vulneracion", "la respuesta ARCO-POL esta pendiente de aprobacion del Delegado".
+- **La comunicacion formal a un titular, a la ACE o a la Fiscalia General de la Republica es un acto sustantivo del modulo propietario del expediente, nunca de MOD-022.** MOD-011 genera y controla la respuesta ARCO-POL al titular (incluida la notificacion de denegatoria, Art. 22, y la notificacion a receptores, Art. 21 inc. 3). MOD-013 genera y controla la notificacion de la vulneracion a la ACE, a la Fiscalia y a los titulares (Art. 25). Ambos actos tienen su propio contenido, su propia Aprobacion (via MOD-021, ver 12.1.5) y su propia evidencia de envio (via MOD-019); MOD-022 nunca los redacta ni los emite, solo avisa internamente de que el plazo para hacerlo se acerca o vencio.
+- **El Portal del Titular (MOD-012) no rompe esta frontera.** El codigo de verificacion de un solo uso y el aviso de actualizacion de estado que el Portal envia al titular externo no son Notification de MOD-022: se modelan como actos propios de MOD-011 (dueno del expediente ARCO-POL, incluso cuando el canal de entrada es el Portal), ejecutados por el canal que corresponda dentro de MOD-011/MOD-012 (`MOD-022_ficha.md`, seccion A.1, resolviendo la pregunta abierta que dejo `MOD-012_ficha.md`, seccion L).
+- **Ninguna plantilla de mensaje de MOD-022 puede contener un dato personal de titular ni el detalle sustantivo de un caso**, ni siquiera en la version que se ve dentro de la plataforma: guarda solo una referencia al expediente de origen (por ejemplo, el numero de expediente ARCO-POL o el numero de caso de incidente). La version enviada por un canal externo (correo) es aun mas restringida: solo el aviso generico y un enlace de acceso autenticado, nunca el contenido del caso (`22_anti_features.md`, items 8 y 9).
+- **Consecuencia practica para el usuario no especialista:** recibir el aviso interno de MOD-022 nunca significa que la comunicacion formal ya se envio; son dos hechos distintos y ambos quedan registrados por separado (aviso interno en MOD-022, acto sustantivo en MOD-011 o MOD-013), con su propio historial e integridad verificable.
+
+---
+
+## Contradicciones y huecos detectados
+
+Formato de cada fila: archivo(s), que dice cada fuente, cual version se adopto en esta seccion y por que (segun la jerarquia: fuente legal primaria y `matriz_obligaciones.json` > `mapa_modulos.json` y `06_mapa_definitivo_de_modulos.md` > `05_tipos_de_usuario.md` para roles > ficha del modulo propietario > otras fichas).
+
+### Contradicciones
+
+1. **`02_validacion/mapa_modulos.json` (entrada MOD-023, campo `obligaciones_colaboradoras`) frente a `03_modulos/MOD-023_ficha.md` (seccion D.4) y `01_legal/matriz_obligaciones.json`.** El campo del mapa lista solo 8 OBL-ID como colaboradoras de MOD-023 (OBL-ARCO-08, OBL-ARCO-09, OBL-ARCO-10, OBL-DPO-02, OBL-DPO-03, OBL-INC-01, OBL-INC-02, OBL-SANC-05); la propia ficha de MOD-023, contrastada contra `matriz_obligaciones.json`, confirma que ese modulo tambien calcula el plazo de OBL-ARCO-11, OBL-ARCO-12, OBL-CONS-03, OBL-DPO-04 y OBL-SANC-06, para los mismos modulos propietarios (MOD-011, MOD-007, MOD-002, MOD-024). Se adopta la version de la ficha propietaria de MOD-023 (seccion D.4) para el catalogo de plazos de 12.2 y 12.3: el campo `obligaciones_colaboradoras` de `mapa_modulos.json` esta incompleto frente a la fuente legal primaria (`matriz_obligaciones.json`), que tiene jerarquia superior. No se modifica `mapa_modulos.json` desde esta seccion.
+2. **`02_validacion/mapa_modulos.json` (entrada MOD-024, campo `alimenta_a`) frente a `03_modulos/MOD-008_ficha.md` (seccion G, regla 3) y `03_modulos/MOD-024_ficha.md` (seccion G, regla 1).** El mapa declara que MOD-024 alimenta solo a MOD-002, MOD-007, MOD-011, MOD-015 y MOD-017 con el evento de cambio de bandera; la propia ficha de MOD-008 describe una automatizacion propia disparada exactamente por ese evento ("MOD-024 cambia la bandera `regimen_reforma_659` de ACTUAL a FUTURO"), y la ficha de MOD-024 lo reconoce de forma expresa como omision del mapa. Se adopta la version de ambas fichas propietarias (MOD-008 y MOD-024): en 12.2.21 y 12.7 se incluye a MOD-008 entre los receptores del evento de cambio de regimen. No se modifica `mapa_modulos.json` desde esta seccion.
+3. **`02_validacion/mapa_modulos.json` (`alimenta_a` de MOD-008 y MOD-009) frente a `03_modulos/MOD-021_ficha.md` (seccion L.2) y las propias secciones G de `MOD-008_ficha.md` y `MOD-009_ficha.md`.** El mapa no declara que MOD-008 ni MOD-009 alimenten a MOD-021; sin embargo, ambas fichas contienen reglas de automatizacion que si generan tareas hacia MOD-021 (por ejemplo, MOD-008 regla 1 "Actualizar Aviso de Privacidad: nueva finalidad detectada"; MOD-009 regla 7 "notificar a [Receptor]"). La propia ficha de MOD-021 ya deja constancia de esta asimetria sin corregirla. Se adopta la version de las fichas propietarias de MOD-008 y MOD-009 para el catalogo de 12.2 (secciones 12.2.8 y 12.2.9), porque describen el comportamiento real del modulo de origen; el campo `alimenta_a`/`depende_de` de `mapa_modulos.json` registra solo la dependencia estructural minima (segun su propia convencion declarada en `06_mapa_definitivo_de_modulos.md`, seccion 6.1) y su silencio no contradice el contenido, solo lo deja incompleto.
+4. **`03_modulos/MOD-021_ficha.md` (campo `depende_de` heredado de `mapa_modulos.json`) frente a `03_modulos/MOD-014_ficha.md` y `03_modulos/MOD-018_ficha.md`.** El `depende_de` de MOD-021 en el mapa solo lista MOD-002, MOD-004, MOD-005, MOD-011 y MOD-013; las fichas de MOD-014 (Riesgos/EIPD) y MOD-018 (Auditoria) declaran de forma expresa "Sale hacia MOD-021", y ambas tienen reglas de generacion de tareas documentadas en 12.2.14 y 12.2.18. Se adopta la version de las fichas propietarias de MOD-014 y MOD-018: sus tareas ("elaborar EIPD para este tratamiento", plan de accion correctiva de auditoria) se incluyen en el catalogo de 12.2 igual que las de los modulos MUST HAVE, sin esperar a que `mapa_modulos.json` corrija el campo `depende_de`.
+5. **`03_modulos/MOD-023_ficha.md` (seccion L.3) frente a `03_modulos/MOD-002_ficha.md` (seccion L).** MOD-002 senala que, aunque el mapa y `06_mapa_definitivo_de_modulos.md` declaran que MOD-023 "sale hacia" MOD-002, el propio `depende_de` de MOD-002 no incluye a MOD-023 como entrada; MOD-023 confirma desde su propio lado que la relacion si existe en la practica (MOD-002 consulta a MOD-023 para sus contadores de 3, 10, 15 dias habiles y de 1, 3 y 5 anos). Ambas fichas coinciden en que se trata de una omision de `mapa_modulos.json`, no de una diferencia de diseno. Esta seccion sigue el comportamiento descrito por ambas fichas propietarias (MOD-002 consulta a MOD-023 para todo plazo del Delegado, ver 12.2.2) sin modificar `mapa_modulos.json`.
+
+### Huecos
+
+1. **Ninguna ficha define que ocurre cuando el responsable asignado de una tarea con plazo legal esta ausente (vacaciones, licencia o baja temporal) durante la ventana del plazo.** MOD-021 permite reasignar manualmente el responsable (seccion C) y MOD-022 permite configurar un suplente por rol para el escalamiento (seccion D.2), pero ninguna ficha conecta ambos mecanismos para el caso especifico de una ausencia programada: no hay una regla que sugiera de forma proactiva reasignar la tarea, solo el escalamiento reactivo tras el umbral de no respuesta. Se deja constancia como hueco funcional, no se propone una solucion nueva en esta seccion porque excederia el alcance de consolidar lo ya decidido.
+2. **Ninguna ficha especifica si la generacion de la siguiente instancia de una tarea recurrente se detiene cuando el tipo de tarea queda exclusivo del regimen ACTUAL y ese regimen cambia a FUTURO.** MOD-021 (seccion G) documenta que el cambio de bandera archiva la instancia activa como "No aplica", pero no dice de forma expresa si el generador de la siguiente instancia recurrente (por ejemplo, la reverificacion trienal del Delegado) tambien se desactiva a partir de ese momento, o si seguiria intentando crear una nueva instancia que luego habria que archivar de nuevo. Se interpreta, por coherencia con el principio general del punto 6 de `06_mapa_definitivo_de_modulos.md`, seccion 5 (preservacion de historial, no generacion de trabajo bajo un regimen que ya no aplica), que el generador tambien se desactiva, pero ninguna ficha lo dice de forma literal: **propuesta de esta seccion, no presente en las fichas**, que una futura ficha o revision de MOD-021/MOD-002 lo confirme de forma expresa.
+3. **Ninguna ficha define un tope maximo de notificaciones CRITICAL simultaneas que un mismo usuario puede recibir sin que eso degrade su capacidad real de atenderlas todas a tiempo.** Las reglas anti-fatiga de MOD-022 (seccion G y H) excluyen expresamente a las familias CRITICAL de cualquier agrupacion o silencio, lo cual es correcto para no ocultar un plazo legal, pero ninguna ficha aborda el escenario (real en una pyme donde una sola persona acumula varios roles, ver `05_tipos_de_usuario.md`, seccion 5.1, perfil Karla) de que dos o mas cronometros CRITICAL corran en paralelo sobre la misma persona. MOD-021 (seccion H) solo dice que "la decision final de a que deduar el tiempo primero queda con el responsable o su superior", sin un mecanismo de apoyo especifico mas alla de la prioridad por cercania de fecha limite. Se deja constancia como hueco de UX/operacion, no se propone una solucion nueva.
+4. **Ninguna ficha detalla el formato visual exacto del resumen diario o semanal de notificaciones** (por ejemplo, si agrupa por familia, por modulo de origen o por nivel, y en que orden). MOD-022 (seccion D.2) define la existencia del resumen como preferencia de usuario, pero no su disposicion. Se deja constancia como hueco de diseno de interfaz, fuera del alcance funcional que esta seccion puede cerrar sin inventar una decision de producto no presente en ninguna ficha.
+5. **Ninguna ficha conecta de forma explicita el catalogo de alertas de MOD-025 Busqueda Global con el resto del sistema de tareas y alertas**, mas alla de mencionar que MOD-025 es de solo lectura. Esto es consistente con su diseno (no genera tareas ni alertas de negocio), por lo que no se trata de una omision real sino de la ausencia esperada de contenido; se anota aqui solo para dejar constancia de que la seccion 12.3.23 de este documento no oculta un catalogo que exista en otro lugar.
+
