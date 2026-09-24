@@ -64,3 +64,7 @@ Documento completo en un solo archivo: [BLUEPRINT_FUNCIONAL_PRIV-SV.md](BLUEPRIN
 - [Anexo A. Control de calidad de la fase 3](anexo_control_de_calidad.md): revision adversarial de las fichas y critica de coherencia global con el resultado de cada correccion.
 - Anexo B. Archivos fuente y huella SHA-256: al final de [BLUEPRINT_FUNCIONAL_PRIV-SV.md](BLUEPRINT_FUNCIONAL_PRIV-SV.md).
 - Matriz de obligaciones (105 obligaciones canonicas): [matriz_obligaciones.md](../01_legal/matriz_obligaciones.md) y [matriz_obligaciones.json](../01_legal/matriz_obligaciones.json).
+
+## Backlog de desarrollo (etapa siguiente)
+
+- [Backlog del MVP y plan de sprints](../06_backlog/README.md): 316 historias de usuario en 21 epicas, con criterios de aceptacion, puntos, dependencias, CSV importable y plan de sprints.

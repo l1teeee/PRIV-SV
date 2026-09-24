@@ -2,6 +2,16 @@
 
 Fecha: 2026-09-24. Plan generado a partir del backlog (`backlog_mvp.json`) respetando las dependencias entre historias y modulos, la secuencia de construccion de la seccion 19.9 del blueprint y la capacidad de cada sprint. Las fechas son tentativas: se recalculan con la velocidad real del equipo.
 
+## Resumen para decidir
+
+- Tamano del MVP: 316 historias de usuario, 1322 puntos (749 en R1 y 573 en R2), organizadas en 21 epicas.
+- Con el equipo de referencia y la velocidad base de 40 puntos por sprint, R1 (el nucleo vendible) queda listo al final del Sprint 21, el 2027-08-06, y R2 (el MVP completo) al final del Sprint 36, el 2028-03-03.
+- Con un equipo mayor que sostenga 60 puntos por sprint (ver la tabla de sensibilidad, seccion 3), R1 se adelanta al Sprint 14 (2027-04-30) y R2 al Sprint 25 (2027-10-01).
+- Se recomienda iniciar con el equipo de referencia de la seccion 1 y recalibrar la velocidad con lo medido en los sprints 1 a 3, antes de decidir si conviene ampliar el equipo para adelantar R1.
+- Con R1 ya se puede vender o pilotear el diagnostico de cumplimiento, el plan de accion con plazos, el RAT y los documentos regulatorios base, con el Delegado designado y el soporte transversal de tareas, notificaciones, plazos y marco regulatorio.
+- R2 agrega consentimiento, proveedores y encargados, ARCO-POL, incidentes de seguridad, controles de seguridad, capacitacion, evidencias completas, dashboard y ayuda completa.
+- El principal riesgo del plan es que la velocidad real del equipo sea distinta de los 40 puntos supuestos: segun la tabla de sensibilidad de la seccion 3, la fecha de R1 por si sola varia entre el 2027-04-30 (60 puntos) y el 2027-11-12 (30 puntos), una diferencia de mas de seis meses.
+
 ## 1. Supuestos
 
 | Supuesto | Valor |
@@ -11,7 +21,9 @@ Fecha: 2026-09-24. Plan generado a partir del backlog (`backlog_mvp.json`) respe
 | Velocidad base | 40 puntos por sprint completo |
 | Rampa de arranque | Sprint 1 al 60%, Sprint 2 al 80%, desde el Sprint 3 al 100% |
 | Asuetos descontados | 2026-11-02, 2026-12-24, 2026-12-25, 2026-12-31, 2027-01-01, 2027-03-25, 2027-03-26, 2027-05-10, 2027-06-17, 2027-08-03, 2027-08-04, 2027-08-05, 2027-08-06, 2027-09-15, 2027-11-02, 2027-12-24, 2027-12-31 |
-| Equipo de referencia | EQUIPO POR DEFINIR |
+| Equipo de referencia | 4 desarrolladores full-stack, 1 QA, 1 disenador UX/UI, 1 Product Owner, y apoyo legal y de contenido a tiempo parcial |
+
+Nota: los 40 puntos de velocidad base de esta tabla corresponden al equipo de referencia de arriba (4 desarrolladores full-stack, 1 QA, 1 disenador UX/UI, 1 Product Owner, y apoyo legal y de contenido a tiempo parcial). Esa cifra es una estimacion inicial: se recalibra con la velocidad realmente medida en los sprints 1 a 3 (con su rampa de arranque al 60% y al 80%), y el resto de este plan, incluidas sus fechas, se recalcula a partir de esa medicion.
 
 ## 2. Releases e hitos
 
@@ -32,15 +44,25 @@ Fecha: 2026-09-24. Plan generado a partir del backlog (`backlog_mvp.json`) respe
 
 ## 4. Sprint 0 (preparacion, sin historias de desarrollo)
 
-PENDIENTE DE REDACCION
+Sprint de preparacion, sin historias de desarrollo del backlog: deja listo lo que las HU de los sprints 1 a 3 necesitan para cumplir la definicion de listo del README, sin comprometer todavia ninguna eleccion de tecnologia.
+
+| Entregable | Responsable | Criterio de terminado |
+|---|---|---|
+| Lista de decisiones de arquitectura tecnica y de modelo de datos pendientes (por ejemplo: aislamiento de datos entre organizaciones clientes, conservacion y consulta de la bitacora de auditoria, verificacion de integridad de los paquetes de evidencia, modelo de datos del RAT y del catalogo de tratamientos), nombradas sin elegir tecnologia en esta etapa | Product Owner con el equipo de desarrollo | Cada decision esta nombrada, tiene un responsable y una fecha limite antes del sprint que la necesita |
+| Entornos de trabajo (desarrollo, pruebas, produccion) y flujo de trabajo del equipo (revision de cambios, control de versiones, despliegue, gestion del backlog) | Equipo de desarrollo | Un cambio puede recorrer todo el flujo, desde el entorno de desarrollo hasta el de pruebas, siguiendo el proceso acordado |
+| Prototipo navegable de los tres recorridos criticos: onboarding y diagnostico, ARCO-POL, e incidentes de seguridad | Disenador UX/UI con el Product Owner | Al menos una ronda de prueba con un usuario no especialista completada sobre los tres recorridos, con sus hallazgos documentados |
+| Arranque de la validacion legal de las preguntas pendientes que bloquean el MVP (seccion 24 del blueprint, resumen en 24.8) | Apoyo legal con el Product Owner | Cada pregunta bloqueante tiene una consulta enviada a asesoria juridica externa o una fecha de respuesta comprometida |
+| Plan de produccion de contenido legal y de ayuda para las epicas de los primeros sprints (plantillas, banco de preguntas del diagnostico, textos de ayuda) | Apoyo legal y de contenido con el Product Owner | Existe un calendario de contenido, con responsable y fecha, para cada entregable de contenido_y_validacion_legal.md que vence en los sprints 1 a 5 |
+| Refinamiento del backlog: revision conjunta de las HU de los primeros sprints | Product Owner con desarrollo, QA y UX/UI | Las HU de los sprints 1 a 3 cumplen la definicion de listo antes de empezar el Sprint 1 |
+| Definicion de listo y de terminado del equipo, adoptando o ajustando las del README | Product Owner con QA | El equipo completo conoce y acepta ambas definiciones antes de empezar el Sprint 1 |
 
 ## 5. Sprints
 
 ### Sprint 1 (2026-10-19 a 2026-10-30)
 
-Objetivo: POR DEFINIR
+Objetivo: Sentar las bases tecnicas y de datos de la organizacion cliente: aislar la informacion entre organizaciones, dejar registro en la bitacora de auditoria, y capturar los datos basicos de la empresa y sus sucursales.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede crear una organizacion con sus datos basicos y sus sucursales, confirmar que sus datos quedan aislados de otras organizaciones, y ver las acciones relevantes ya registradas en la bitacora de auditoria.
 
 Capacidad: 24 puntos. Comprometido: 24 puntos en 4 historias. Epicas: EP-000 Plataforma y requisitos transversales (16 pts); EP-001 Organizacion y Personas (8 pts).
 
@@ -53,9 +75,9 @@ Capacidad: 24 puntos. Comprometido: 24 puntos en 4 historias. Epicas: EP-000 Pla
 
 ### Sprint 2 (2026-11-02 a 2026-11-13)
 
-Objetivo: POR DEFINIR
+Objetivo: Avanzar la gestion de usuarios y la estructura interna de la organizacion, y habilitar el inicio de sesion.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Un Administrador puede iniciar sesion, invitar usuarios con uno de los 12 roles estandar, editarlos, suspenderlos y reactivarlos, y organizar la empresa en unidades o departamentos.
 
 Capacidad: 28 puntos (descuenta asuetos: 2026-11-02). Comprometido: 28 puntos en 7 historias. Epicas: EP-001 Organizacion y Personas (20 pts); EP-000 Plataforma y requisitos transversales (8 pts).
 
@@ -71,9 +93,9 @@ Capacidad: 28 puntos (descuenta asuetos: 2026-11-02). Comprometido: 28 puntos en
 
 ### Sprint 3 (2026-11-16 a 2026-11-27)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el ciclo de vida de usuarios con roles criticos, y encender el Centro de Tareas y las Notificaciones como infraestructura transversal.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Dar de baja a un usuario con un rol critico exige nombrar antes su reemplazo, los eventos de la organizacion generan tareas y notificaciones automaticas, y el sistema calcula por primera vez un plazo de 72 horas.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 12 historias. Epicas: EP-001 Organizacion y Personas (19 pts); EP-022 Notificaciones (13 pts); EP-021 Centro de Tareas (3 pts); EP-023 Calendario y Motor de Plazos (5 pts).
 
@@ -94,9 +116,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 12 historias. Epicas: EP-001 Or
 
 ### Sprint 4 (2026-11-30 a 2026-12-11)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar el motor de calculo de plazos en dias y horas habiles, con su calendario de asuetos, sus prorrogas y su recalculo automatico.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede publicar el calendario anual de asuetos, calcular una fecha limite en dias habiles con su desglose visible, suspender o prorrogar un plazo abierto, y ver como se recalcula al agregarse un asueto nuevo.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 8 historias. Epicas: EP-023 Calendario y Motor de Plazos (38 pts); EP-005 Plan de Cumplimiento (2 pts).
 
@@ -113,9 +135,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 8 historias. Epicas: EP-023 Cal
 
 ### Sprint 5 (2026-12-14 a 2026-12-25)
 
-Objetivo: POR DEFINIR
+Objetivo: Poner en marcha el Centro de Tareas de principio a fin, y dar los primeros pasos del Onboarding y del Diagnostico de Cumplimiento.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede consultar el calendario central, iniciar la configuracion inicial guiada y una sesion de diagnostico, y crear, avanzar y adjuntar evidencia a una tarea desde la bandeja personal.
 
 Capacidad: 32 puntos (descuenta asuetos: 2026-12-24, 2026-12-25). Comprometido: 32 puntos en 10 historias. Epicas: EP-023 Calendario y Motor de Plazos (11 pts); EP-003 Onboarding (3 pts); EP-004 Diagnostico de Cumplimiento (3 pts); EP-021 Centro de Tareas (14 pts); EP-000 Plataforma y requisitos transversales (1 pts).
 
@@ -134,9 +156,9 @@ Capacidad: 32 puntos (descuenta asuetos: 2026-12-24, 2026-12-25). Comprometido: 
 
 ### Sprint 6 (2026-12-28 a 2027-01-08)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar el ciclo de vida de las tareas con comentarios, aprobaciones, vencimientos y el escalamiento de alertas criticas.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Una tarea se puede comentar, enviar a revision y aprobar con bloqueo de autorrevision; se puede ver una tarea marcarse vencida sola y una alerta critica de 72 horas escalar si nadie responde, y exportar el listado de tareas.
 
 Capacidad: 32 puntos (descuenta asuetos: 2026-12-31, 2027-01-01). Comprometido: 32 puntos en 9 historias. Epicas: EP-021 Centro de Tareas (31 pts); EP-000 Plataforma y requisitos transversales (1 pts).
 
@@ -154,9 +176,9 @@ Capacidad: 32 puntos (descuenta asuetos: 2026-12-31, 2027-01-01). Comprometido: 
 
 ### Sprint 7 (2027-01-11 a 2027-01-22)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar las Notificaciones con sus niveles de urgencia, su escalamiento y el acuse de recibo obligatorio, y abrir el RAT con la primera ficha de tratamiento.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Una notificacion sube de nivel y escala sola si no se atiende, exige acuse de recibo cuando es critica y reintenta su envio si falla; y se puede crear la primera ficha de tratamiento del RAT en Borrador.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-021 Centro de Tareas (8 pts); EP-022 Notificaciones (29 pts); EP-006 RAT y Mapa de Datos (3 pts).
 
@@ -175,9 +197,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-021 Ce
 
 ### Sprint 8 (2027-01-25 a 2027-02-05)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar el flujo principal del RAT, desde el borrador de una ficha de tratamiento hasta su aprobacion como Vigente.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede completar una ficha de tratamiento con su base de licitud justificada, vincularla a un sistema del catalogo, y aprobarla hasta verla Vigente.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-006 RAT y Mapa de Datos (37 pts); EP-015 Controles de Seguridad (3 pts).
 
@@ -196,9 +218,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-006 RA
 
 ### Sprint 9 (2027-02-08 a 2027-02-19)
 
-Objetivo: POR DEFINIR
+Objetivo: Avanzar el Onboarding guiado (datos de la organizacion, primer Administrador e invitaciones) y arrancar el nombramiento del Delegado, y bloquear los tratamientos sensibles que no tengan un control de seguridad vinculado.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede completar los datos basicos de la organizacion, registrar al primer Administrador e invitar usuarios adicionales, nombrar al Delegado y hacerle aceptar el cargo con su declaracion jurada, y comprobar que un tratamiento sensible sin control vinculado no puede pasar a Vigente.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 12 historias. Epicas: EP-006 RAT y Mapa de Datos (5 pts); EP-022 Notificaciones (6 pts); EP-003 Onboarding (8 pts); EP-024 Centro Regulatorio (3 pts); EP-002 Delegado / Responsable Interno de Datos (16 pts); EP-004 Diagnostico de Cumplimiento (2 pts).
 
@@ -219,9 +241,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 12 historias. Epicas: EP-006 RA
 
 ### Sprint 10 (2027-02-22 a 2027-03-05)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el nombramiento del Delegado ante la ACE, y terminar el recorrido guiado del Onboarding.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede preparar la comunicacion del nombramiento del Delegado a la ACE, ver como reacciona su registro ante un cambio de regimen de la reforma 659, y terminar la configuracion inicial aceptando el descargo de responsabilidad, con la tarea automatica de iniciar el Diagnostico.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 8 historias. Epicas: EP-002 Delegado / Responsable Interno de Datos (21 pts); EP-003 Onboarding (19 pts).
 
@@ -238,9 +260,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 8 historias. Epicas: EP-002 Del
 
 ### Sprint 11 (2027-03-08 a 2027-03-19)
 
-Objetivo: POR DEFINIR
+Objetivo: Terminar el Onboarding con su guardado automatico, su historial y la gestion de invitaciones, y avanzar el ciclo de vida del Delegado: rechazo de inscripcion, edicion, reverificacion, capacitacion y registro del cese.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Una configuracion inicial abandonada se puede reanudar, su resumen exportar y sus invitaciones gestionar; y el Delegado se puede reverificar cada tres anos, registrar su capacitacion anual, y su cese se registra disparando la designacion de un sustituto en 10 dias habiles.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 9 historias. Epicas: EP-003 Onboarding (15 pts); EP-002 Delegado / Responsable Interno de Datos (24 pts).
 
@@ -258,9 +280,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 9 historias. Epicas: EP-003 Onb
 
 ### Sprint 12 (2027-03-22 a 2027-04-02)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el expediente del Delegado con sus plazos y su confidencialidad post-cese, y avanzar el cuestionario del Diagnostico de Cumplimiento.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede exportar el expediente del Delegado con su bitacora de plazos, responder un bloque de preguntas del diagnostico guardando el avance, y ver una posible exclusion del Art. 3 que exige confirmacion humana antes de cerrarse.
 
 Capacidad: 32 puntos (descuenta asuetos: 2027-03-25, 2027-03-26). Comprometido: 32 puntos en 7 historias. Epicas: EP-002 Delegado / Responsable Interno de Datos (13 pts); EP-004 Diagnostico de Cumplimiento (16 pts); EP-008 Documentos y Politicas (3 pts).
 
@@ -276,9 +298,9 @@ Capacidad: 32 puntos (descuenta asuetos: 2027-03-25, 2027-03-26). Comprometido: 
 
 ### Sprint 13 (2027-04-05 a 2027-04-16)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar una sesion del Diagnostico de Cumplimiento con su resultado calculado, y poner en marcha el flujo completo de Documentos y Politicas.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Una sesion de diagnostico se puede cerrar con su resultado calculado; y un documento se puede crear desde su plantilla, enviar a revision, aprobar y publicar con su evidencia de publicacion adjunta.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 9 historias. Epicas: EP-004 Diagnostico de Cumplimiento (10 pts); EP-008 Documentos y Politicas (25 pts); EP-019 Centro de Evidencias (5 pts).
 
@@ -296,9 +318,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 9 historias. Epicas: EP-004 Dia
 
 ### Sprint 14 (2027-04-19 a 2027-04-30)
 
-Objetivo: POR DEFINIR
+Objetivo: Activar el motor de disparo del Diagnostico, que genera tratamientos, tareas, documentos y riesgos sugeridos al cerrar una sesion, y completar el ciclo de vida de los Documentos.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Al cerrar un diagnostico se generan automaticamente tratamientos, tareas y documentos sugeridos; un documento vigente se puede exportar a PDF, y un nuevo diagnostico archiva la sesion anterior.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-008 Documentos y Politicas (10 pts); EP-004 Diagnostico de Cumplimiento (27 pts); EP-006 RAT y Mapa de Datos (3 pts).
 
@@ -317,9 +339,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-008 Do
 
 ### Sprint 15 (2027-05-03 a 2027-05-14)
 
-Objetivo: POR DEFINIR
+Objetivo: Poner en marcha el Plan de Cumplimiento completo, desde su generacion automatica hasta su aprobacion.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Al cerrar el diagnostico se genera automaticamente el plan de cumplimiento con sus acciones priorizadas, asignadas y con fecha; el plan se puede enviar a revision y aprobar como Vigente, y esa aprobacion crea automaticamente una tarea por cada accion pendiente.
 
 Capacidad: 36 puntos (descuenta asuetos: 2027-05-10). Comprometido: 36 puntos en 9 historias. Epicas: EP-005 Plan de Cumplimiento (34 pts); EP-006 RAT y Mapa de Datos (2 pts).
 
@@ -337,9 +359,9 @@ Capacidad: 36 puntos (descuenta asuetos: 2027-05-10). Comprometido: 36 puntos en
 
 ### Sprint 16 (2027-05-17 a 2027-05-28)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el ciclo de vida del Plan de Cumplimiento (estados de cada accion, descarte, recalculo y exportacion), y avanzar el RAT con la revision, el archivado y el Mapa de Datos.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Una accion del plan se puede avanzar por sus estados o descartar con justificacion, el plan se puede recalcular bajo demanda y exportar, y el RAT se puede consultar como Mapa de Datos en una vista tabular.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 8 historias. Epicas: EP-005 Plan de Cumplimiento (26 pts); EP-006 RAT y Mapa de Datos (14 pts).
 
@@ -356,9 +378,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 8 historias. Epicas: EP-005 Pla
 
 ### Sprint 17 (2027-05-31 a 2027-06-11)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar el RAT con su biblioteca de tratamientos plantilla y su exportacion consolidada, y cerrar los checklists legales y las alertas de vigencia de los Documentos.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede crear una ficha de tratamiento desde la biblioteca de plantillas, exportar el RAT consolidado con verificacion de integridad, y completar el checklist del Aviso de Privacidad viendo sus alertas cuando el RAT cambia o vence su revision periodica.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 10 historias. Epicas: EP-006 RAT y Mapa de Datos (18 pts); EP-008 Documentos y Politicas (21 pts).
 
@@ -377,9 +399,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 10 historias. Epicas: EP-006 RA
 
 ### Sprint 18 (2027-06-14 a 2027-06-25)
 
-Objetivo: POR DEFINIR
+Objetivo: Poner en marcha el Centro Regulatorio: el marco normativo versionado, el interruptor del doble estado de la reforma 659, y el catalogo de infracciones y multas.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede consultar el marco normativo vigente, activar y revertir el regimen FUTURO de la reforma 659 con su notificacion y su tarea de revision, y consultar el catalogo de infracciones y multas.
 
 Capacidad: 36 puntos (descuenta asuetos: 2027-06-17). Comprometido: 35 puntos en 9 historias. Epicas: EP-008 Documentos y Politicas (3 pts); EP-024 Centro Regulatorio (32 pts).
 
@@ -397,9 +419,9 @@ Capacidad: 36 puntos (descuenta asuetos: 2027-06-17). Comprometido: 35 puntos en
 
 ### Sprint 19 (2027-06-28 a 2027-07-09)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar el registro de tramites ante la ACE, y encender el Centro de Evidencias y el Centro de Ayuda.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Un tramite ante la ACE se puede completar, aprobar, enviar y registrar su acuse; el catalogo de evidencia muestra sus huecos detectados y admite evidencia suelta cargada y aprobada a mano; y se puede crear y enviar a revision legal el primer articulo de ayuda.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 13 historias. Epicas: EP-024 Centro Regulatorio (17 pts); EP-019 Centro de Evidencias (16 pts); EP-026 Centro de Ayuda (5 pts); EP-000 Plataforma y requisitos transversales (2 pts).
 
@@ -421,9 +443,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 13 historias. Epicas: EP-024 Ce
 
 ### Sprint 20 (2027-07-12 a 2027-07-23)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar el Centro de Ayuda con su tarjeta contextual y su glosario, y mostrar el primer panel del Dashboard.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede ver la tarjeta de ayuda contextual de 4 partes de un campo, consultar el glosario buscable y el historial de revision legal de un articulo, y ver el panel inicial de pendientes del plan y de tareas.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 12 historias. Epicas: EP-026 Centro de Ayuda (27 pts); EP-020 Dashboard y Reportes (3 pts); EP-000 Plataforma y requisitos transversales (9 pts).
 
@@ -444,9 +466,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 12 historias. Epicas: EP-026 Ce
 
 ### Sprint 21 (2027-07-26 a 2027-08-06)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar los requisitos transversales de seguridad y de aceptacion contractual que completan R1, el nucleo vendible.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se pueden aceptar los terminos de uso y el contrato de encargo de tratamiento, iniciar sesion con doble factor en un rol sensible, y comprobar el cierre automatico de sesion por inactividad. Con este sprint R1 queda completo.
 
 Capacidad: 24 puntos (descuenta asuetos: 2027-08-03, 2027-08-04, 2027-08-05, 2027-08-06). Comprometido: 24 puntos en 7 historias. Epicas: EP-000 Plataforma y requisitos transversales (24 pts).
 
@@ -462,9 +484,9 @@ Capacidad: 24 puntos (descuenta asuetos: 2027-08-03, 2027-08-04, 2027-08-05, 202
 
 ### Sprint 22 (2027-08-09 a 2027-08-20)
 
-Objetivo: POR DEFINIR
+Objetivo: Abrir R2 con el flujo principal de Proveedores y Encargados (alta, evaluacion y activacion con contrato), y el primer registro de Consentimiento.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede dar de alta un proveedor, vincularlo a un tratamiento del RAT, aprobar su evaluacion de riesgo y su Contrato/DPA con doble control, y registrar el primer consentimiento general de un titular.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 9 historias. Epicas: EP-009 Proveedores y Encargados (34 pts); EP-007 Consentimiento (5 pts).
 
@@ -482,9 +504,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 9 historias. Epicas: EP-009 Pro
 
 ### Sprint 23 (2027-08-23 a 2027-09-03)
 
-Objetivo: POR DEFINIR
+Objetivo: Abrir ARCO-POL con el registro y la admision de solicitudes, y registrar el primer incidente de seguridad.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede registrar una solicitud ARCO-POL, verificar la identidad del solicitante y verla admitirse automaticamente al completar el checklist del Art. 18, notificar a un proveedor tras una rectificacion, y reportar un incidente de seguridad.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 7 historias. Epicas: EP-009 Proveedores y Encargados (16 pts); EP-011 ARCO-POL (20 pts); EP-013 Incidentes de Seguridad (3 pts).
 
@@ -500,9 +522,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 7 historias. Epicas: EP-009 Pro
 
 ### Sprint 24 (2027-09-06 a 2027-09-17)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el ciclo de vida de Proveedores (suspension, cierre, archivado y evidencia), y construir la mayor parte del catalogo de Controles de Seguridad iniciado en el Sprint 8.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede suspender y finalizar la relacion con un proveedor exportando su evidencia, y editar, filtrar, vincular a un sistema o tratamiento, y marcar como implementado un control de seguridad con su evidencia adjunta.
 
 Capacidad: 36 puntos (descuenta asuetos: 2027-09-15). Comprometido: 36 puntos en 10 historias. Epicas: EP-009 Proveedores y Encargados (17 pts); EP-015 Controles de Seguridad (19 pts).
 
@@ -521,9 +543,9 @@ Capacidad: 36 puntos (descuenta asuetos: 2027-09-15). Comprometido: 36 puntos en
 
 ### Sprint 25 (2027-09-20 a 2027-10-01)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el catalogo de Controles de Seguridad con sus indicadores, y retomar Consentimiento con el flujo reforzado para datos sensibles.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Una excepcion de control se puede aprobar con un segundo aprobador, los indicadores de controles con y sin evidencia quedan visibles, y se puede registrar un consentimiento reforzado con firma para un dato sensible.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-015 Controles de Seguridad (29 pts); EP-007 Consentimiento (11 pts).
 
@@ -542,9 +564,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-015 Co
 
 ### Sprint 26 (2027-10-04 a 2027-10-15)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar Consentimiento con los flujos biometrico, parental para NNA, y de revocacion de principio a fin.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede registrar un consentimiento biometrico y uno parental para un titular menor de edad, y ejecutar una revocacion completa hasta su notificacion al encargado o hasta que venza su plazo.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 8 historias. Epicas: EP-007 Consentimiento (39 pts).
 
@@ -561,9 +583,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 8 historias. Epicas: EP-007 Con
 
 ### Sprint 27 (2027-10-18 a 2027-10-29)
 
-Objetivo: POR DEFINIR
+Objetivo: Avanzar ARCO-POL con sus ramas de prevencion, incompetencia y prorroga, y arrancar la contencion de incidentes.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede cargar un formulario oficial ARCO-POL, prevenir una solicitud incompleta y verla archivarse sola si no se subsana, declarar una incompetencia o prorrogar el plazo general, y registrar las acciones de contencion inmediata de un incidente.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 9 historias. Epicas: EP-007 Consentimiento (5 pts); EP-011 ARCO-POL (32 pts); EP-013 Incidentes de Seguridad (3 pts).
 
@@ -581,9 +603,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 9 historias. Epicas: EP-007 Con
 
 ### Sprint 28 (2027-11-01 a 2027-11-12)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el flujo de decision de ARCO-POL (procedencia, reconocimiento y denegatoria), y arrancar Capacitacion.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede analizar la procedencia de una solicitud ARCO-POL, aprobarla o denegarla de forma motivada dentro de plazo, notificar a los receptores de los datos, y cerrar el expediente sin posibilidad de borrado.
 
 Capacidad: 36 puntos (descuenta asuetos: 2027-11-02). Comprometido: 36 puntos en 6 historias. Epicas: EP-011 ARCO-POL (34 pts); EP-017 Capacitacion (2 pts).
 
@@ -598,9 +620,9 @@ Capacidad: 36 puntos (descuenta asuetos: 2027-11-02). Comprometido: 36 puntos en
 
 ### Sprint 29 (2027-11-15 a 2027-11-26)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar ARCO-POL con sus reportes y su exportacion, y poner en marcha Incidentes con el doble cronometro de 72 horas.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede generar el informe de acceso filtrando los datos de terceros y exportar el expediente ARCO-POL, y confirmar la fecha de conocimiento de un incidente arrancando sus dos cronometros de 72 horas hasta clasificarlo en Triage.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 8 historias. Epicas: EP-011 ARCO-POL (18 pts); EP-013 Incidentes de Seguridad (21 pts).
 
@@ -617,9 +639,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 8 historias. Epicas: EP-011 ARC
 
 ### Sprint 30 (2027-11-29 a 2027-12-10)
 
-Objetivo: POR DEFINIR
+Objetivo: Completar el nucleo de Incidentes: evaluacion de riesgo, decision de notificar, y envio de las notificaciones externas dentro de las 72 horas.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede evaluar el alcance y el riesgo de un incidente, decidir y aprobar el envio de sus notificaciones a la ACE, a la Fiscalia y a los titulares, y seguir el checklist y las alertas de las 72 horas.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 6 historias. Epicas: EP-013 Incidentes de Seguridad (40 pts).
 
@@ -634,9 +656,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 6 historias. Epicas: EP-013 Inc
 
 ### Sprint 31 (2027-12-13 a 2027-12-24)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el ciclo de vida de Incidentes (medidas correctivas, cierre y reapertura), y poner en marcha los programas de Capacitacion.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Un incidente se puede cerrar con sus medidas correctivas y sus lecciones aprendidas, o reabrirse si corresponde; y se puede crear un programa de capacitacion asignando y siguiendo la asistencia del personal.
 
 Capacidad: 36 puntos (descuenta asuetos: 2027-12-24). Comprometido: 36 puntos en 8 historias. Epicas: EP-013 Incidentes de Seguridad (26 pts); EP-017 Capacitacion (10 pts).
 
@@ -653,9 +675,9 @@ Capacidad: 36 puntos (descuenta asuetos: 2027-12-24). Comprometido: 36 puntos en
 
 ### Sprint 32 (2027-12-27 a 2028-01-07)
 
-Objetivo: POR DEFINIR
+Objetivo: Avanzar Capacitacion con la induccion automatica y la renovacion, hasta aprobar y publicar el plan anual.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Un usuario nuevo recibe induccion automatica y una capacitacion vencida se renueva sola; y el plan anual de capacitacion se puede elaborar, aprobar y publicar, con su recordatorio antes de vencer.
 
 Capacidad: 36 puntos (descuenta asuetos: 2027-12-31). Comprometido: 36 puntos en 9 historias. Epicas: EP-013 Incidentes de Seguridad (3 pts); EP-017 Capacitacion (33 pts).
 
@@ -673,9 +695,9 @@ Capacidad: 36 puntos (descuenta asuetos: 2027-12-31). Comprometido: 36 puntos en
 
 ### Sprint 33 (2028-01-10 a 2028-01-21)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar Capacitacion con sus indicadores y reportes, y avanzar el Centro de Evidencias con paquetes verificables y doble control para exportacion externa.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se pueden consultar los indicadores de capacitacion del personal, y generar y exportar un paquete de evidencia con manifiesto verificable, exigiendo doble control cuando el destinatario es externo.
 
 Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-017 Capacitacion (11 pts); EP-019 Centro de Evidencias (29 pts).
 
@@ -694,9 +716,9 @@ Capacidad: 40 puntos. Comprometido: 40 puntos en 10 historias. Epicas: EP-017 Ca
 
 ### Sprint 34 (2028-01-24 a 2028-02-04)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el Centro de Evidencias, y poner en marcha el Dashboard con sus primeras perspectivas.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede consultar el informe de huecos de evidencia, y ver el Dashboard filtrado por sucursal, unidad y periodo en las perspectivas de Gerencia, Responsable y Legal/Delegado, siempre con su aviso de que no es un porcentaje de cumplimiento legal.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 10 historias. Epicas: EP-019 Centro de Evidencias (11 pts); EP-020 Dashboard y Reportes (25 pts); EP-022 Notificaciones (3 pts).
 
@@ -715,9 +737,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 10 historias. Epicas: EP-019 Ce
 
 ### Sprint 35 (2028-02-07 a 2028-02-18)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el Dashboard con la perspectiva de Auditor, y abrir el registro del Procedimiento Sancionador en el Centro Regulatorio.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede ver el Dashboard en la perspectiva de Auditor y su catalogo de reportes minimos por modulo, y registrar el expediente de un procedimiento sancionador desde el emplazamiento hasta su resolucion final.
 
 Capacidad: 40 puntos. Comprometido: 39 puntos en 7 historias. Epicas: EP-020 Dashboard y Reportes (13 pts); EP-021 Centro de Tareas (5 pts); EP-022 Notificaciones (3 pts); EP-024 Centro Regulatorio (18 pts).
 
@@ -733,9 +755,9 @@ Capacidad: 40 puntos. Comprometido: 39 puntos en 7 historias. Epicas: EP-020 Das
 
 ### Sprint 36 (2028-02-21 a 2028-03-03)
 
-Objetivo: POR DEFINIR
+Objetivo: Cerrar el Procedimiento Sancionador y completar los requisitos de fin de contrato, con lo que se completa R2, el MVP completo.
 
-Demo al cierre: POR DEFINIR
+Demo al cierre: Se puede cerrar y exportar el expediente sancionador para auditoria, y ejecutar la exportacion y la eliminacion de todos los datos de una organizacion al finalizar su contrato.
 
 Capacidad: 40 puntos. Comprometido: 24 puntos en 6 historias. Epicas: EP-024 Centro Regulatorio (9 pts); EP-002 Delegado / Responsable Interno de Datos (2 pts); EP-000 Plataforma y requisitos transversales (13 pts).
 
@@ -750,8 +772,65 @@ Capacidad: 40 puntos. Comprometido: 24 puntos en 6 historias. Epicas: EP-024 Cen
 
 ## 6. Trabajo en paralelo al desarrollo (legal, contenido y UX)
 
-PENDIENTE DE REDACCION
+El desarrollo no espera a que todo el contenido legal y de ayuda este listo, pero una HU no se considera terminada para venta hasta que su contenido o su validacion legal existen (definicion de terminado del README). Esta tabla ordena, por area de trabajo, que debe estar listo y antes de que sprint, tomando el sprint de cada HU de contenido_y_validacion_legal.md.
+
+| Area de trabajo paralelo | Que debe estar listo | Antes del sprint |
+|---|---|---|
+| Validaciones legales bloqueantes | Asesoria juridica externa responde, una por una, las HU de la seccion 2 de contenido_y_validacion_legal.md (44 HU en total) | Sprint 3 (la primera) y de forma continua hasta el Sprint 34 |
+| Plantillas de avisos y politicas | Aviso de Privacidad con el checklist del Art. 24, Politica de Privacidad, Politica de Proteccion de Datos y Procedimiento ARCO-POL, validados por abogado | Sprint 13 |
+| Plantillas de contratos | Contrato de encargo de tratamiento entre el proveedor y la organizacion cliente; Contrato/DPA estandar con el Encargado; documento de sometimiento a la LPDP con el Tercero/Receptor | Sprint 21 y Sprint 22 |
+| Plantillas de notificacion de brecha | Notificacion a la ACE y a la Fiscalia General de la Republica, y notificacion a los titulares, ambas con los elementos del Art. 25 | Sprint 30 |
+| Plantillas de prevencion y de denegatoria de ARCO-POL | Plantilla de prevencion y plantilla de denegatoria motivada, validadas por la organizacion | Sprint 27 y Sprint 28 |
+| Banco de preguntas del diagnostico | Las 47 preguntas de los 11 bloques, con sus dependencias y su ayuda contextual, validadas por el equipo legal y de contenido | Sprint 12 |
+| Catalogo de controles de seguridad | Catalogo base de controles organizativos, tecnicos y fisicos que exige el Art. 4 de las Politicas ACE, listo para precargarse al completar el diagnostico | Sprint 25 |
+| Biblioteca de tratamientos plantilla | Al menos 20 tratamientos plantilla del RAT, con finalidad, base de licitud y retencion sugeridas | Sprint 17 |
+| Textos de ayuda contextual | Catalogo inicial de articulos por cada modulo obligatorio, con su primera revision legal y el descargo estandar | Sprint 19 y Sprint 20 |
+| Calendario de asuetos | Verificacion de la fuente oficial de cada asueto nacional y ad hoc antes de publicar la version del ano | Sprint 4, y de nuevo antes de cada version anual siguiente |
+| Pilotos con clientes despues de R1 | Validacion con empresas reales de las decisiones que el blueprint marca como opinion de producto (seccion 25.7), antes de dar por cerradas las HU de R2 que dependen de esa validacion (por ejemplo HU-020-03) | Despues del Sprint 21 |
 
 ## 7. Riesgos del plan y como recalcularlo
 
-PENDIENTE DE REDACCION
+Este plan es una proyeccion, no una promesa: depende de supuestos que solo se confirman con datos reales del propio equipo y del propio mercado.
+
+### Velocidad real distinta de la supuesta
+
+Todo el plan se apoya en una velocidad base de 40 puntos por sprint para el equipo de referencia de la seccion 1. La tabla de sensibilidad (seccion 3) muestra cuanto cambia el plan si la velocidad real es distinta: entre 30 y 80 puntos por sprint, la fecha de R1 va del 2027-11-12 al 2027-03-19, y la de R2 del 2028-08-04 al 2027-07-09. Es el riesgo mas grande del plan porque no se resuelve con gestion, solo con la velocidad medida en los sprints 1 a 3 y su rampa de arranque (60% y 80%).
+
+### Alcance grande
+
+El MVP tiene 316 HU y 1322 puntos en 21 epicas: es un alcance grande para un solo equipo, consistente con el riesgo ya senalado en el blueprint de que clasificar 20 de los 26 modulos como obligatorios puede exceder la capacidad real de desarrollo de un producto minimo vendible.
+
+### Opciones para adelantar R1
+
+- Un equipo mayor: la tabla de sensibilidad ya muestra el efecto de sostener 50, 60 u 80 puntos por sprint en vez de 40; adelantar R1 exige sumar capacidad real de desarrollo, no solo pedir mas velocidad al mismo equipo.
+- Recortes que no rompen el nucleo vendible: mover a R2 alguna HU que hoy esta en R1 pero no forma parte del nucleo vendible minimo de la seccion 19.8 del blueprint, sin tocar las HU que atienden las obligaciones ya vencidas (diagnostico, plan de cumplimiento, RAT y documentos regulatorios base): esas son las que no se pueden recortar.
+
+### Dependencias criticas
+
+MOD-001 (Organizacion y Personas), MOD-021 (Centro de Tareas), MOD-022 (Notificaciones) y MOD-023 (Calendario y Motor de Plazos) son la base de la que dependen casi todos los demas modulos: un retraso en cualquiera de los cuatro se propaga a todo lo que se construye despues.
+
+### HU que no pueden liberarse sin validacion legal
+
+44 HU de las ya planificadas (seccion 2 de contenido_y_validacion_legal.md) no se pueden dar por terminadas para venta sin la respuesta de asesoria juridica externa a una pregunta pendiente del blueprint (seccion 24). El desarrollo puede seguir su calendario de sprints, pero la venta de esas HU especificas queda condicionada a esa respuesta.
+
+### Reforma 659
+
+El interruptor de doble estado de la reforma 659 se construye en el Sprint 18 (HU-024-04 y HU-024-05), y el registro del Delegado ya reacciona a un cambio de regimen desde el Sprint 10 (HU-002-15). Si el Diario Oficial confirma la publicacion del decreto antes de esos sprints, o si el texto oficial difiere de lo asumido con fuentes secundarias, el contenido y las reglas ya construidas sobre MOD-002 y MOD-024 pueden necesitar rehacerse, no solo reetiquetarse.
+
+### Asuetos y vacaciones
+
+La capacidad de cada sprint ya descuenta los asuetos nacionales listados en la seccion 1. Un asueto ad hoc que se decrete despues (el propio backlog ya lo contempla en HU-023-08) reduce la capacidad de un sprint que este plan no preveia, y las vacaciones del equipo, distintas de los asuetos nacionales, no estan descontadas en ninguna fila de este documento.
+
+### Cambios del blueprint
+
+El blueprint deja preguntas pendientes (seccion 24) y una siguiente etapa por completar (seccion 25) antes del PRD por modulo: la validacion juridica externa, la validacion con clientes piloto y el prototipo de UX pueden cambiar el alcance o los criterios de aceptacion de una HU ya planificada, lo que exigiria reordenar el backlog y volver a correr la asignacion de sprints.
+
+### Dos decisiones de planificacion
+
+Las 6 HU del expediente sancionador (EP-024, HU-024-16 a HU-024-21) y las 2 HU de fin de contrato (EP-000, HU-000-16 y HU-000-17) se movieron a R2 aunque sus epicas son R1: ninguna empresa cliente tiene un procedimiento sancionador real ni un contrato terminado antes de tener un primer cliente, asi que construirlas junto con el nucleo vendible habria consumido capacidad de desarrollo sin agregar valor vendible en R1.
+
+42 dependencias mutuas entre los modulos de la infraestructura transversal (Centro de Tareas, Notificaciones, Calendario y Motor de Plazos, Centro Regulatorio, Centro de Evidencias y Centro de Ayuda) se resolvieron construyendo primero toda esa capa completa, tal como recomienda la seccion 19.9 del blueprint, en vez de intentar respetar un orden estricto derivado de las dependencias que estos modulos declaran entre si.
+
+### Regla para recalcular el plan
+
+Cuando la velocidad medida en un sprint cerrado sea distinta de la supuesta, el plan se recalcula con esta regla: puntos pendientes dividido entre la velocidad medida, igual que hace la tabla de sensibilidad de la seccion 3.
