@@ -363,7 +363,433 @@ Mapeo de los 26 modulos del mapa definitivo a los 8 clusters legales de `propues
 
 **Modulos fuera de los 8 clusters (nota de diseno, ver Nota final punto 3).** Los 6 modulos de la barra transversal (MOD-021 a MOD-026) y los dos modulos semi-transversales de la etapa Demostrar (MOD-018 Auditoria de Cumplimiento y MOD-019 Centro de Evidencias, ademas del propio MOD-020) no tienen una casilla propia en la tabla anterior: la propuesta original de los 8 clusters los agrupaba a todos, sin distincion, dentro de una unica categoria "I. Modulos transversales" (`propuesta_mapa_obligaciones.md`, seccion 1), mientras que el mapa definitivo ya saco a MOD-018 y MOD-019 de la barra transversal para ubicarlos en la etapa Demostrar (`06_mapa_definitivo_de_modulos.md`, seccion 4). Esta ficha resuelve esa diferencia asi: cuando el usuario filtra la vista Legal/Delegado por un cluster especifico, el panel muestra tambien, de forma cruzada, las tareas (MOD-021), la evidencia (MOD-019) y los hallazgos de auditoria (MOD-018) cuyo "modulo de origen" pertenece a alguno de los modulos de ese cluster, en vez de asignarle a MOD-018 o MOD-019 un cluster propio que no les corresponde con precision. Se recomienda a quien consolide el mapa final confirmar o ajustar este criterio (ver Nota final).
 
-<!-- CONTINUAR AQUI 4 -->
+### M.3.1 Catalogo consolidado de indicadores por modulo fuente
+
+Consolidado a partir de la seccion M de las 23 fichas ya redactadas (`awk '/^## M[.]/,/^## O[.]/' analisis/03_modulos/MOD-*.md`), en orden de codigo de modulo. La formula se resume de forma breve; el detalle completo (incluidos los umbrales exactos y las notas de opinion de producto) vive siempre en la seccion M de la ficha de origen, que esta tabla no reemplaza sino que indexa. MOD-026 (Centro de Ayuda) aun no tiene ficha propia al momento de escribir esta: se lista al final con una nota, igual que MOD-019 hizo para los modulos que le faltaban al momento de escribirse.
+
+**MOD-001 Organizacion y Personas**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Usuarios activos vs invitados pendientes | Activos sobre total invitado | Verde/amarillo/rojo segun invitaciones vencidas | Gerencia, Administrador |
+| Roles criticos sin titular | Roles criticos (Administrador, Delegado, Seguridad) sin usuario activo | Verde 0, amarillo 1, rojo 2+ | Gerencia, Legal, Administrador |
+| Sucursales registradas | Conteo de sucursales ACTIVA | Informativo | Gerencia, Responsable de area |
+| Separacion de funciones | Estado activada / recomendada no activada / no aplica | Verde si activada o bajo umbral; amarillo si no | Legal, Auditor, Gerencia |
+| Ultimo cambio de estructura | Fecha del ultimo alta, baja o cambio de rol | Informativo | Auditor, Seguridad/IT |
+
+**MOD-002 Delegado / Responsable Interno de Datos**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Estado del nombramiento | ACTIVO sin plazos vencidos | Verde/amarillo (plazo a 5 dias)/rojo (sin registro o plazo vencido) | Gerencia, Responsable |
+| Dias habiles para la proxima obligacion | Minimo entre fechas limite del modulo, via MOD-023 | Colorea segun cercania | Responsable, Legal |
+| Informes periodicos entregados vs minimo legal | Conteo ultimos 12 meses contra el minimo de 2 (Art. 30) | Si/no cumplido | Legal, Auditor |
+| Estado regulatorio vigente | Badge ACTUAL / FUTURO desde MOD-024 | Informativo | Todas |
+| Evidencia disponible del modulo | X de Y evidencias requeridas disponibles | Verde/amarillo/rojo | Auditor, Legal |
+| Alertas activas del modulo | Conteo por nivel INFO/WARNING/HIGH/CRITICAL | Semaforo por nivel | Gerencia (HIGH/CRITICAL), Responsable (todas) |
+
+**MOD-003 Onboarding**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Configuracion inicial completada | Estado del onboarding (NO_INICIADO/EN_PROGRESO/ABANDONADO/COMPLETADO) | Verde/amarillo/rojo segun antiguedad | Gerencia, Administrador |
+| Aceptacion de invitaciones | Usuarios que aceptaron sobre total invitados | Verde 100%, amarillo dentro de plazo, rojo vencidas | Administrador, Auditor |
+| Estado de la designacion del Delegado | Heredado de MOD-002 desde el Paso 4 del onboarding | Verde/amarillo/rojo | Legal/Delegado, Gerencia |
+| Fecha y usuario de creacion de la organizacion | Dato directo del evento de auditoria | Informativo | Auditor |
+
+**MOD-004 Diagnostico de Cumplimiento**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Diagnosticos completados vs organizaciones activas | Sesiones Cerradas sobre total de organizaciones con onboarding completo | Verde 100%, amarillo parcial, rojo sin iniciar | Gerencia, Administrador |
+| Avance del diagnostico en curso | Preguntas respondidas sobre obligatorias visibles | Barra de progreso | Responsable |
+| Acciones criticas abiertas generadas | Conteo de acciones criticas de la seccion E.1 no Completadas en MOD-021 | Rojo si mayor a 0 | Legal/Delegado, Gerencia |
+| Acciones importantes y recomendadas abiertas | Igual, para esas dos categorias | Amarillo / gris | Responsable, Legal/Delegado |
+| Nivel de madurez inicial de la organizacion | Regla de la seccion E.1 (Inicial/En desarrollo/En consolidacion) | Rojo/amarillo/verde | Gerencia, Legal/Delegado |
+| Dias desde el ultimo diagnostico cerrado | Hoy menos fecha de cierre de la ultima sesion | Verde/amarillo/rojo segun ciclo configurado | Administrador, Delegado |
+
+**MOD-005 Plan de Cumplimiento** (dependencia estructural de MOD-020)
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Avance del plan | Acciones Completada sobre total de la version Vigente | Verde >80%, amarillo 50-80%, rojo <50% | Gerencia, Responsable, Legal, Auditor |
+| Acciones criticas pendientes o vencidas | Conteo de prioridad Critica no Completada | Rojo si hay Vencida, amarillo si Pendiente sin vencer | Gerencia, Responsable, Legal |
+| Dias promedio de retraso de acciones vencidas | Promedio de dias de retraso sobre las Vencidas | Verde 0, amarillo <10 dias, rojo >=10 | Legal, Auditor |
+| Acciones por modulo de ejecucion | Distribucion por modulo | Sin semaforo | Legal, Responsable de area |
+| Vigencia de la version actual del plan | Fecha de aprobacion y version | Amarillo si +90 dias sin recalculo | Administrador, Delegado, Auditor |
+
+**MOD-006 RAT y Mapa de Datos**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Cobertura del RAT | Fichas Vigentes sobre tratamientos detectados por el diagnostico | Verde >80%, amarillo 50-80%, rojo <50% | Gerencia, Responsable, Legal, Auditor |
+| Tratamientos por base de licitud | Distribucion por base de licitud elegida | Sin semaforo | Legal, Delegado |
+| Tratamientos con dato sensible | Conteo con al menos una categoria sensible | Amarillo/rojo segun cobertura de EIPD | Legal, Delegado, Gerencia |
+| Fichas pendientes de revision periodica | Conteo en "Requiere revision" | Verde 0, amarillo 1-5, rojo >5 | Responsable, Delegado |
+| Transferencias posiblemente no documentadas | Alertas de la regla G.5 sin resolver | Verde 0, rojo >0 | Delegado, Legal, Auditor |
+| Sistemas sin pais confirmado | Conteo con pais pendiente de confirmar | Amarillo/rojo segun cantidad | Seguridad/IT, Delegado |
+| Antiguedad promedio del RAT | Dias desde la ultima revision confirmada | Verde <180, amarillo 180-365, rojo >365 | Gerencia, Auditor |
+
+**MOD-007 Consentimiento**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Consentimientos vigentes por finalidad | Conteo de Consent Vigente agrupado por finalidad | Informativo | Gerencia, Responsable, Legal |
+| Cobertura de captura | Tratamientos con base Consentimiento que ya tienen Consent vigente | Verde 100%, amarillo pendientes recientes, rojo >15 dias | Responsable, Gerencia |
+| Revocaciones dentro de plazo | Cerradas a tiempo sobre total cerradas en el periodo | Verde 100%, amarillo 1 caso, rojo 2+ | Legal, Auditor, Gerencia |
+| Consentimientos sensibles/biometricos incompletos | Presentados sin firma por mas de 2 dias | Rojo si mayor a 0 | Responsable, Legal |
+| Evidencia disponible | Consent/ConsentWithdrawal con snapshot y adjunto completos | Verde/amarillo/rojo | Auditor, Legal |
+
+**MOD-008 Documentos y Politicas**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Documentos regulatorios obligatorios vigentes | Conteo de los 3 tipos con version PUBLICADO/VIGENTE sobre 3 | Verde 3/3, amarillo 1-2/3, rojo 0/3 | Gerencia, Responsable/Legal, Auditor |
+| Documentos con revision pendiente | Conteo en REQUIERE_REVISION | Amarillo si hay alguno, rojo si +30 dias | Responsable/Legal, Gerencia |
+| Tiempo promedio de aprobacion | Dias habiles EN_REVISION -> APROBADO | Sin semaforo | Gerencia, Legal |
+| Ultima publicacion del Aviso de Privacidad | Fecha de la version vigente y dias transcurridos | Amarillo si supera el intervalo configurado | Responsable/Legal, Auditor |
+
+**MOD-009 Proveedores y Encargados**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Proveedores activos (total y por tipo) | Conteo ACTIVO por Encargado/Receptor/Subencargado | Informativo | Gerencia, Responsable |
+| Proveedores sin contrato/DPA vigente vinculado | PENDIENTE_DE_CONTRATO o contrato vencido | Rojo si mayor a 0 | Responsable, Legal/Compliance |
+| Contratos por vencer en 30 dias | Conteo con vencimiento proximo | Amarillo | Responsable, Gerencia |
+| Proveedores fuera de El Salvador sin transferencia vinculada | Conteo sin registro activo en MOD-010 | Rojo | Legal/Compliance, Auditor |
+| Proveedores con revision periodica vencida | Conteo EN_REVISION con fecha superada | Amarillo <30 dias, rojo >=30 | Responsable, Auditor |
+| Proveedores suspendidos por incidente | Conteo SUSPENDIDO | Rojo | Gerencia, Legal/Compliance, Seguridad/IT |
+| Evidencia disponible por proveedor activo | % con contrato, riesgo y revision al dia | Verde/amarillo/rojo | Auditor |
+
+**MOD-010 Transferencias Internacionales**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Transferencias activas registradas | Conteo ACTIVA | Informativo | Gerencia, Responsable/Legal, Auditor |
+| Transferencias pendientes de confirmar | Conteo DETECTADA_PENDIENTE_DE_CONFIRMAR | Verde 0, amarillo 1-4, rojo 5+ | Responsable, Legal, Gerencia |
+| Transferencias sin evaluacion de pais completa | Conteo EN_EVALUACION_DE_PAIS >10 dias habiles | Verde 0, amarillo 1-2, rojo 3+ | Legal, Auditor |
+| Puestas en conocimiento a la ACE pendientes de envio | Conteo de ACEFiling no enviado | Verde 0, amarillo 1-2, rojo 3+ | Delegado, Legal |
+| Contratos de transferencia vencidos o por vencer | Conteo por vencer o vencidos | Verde/amarillo/rojo | Legal, Seguridad/IT, Gerencia |
+| Cobertura de evidencia de transferencias | % con expediente completo | Verde 90-100%, amarillo 70-89%, rojo <70% | Auditor, Legal, Gerencia |
+
+**MOD-011 ARCO-POL** (contribuye al "dashboard basico": solicitudes)
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Solicitudes abiertas por estado | Distribucion de expedientes activos | Sin semaforo | Gerencia, Responsable |
+| Solicitudes proximas a vencer | Menos del 25%/10% del plazo restante | Amarillo/rojo | Responsable, Legal/Delegado |
+| Solicitudes vencidas | Plazo aplicable ya cumplido sin resolucion | Rojo si mayor a 0 | Gerencia, Legal/Delegado, Auditor |
+| Tiempo promedio de resolucion | Dias habiles admision -> cierre | Verde/amarillo/rojo segun plazo general | Legal/Delegado, Auditor |
+| Solicitudes resueltas dentro del plazo legal aplicable | % cerradas a tiempo | Verde/amarillo/rojo configurable | Gerencia, Legal/Delegado |
+| Solicitudes con prevencion activa | Conteo en estado Prevenida | Sin semaforo | Responsable, Legal/Delegado |
+| Reclamos ante la Direccion de Proteccion de Datos abiertos | Conteo sin informe remitido | Rojo si mayor o igual a 1 | Gerencia, Legal/Delegado, Auditor |
+| Expedientes con evidencia completa vs incompleta | % checklist de evidencia esperada completo | Verde/amarillo/rojo | Auditor, Legal/Delegado |
+
+**MOD-012 Portal del Titular**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Solicitudes recibidas por canal | Conteo con origen Portal sobre total del periodo | Informativo | Gerencia, Responsable ARCO-POL |
+| Tiempo promedio hasta el primer triage | Horas envio -> apertura del expediente | Verde <1 dia habil, amarillo 1-2, rojo >2 | Responsable ARCO-POL, Legal |
+| Tasa de intentos de verificacion fallidos | Fallidos sobre total de intentos | Verde <5%, amarillo 5-15%, rojo >15% | Seguridad/IT, Auditor |
+| Disponibilidad del contenido publicado | Aviso/Politica mostrados = version vigente en MOD-008 | Verde al dia, rojo version vencida | Legal, Auditor |
+| Cobertura de evidencia | % solicitudes del Portal con comprobante documentado en MOD-019 | Se muestra como evidencia disponible | Auditor |
+
+**MOD-013 Incidentes de Seguridad**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Incidentes abiertos por severidad | Conteo Reportado a Remediacion por severidad | Verde sin Alta/Critica, amarillo 1+ Alta, rojo 1+ Critica | Gerencia, Responsable |
+| Cronometros de 72h por vencer | Conteo con menos de 24 horas restantes | Amarillo <24h, rojo <6h | Responsable, Gerencia |
+| Casos con notificacion enviada dentro de plazo (12 meses) | Ratio sobre casos con notificacion requerida | Dato de estado, sin umbral de cumplimiento | Legal, Auditor |
+| Tiempo promedio de cierre | Promedio de dias Reportado -> Cierre | Informativo | Responsable, Gerencia |
+| Incidentes por origen | Distribucion interno/proveedor/terceros | Informativo | Legal, Auditor |
+| Expedientes con documentacion incompleta (OBL-INC-04) | Riesgo=Si con campos D.5 incompletos | Rojo si +72 horas en ese estado | Responsable, Legal |
+
+**MOD-014 Riesgos y EIPD**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Tratamientos de alto riesgo evaluados | EIPD avanzadas sobre motivos de apertura detectados | Verde 1, amarillo si hay Detectado sin avanzar, rojo si vencida | Gerencia, Responsable, Legal, Auditor |
+| EIPD vigentes | Conteo en estado VIGENTE | Informativo | Todas |
+| EIPD pendientes de mitigacion (Alto/Critico) | Conteo EN_MITIGACION | Amarillo/rojo segun plazo de escalamiento | Gerencia, Responsable, Legal, Auditor |
+| EIPD con revision atrasada | Conteo EN_REVISION con fecha vencida | Amarillo <30 dias, rojo >30 dias | Gerencia, Responsable/Delegado, Auditor |
+| Distribucion por nivel de riesgo | Conteo Bajo/Medio/Alto/Critico | Semaforo por franja | Gerencia, Legal, Auditor |
+| Controles pendientes originados en una EIPD | Conteo en MOD-015 con origen EIPD | Amarillo/rojo segun escalamiento | Seguridad/IT, Gerencia |
+
+**MOD-015 Controles de Seguridad**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Controles con evidencia vigente | Implementado/Implementado con hallazgo sobre no archivados | Verde >=80%, amarillo 50-79%, rojo <50% | Gerencia, Seguridad/IT, Legal/Delegado, Auditor |
+| Controles obligatorios sin evidencia o vencidos | Conteo OBL-SEG-01 a 06 pendiente o vencido | Rojo si mayor a 0 | Gerencia, Legal/Delegado, Seguridad/IT |
+| Proximas revisiones (30 dias) | Conteo con revision proxima | Informativo | Seguridad/IT |
+| Excepciones activas | Conteo No aplica-Exceptuado | Amarillo si hay pendientes de aprobar | Legal/Delegado, Aprobador, Gerencia |
+
+**MOD-016 Retencion y Eliminacion**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Reglas de retencion activas | Conteo ACTIVO/PROXIMO A VENCER | Verde/amarillo/rojo segun SLA | Responsable, Legal |
+| Eliminaciones pendientes de aprobacion | Conteo LISTO PARA ELIMINAR | Rojo si mayor a 0 y vencido el SLA | Legal, Gerencia, Responsable |
+| Documentos de cumplimiento bajo retencion obligatoria | Conteo reglas documentales activas | Informativo | Auditor, Legal |
+| Intentos bloqueados de eliminacion anticipada (90 dias) | Conteo eventos de la automatizacion G.13 | Rojo si mayor a 0 | Auditor, Gerencia |
+| Cobertura del motor de retencion | X de Y tratamientos con regla definida | Conteo, sin semaforo de porcentaje | Responsable, Legal, Gerencia |
+
+**MOD-017 Capacitacion**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Personal con capacitacion general vigente | X de Y personas con registro vigente | Amarillo si X<Y, rojo si hay Vencida | Gerencia, Delegado/Legal, Responsable de area, Auditor |
+| Inducciones pendientes | Personas dadas de alta sin induccion completada | Rojo/amarillo segun plazo configurado | RRHH/Resp. de area, Delegado, Gerencia |
+| Vencimientos proximos (30/60 dias) | Conteo Proxima a vencer | Amarillo, rojo si <5 dias | Delegado, Responsable de area |
+| Estado del plan anual de capacitacion e induccion | Estado cruzado con la bandera regimen_reforma_659 | Verde/amarillo/rojo/gris (no aplica) | Delegado, Gerencia, Auditor |
+| Capacitacion por rol cubierta | Personas con TrainingRecord por rol sobre total con ese rol | Amarillo/rojo segun brecha | Responsable de area, Delegado |
+
+**MOD-018 Auditoria de Cumplimiento**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Estado de la ultima auditoria | Estado del ComplianceAudit mas reciente | Verde/amarillo/rojo segun ciclo anual | Gerencia, Legal/Delegado, Resp. Legal/Compliance, Auditor, Seguridad/IT |
+| Dias desde el cierre de la ultima auditoria | Hoy menos fecha de cierre | Verde <300, amarillo 300-365, rojo >365 | Gerencia, Legal/Delegado |
+| Hallazgos abiertos por severidad | Conteo Abierto/En correccion por severidad | Rojo si 1+ Critico | Legal/Delegado, Seguridad/IT, Gerencia |
+| Acciones correctivas vencidas | Conteo con fecha limite pasada | Rojo si mayor a 0 | Legal/Delegado, Responsable de la accion, Gerencia |
+
+**MOD-019 Centro de Evidencias** (dependencia estructural de MOD-020)
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Evidencia disponible por obligacion aplicable | % de obligaciones aplicables con Evidence Disponible | Verde 100% OBLIGATORIO, amarillo falta RECOMENDADO/CONDICIONAL, rojo falta OBLIGATORIO | Gerencia, Legal/Delegado, Auditor |
+| Huecos de evidencia abiertos | Conteo Faltante por clasificacion | Rojo si 1+ OBLIGATORIO | Legal/Delegado, Gerencia, Auditor |
+| Evidencia vencida o por vencer | Conteo Vencida mas proximos 30 dias | Rojo/amarillo | Seguridad/IT, Legal/Delegado, Gerencia |
+| Paquetes de evidencia generados en el periodo | Conteo EvidencePackage Exportado por tipo | Informativo | Legal/Delegado, Auditor, Gerencia |
+| Tiempo promedio de aprobacion de evidencia manual | Promedio dias En revision -> Disponible | Verde <5, amarillo 5-10, rojo >10 | Legal/Delegado, Administrador |
+
+**MOD-021 Centro de Tareas** (dependencia estructural de MOD-020)
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Tareas pendientes | Pendiente + En proceso + Bloqueada | Verde/amarillo/rojo segun promedio historico | Responsable, Gerencia, Legal |
+| Tareas vencidas | Conteo con bandera Vencida | Rojo si mayor a 0 | Gerencia, Responsable, Legal, Auditor |
+| Aprobaciones pendientes | Conteo sin Decision, por dias en espera | Amarillo >3 dias, rojo >5 dias | Aprobador, Delegado/Resp. interno, Gerencia |
+| Tiempo promedio de cierre por tipo de tarea | Promedio dias creacion -> completada | Sin semaforo | Legal, Gerencia |
+| Cumplimiento de plazos operativos con plazo legal | % completadas dentro de la fecha limite | Verde >=95%, amarillo 80-94%, rojo <80% | Gerencia, Legal, Auditor |
+| Tareas archivadas por cambio de regimen | Conteo acumulado desde la activacion de FUTURO | Informativo | Delegado/Resp. interno, Legal, Auditor |
+| Carga de trabajo por responsable | Conteo de tareas activas por usuario | Amarillo si supera el umbral configurado | Administrador, Gerencia |
+
+**MOD-022 Notificaciones**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Notificaciones CRITICAL pendientes de acuse | Conteo Leida/Entregada CRITICAL sin Acuse | Rojo si mayor a 0 | Gerencia, Delegado/Resp. interno, Legal/Compliance, Auditor |
+| Notificaciones escaladas en el periodo | Conteo con bandera Escalada por familia | Amarillo/rojo segun promedio historico | Gerencia, Administrador |
+| Tasa de entrega fallida | Fallida tras reintentos sobre total enviado | Verde <1%, amarillo 1-5%, rojo >5% | Administrador |
+| Tiempo promedio de acuse en CRITICAL | Promedio entre entrega/lectura y acuse | Sin semaforo | Legal, Gerencia, Auditor |
+| Notificaciones agrupadas vs individuales | Proporcion en resumen sobre el total | Informativo | Administrador |
+| Roles criticos sin titular activo | Conteo de reglas con destinatario resuelto vacio | Rojo si mayor a 0 | Gerencia, Administrador, Auditor |
+
+**MOD-023 Calendario y Motor de Plazos**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Calendario del anio en curso y del proximo anio | Estado de la version (Vigente/Publicado/Borrador) | Verde/amarillo/rojo segun antelacion | Administrador, Gerencia, Auditor |
+| Plazos legales actualmente en curso | Conteo por modulo de origen | Informativo | Gerencia, Delegado/Resp. interno, Legal |
+| Plazos vencidos sin cerrar | Conteo con bandera Vencido | Rojo si mayor a 0 | Gerencia, Delegado/Resp. interno, Auditor |
+| Recalculos aplicados (12 meses) | Conteo de eventos de recalculo | Informativo | Legal/Compliance, Auditor |
+| Cobertura de fuente verificada en asuetos locales | % sucursales con fuente verificada en 24 meses | Verde 100%, amarillo 80-99%, rojo <80% | Administrador, Auditor |
+| Casos con criterio de computo ambiguo en su valor alternativo | Conteo de cambios de criterio por defecto | Amarillo si mayor a 0 | Legal/Compliance, Delegado/Resp. interno, Auditor |
+
+**MOD-024 Centro Regulatorio**
+
+| Indicador | Formula (resumen) | Semaforo | Perspectiva |
+|---|---|---|---|
+| Estado regulatorio vigente | Badge ACTUAL/FUTURO con fecha del ultimo cambio | Informativo | Todas |
+| Actualizaciones normativas pendientes de revision | Conteo de tareas "Revisar cambio normativo" no completadas | Verde 0, amarillo 1-2, rojo 3+ | Administrador, Delegado/Resp. Interno, Responsable Legal |
+| Procedimientos sancionadores activos | Conteo distinto de CERRADO/PRESCRITO_ARCHIVADO | Rojo si hay uno con plazo vencido | Gerencia, Responsable Legal, Auditor |
+| Dias habiles para la proxima obligacion del expediente sancionador activo | Minimo entre fechas limite del expediente | Colorea segun cercania | Responsable Legal, Administrador |
+| Tramites ante la ACE pendientes de envio | Conteo BORRADOR/PENDIENTE_DE_ENVIO | Amarillo tras 15 dias, rojo tras 30 | Delegado/Resp. Interno, Administrador, Legal |
+| Evidencia disponible del modulo | X de Y evidencias requeridas disponibles | Verde/amarillo/rojo | Auditor, Legal |
+| Historial de sanciones y apercibimientos (RECOMENDADO) | Conteo acumulado de expedientes cerrados con sancion | Informativo | Legal, Auditor, Gerencia |
+| Alertas activas del modulo | Conteo por nivel INFO/WARNING/HIGH/CRITICAL | Semaforo por nivel | Gerencia (HIGH/CRITICAL), Responsable Legal (todas) |
+
+**MOD-025 Busqueda Global.** No aporta indicadores de estado del programa al Dashboard principal (segun su propia ficha, seccion M): sus 3 indicadores (consultas ejecutadas, proporcion sin resultados, volumen de consultas en ambito sensible) son de gestion interna de la propia busqueda y se muestran unicamente al Administrador, nunca en las 4 perspectivas de MOD-020.
+
+**MOD-026 Centro de Ayuda.** Aun sin ficha propia al momento de escribir esta (no existe `MOD-026_ficha.md` en `analisis/03_modulos/`). Segun su ficha resumida (`06_mapa_definitivo_de_modulos.md`, seccion 3), es un modulo transversal de solo lectura sin obligacion propia; por el mismo patron que MOD-025, es razonable anticipar que no aportara indicadores de estado del programa al Dashboard principal, solo indicadores internos de uso de la ayuda contextual (por ejemplo, articulos consultados, busquedas de ayuda sin resultado). Se deja como pendiente para cuando esa ficha se redacte (ver Nota final).
+
+---
+
+## N. Reportes
+
+Igual que en la seccion M, esta seccion tiene una parte propia (N.1, los reportes que solo MOD-020 puede producir porque combinan varios modulos) y una parte consolidada (N.2 y N.3), que indexa los reportes que cada modulo ya define en su propia seccion N.
+
+### N.1 Reportes propios de MOD-020
+
+| Reporte | Contenido | Filtros | Formato | Destinatario tipico | Parte del paquete de evidencia |
+|---|---|---|---|---|---|
+| Informe gerencial consolidado | Sintesis del estado del programa por las 6 etapas del recorrido y por los 8 clusters legales (seccion M.3), indicadores criticos de cada modulo MUST HAVE, avance del Plan de Cumplimiento (MOD-005) | Por etapa, por cluster, por periodo o foto mensual | PDF | Gerencia, Administrador | Si, como pieza de sintesis del paquete general |
+| Informe para Junta Directiva | Version ejecutiva del informe gerencial, pensada para un destinatario que no usa el sistema dia a dia: menos detalle operativo, mas enfasis en riesgos criticos, avance del plan y proximos hitos regulatorios (por ejemplo, la reforma 659) | Por periodo (tipicamente trimestral o semestral) | PDF | Junta Directiva (destinatario externo al sistema, ver seccion B) | Si |
+| Enlace al paquete de evidencia para la ACE | Referencia al paquete que arma MOD-019 (paquete de evidencia general o paquete de preparacion de inspeccion, segun corresponda), con su fecha de generacion, alcance y estado, sin duplicar su contenido | Por tipo de paquete, por fecha de generacion | Enlace mas metadatos (el archivo en si es el que ya genera MOD-019) | Delegado/Responsable interno, Legal/Compliance, Administrador | Si (por remision directa al paquete de MOD-019) |
+| Reporte comparativo de tendencia (fotos periodicas) | Evolucion de los indicadores de la seccion M.3 entre dos o mas cierres mensuales elegidos | Por rango de fechas, por modulo o cluster | PDF, XLSX | Gerencia, Legal/Delegado, Auditor | Si |
+| Exportacion de la vista de Dashboard vigente | Fotografia en PDF de la pantalla tal como la ve el usuario en el momento de exportar, con sus filtros aplicados | Los mismos filtros de la seccion D.1 | PDF | El usuario que exporta, para compartir puntualmente | No (a menos que se use como respaldo puntual; no sustituye al paquete de MOD-019) |
+
+### N.2 Los 7 reportes minimos del area 28, mas Junta Directiva y el enlace a la ACE
+
+El area 28 del prompt de analisis funcional exige, como minimo, reportes gerencial, ARCO-POL, incidentes, proveedores, RAT, auditoria y seguridad. Ninguno de estos siete se duplica desde cero en MOD-020: cada uno ya existe, con mayor detalle, en la seccion N de su modulo de origen; el rol de MOD-020 es ofrecer un unico punto de entrada donde encontrarlos todos, ademas de dos reportes que si son exclusivos de este modulo (Informe para Junta Directiva y el enlace al paquete para la ACE, ya descritos en N.1).
+
+| Reporte minimo del area 28 | Se satisface con (modulo y reporte de origen) |
+|---|---|
+| Gerencial | Informe gerencial consolidado (N.1, propio de MOD-020), que a su vez agrega el Plan de Cumplimiento vigente y el Plan de adecuacion de MOD-005 |
+| ARCO-POL | Reporte de solicitudes ARCO-POL y Estadisticas ARCO-POL para el informe periodico del Delegado, ambos de MOD-011 |
+| Incidentes | Listado de incidentes del periodo y Reporte de cumplimiento de plazos de notificacion, ambos de MOD-013 |
+| Proveedores | Listado de proveedores/encargados y Reporte de vencimientos, ambos de MOD-009 |
+| RAT | RAT consolidado y RAT de datos sensibles, ambos de MOD-006 |
+| Auditoria | Informe de auditoria anual y Plan de accion exportable, ambos de MOD-018; complementado por el Historico de exportaciones de MOD-020 mismo (ver N.3) |
+| Seguridad | Checklist de controles de seguridad y Reporte de excepciones y justificaciones, ambos de MOD-015 |
+| (adicional, no exigido como "minimo" por el area 28 pero exigido por el enfoque especifico de esta tarea) Informe para Junta Directiva | Reporte propio de MOD-020 (N.1) |
+| (adicional) Enlace al paquete para la ACE | Reporte propio de MOD-020 (N.1), que remite al paquete armado por MOD-019 |
+
+### N.3 Catalogo consolidado de reportes por modulo fuente
+
+Consolidado a partir de la seccion N de las 23 fichas ya redactadas. El contenido se resume de forma breve; el detalle completo (todas las columnas exactas de cada reporte) vive en la seccion N de la ficha de origen.
+
+| Modulo fuente | Reportes (nombre resumido) | Formato tipico | Destinatario tipico | Integra paquete de evidencia |
+|---|---|---|---|---|
+| MOD-001 | Listado de usuarios y roles vigentes; Ficha de organizacion; Historial de cambios de estructura | PDF, XLSX, CSV | Auditor, Administrador, Gerencia | Si (control de acceso) |
+| MOD-002 | Ficha del responsable del programa de datos; Bitacora de plazos del Delegado; Paquete de evidencia del Delegado; Informe de gestion periodico del Delegado | PDF, XLSX, ZIP | Auditoria interna, Gerencia, Junta Directiva | Si |
+| MOD-003 | Resumen de configuracion inicial; Historial de invitaciones y aceptaciones | PDF, CSV/XLSX | Administrador, Auditor | Si |
+| MOD-004 | Resultado del diagnostico; Historial comparativo de diagnosticos; Detalle de disparadores activados | PDF, XLSX, CSV | Administrador, Delegado, Legal/Compliance, Auditor | Si |
+| MOD-005 | Plan de Cumplimiento vigente; Plan de adecuacion; Acciones vencidas; Historial de recalculos del plan | PDF, XLSX | Administrador, Delegado, Legal, Auditor, ACE si se requiere | Si |
+| MOD-006 | RAT consolidado; RAT de datos sensibles; Mapa de Datos exportado; Reporte de transferencias no documentadas; Historial de cambios; Paquete de evidencia del RAT | PDF, XLSX/CSV | Delegado, Legal, Gerencia, Auditor | Si |
+| MOD-007 | Consentimientos vigentes; Revocaciones procesadas; Expediente individual de consentimiento; Consentimientos sensibles y biometricos | XLSX, CSV, PDF | Responsable, Legal, Gerencia, Auditor | Si |
+| MOD-008 | Inventario de documentos regulatorios; Historial de versiones; Paquete de evidencia documental; Checklist de contenido minimo del Aviso | PDF, XLSX, ZIP | Gerencia, Auditor, ACE | Si |
+| MOD-009 | Listado de proveedores/encargados; Reporte de vencimientos; Paquete de evidencia de un proveedor; Reporte de transferencias derivadas | XLSX, CSV, PDF, ZIP | Delegado, Auditor, Responsable de area | Si (salvo el reporte de vencimientos, de uso interno) |
+| MOD-010 | Listado de transferencias; Expediente individual; Paquete de evidencia de transferencias; Pendientes o con riesgo abierto; Registro de puestas en conocimiento a la ACE | XLSX, CSV, PDF, ZIP | Legal, Auditor, Delegado, Gerencia | Si (salvo el listado y el reporte de pendientes, de uso interno) |
+| MOD-011 | Reporte de solicitudes ARCO-POL; Estadisticas para el informe del Delegado; Paquete de evidencia de un expediente; Reporte de reclamos ante la ACE; Reporte de tarifas cobradas | PDF, XLSX, ZIP | Delegado, Gerencia, Auditor, Legal | Si |
+| MOD-012 | Solicitudes recibidas por el Portal; Accesos y verificaciones del Portal; Constancia de mecanismo operativo | XLSX, CSV, PDF | Responsable ARCO-POL, Seguridad/IT, Auditor, Delegado, Gerencia | Si |
+| MOD-013 | Listado de incidentes del periodo; Expediente individual; Reporte de cumplimiento de plazos de notificacion; Reporte de incidentes por proveedor; Paquete de evidencia para auditoria anual | PDF, XLSX, CSV, ZIP | Gerencia, Legal, Auditor, Responsable de Proveedores | Si (salvo el listado del periodo, gerencial) |
+| MOD-014 | Listado de EIPD; Expediente EIPD individual; Reporte de riesgos por nivel; Reporte de mitigaciones y controles pendientes; Paquete de evidencia de una EIPD | PDF, XLSX, ZIP | Delegado, Gerencia, Auditor, ACE si se requiere, Seguridad/IT | Si |
+| MOD-015 | Checklist de controles de seguridad; Reporte de excepciones y justificaciones; Paquete de evidencia de seguridad; Historial de cambios de un control | PDF, XLSX, ZIP, CSV | Seguridad/IT, Delegado, Gerencia, Legal, Auditor | Si |
+| MOD-016 | Inventario de reglas de retencion; Historial de eliminaciones; Excepciones y eliminaciones anticipadas; Reglas sin fundamento sectorial confirmado | PDF, XLSX, CSV, ZIP | Delegado, Gerencia, Auditor, ACE | Si (salvo el ultimo, de gestion interna) |
+| MOD-017 | Listado de capacitaciones por persona; Historial por area o rol; Plan anual de capacitacion; Vencimientos e inducciones pendientes | PDF, XLSX, CSV | RRHH, Delegado, Auditor, Gerencia, ACE si la requiere | Si (salvo vencimientos, de gestion interna) |
+| MOD-018 | Informe de auditoria anual; Plan de accion exportable; Historico de auditorias; Paquete de evidencia de la auditoria | PDF, XLSX, CSV, ZIP | Gerencia, Auditor externo, ACE, Legal/Delegado, Seguridad/IT | Si |
+| MOD-019 | Informe de brecha de evidencia; Paquete de evidencia general; Paquete para auditoria anual; Paquete para procedimiento sancionador; Paquete de preparacion de inspeccion; Historico de exportaciones | XLSX, PDF, ZIP, CSV | Delegado, Gerencia, Auditor, ACE, Legal/Compliance | Si (salvo el informe de brecha, que orienta antes de generar el paquete) |
+| MOD-021 | Listado de tareas; Tareas vencidas; Historial de una tarea; Historial de aprobaciones; Carga de trabajo; Paquete de tareas archivadas por cambio de regimen | XLSX, CSV, PDF, ZIP | Administrador, Delegado, Legal/Compliance, Gerencia, Auditor | Si (salvo carga de trabajo, de uso interno) |
+| MOD-022 | Listado de notificaciones; Notificaciones CRITICAL con su acuse; Historial de una notificacion; Entregas fallidas y reintentos; Configuracion vigente de reglas | XLSX, CSV, PDF | Administrador, Delegado, Legal/Compliance, Auditor, Gerencia | Si (salvo entregas fallidas, de uso interno) |
+| MOD-023 | Calendario oficial vigente por anio; Historial de calculos de plazo; Historial de recalculos; Registro de cambios de criterio de computo; Paquete de evidencia de un calculo | PDF, XLSX, CSV, ZIP | Administrador, Delegado, Legal/Compliance, Auditor | Si |
+| MOD-024 | Marco normativo vigente; Catalogo de infracciones y multas; Bitacora de actualizaciones normativas; Expediente completo de un Procedimiento Sancionador; Registro de tramites ante la ACE; Historial del regimen de la reforma 659 | PDF, XLSX, CSV, ZIP | Gerencia, Legal, Auditor, Auditoria interna, ACE | Si |
+| MOD-025 | Registro agregado de consultas en ambito sensible; Catalogo de sinonimos vigente | XLSX, CSV | Administrador, Auditor interno, equipo de producto | No (son reportes de gestion interna del buscador, no del programa de proteccion de datos) |
+| MOD-026 | Aun sin ficha propia; se anticipa, por el mismo patron de MOD-025, un reporte interno de uso de la ayuda (por ejemplo, articulos mas consultados), sin reportes de programa | A definir | A definir | A definir |
+
+---
+
+## O. Historial
+
+Eventos que quedan en el registro tecnico de MOD-020 y en el AuditLog transversal (MOD-020 no tiene un historial de "cambios de campo" de un registro de negocio propio, porque no posee esa entidad; se limita a los eventos tecnicos propios del modulo, igual que MOD-025):
+
+- Cada exportacion de un reporte (seccion N): usuario, fecha y hora, reporte, filtros aplicados, formato.
+- Cada generacion de una foto periodica (cierre mensual): fecha, si fue automatica o manual, y el motivo si fue manual (seccion D.3).
+- Cambios a la configuracion de umbrales de semaforo, catalogo de sucursales/unidades a efectos del Dashboard, o al calendario de cierres mensuales: quien lo cambio, el valor anterior y el nuevo.
+- Acceso a una perspectiva o a un reporte marcado con nivel de confidencialidad reforzado (por ejemplo, la exportacion del Informe para Junta Directiva) por un rol distinto del habitual (Administrador o Delegado/Responsable interno), igual que MOD-021 y MOD-025 registran el acceso de segundo nivel a sus propios contenidos sensibles.
+- Cada vez que se enlaza o se consulta el paquete de evidencia para la ACE desde este modulo (sin registrar el contenido del paquete en si, que ya audita MOD-019 por su cuenta).
+
+---
+
+## P. Riesgos
+
+- **Riesgo legal: que un indicador o una combinacion de indicadores del Dashboard se lea como una afirmacion de cumplimiento legal.** Es el riesgo central que motiva el anti-feature 5 y toda la seccion H de esta ficha. *Mitigacion de diseno*: ningun texto de pantalla usa la palabra "cumplimiento" junto a un numero o porcentaje; se usa siempre "estado del programa", "controles configurados", "tareas pendientes" o "evidencia disponible" (`04_objetivo_exacto_del_producto.md`, seccion 1.2), y el banner general de descargo (seccion 1.3 del mismo documento) es visible en el Dashboard principal, tal como el propio maestro lo describe en su seccion 31.
+- **Riesgo legal: que el indicador de "estado del programa" por etapa o por cluster (seccion M.3) se use como sustituto de una opinion juridica sobre riesgo real.** *Mitigacion de diseno*: el indicador se declara explicitamente como sintesis operativa [opinion de producto], nunca como una conclusion sobre la exposicion legal de la empresa; el texto de ayuda contextual (seccion R) lo explica y remite a asesoria especializada cuando corresponda.
+- **Riesgo de UX: sobrecarga de informacion para un usuario no especialista que entra por primera vez.** Con indicadores de 23 modulos distintos, una vista sin jerarquia puede abrumar a alguien como Karla (perfil pyme de `05_tipos_de_usuario.md`). *Mitigacion de diseno*: la perspectiva por defecto (segun el rol, seccion B) muestra primero los indicadores de mayor severidad (rojos) y el resumen por etapa/cluster (seccion M.3), dejando el detalle exhaustivo del catalogo (M.3.1) accesible pero no como pantalla de entrada.
+- **Riesgo de UX: que la vista alternativa por los 8 clusters legales confunda a un usuario que ya aprendio a navegar por las 6 etapas del recorrido.** *Mitigacion de diseno*: la vista por clusters es opcional y esta acotada a la perspectiva Legal/Delegado (seccion D.1); las demas perspectivas siempre usan las 6 etapas, que son el criterio de navegacion principal de todo el sistema (`06_mapa_definitivo_de_modulos.md`, seccion 2, principio 1).
+- **Riesgo operativo: que un indicador quede desactualizado o incorrecto por un error en su modulo fuente, y que el Dashboard "hereda" ese error sin que nadie lo note en el lugar correcto.** *Mitigacion de diseno*: MOD-020 nunca recalcula el valor de un indicador (seccion M.1); si el valor es incorrecto, el error se corrige en el modulo fuente y se refleja aqui de inmediato, sin necesidad de un mecanismo de correccion separado en el Dashboard.
+- **Riesgo operativo: que la foto periodica (cierre mensual) no se genere por una falla tecnica, y que la tendencia quede con un hueco sin que nadie lo note.** *Mitigacion de diseno*: el indicador propio de la seccion M.2 ("fotos periodicas generadas a tiempo") hace visible ese hueco al Administrador, y el estado "Programada" del snapshot (seccion F.2) queda visible hasta que se resuelve.
+- **Riesgo de seguridad y privacidad: que un indicador o un reporte exponga, sin querer, un dato personal de un titular.** Por ejemplo, un reporte mal filtrado que muestre el nombre de un titular en vez de solo el conteo de solicitudes. *Mitigacion de diseno*: la regla de minimizacion de la seccion D.4 (todo indicador es un agregado, nunca un dato individual) y el hecho de que todo reporte con contenido detallado proviene, sin alteracion de sus reglas de minimizacion, del modulo de origen que ya las define (por ejemplo, MOD-011 nunca expone el nombre completo del titular fuera de su propio expediente, ver `MOD-011_ficha.md`).
+- **Riesgo de seguridad: que un rol vea, a traves del drill-down, un registro que su propio modulo de origen le negaria si lo buscara directamente.** *Mitigacion de diseno*: el filtro de permisos se aplica siempre antes que el filtro de perspectiva o cluster (seccion C y seccion D.4, punto 2), exactamente con la misma regla de "no revelar existencia" que ya define `MOD-025_ficha.md` para la Busqueda Global.
+- **Riesgo operativo: que el filtro por "sociedad" (seccion D.1) se active antes de que el MVP soporte realmente varias sociedades, generando expectativas de una capacidad que aun no existe.** *Mitigacion de diseno*: el campo queda modelado pero explicitamente inactivo mientras la organizacion tenga una sola sociedad dada de alta (ver Nota final punto 2), sin mostrarse como opcion de filtro cuando no aplica.
+
+---
+
+## Q. MVP
+
+| Funcionalidad del modulo | MUST HAVE | SHOULD HAVE | COULD HAVE | FUTURE | Justificacion |
+|---|---|---|---|---|---|
+| Dashboard basico por perspectiva (Gerencia, Responsable, Legal/Delegado, Auditor) con los indicadores de "pendientes, vencidos, tratamientos, solicitudes" | X | | | | Es la justificacion explicita de MUST HAVE de la propia entrada de MOD-020 en `mapa_modulos.json`; sin esto el producto no cumple su promesa de dar una vision general desde el primer dia |
+| Indicadores agregados desde MOD-005, MOD-019 y MOD-021 (dependencia estructural minima) | X | | | | Son los tres modulos MUST HAVE de los que depende la version minima (seccion L); sin ellos no hay avance del plan, evidencia disponible ni tareas que mostrar |
+| Filtro por sucursal o unidad, y drill-down al registro fuente respetando permisos | X | | | | Sin drill-down el Dashboard es solo una foto sin accion posible; el enfoque especifico de esta tarea lo exige de forma explicita ("cada indicador permite bajar al registro fuente respetando permisos") |
+| Regla de minimizacion (nunca datos personales de titulares en el Dashboard) y prohibicion de lenguaje de cumplimiento legal | X | | | | No postergable desde el primer dia: es la instrumentacion directa de dos anti-features centrales (items 5 y 8 de `22_anti_features.md`) |
+| Toda exportacion queda en el AuditLog, con verificacion de integridad via MOD-019 | X | | | | Cierra el anti-feature 25 (integridad de toda exportacion); sin esto ningun reporte de este modulo es verificable despues |
+| Catalogo consolidado de indicadores de los modulos MUST HAVE (seccion M.3.1, filas de MOD-001 a MOD-009, MOD-011, MOD-013, MOD-015, MOD-017, MOD-019, MOD-021 a MOD-024) | X | | | | Estos son los modulos MUST HAVE del mapa definitivo; sus indicadores deben estar disponibles desde el primer dia |
+| Estado del programa por etapa y por cluster (seccion M.3, sintesis de alto nivel) | | X | | | Mejora de comprension para Gerencia sobre datos que ya existen en el detalle MUST HAVE; el detalle por modulo ya cubre la necesidad minima sin esta capa de sintesis |
+| Vista alternativa por los 8 clusters legales | | X | | | Injerto de un solo juez, no parte de la propuesta ganadora original; util para el rol Legal/Delegado, pero la navegacion por las 6 etapas (MUST HAVE) ya cubre la necesidad de encontrar informacion |
+| Fotos periodicas (cierres mensuales) y reporte comparativo de tendencia | | X | | | Util desde el inicio, pero el mismo resultado puede obtenerse revisando manualmente el Dashboard en distintos momentos mientras no exista el snapshot automatico; no es dependencia estructural de otro MUST HAVE |
+| Reportes exportables avanzados por area (los 7 minimos del area 28, seccion N.2) mas alla del listado basico ya MUST HAVE en cada modulo de origen | | X | | | Cada modulo de origen ya exporta su propio reporte MUST HAVE (por ejemplo, RAT consolidado en MOD-006); lo que se difiere es la conveniencia de encontrarlos todos consolidados desde MOD-020, no la existencia del reporte en si |
+| Informe gerencial consolidado e Informe para Junta Directiva | | X | | | Valor claro para clientes con Junta Directiva formal (perfil corporativo de `05_tipos_de_usuario.md`), pero no bloquea la operacion de una pyme sin ese organo, que puede seguir usando el Dashboard basico |
+| Enlace al paquete de evidencia para la ACE | | X | | | Depende de que MOD-019 tenga su paquete de evidencia general ya armado; el enlace en si es de bajo costo, pero no urgente mientras la ACE no abra un requerimiento activo |
+| Indicadores de indicadores no disponibles como "no disponible en esta version" para modulos SHOULD/COULD HAVE aun sin construir | | X | | | Mejora de claridad de UX sobre una version que ya podria mostrar simplemente ausencia de datos; no bloquea la utilidad basica del Dashboard |
+| Personalizacion completa de umbrales de semaforo por la empresa, para cada uno de los mas de 100 indicadores del catalogo | | | X | | Los umbrales por defecto de cada modulo fuente (documentados en su propia seccion M) cubren el caso general; la personalizacion exhaustiva es una mejora posterior |
+| Vista consolidada multi-sociedad del Dashboard (filtro por sociedad activo) | | | | X | Coincide con la decision de alcance 2.7.31 de `02_validacion_de_la_idea.md`: el MVP no soporta grupos multi-sociedad; el filtro por sociedad de esta ficha queda listo pero inactivo hasta esa capacidad (ver Nota final punto 2) |
+| Meta-indicadores de uso del propio Dashboard (perspectiva mas consultada, etc.) mas alla de la cobertura basica de fotos mensuales | | | X | | Util para el equipo de producto, no para el programa de proteccion de datos de la empresa cliente; no aporta valor legal ni operativo directo |
+
+**Version minima vendible del modulo.** La version minima que ya puede venderse es el Dashboard basico por las 4 perspectivas, con los indicadores de MOD-005 (avance del plan), MOD-019 (evidencia disponible) y MOD-021 (tareas pendientes y vencidas) mas los indicadores de los demas modulos MUST HAVE ya construidos al momento del lanzamiento, filtrado por sucursal/unidad, con drill-down respetando permisos, sin lenguaje de cumplimiento legal y con toda exportacion verificable via MOD-019. Esto ya resuelve la pregunta central que motiva este modulo (como vamos, desde cualquier perspectiva) y es coherente con la propia clasificacion MUST HAVE del mapa definitivo, que reserva explicitamente los reportes avanzados y la vista por clusters para una version posterior dentro del mismo modulo.
+
+---
+
+## R. Ayuda contextual (complemento obligatorio)
+
+**1. Que es el Dashboard**
+
+- *Que es*: la pantalla principal que le muestra, de un vistazo, en que esta su programa de proteccion de datos: pendientes, vencidos, tratamientos registrados, solicitudes abiertas, y mas, segun el punto de vista (perspectiva) desde el que lo mire.
+- *Por que tengo que hacer esto*: para no tener que revisar cada modulo por separado cada vez que alguien le pregunte "como vamos".
+- *Fundamento*: no tiene un fundamento legal propio; es la instrumentacion funcional del area 26 del prompt de analisis funcional y de la seccion 31 del documento maestro (hipotesis de producto, aqui convertida en diseno).
+- *Cuando necesito ayuda juridica*: nunca por usar el Dashboard en si; si un indicador le genera una duda legal sobre que hacer, esa duda se resuelve en el modulo de origen del indicador, no aqui.
+
+**2. Que significa "estado del programa" (y por que nunca vera un porcentaje de cumplimiento legal)**
+
+- *Que es*: una forma de describir donde esta su empresa en su proceso de proteccion de datos (por ejemplo, "sin iniciar", "en configuracion", "operando", "con evidencia" o "revisado"), sin afirmar que su empresa "cumple" o "no cumple" con la ley.
+- *Por que tengo que hacer esto*: porque solo un abogado o su Delegado, revisando su caso concreto, puede decir si su empresa cumple la ley; el sistema solo puede mostrarle que tan avanzado esta su trabajo de organizacion, documentacion y evidencia.
+- *Fundamento*: anti-feature 5 de `22_anti_features.md` y seccion 1.2 de `04_objetivo_exacto_del_producto.md`: el sistema nunca declara un porcentaje de cumplimiento legal.
+- *Cuando necesito ayuda juridica*: siempre que quiera saber si el estado que ve equivale a estar "en regla" con la ley; esa conclusion requiere criterio de su Delegado o de asesoria especializada.
+
+**3. Que son los 8 clusters legales (vista alternativa a las 6 etapas)**
+
+- *Que es*: una segunda forma de organizar la informacion del Dashboard, agrupando los modulos por tema legal (por ejemplo, "Relacion con terceros" agrupa Proveedores y Transferencias) en vez de por el orden en que normalmente se usa el sistema.
+- *Por que tengo que hacer esto*: es util para el Delegado o para Legal/Compliance cuando necesita revisar un tema legal completo (por ejemplo, todo lo relacionado con la autoridad) sin importar en que etapa del recorrido vive cada modulo.
+- *Fundamento*: no corresponde a un OBL-ID especifico; es una clasificacion de producto tomada de `propuesta_mapa_obligaciones.md`, adoptada como vista alternativa por `06_mapa_definitivo_de_modulos.md`, seccion 3, ficha de MOD-020.
+- *Cuando necesito ayuda juridica*: no aplica directamente a la vista en si; si un cluster completo muestra muchos indicadores en rojo, consulte a su Delegado para priorizar por donde empezar.
+
+**4. Que es una foto periodica (cierre mensual)**
+
+- *Que es*: una copia guardada de como estaban todos los indicadores en una fecha especifica de cada mes, para poder comparar como ha cambiado su programa con el tiempo.
+- *Por que tengo que hacer esto*: para ver tendencias (por ejemplo, si las solicitudes ARCO-POL vencidas estan aumentando o disminuyendo mes a mes) en vez de solo ver el dato de hoy.
+- *Fundamento*: no corresponde a un OBL-ID especifico; es una buena practica de gestion definida para este modulo (seccion D.3), util ademas como evidencia de que el estado mostrado en un momento dado no se altero retroactivamente.
+- *Cuando necesito ayuda juridica*: no aplica; si una tendencia negativa (por ejemplo, un aumento sostenido de incidentes) le preocupa, consulte a su Delegado o a asesoria especializada para entender la causa.
+
+**5. Diferencia entre el Dashboard y un Reporte**
+
+- *Que es*: el Dashboard es la vista en vivo, siempre actualizada, que usted consulta dentro del sistema; un Reporte es un archivo exportado (PDF, XLSX, CSV o ZIP) que congela esa informacion en un momento dado para compartirla fuera del sistema, con verificacion de integridad.
+- *Por que tengo que hacer esto*: porque a veces necesita mostrarle el estado de su programa a alguien que no tiene acceso al sistema (por ejemplo, la Junta Directiva o un auditor externo), y para eso necesita un archivo, no solo una pantalla.
+- *Fundamento*: no corresponde a un OBL-ID especifico, salvo cuando el reporte exportado es, en si mismo, evidencia de una obligacion (por ejemplo, el paquete de evidencia para la ACE, que remite a OBL-PRIN-03, propietaria de MOD-019).
+- *Cuando necesito ayuda juridica*: si va a entregar un reporte a la ACE o a un tercero externo y no esta seguro de si el contenido es correcto o completo, consulte a su Delegado o a asesoria especializada antes de enviarlo.
+
+**6. Por que un indicador puede decir "no disponible en esta version"**
+
+- *Que es*: algunos indicadores del catalogo dependen de un modulo que su version del sistema aun no incluye (por ejemplo, Transferencias Internacionales o Riesgos/EIPD, si su empresa contrato solo el nucleo basico).
+- *Por que tengo que hacer esto*: para que la ausencia de un modulo no se confunda con "no hay riesgo" en esa area; el sistema le avisa explicitamente que ese dato todavia no esta disponible, en vez de mostrar un cero enganoso.
+- *Fundamento*: no corresponde a un OBL-ID especifico; es una regla de diseno de este modulo (seccion G) pensada para no contradecir el principio de no afirmar cumplimiento donde en realidad falta informacion.
+- *Cuando necesito ayuda juridica*: si no sabe si su empresa deberia tener contratado ese modulo (por ejemplo, si en verdad transfiere datos al extranjero), consulte con su Delegado antes de decidir que el area "no aplica".
+
+---
+
+## Nota final del agente (desacuerdos y observaciones sobre las fuentes de diseno)
+
+1. **Asimetria entre `depende_de` (3 modulos) y el consumo real de indicadores y reportes (23 modulos), y como se resolvio.** `mapa_modulos.json` declara `depende_de: ["MOD-005", "MOD-019", "MOD-021"]` para MOD-020, y la ficha resumida de la seccion 3 de `06_mapa_definitivo_de_modulos.md` describe esto como "entra desde MOD-005, MOD-019, MOD-021... sale hacia ninguno (es un modulo terminal de lectura)". Esa declaracion es correcta como dependencia estructural minima de construccion (los tres son los unicos MUST HAVE sin los cuales el "dashboard basico" no puede operar en absoluto), pero es incompleta como descripcion funcional: el `grep -n "MOD-020" analisis/03_modulos/*.md` ejecutado antes de escribir esta ficha encontro menciones explicitas a "MOD-020" en las secciones M o L de MOD-005, MOD-008, MOD-009, MOD-010, MOD-011, MOD-014, MOD-015, MOD-016, MOD-017, MOD-018, MOD-019, MOD-021, MOD-022, MOD-023, MOD-024 y MOD-025 (15 modulos con mencion literal), y ademas las secciones M de MOD-001, MOD-002, MOD-003, MOD-004, MOD-006, MOD-007, MOD-012 y MOD-013 (8 modulos mas, 23 en total) usan exactamente el mismo vocabulario de "vista por rol: Gerencia, Responsable, Legal, Auditor" que corresponde a las 4 perspectivas de este modulo, aunque no citen "MOD-020" por su codigo. Esta ficha resuelve esa asimetria exactamente con el mismo criterio que la seccion 6.1 de `06_mapa_definitivo_de_modulos.md` ya usa para explicar por que MOD-001, MOD-023 y MOD-024 alimentan a casi todos los modulos sin que cada consumidor declare una dependencia estructural reciproca: `depende_de` registra la dependencia minima de construccion, mientras que el consumo de datos por referencia (aqui, al reves: MOD-020 como consumidor amplio) es mas extenso por diseno. No se propone cambiar `depende_de` de MOD-020 en `mapa_modulos.json` (seria incorrecto declarar alli una dependencia estructural que MOD-020 no tiene para poder lanzarse en su version minima), pero se recomienda a quien consolide el mapa final documentar esta misma distincion tambien para MOD-020, con la misma nota que ya lleva la seccion 6.1, y considerar si el campo `alimenta_a` de los 23 modulos fuente deberia declarar "MOD-020" de forma mas consistente (hoy 15 de 23 lo hacen explicitamente en su ficha, aunque no siempre coincide con su propio campo `alimenta_a` en el JSON, un patron de inconsistencia ya senalado antes por `MOD-021_ficha.md` y `MOD-022_ficha.md` para otras relaciones).
+2. **El filtro por "sociedad" del enfoque especifico de la tarea contradice, en apariencia, el alcance MVP ya decidido para MOD-001.** El enunciado de esta tarea pide explicitamente "filtros por sucursal, unidad o sociedad". Sin embargo, `MOD-001_ficha.md` (seccion D.1, campo Sucursales, y seccion Q) y la decision de alcance 2.7.31 de `02_validacion_de_la_idea.md` establecen que el MVP solo soporta "una razon social con sucursales", no multiples sociedades de un mismo grupo (esa capacidad, junto con "vision consolidada multi-sociedad en el dashboard", queda declarada explicitamente V1/Enterprise en la propia tabla Q de MOD-001). Esta ficha resuelve la aparente contradiccion sin desatender ninguna de las dos fuentes: modela el campo "Sociedad" en el filtro de vista (seccion D.1) para que el diseno del Dashboard ya contemple esa dimension cuando la capacidad exista, pero lo declara explicitamente inactivo mientras la organizacion tenga una sola sociedad dada de alta, y clasifica la "vista consolidada multi-sociedad" como FUTURE en la seccion Q, coherente con MOD-001. No se trata de un supuesto incorrecto de la tarea, sino de una instruccion redactada pensando en el diseno completo del modulo (que debe estar preparado para esa dimension) mas que en el alcance exacto del MVP; se recomienda a quien redacte o revise el enfoque especifico de proximas tareas aclarar esta distincion entre "campo modelado" y "capacidad activa en el MVP".
+3. **Mapeo de los 8 clusters legales sobre el mapa definitivo de 26 modulos: ambiguedad genuina, resuelta como decision de diseno explicita.** `propuesta_mapa_obligaciones.md` (perdedora, ver `06_mapa_definitivo_de_modulos.md`, seccion 12) definio los 8 clusters sobre 16 modulos "de proceso" propios, dejando fuera de cualquier cluster a los 9 modulos que en esa propuesta eran transversales (incluyendo Dashboard, Reportes, Auditoria y Evidencias, todos agrupados sin distincion en su cluster "I"). El mapa definitivo vigente reorganizo esos modulos de forma distinta: mantuvo 6 modulos transversales (MOD-021 a MOD-026) pero saco a Auditoria (MOD-018) y Evidencias (MOD-019) de esa barra para ubicarlos en la etapa Demostrar, como modulos semi-transversales. Ninguna fuente de diseno disponible (ni la propuesta perdedora, ni el mapa definitivo, ni el objetivo del producto) resuelve explicitamente a que cluster legal, si alguno, pertenecen MOD-018 y MOD-019 bajo esta nueva organizacion. Esta ficha resuelve la ambiguedad de forma explicita en la seccion M.4: los 8 clusters se mapean 1 a 1 sobre los 16 modulos de proceso equivalentes en el mapa actual (MOD-001, MOD-002 para el cluster A; y asi sucesivamente), y MOD-018, MOD-019, MOD-020 mismo y los 6 modulos transversales (MOD-021 a MOD-026) quedan fuera de la clasificacion por cluster, apareciendo en la vista de un cluster especifico solo de forma cruzada (por ejemplo, mostrando las tareas o la evidencia cuyo "modulo de origen" pertenece a ese cluster) en vez de tener una casilla propia. Se marca como una decision de diseno de esta ficha, no como una correccion de `mapa_modulos.json` ni de `06_mapa_definitivo_de_modulos.md`, y se recomienda a quien consolide el mapa final confirmar o ajustar este criterio, en particular para el cluster H ("Relacion con la autoridad"), donde podria argumentarse en sentido contrario que MOD-018 (auditoria de cumplimiento, vinculada a las Politicas ACE) deberia tener su propia casilla.
+4. **Clasificacion global MUST HAVE, mantenida sin cambios, con el desglose interno que la propia entrada del mapa ya anticipaba.** Esta ficha mantiene la clasificacion MUST HAVE de `mapa_modulos.json` para MOD-020 en su conjunto, sin proponer ningun cambio: coincide con el test de tres condiciones de `06_mapa_definitivo_de_modulos.md`, seccion 2, principio 7, porque MOD-020 es la unica forma de que el estado del programa (condicion (c), capacidad probatoria y de vision general desde el primer dia) sea visible sin recorrer 25 pantallas distintas. La propia justificacion de MVP que ya trae la entrada de MOD-020 en el mapa ("Dashboard basico... MUST HAVE; reportes exportables avanzados por area SHOULD HAVE dentro del mismo modulo") es la que esta ficha desarrolla en detalle en la seccion Q, sin reinterpretarla.
+5. **Ninguna mencion especifica a MOD-020, Dashboard o Reportes se encontro en `lente_faltantes.md` ni en `lente_inconsistencias.md`.** Se verifico con busqueda de texto sobre ambos documentos completos; las unicas coincidencias de "reporte" en `lente_faltantes.md` se refieren a un reporte de buro de credito (exclusion del Art. 3) y a un reporte de incidentes de ciberseguridad a la ACE (faltante de MOD-013), ninguna relacionada con este modulo. Esto es consistente con que MOD-020 no aparece como modulo propietario ni colaborador de ninguna obligacion: los faltantes e inconsistencias de la validacion de la idea se concentran en modulos con obligaciones propias, no en el Dashboard.
+6. **Ningun otro desacuerdo material se detecto entre esta ficha y las fuentes de diseno ya decididas** (`02_validacion_de_la_idea.md`, `04_objetivo_exacto_del_producto.md`, `05_tipos_de_usuario.md`, `22_anti_features.md`, `06_mapa_definitivo_de_modulos.md`, `mapa_modulos.json`). Todas las afirmaciones juridicas de esta ficha (por ejemplo, las referencias a OBL-PRIN-03 o a la reforma 659) citan su fuente y su articulo segun `01_legal/matriz_obligaciones.json` y `01_legal/03_hallazgos_regulatorios.md`, sin inventar ningun OBL-ID nuevo; donde una regla es una decision de producto sin respaldo legal expreso (los umbrales de semaforo, el plazo de retencion propuesto para el registro de exportaciones, la escala de 5 estados del "estado del programa"), esta ficha lo marca explicitamente como "[opinion de producto]", siguiendo el mismo estandar que las 23 fichas ya redactadas.
+
+
+
 
 
 
